@@ -26,9 +26,9 @@
 <style lang="scss" scoped>
 section {
     background-image: url('../../assets/images/bg.jpg');
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     // background-size: cover;
-    background-position: top right;
+    background-position: center center;
 
     .section-title {
         color: #fff;
