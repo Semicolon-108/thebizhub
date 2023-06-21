@@ -1,0 +1,26 @@
+@charset "utf-8";
+// Typography
+$font-family: 'Roboto', 'Nuanta', sans-serif;
+
+
+// Theme Color
+$main-color: #000000;
+$sub-color: #E60278;
+$light-color: #E9FBFF;
+$info-color: #eed221;
+$alert-color: #e74615;
+$warning-color: #ddac51;
+
+// Component Color
+$border-color: hsl(0, 0%, 86%);
+$bg-color: #f4f5f1;
+// Font color
+$font-color: #000000;
+
+// Helper Color
+$light-grey-color: hsl(0, 0%, 90%);
+$grey-color: hsl(0, 0%, 71%);
+$dark-grey-color: hsl(0, 0%, 29%);
+
+
+$radius: 0.5rem;

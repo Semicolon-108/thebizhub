@@ -1,0 +1,12 @@
+input {
+    border: 1px solid $border-color;
+    @include md-font;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+
+    &.small {
+        @include sm-font;
+        padding: 8px 12px;
+    }
+}

@@ -1,0 +1,44 @@
+$columns: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
+$gaps: 10, 15, 20, 30;
+$spans: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
+
+@each $col in $columns {
+    @each $gap in $gaps {
+        .grids {
+            &.gap-#{$gap} {
+                gap: $gap + px;
+            }
+
+            &.is-#{$col}-desktop {
+                @include desktop {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat($col, minmax(0, 1fr));
+
+                    @each $span in $spans {
+                        .span-#{$span} {
+                            grid-column: span $span;
+                        }
+                    }
+                }
+            }
+
+            &.is-#{$col}-mobile {
+                @include mobile {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat($col, minmax(0, 1fr));
+
+                    @each $span in $spans {
+                        .span-#{$span} {
+                            grid-column: span $span;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        // grids
+    }
+}
