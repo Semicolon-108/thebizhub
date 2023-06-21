@@ -36,9 +36,9 @@
                             <li>Self-Employment</li>
                         </ul>
                     </li>
-                    <li><nuxt-link to="biz-laws">BIZ Laws</nuxt-link></li>
-                    <li><nuxt-link to="update">Update</nuxt-link></li>
-                    <li><nuxt-link to="about-us">About Us</nuxt-link></li>
+                    <li><a>BIZ Laws</a></li>
+                    <li><a>Update</a></li>
+                    <li><a>About Us</a></li>
                 </ul>
             </div>
             <div class="navbar-end">
