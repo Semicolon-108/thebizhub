@@ -9,7 +9,7 @@
                     <i class="fa-regular fa-bars"></i>
                 </p>
             </div>
-            <div class="logo">
+            <div class="logo" @click="$router.push({ path: '/' })">
                 <img src="../../assets/images/thebizhub-logo.jpg">
             </div>
             <h1>Partner for Success in Business and Entrepreneurship</h1>
@@ -37,14 +37,19 @@
                         </ul>
                     </li>
                     <li><a>BIZ Laws</a></li>
-                    <li><a>Update</a></li>
+                    <li>
+                        <NuxtLink to="update">Update</NuxtLink>
+                    </li>
                     <li><a>About Us</a></li>
                 </ul>
             </div>
             <div class="navbar-end">
                 <input type="text" class="input small" placeholder="Enter keyword and press Enter">
                 <hr class="v">
-                <button class="grey">English</button>
+                <p class="lang-switch">
+                    <a class="current">EN</a>
+                    <a>LA</a>
+                </p>
                 <hr class="v">
                 <div class="button-groups">
                     <button>Login</button>
@@ -113,6 +118,7 @@
 
     .logo {
         margin-bottom: 10px;
+        cursor: pointer;
 
         img {
             height: 4rem;
@@ -237,6 +243,22 @@
             border-color: $light-grey-color !important;
             margin: 0 20px;
             display: block;
+        }
+
+        .lang-switch {
+            display: flex;
+
+            a {
+                background-color: $light-grey-color;
+                padding: 5px;
+                cursor: pointer;
+                @include xsm-font;
+
+                &.current {
+                    background-color: $sub-color;
+                    color: #fff;
+                }
+            }
         }
 
         .button-groups {

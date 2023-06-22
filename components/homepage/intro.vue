@@ -8,7 +8,7 @@
                         <h3>Partner for success <br class="is-hidden-mobile">
                             in business and <br class="is-hidden-mobile">
                             entrepreneurship</h3>
-                        <button class="main margin-top-20 large">
+                        <button class="main margin-top-20 large" @click="$router.push({ path: '/update' })">
                             Update
                         </button>
                     </div>

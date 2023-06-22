@@ -1,4 +1,3 @@
-import { LayoutsNavbar, LayoutsFooter } from '../.nuxt/components';
 <template>
     <div>
         <LayoutsNavbar />
