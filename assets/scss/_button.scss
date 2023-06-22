@@ -4,6 +4,7 @@ button {
     cursor: pointer;
     background-color: #fff;
     border-radius: 3px;
+    @include md-font;
 
     // Size
     .small {

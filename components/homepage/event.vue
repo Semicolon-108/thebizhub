@@ -5,7 +5,7 @@
             <ul>
                 <li v-for="(i, index) in 3" :key="index">
                     <div class="card">
-                        <div class="card-image">
+                        <div class="card-image fullheight">
                             <img src="../../assets/images/event1.png" alt="">
                         </div>
                         <div class="card-content">

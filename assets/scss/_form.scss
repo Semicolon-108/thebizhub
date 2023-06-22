@@ -1,12 +1,88 @@
+.field {
+    width: 100%;
+
+    label {
+        display: block;
+        @include md-font;
+        font-weight: 700;
+        margin-bottom: 5px;
+
+        span {
+            color: red;
+        }
+    }
+}
+
 input {
+    width: 100%;
     border: 1px solid $border-color;
     @include md-font;
     outline: none;
     box-shadow: none;
     border-radius: 5px;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(0.75em - 1px);
+    padding-right: calc(0.75em - 1px);
+    padding-top: calc(0.5em - 1px);
+    height: 2.5em;
 
+    // size
     &.small {
         @include sm-font;
         padding: 8px 12px;
+    }
+}
+
+
+
+.select {
+    height: 2.5em;
+    width: 100%;
+    position: relative;
+
+    &::after {
+        right: 1.125em;
+        z-index: 4;
+        border: 2px solid $grey-color;
+        border-radius: 2px;
+        border-right: 0;
+        border-top: 0;
+        content: " ";
+        display: block;
+        height: 0.625em;
+        margin-top: -0.4375em;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        width: 0.625em;
+    }
+
+
+    select {
+        -webkit-appearance: none;
+        width: 100%;
+        border: 1px solid $border-color;
+        align-items: center;
+        border-radius: 0.375em;
+        box-shadow: none;
+        display: inline-flex;
+        font-size: 1rem;
+        height: 2.5em;
+        justify-content: flex-start;
+        line-height: 1.5;
+        padding-bottom: calc(0.5em - 1px);
+        padding-left: calc(0.75em - 1px);
+        padding-right: 2.5em;
+        padding-top: calc(0.5em - 1px);
+        position: relative;
+        vertical-align: top;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid $border-color;
+        }
     }
 }

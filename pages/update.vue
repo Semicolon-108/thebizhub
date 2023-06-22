@@ -24,14 +24,6 @@ import cardList from '../components/update/card-list.vue'
 
 </script>
 <style lang="scss" scoped>
-.page-title {
-    @include xxxlg-font;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
 .tabs-container {
     display: flex;
     align-items: center;
