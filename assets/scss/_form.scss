@@ -11,6 +11,35 @@
             color: red;
         }
     }
+
+    .control{
+        a{
+            text-decoration: underline;
+            display: block;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        &.has-addon{
+            display: flex;
+            input{
+                flex-grow: 1;             
+                border-radius: 5px 0 0 5px;              
+                
+            }
+            a{
+                border: 1px solid $border-color;
+                border-radius: 0 5px 5px 0;
+                margin: 0;
+                min-height: 100%;
+                white-space: nowrap;
+                padding: 0 15px;
+                background-color: $light-grey-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
 }
 
 input {
@@ -25,7 +54,9 @@ input {
     padding-right: calc(0.75em - 1px);
     padding-top: calc(0.5em - 1px);
     height: 2.5em;
-
+    &:disabled{
+        background-color: $light-grey-color;
+    }
     // size
     &.small {
         @include sm-font;

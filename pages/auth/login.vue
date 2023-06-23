@@ -4,8 +4,8 @@
         <div class="container">
             <h1 class="page-title">Login</h1>
 
-            <div class="grids is-2-desktop is-1-mobile margin-top-30">
-                <div class="left">
+            <div class="grids is-5-desktop is-1-mobile margin-top-30">
+                <div class="left span-2">
                     <form action="" class="grids is-1-desktop is-1-mobile gap-20">
                         <div class="field">
                             <label for="">Mobile number (020) <span>*</span></label>
@@ -17,6 +17,7 @@
                             <label for="">Password <span>*</span></label>
                             <div class="control">
                                 <input type="text" class="input" placeholder="password">
+                                <NuxtLink to="password-recovery">Forgot Password</NuxtLink>
                             </div>
                         </div>
                     </form>
@@ -24,7 +25,7 @@
 
                     <p class="note">Don't have an account? <a @click="$router.push({ path: 'register' })">Register</a></p>
                 </div>
-                <div class="right">
+                <div class="right span-3">
                     <div class="box">
                         <h3 class="box-title margin-bottom-10">Contact Information</h3>
                         <ul>
@@ -58,7 +59,6 @@
 <style lang="scss" scoped>
 section {
     position: relative;
-
 }
 
 button {
@@ -76,9 +76,6 @@ button {
     height: 100%;
     background-color: $sub-color;
 }
-
-.left {}
-
 .right {
     position: relative;
     display: flex;

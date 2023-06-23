@@ -52,8 +52,8 @@
                 </p>
                 <hr class="v">
                 <div class="button-groups">
-                    <button @click="$router.push({ path: '/login' })">Login</button>
-                    <button class="main" @click="$router.push({ path: '/register' })">Register</button>
+                    <button @click="$router.push({ path: '/auth/login' })">Login</button>
+                    <button class="main" @click="$router.push({ path: '/auth/register' })">Register</button>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "The BIZ Hub",
   "private": true,
   "scripts": {
     "build": "nuxt build",
