@@ -1,10 +1,10 @@
 <template>
     <section class="section">
-        <div class="bg"></div>
+        <div class="bg is-hidden-mobile"></div>
         <div class="container">
             <h1 class="page-title">Reset Password</h1>
 
-            <div class="grids is-2-desktop is-1-mobile margin-top-30">
+            <div class="grids is-2-desktop is-1-mobile margin-top-30 gap-30">
                 <div class="left">
                     <form action="" class="grids is-1-desktop is-1-mobile gap-20">
                         <div class="field">

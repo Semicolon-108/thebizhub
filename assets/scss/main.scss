@@ -109,3 +109,10 @@ section {
         @include md-font;
     }
 }
+
+
+.is-hidden-mobile{
+    @include mobile{
+        display: none !important;
+    }
+}
