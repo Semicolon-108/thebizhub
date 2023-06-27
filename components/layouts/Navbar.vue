@@ -9,7 +9,7 @@
           <i class="fa-regular fa-bars"></i>
         </p>
       </div>
-      <div class="logo" @click="$router.push({ path: '/' })">
+      <div class="logo" @click="router.push({ path: '/' })">
         <img src="../../assets/images/thebizhub-logo.jpg" />
       </div>
       <h1>Partner for Success in Business and Entrepreneurship</h1>
@@ -86,11 +86,8 @@
         </p>
         <hr class="v" />
         <div class="button-groups">
-          <button @click="$router.push({ path: '/auth/login' })">Login</button>
-          <button
-            class="main"
-            @click="$router.push({ path: '/auth/register' })"
-          >
+          <button @click="router.push({ path: '/auth/login' })">Login</button>
+          <button class="main" @click="router.push({ path: '/auth/register' })">
             Register
           </button>
         </div>
@@ -98,6 +95,10 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+const router = useRouter();
+</script>
 <style lang="scss" scoped>
 .top-navbar {
   background-color: #000;

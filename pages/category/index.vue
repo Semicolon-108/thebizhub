@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h1 class="page-title">{{ this.$route.query.is }}</h1>
+      <h1 class="page-title">{{ route.query.is }}</h1>
 
       <div class="tabs-container">
         <ul class="tabs">
@@ -17,13 +17,16 @@
         <p><i class="fa-regular fa-angle-right"></i></p>
       </div>
 
-      <cardList />
+      <CategoryCardList />
     </div>
   </section>
 </template>
+
 <script setup>
-import cardList from "./card-list.vue";
+import CategoryCardList from "../../components/category/card-list.vue";
+const route = useRoute();
 </script>
+
 <style lang="scss" scoped>
 .tabs-container {
   display: flex;

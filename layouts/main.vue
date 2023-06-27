@@ -1,11 +1,10 @@
 <template>
-    <div>
-        <LayoutsNavbar />
+  <div>
+    <LayoutsNavbar />
+    <main>
+      <slot />
+    </main>
 
-        <main>
-            <slot />
-        </main>
-
-        <LayoutsFooter />
-    </div>
+    <LayoutsFooter />
+  </div>
 </template>

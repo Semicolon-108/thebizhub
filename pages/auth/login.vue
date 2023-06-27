@@ -27,7 +27,7 @@
 
           <p class="note">
             Don't have an account?
-            <a @click="$router.push({ path: 'register' })">Register</a>
+            <a @click="router.push({ path: 'register' })">Register</a>
           </p>
         </div>
         <div class="right span-3">
@@ -67,6 +67,9 @@
     </div>
   </section>
 </template>
+<script lang="ts" setup>
+const router = useRouter();
+</script>
 <style lang="scss" scoped>
 section {
   position: relative;
