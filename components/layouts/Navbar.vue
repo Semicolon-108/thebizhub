@@ -17,14 +17,38 @@
     <div class="navbar">
       <div class="navbar-start">
         <ul>
-          <li><a>News & Event</a></li>
+          <li>
+            <NuxtLink :to="{ path: '/category', query: { is: 'News & Event' } }"
+              >BIZ Laws</NuxtLink
+            >
+          </li>
           <li class="has-dropdown">
             <a>Product & Services <i class="fa-light fa-angle-down"></i></a>
             <ul class="dropdown">
-              <li>BIZ COACHING</li>
-              <li>BIZ EVENTS</li>
-              <li>BIZ TOOLS</li>
-              <li>BIZ COURSES</li>
+              <li>
+                <NuxtLink
+                  :to="{ path: '/category', query: { is: 'BIZ COACHING' } }"
+                  >BIZ COACHING</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  :to="{ path: '/category', query: { is: 'BIZ EVENTS' } }"
+                  >BIZ EVENTS</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  :to="{ path: '/category', query: { is: 'BIZ TOOLS' } }"
+                  >BIZ TOOLS</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink
+                  :to="{ path: '/category', query: { is: 'BIZ COURSES' } }"
+                  >BIZ COURSES</NuxtLink
+                >
+              </li>
             </ul>
           </li>
 
@@ -36,9 +60,15 @@
               <li>Self-Employment</li>
             </ul>
           </li>
-          <li><a>BIZ Laws</a></li>
           <li>
-            <NuxtLink to="/update">Update</NuxtLink>
+            <NuxtLink :to="{ path: '/category', query: { is: 'BIZ Laws' } }"
+              >BIZ Laws</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink :to="{ path: '/category', query: { is: 'update' } }"
+              >Update</NuxtLink
+            >
           </li>
           <li><NuxtLink to="/about-us">About Us</NuxtLink></li>
         </ul>
@@ -226,8 +256,16 @@
 
             li {
               white-space: pre;
-              line-height: 1.8;
+              line-height: 2;
               cursor: pointer;
+              a {
+                transition: all ease-in-out 0.3s;
+                padding: 0;
+                &:hover {
+                  color: #fff !important;
+                  text-decoration: underline;
+                }
+              }
             }
           }
         }
