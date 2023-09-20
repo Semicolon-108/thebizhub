@@ -19,6 +19,6 @@ export default defineNuxtConfig({
         },
       },
     },
-  }, //vite
+  },
   css: ["@/assets/css/font.css", "@/assets/css/all.css"],
 });
