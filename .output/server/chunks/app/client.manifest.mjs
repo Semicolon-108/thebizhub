@@ -1,4 +1,4 @@
-{
+const client_manifest = {
   "_img-05.0db779e9.js": {
     "resourceType": "script",
     "module": true,
@@ -839,4 +839,7 @@
     "isDynamicEntry": true,
     "src": "virtual:nuxt:D:/Thebizhub/thebizhub/.nuxt/error-component.mjs"
   }
-}
+};
+
+export { client_manifest as default };
+//# sourceMappingURL=client.manifest.mjs.map

@@ -1,5 +1,5 @@
-const interopDefault = r => r.default || r || []
-export default {
+const interopDefault = r => r.default || r || [];
+const styles = {
   "pages/about-us/product-and-services.vue": () => import('./_nuxt/product-and-services-styles.16e80952.mjs').then(interopDefault),
   "pages/about-us/works.vue": () => import('./_nuxt/works-styles.9d7d45a7.mjs').then(interopDefault),
   "pages/about-us/index.vue": () => import('./_nuxt/index-styles.336f4ef0.mjs').then(interopDefault),
@@ -22,4 +22,7 @@ export default {
   "components/homepage/intro.vue": () => import('./_nuxt/intro-styles.23c9d046.mjs').then(interopDefault),
   "components/layouts/Footer.vue": () => import('./_nuxt/Footer-styles.c9dd85cd.mjs').then(interopDefault),
   "components/layouts/Navbar.vue": () => import('./_nuxt/Navbar-styles.81356a6d.mjs').then(interopDefault)
-}
+};
+
+export { styles as default };
+//# sourceMappingURL=styles.mjs.map
