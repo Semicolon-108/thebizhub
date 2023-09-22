@@ -35,13 +35,11 @@
         </div>
       </div>
     </section>
-    <img
-      class="top-image"
-      src="https://envato-shoebox-0.imgix.net/4a65/bbee-cd5c-4859-9db4-f17eda923f6f/2439421.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1000&s=c07228076b4d4daa82aa19ee9e50e59d"
-    />
+    <img class="top-image"
+      src="https://envato-shoebox-0.imgix.net/4a65/bbee-cd5c-4859-9db4-f17eda923f6f/2439421.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1000&s=c07228076b4d4daa82aa19ee9e50e59d" />
     <ProductAndServcie />
     <h1 class="section-title">ຜົນງານຂອງ THE BIZ HUB</h1>
-    <Works :work="i" v-for="(i, index) in works" :key="index" />
+    <Works :work="i.name" v-for="(i, index) in works" :key="index" />
   </div>
 </template>
 
@@ -72,14 +70,17 @@ const works = ref<any>([
 .box {
   background-color: $light-color;
   padding: 20px;
+
   h1 {
     font-weight: 700;
     @include xxlg-font;
   }
+
   h3 {
     font-weight: 700;
     @include lg-font;
   }
+
   p {
     @include md-font;
   }

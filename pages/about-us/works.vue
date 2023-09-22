@@ -10,7 +10,7 @@
         </li>
       </ul>
       <h3>
-        {{ work.name }}
+        {{ work }}
       </h3>
     </div>
   </section>

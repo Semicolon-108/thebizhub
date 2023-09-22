@@ -463,7 +463,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-496dd067.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-8b224a68.js").then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -479,7 +479,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/works-6f46f249.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/works-5a851dff.js").then((m) => m.default || m)
   },
   {
     name: "auth-login",
