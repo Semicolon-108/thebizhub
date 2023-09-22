@@ -292,7 +292,7 @@ function useHead(input, options = {}) {
     return isBrowser ? clientUseHead(input, options) : serverUseHead(input, options);
   }
 }
-const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "charset": "utf-8" }], "link": [{ "rel": "icon", "type": "image/png", "href": "/favicon.ico" }], "style": [], "script": [], "noscript": [], "charset": "utf-8", "viewport": "width=device-width, initial-scale=1" };
+const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "charset": "utf-8" }], "link": [{ "rel": "icon", "type": "image/png", "href": "/favicon.ico" }], "style": [], "script": [], "noscript": [] };
 const appPageTransition = { "name": "page", "mode": "out-in" };
 const appLayoutTransition = false;
 const appKeepalive = false;
