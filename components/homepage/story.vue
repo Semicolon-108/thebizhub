@@ -3,19 +3,17 @@
         <div class="container">
             <h1 class="section-title">Entrepreneur's Story</h1>
             <ul>
-                <li v-for="(i, index) in 3" :key="index">
+                <li v-for="(i, index) in info" :key="index">
                     <div class="card dark">
                         <div class="card-image">
-                            <img src="../../assets/images/img-05.jpg" alt="">
+                            <img :src="images + i.coverPage" alt="">
                         </div>
                         <div class="card-content">
                             <p class="tag-list">
-                                <span>Learning</span>
-                                <span>SME & Startup</span>
+                                <span>{{ i.tag }}</span>
+                                <span>{{ i.category }}</span>
                             </p>
-                            <h3>Home / NETWORK (Wireless) / Range extender & mesh wifi / Whole-home mesh tp-link (deco e4)
-                                wireless ac1200 dual band (pack 2)
-                            </h3>
+                            <h3>{{ i.title }}</h3>
                         </div>
                     </div>
                 </li>
@@ -23,6 +21,12 @@
         </div>
     </section>
 </template>
+<script setup lang="ts">
+defineProps(['info'])
+const images = useNuxtApp().$imageURL
+</script>
+
+
 <style lang="scss" scoped>
 section {
     background-image: url('../../assets/images/bg.jpg');

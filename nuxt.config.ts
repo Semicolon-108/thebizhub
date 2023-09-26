@@ -1,9 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  ssr: true,
+  ssr: false,
   app: {
     head: {
+      title: 'Thebizhub',
+      meta: [
+        { name: 'Thebizhub', content: 'thebizhub bizhub' }
+      ],
       link: [{ rel: "icon", type: "image/png", href: "/favicon.ico" }]
     },
     pageTransition: { name: "page", mode: "out-in" },

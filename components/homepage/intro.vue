@@ -10,12 +10,9 @@
               in business and <br class="is-hidden-mobile" />
               entrepreneurship
             </h3>
-            <button
-              class="main margin-top-20 large"
-              @click="
-                router.push({ path: '/category', query: { is: 'update' } })
-              "
-            >
+            <button class="main margin-top-20 large" @click="
+              router.push({ path: '/category', query: { is: 'Update' } })
+              ">
               Update
             </button>
           </div>
@@ -74,6 +71,7 @@
 </template>
 <script lang="ts" setup>
 const router = useRouter();
+
 </script>
 <style lang="scss" scoped>
 .left {

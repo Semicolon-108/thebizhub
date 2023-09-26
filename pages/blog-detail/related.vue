@@ -1,23 +1,31 @@
 <template>
     <ul>
-        <li v-for="(i, index) in 3" :key="index">
-            <div class="card">
+        <li v-for="(i, index) in relate" :key="index">
+            <div class="card" @click="clickHandler(i._id)">
                 <div class="card-image">
-                    <img src="../../assets/images/img-05.jpg" alt="">
+                    <img :src="imageURL + i.coverPage" alt="">
                 </div>
                 <div class="card-content">
                     <p class="tag-list">
-                        <span>Learning</span>
-                        <span>SME & Startup</span>
+                        <span>{{ i.tag }}</span>
+                        <span>{{ i.category }}</span>
                     </p>
-                    <h3>Home / NETWORK (Wireless) / Range extender & mesh wifi / Whole-home mesh tp-link (deco e4)
-                        wireless ac1200 dual band (pack 2)
-                    </h3>
+                    <h3>{{ i.title }} </h3>
                 </div>
             </div>
         </li>
     </ul>
 </template>
+<script setup lang="ts">
+const imageURL = useNuxtApp().$imageURL
+const router = useRouter()
+defineProps(['relate'])
+
+const clickHandler = (id: any) => {
+    router.push(`/blog-detail/${id}`)
+    window.location.reload()
+}
+</script>
 <style lang="scss" scoped>
 ul {
     display: flex;
