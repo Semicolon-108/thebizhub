@@ -70,8 +70,8 @@
 <script lang="ts" setup>
 const axios = useNuxtApp().$axios
 const router = useRouter();
-const productAndService = ref<any>()
-const learing = ref<any>()
+const productAndService = ref<any>([])
+const learing = ref<any>([])
 const fetchProductAndService = async () => {
   const type = "Product & Services"
   await axios.post(`get-group/${type}`).then((res) => {
@@ -88,8 +88,8 @@ const fetchLearning = async () => {
     }
   })
 }
-await fetchProductAndService()
-await fetchLearning()
+ fetchProductAndService()
+ fetchLearning()
 </script>
 
 <style lang="scss" scoped>
