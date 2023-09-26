@@ -2,9 +2,10 @@ module.exports = {
   apps: [
     {
       name: "Guest",
-      script: "serve -s dist -l 9090",
+      script: "./.output/server/index.mjs",
+      port: 9090,
       exec_mode: 'cluster',
-      instances: 'max', 
+      instances: 'max',
       args: 'start'
     }
   ]
