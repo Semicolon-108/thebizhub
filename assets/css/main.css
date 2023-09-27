@@ -99,6 +99,16 @@ a {
   --font-color: #000000;
 }
 
+:root {
+  --xsm-font: clamp(0.7rem, 2.5vw, 0.8rem);
+  --sm-font: clamp(0.8rem, 2.5vw, 0.9rem);
+  --md-font: clamp(0.9rem, 2.5vw, 1rem);
+  --lg-font: clamp(1.1rem, 2.5vw, 1.3rem);
+  --xlg-font: clamp(1.3rem, 2.5vw, 1.5rem);
+  --xxlg-font: clamp(1.5rem, 2.5vw, 1.7rem);
+  --xxxlg-font: clamp(1.7rem, 2.5vw, 3rem);
+}
+
 @media (max-width: 767px) {
   .is-hidden-mobile {
     display: none;
@@ -30440,7 +30450,7 @@ section {
 }
 
 .page-title {
-  font-size: clamp(1.7rem, 2.5vw, 2rem);
+  font-size: clamp(1.7rem, 2.5vw, 3rem);
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;

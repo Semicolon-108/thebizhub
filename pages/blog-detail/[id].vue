@@ -162,7 +162,7 @@ fetch();
 
     &:nth-child(3) {
       font-size: var(--xsm-font);
-      color: $dark-grey-color;
+      color: var(--dark-grey-color);
     }
   }
 }

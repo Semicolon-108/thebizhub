@@ -4,4 +4,14 @@ $md-font: clamp(0.9rem, 2.5vw, 1rem);
 $lg-font: clamp(1.1rem, 2.5vw, 1.3rem);
 $xlg-font: clamp(1.3rem, 2.5vw, 1.5rem);
 $xxlg-font: clamp(1.5rem, 2.5vw, 1.7rem);
-$xxxlg-font: clamp(1.7rem, 2.5vw, 2rem);
+$xxxlg-font: clamp(1.7rem, 2.5vw, 3rem);
+
+:root {
+  --xsm-font: #{$xsm-font};
+  --sm-font: #{$sm-font};
+  --md-font: #{$md-font};
+  --lg-font: #{$lg-font};
+  --xlg-font: #{$xlg-font};
+  --xxlg-font: #{$xxlg-font};
+  --xxxlg-font: #{$xxxlg-font};
+}
