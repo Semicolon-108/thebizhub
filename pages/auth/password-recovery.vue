@@ -62,7 +62,7 @@ button {
   right: 0;
   top: 0;
   height: 100%;
-  background-color: $sub-color;
+  background-color: var(--sub-color);
 }
 
 .right {
@@ -75,7 +75,7 @@ button {
   .box {
     position: relative;
     display: inline-block;
-    background-color: $main-color;
+    background-color: var(--main-color);
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
@@ -88,12 +88,12 @@ button {
       top: -15px;
       height: 30px;
       width: 30px;
-      background-color: $sub-color;
+      background-color: var(--sub-color);
       border-radius: 5px;
     }
 
     .box-title {
-      @include xlg-font;
+      font-size: var(--xlg-font);
       font-weight: 700;
       text-transform: uppercase;
     }
@@ -106,7 +106,7 @@ button {
         span {
           min-width: 20px;
           max-width: 20px;
-          color: $sub-color;
+          color: var(--sub-color);
         }
 
         p {
@@ -127,7 +127,7 @@ button {
 
       i {
         color: #fff;
-        @include xlg-font;
+        font-size: var(--xlg-font);
       }
     }
   }
@@ -135,7 +135,7 @@ button {
 
 .note {
   a {
-    color: $sub-color;
+    color: var(--sub-color);
     cursor: pointer;
   }
 }

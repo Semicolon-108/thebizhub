@@ -10,8 +10,16 @@ $info-color: #eed221;
 $alert-color: #e74615;
 $warning-color: #ddac51;
 
+// Theme Color RGB
+$main-color-rgb: 0, 0, 0;
+$sub-color-rgb: 0, 44, 155;
+$light-color-rgb: 233, 251, 255;
+$info-color0-rgb: 238, 210, 33;
+$alert-color: 231, 70, 21;
+$warning-color: 222, 173, 82;
+
 // Component Color
-$border-color: hsl(0, 0%, 86%);
+$border-color: #dbdbdb;
 $bg-color: #f4f5f1;
 // Font color
 $font-color: #000000;
@@ -21,4 +29,24 @@ $light-grey-color: hsl(0, 0%, 90%);
 $grey-color: hsl(0, 0%, 71%);
 $dark-grey-color: hsl(0, 0%, 29%);
 
-$radius: 0.5rem;
+:root {
+  --font-family: #{$font-family};
+
+  // Theme
+  --main-color: #{$main-color};
+  --sub-color: #{$sub-color};
+  --light-color: #{$light-color};
+  --info-color: #{$info-color};
+  --alert-color: #{$alert-color};
+  --warning-color: #{$warning-color};
+
+  --light-grey-color: #{$light-grey-color};
+  --grey-color: #{$grey-color};
+  --dark-grey-color: #{$dark-grey-color};
+
+  // Component Color
+  --border-color: #{$border-color};
+  --bg-color: #{$bg-color};
+  // Font color
+  --font-color: #{$font-color};
+}

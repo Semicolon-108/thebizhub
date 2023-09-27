@@ -83,6 +83,22 @@ a {
   color: inherit;
 }
 
+:root {
+  --font-family: Roboto, Nuanta, sans-serif;
+  --main-color: #000000;
+  --sub-color: #002c9b;
+  --light-color: #e9fbff;
+  --info-color: #eed221;
+  --alert-color: 231, 70, 21;
+  --warning-color: 222, 173, 82;
+  --light-grey-color: hsl(0, 0%, 90%);
+  --grey-color: hsl(0, 0%, 71%);
+  --dark-grey-color: hsl(0, 0%, 29%);
+  --border-color: #dbdbdb;
+  --bg-color: #f4f5f1;
+  --font-color: #000000;
+}
+
 @media (max-width: 767px) {
   .is-hidden-mobile {
     display: none;
@@ -15401,26 +15417,6 @@ a {
   }
 }
 
-.xsm-font {
-  font-size: clamp(0.7rem, 2.5vw, 0.8rem);
-}
-
-.sm-font {
-  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-}
-
-.md-font {
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
-}
-
-.lg-font {
-  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-}
-
-.xlg-font {
-  font-size: clamp(1.3rem, 2.5vw, 1.5rem);
-}
-
 .b-400 {
   font-weight: 400;
 }
@@ -30341,7 +30337,7 @@ button.main {
 }
 .field .control.has-addon a {
   text-decoration: none;
-  border: 1px solid hsl(0, 0%, 86%);
+  border: 1px solid #dbdbdb;
   border-radius: 0 5px 5px 0;
   margin: 0;
   min-height: 100%;
@@ -30355,7 +30351,7 @@ button.main {
 
 input {
   width: 100%;
-  border: 1px solid hsl(0, 0%, 86%);
+  border: 1px solid #dbdbdb;
   font-size: clamp(0.9rem, 2.5vw, 1rem);
   outline: none;
   box-shadow: none;
@@ -30400,7 +30396,7 @@ input.small {
 .select select {
   -webkit-appearance: none;
   width: 100%;
-  border: 1px solid hsl(0, 0%, 86%);
+  border: 1px solid #dbdbdb;
   align-items: center;
   border-radius: 0.375em;
   box-shadow: none;
@@ -30419,7 +30415,7 @@ input.small {
 .select select:focus {
   outline: none;
   box-shadow: none;
-  border: 1px solid hsl(0, 0%, 86%);
+  border: 1px solid #dbdbdb;
 }
 
 section {

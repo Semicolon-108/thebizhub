@@ -92,7 +92,7 @@ section {
 }
 
 .section-title {
-  @include xxlg-font;
+  font-size: var(--xxlg-font);
   font-weight: 700;
   //   text-transform: uppercase;
   margin-bottom: 10px;

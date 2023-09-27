@@ -123,7 +123,7 @@ fetchLearning();
     left: 15px;
     right: 15px;
     top: 15px;
-    @include xlg-font;
+    font-size: var(--xlg-font);
     display: none;
 
     @include mobile {
@@ -180,17 +180,17 @@ fetchLearning();
 
   h1 {
     color: #fff;
-    @include lg-font;
+    font-size: var(--lg-font);
     text-align: center;
 
     @include mobile {
-      @include sm-font;
+      font-size: var(--sm-font);
     }
   }
 }
 
 .navbar {
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   padding: 0 10px;
@@ -212,7 +212,7 @@ fetchLearning();
       li {
         a {
           padding: 20px 10px;
-          @include sm-font;
+          font-size: var(--sm-font);
           transition: all ease-in-out 0.15s;
           white-space: nowrap;
           display: flex;
@@ -224,7 +224,7 @@ fetchLearning();
           }
 
           &:hover {
-            color: $sub-color;
+            color: var(--sub-color);
           }
         }
 
@@ -244,7 +244,7 @@ fetchLearning();
             top: 2.5rem;
             right: 0;
             border-radius: 5px;
-            background-color: $sub-color;
+            background-color: var(--sub-color);
             color: #fff;
             padding: 15px;
             height: auto;
@@ -261,7 +261,7 @@ fetchLearning();
               height: 0;
               border-left: 8px solid transparent;
               border-right: 8px solid transparent;
-              border-bottom: 8px solid $sub-color;
+              border-bottom: 8px solid var(--sub-color);
             }
 
             li {
@@ -294,7 +294,7 @@ fetchLearning();
       height: 1.5rem;
       width: 1px;
       border-width: 0 1px 0 0;
-      border-color: $light-grey-color !important;
+      border-color: var(--light-grey-color) !important;
       margin: 0 20px;
       display: block;
     }
@@ -303,13 +303,13 @@ fetchLearning();
       display: flex;
 
       a {
-        background-color: $light-grey-color;
+        background-color: var(--light-grey-color);
         padding: 5px;
         cursor: pointer;
-        @include xsm-font;
+        font-size: var(--xsm-font);
 
         &.current {
-          background-color: $sub-color;
+          background-color: var(--sub-color);
           color: #fff;
         }
       }

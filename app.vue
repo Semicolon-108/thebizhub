@@ -8,7 +8,7 @@
 <style lang="scss">
 html,
 body {
-  font-family: $font-family;
+  font-family: var(--font-family);
 }
 
 .page-enter-active,

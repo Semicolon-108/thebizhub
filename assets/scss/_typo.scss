@@ -1,27 +1,7 @@
-@mixin xsm-font {
-    font-size: clamp(.7rem, 2.5vw, .8rem)
-}
-
-@mixin sm-font {
-    font-size: clamp(.8rem, 2.5vw, .9rem)
-}
-
-@mixin md-font {
-    font-size: clamp(.9rem, 2.5vw, 1rem)
-}
-
-@mixin lg-font {
-    font-size: clamp(1.1rem, 2.5vw, 1.3rem)
-}
-
-@mixin xlg-font {
-    font-size: clamp(1.3rem, 2.5vw, 1.5rem)
-}
-
-@mixin xxlg-font {
-    font-size: clamp(1.5rem, 2.5vw, 1.7rem)
-}
-
-@mixin xxxlg-font {
-    font-size: clamp(1.7rem, 2.5vw, 2rem)
-}
+$xsm-font: clamp(0.7rem, 2.5vw, 0.8rem);
+$sm-font: clamp(0.8rem, 2.5vw, 0.9rem);
+$md-font: clamp(0.9rem, 2.5vw, 1rem);
+$lg-font: clamp(1.1rem, 2.5vw, 1.3rem);
+$xlg-font: clamp(1.3rem, 2.5vw, 1.5rem);
+$xxlg-font: clamp(1.5rem, 2.5vw, 1.7rem);
+$xxxlg-font: clamp(1.7rem, 2.5vw, 2rem);

@@ -111,7 +111,7 @@ button {
   right: 0;
   top: 0;
   height: 100%;
-  background-color: $sub-color;
+  background-color: var(--sub-color);
 }
 
 .left {
@@ -127,7 +127,7 @@ button {
 
 .note {
   a {
-    color: $sub-color;
+    color: var(--sub-color);
     cursor: pointer;
   }
 }
