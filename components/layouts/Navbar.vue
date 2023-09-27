@@ -60,11 +60,11 @@
               <li>Self-Employment</li>
             </ul>
           </li>
-          <li>
+          <!-- <li>
             <NuxtLink :to="{ path: '/category', query: { is: 'BIZ Laws' } }"
               >BIZ Laws</NuxtLink
             >
-          </li>
+          </li> -->
           <li>
             <NuxtLink :to="{ path: '/category', query: { is: 'update' } }"
               >Update</NuxtLink
