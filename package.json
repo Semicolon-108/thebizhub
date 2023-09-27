@@ -2,6 +2,7 @@
   "name": "TheBIZHub",
   "private": true,
   "scripts": {
+    "scss": "sass --watch ./assets/scss/main.scss ./assets/css/main.css",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
