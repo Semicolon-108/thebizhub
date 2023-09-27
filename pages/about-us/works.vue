@@ -34,7 +34,7 @@ h3 {
   margin-right: auto;
   text-align: center;
   margin-top: 10px;
-  @include lg-font;
+  font-size: var(--lg-font);
   max-width: 550px;
 }
 </style>

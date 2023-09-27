@@ -32,7 +32,7 @@
     h3 {
       text-align: center;
       margin-top: 10px;
-      @include md-font;
+      font-size: var(--md-font);
     }
   }
 }

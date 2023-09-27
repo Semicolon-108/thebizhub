@@ -10,9 +10,12 @@
               in business and <br class="is-hidden-mobile" />
               entrepreneurship
             </h3>
-            <button class="main margin-top-20 large" @click="
-              router.push({ path: '/category', query: { is: 'Update' } })
-              ">
+            <button
+              class="main margin-top-20 large"
+              @click="
+                router.push({ path: '/category', query: { is: 'Update' } })
+              "
+            > 
               Update
             </button>
           </div>
@@ -71,7 +74,6 @@
 </template>
 <script lang="ts" setup>
 const router = useRouter();
-
 </script>
 <style lang="scss" scoped>
 .left {
@@ -122,19 +124,23 @@ const router = useRouter();
       align-items: flex-end;
 
       &:nth-child(1) {
-        background: url("../../assets/images/img-05.jpg") rgba($main-color, 0.7);
+        background: url("../../assets/images/img-05.jpg")
+          rgba(var(--main-color), 0.7);
       }
 
       &:nth-child(2) {
-        background: url("../../assets/images/img-09.jpg") rgba($main-color, 0.7);
+        background: url("../../assets/images/img-09.jpg")
+          rgba(var(--main-color), 0.7);
       }
 
       &:nth-child(3) {
-        background: url("../../assets/images/img-06.jpg") rgba($main-color, 0.7);
+        background: url("../../assets/images/img-06.jpg")
+          rgba(var(--main-color), 0.7);
       }
 
       &:nth-child(4) {
-        background: url("../../assets/images/img-08.jpg") rgba($main-color, 0.7);
+        background: url("../../assets/images/img-08.jpg")
+          rgba(var(--main-color), 0.7);
       }
 
       &:hover {
@@ -163,13 +169,13 @@ const router = useRouter();
 
         h3 {
           font-weight: 600;
-          @include md-font;
+          font-size: var(--md-font);
         }
 
         p {
           transition: ease 0.5s;
           margin-top: 5px;
-          @include sm-font;
+          font-size: var(--sm-font);
           overflow: hidden;
           display: none;
         }

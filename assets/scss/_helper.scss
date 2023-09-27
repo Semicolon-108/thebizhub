@@ -1,133 +1,88 @@
-$spaceamounts: 5,
-    10,
-    15,
-    20,
-    25,
-    30,
-    35,
-    40,
-    45,
-    50;
-$screens: "mobile" "(max-width: 767px)",
-    "desktop" "(min-width: 768px)",
-    "fullhd" "(min-width: 1408px)";
-$sides: "top",
-    "bottom",
-    "left",
-    "right",
-    "center";
+$spaceamounts: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50;
+$screens: "mobile" "(max-width: 767px)", "desktop" "(min-width: 768px)",
+  "fullhd" "(min-width: 1408px)";
+$sides: "top", "bottom", "left", "right", "center";
 $properties: margin padding align;
 
 @mixin screen-size($query) {
-    @media #{$query} {
-        @content;
-    }
+  @media #{$query} {
+    @content;
+  }
 }
 
-@each $name,
-$screen in $screens {
-    .is-hidden-#{$name} {
-        @include screen-size($screen) {
-            display: none;
-        }
+@each $name, $screen in $screens {
+  .is-hidden-#{$name} {
+    @include screen-size($screen) {
+      display: none;
     }
+  }
 }
 
 // margin, padding
 @each $property in $properties {
-    @each $spaceamount in $spaceamounts {
-
-        @each $name,
-        $width in $screens {
-            @each $side in $sides {
-                .#{$property}-#{$side}-#{$spaceamount}-#{$name} {
-                    @include screen-size($width) {
-                        #{$property}-#{$side}: $spaceamount + px;
-                    }
-                }
-
-                .#{$property}-#{$side}-#{$spaceamount} {
-                    @include screen-size($width) {
-                        #{$property}-#{$side}: $spaceamount + px;
-                    }
-                }
-
-                .#{$property}-#{$spaceamount} {
-                    @include screen-size($width) {
-                        #{$property}: $spaceamount + px;
-                    }
-                }
-
-                .#{$property}-#{$spaceamount}-#{$name} {
-                    @include screen-size($width) {
-                        #{$property}: $spaceamount + px;
-                    }
-                }
-            }
+  @each $spaceamount in $spaceamounts {
+    @each $name, $width in $screens {
+      @each $side in $sides {
+        .#{$property}-#{$side}-#{$spaceamount}-#{$name} {
+          @include screen-size($width) {
+            #{$property}-#{$side}: $spaceamount + px;
+          }
         }
-    }
-}
 
+        .#{$property}-#{$side}-#{$spaceamount} {
+          @include screen-size($width) {
+            #{$property}-#{$side}: $spaceamount + px;
+          }
+        }
+
+        .#{$property}-#{$spaceamount} {
+          @include screen-size($width) {
+            #{$property}: $spaceamount + px;
+          }
+        }
+
+        .#{$property}-#{$spaceamount}-#{$name} {
+          @include screen-size($width) {
+            #{$property}: $spaceamount + px;
+          }
+        }
+      }
+    }
+  }
+}
 
 // align
 @each $side in $sides {
-    @each $spaceamount in $spaceamounts {
-
-        @each $name,
-        $width in $screens {
-            @each $side in $sides {
-                .align-#{$side}-#{$spaceamount}-#{$name} {
-                    @include screen-size($width) {
-                        align-#{$side}: $spaceamount + px;
-                    }
-                }
-            }
+  @each $spaceamount in $spaceamounts {
+    @each $name, $width in $screens {
+      @each $side in $sides {
+        .align-#{$side}-#{$spaceamount}-#{$name} {
+          @include screen-size($width) {
+            align-#{$side}: $spaceamount + px;
+          }
         }
+      }
     }
+  }
 }
-
-
-.xsm-font {
-    @include xsm-font;
-}
-
-.sm-font {
-    @include sm-font;
-}
-
-.md-font {
-    @include md-font;
-}
-
-.lg-font {
-    @include lg-font;
-}
-
-.xlg-font {
-    @include xlg-font;
-}
-
 
 // font-weight
-$weights: 400,
-    500,
-    600,
-    700;
+$weights: 400, 500, 600, 700;
 
 @each $i in $weights {
-    .b-#{$i} {
-        font-weight: $i;
-    }
+  .b-#{$i} {
+    font-weight: $i;
+  }
 
-    .b-#{$i} {
-        font-weight: $weights;
-    }
+  .b-#{$i} {
+    font-weight: $weights;
+  }
 
-    .b-#{$i} {
-        font-weight: $i;
-    }
+  .b-#{$i} {
+    font-weight: $i;
+  }
 
-    .b-#{$i} {
-        font-weight: $i;
-    }
+  .b-#{$i} {
+    font-weight: $i;
+  }
 }

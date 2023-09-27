@@ -4,11 +4,9 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
-      title: 'Thebizhub',
-      meta: [
-        { name: 'Thebizhub', content: 'thebizhub bizhub' }
-      ],
-      link: [{ rel: "icon", type: "image/png", href: "/favicon.ico" }]
+      title: "Thebizhub",
+      meta: [{ name: "Thebizhub", content: "thebizhub bizhub" }],
+      link: [{ rel: "icon", type: "image/png", href: "/favicon.ico" }],
     },
     pageTransition: { name: "page", mode: "out-in" },
   },
@@ -19,10 +17,14 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "@/assets/scss/main.scss";',
+          additionalData: '@import "@/assets/scss/_media.scss";',
         },
       },
     },
   },
-  css: ["@/assets/css/font.css", "@/assets/css/all.css"],
+  css: [
+    "@/assets/css/font.css",
+    "@/assets/css/all.css",
+    "@/assets/css/main.css",
+  ],
 });

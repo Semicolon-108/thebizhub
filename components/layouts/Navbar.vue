@@ -18,13 +18,18 @@
       <div class="navbar-start">
         <ul>
           <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'News & Event' } }">News & Events</NuxtLink>
+            <NuxtLink :to="{ path: '/category', query: { is: 'NEWS & EVENT' } }"
+              >News & Events</NuxtLink
+            >
           </li>
           <li class="has-dropdown">
             <a>Product & Services <i class="fa-light fa-angle-down"></i></a>
             <ul class="dropdown">
               <li v-for="(i, indx) in productAndService" :key="indx">
-                <NuxtLink :to="{ path: '/category', query: { is: `${i.name}` } }">{{ i.name }}</NuxtLink>
+                <NuxtLink
+                  :to="{ path: '/category', query: { is: `${i.name}` } }"
+                  >{{ i.name }}</NuxtLink
+                >
               </li>
             </ul>
           </li>
@@ -33,15 +38,22 @@
             <a>Learning <i class="fa-light fa-angle-down"></i></a>
             <ul class="dropdown">
               <li v-for="(o, index) in learing" :key="index">
-                <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }">{{ o.name }}</NuxtLink>
+                <NuxtLink
+                  :to="{ path: '/category', query: { is: `${o.name}` } }"
+                  >{{ o.name }}</NuxtLink
+                >
               </li>
             </ul>
           </li>
           <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'Biz Laws' } }">BIZ Laws</NuxtLink>
+            <NuxtLink :to="{ path: '/category', query: { is: 'Biz Laws' } }"
+              >BIZ Laws</NuxtLink
+            >
           </li>
           <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'Update' } }">Update</NuxtLink>
+            <NuxtLink :to="{ path: '/category', query: { is: 'Update' } }"
+              >Update</NuxtLink
+            >
           </li>
           <li>
             <NuxtLink to="/about-us">About Us</NuxtLink>
@@ -49,7 +61,11 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <input type="text" class="input small" placeholder="Enter keyword and press Enter" />
+        <input
+          type="text"
+          class="input small"
+          placeholder="Enter keyword and press Enter"
+        />
         <hr class="v" />
         <p class="lang-switch">
           <a class="current">EN</a>
@@ -68,28 +84,28 @@
 </template>
 
 <script lang="ts" setup>
-const axios = useNuxtApp().$axios
+const axios = useNuxtApp().$axios;
 const router = useRouter();
-const productAndService = ref<any>([])
-const learing = ref<any>([])
+const productAndService = ref<any>([]);
+const learing = ref<any>([]);
 const fetchProductAndService = async () => {
-  const type = "Product & Services"
+  const type = "Product & Services";
   await axios.post(`get-group/${type}`).then((res) => {
     if (res.status === 200) {
-      productAndService.value = res.data.info.items
+      productAndService.value = res.data.info.items;
     }
-  })
-}
+  });
+};
 const fetchLearning = async () => {
-  const type = "Learning"
+  const type = "Learning";
   await axios.post(`get-group/${type}`).then((res) => {
     if (res.status === 200) {
-      learing.value = res.data.info.items
+      learing.value = res.data.info.items;
     }
-  })
-}
- fetchProductAndService()
- fetchLearning()
+  });
+};
+fetchProductAndService();
+fetchLearning();
 </script>
 
 <style lang="scss" scoped>
@@ -107,7 +123,7 @@ const fetchLearning = async () => {
     left: 15px;
     right: 15px;
     top: 15px;
-    @include xlg-font;
+    font-size: var(--xlg-font);
     display: none;
 
     @include mobile {
@@ -164,17 +180,17 @@ const fetchLearning = async () => {
 
   h1 {
     color: #fff;
-    @include lg-font;
+    font-size: var(--lg-font);
     text-align: center;
 
     @include mobile {
-      @include sm-font;
+      font-size: var(--sm-font);
     }
   }
 }
 
 .navbar {
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   padding: 0 10px;
@@ -196,7 +212,7 @@ const fetchLearning = async () => {
       li {
         a {
           padding: 20px 10px;
-          @include sm-font;
+          font-size: var(--sm-font);
           transition: all ease-in-out 0.15s;
           white-space: nowrap;
           display: flex;
@@ -208,7 +224,7 @@ const fetchLearning = async () => {
           }
 
           &:hover {
-            color: $sub-color;
+            color: var(--sub-color);
           }
         }
 
@@ -228,7 +244,7 @@ const fetchLearning = async () => {
             top: 2.5rem;
             right: 0;
             border-radius: 5px;
-            background-color: $sub-color;
+            background-color: var(--sub-color);
             color: #fff;
             padding: 15px;
             height: auto;
@@ -245,7 +261,7 @@ const fetchLearning = async () => {
               height: 0;
               border-left: 8px solid transparent;
               border-right: 8px solid transparent;
-              border-bottom: 8px solid $sub-color;
+              border-bottom: 8px solid var(--sub-color);
             }
 
             li {
@@ -278,7 +294,7 @@ const fetchLearning = async () => {
       height: 1.5rem;
       width: 1px;
       border-width: 0 1px 0 0;
-      border-color: $light-grey-color !important;
+      border-color: var(--light-grey-color) !important;
       margin: 0 20px;
       display: block;
     }
@@ -287,13 +303,13 @@ const fetchLearning = async () => {
       display: flex;
 
       a {
-        background-color: $light-grey-color;
+        background-color: var(--light-grey-color);
         padding: 5px;
         cursor: pointer;
-        @include xsm-font;
+        font-size: var(--xsm-font);
 
         &.current {
-          background-color: $sub-color;
+          background-color: var(--sub-color);
           color: #fff;
         }
       }

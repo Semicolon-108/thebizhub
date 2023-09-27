@@ -10,7 +10,7 @@
             <span>{{ i.tag }}</span>
             <span>{{ i.category }}</span>
           </p>
-          <h3> {{ i.title }} </h3>
+          <h3>{{ i.title }}</h3>
         </div>
       </div>
     </li>
@@ -18,15 +18,14 @@
 </template>
 <script lang="ts" setup>
 useSeoMeta({
-  title: 'thebizhub',
-  ogTitle: 'bizhub',
-  description: 'bizhub',
-  ogDescription: 'bizhub, thebizhub, Thebizhub',
-})
-defineProps(['info'])
-const imageURL = useNuxtApp().$imageURL
-const router = useRouter()
-
+  title: "thebizhub",
+  ogTitle: "bizhub",
+  description: "bizhub",
+  ogDescription: "bizhub, thebizhub, Thebizhub",
+});
+defineProps(["info"]);
+const imageURL = useNuxtApp().$imageURL;
+const router = useRouter();
 </script>
 
 <style lang="scss" scoped>
@@ -58,7 +57,7 @@ ul {
                 content: "";
                 width: 1px;
                 height: 15px;
-                border-left: 1px solid $grey-color;
+                border-left: 1px solid--var(grey-color);
                 display: block;
                 margin: 0 8px;
               }
@@ -69,7 +68,7 @@ ul {
             white-space: pre-line;
             display: flex;
             align-items: center;
-            @include xsm-font;
+            font-size: var(--xsm-font);
           }
         }
       }
@@ -81,7 +80,7 @@ ul {
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
-        @include md-font;
+        font-size: var(--md-font);
       }
     }
 

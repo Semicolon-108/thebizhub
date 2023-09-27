@@ -1,121 +1,117 @@
 .field {
-    width: 100%;
+  width: 100%;
 
-    label {
-        display: block;
-        @include md-font;
-        font-weight: 700;
-        margin-bottom: 5px;
+  label {
+    display: block;
+    font-size: $md-font;
+    font-weight: 700;
+    margin-bottom: 5px;
 
-        span {
-            color: red;
-        }
+    span {
+      color: red;
     }
+  }
 
-    .control{
-        a{            
-            text-decoration: underline;
-            @include sm-font;
-            display: block;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        &.has-addon{
-            display: flex;
-            input{
-                flex-grow: 1;             
-                border-radius: 5px 0 0 5px;              
-                
-            }
-            a{  
-                text-decoration: none;
-                border: 1px solid $border-color;
-                border-radius: 0 5px 5px 0;
-                margin: 0;
-                min-height: 100%;
-                white-space: nowrap;
-                padding: 0 15px;
-                background-color: $light-grey-color;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
+  .control {
+    a {
+      text-decoration: underline;
+      font-size: $sm-font;
+      display: block;
+      cursor: pointer;
+      margin-top: 10px;
     }
+    &.has-addon {
+      display: flex;
+      input {
+        flex-grow: 1;
+        border-radius: 5px 0 0 5px;
+      }
+      a {
+        text-decoration: none;
+        border: 1px solid $border-color;
+        border-radius: 0 5px 5px 0;
+        margin: 0;
+        min-height: 100%;
+        white-space: nowrap;
+        padding: 0 15px;
+        background-color: $light-grey-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
 }
 
 input {
-    width: 100%;
-    border: 1px solid $border-color;
-    @include md-font;
-    outline: none;
-    box-shadow: none;
-    border-radius: 5px;
-    padding-bottom: calc(0.5em - 1px);
-    padding-left: calc(0.75em - 1px);
-    padding-right: calc(0.75em - 1px);
-    padding-top: calc(0.5em - 1px);
-    height: 2.5em;
-    &:disabled{
-        background-color: $light-grey-color;
-    }
-    // size
-    &.small {
-        @include sm-font;
-        padding: 8px 12px;
-    }
+  width: 100%;
+  border: 1px solid $border-color;
+  font-size: $md-font;
+  outline: none;
+  box-shadow: none;
+  border-radius: 5px;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+  height: 2.5em;
+  &:disabled {
+    background-color: $light-grey-color;
+  }
+  // size
+  &.small {
+    font-size: $sm-font;
+    padding: 8px 12px;
+  }
 }
 
-
-
 .select {
-    height: 2.5em;
+  height: 2.5em;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    right: 1.125em;
+    z-index: 4;
+    border: 2px solid $grey-color;
+    border-radius: 2px;
+    border-right: 0;
+    border-top: 0;
+    content: " ";
+    display: block;
+    height: 0.625em;
+    margin-top: -0.4375em;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    width: 0.625em;
+  }
+
+  select {
+    -webkit-appearance: none;
     width: 100%;
+    border: 1px solid $border-color;
+    align-items: center;
+    border-radius: 0.375em;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.5em;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(0.75em - 1px);
+    padding-right: 2.5em;
+    padding-top: calc(0.5em - 1px);
     position: relative;
+    vertical-align: top;
 
-    &::after {
-        right: 1.125em;
-        z-index: 4;
-        border: 2px solid $grey-color;
-        border-radius: 2px;
-        border-right: 0;
-        border-top: 0;
-        content: " ";
-        display: block;
-        height: 0.625em;
-        margin-top: -0.4375em;
-        pointer-events: none;
-        position: absolute;
-        top: 50%;
-        transform: rotate(-45deg);
-        transform-origin: center;
-        width: 0.625em;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border: 1px solid $border-color;
     }
-
-
-    select {
-        -webkit-appearance: none;
-        width: 100%;
-        border: 1px solid $border-color;
-        align-items: center;
-        border-radius: 0.375em;
-        box-shadow: none;
-        display: inline-flex;
-        font-size: 1rem;
-        height: 2.5em;
-        justify-content: flex-start;
-        line-height: 1.5;
-        padding-bottom: calc(0.5em - 1px);
-        padding-left: calc(0.75em - 1px);
-        padding-right: 2.5em;
-        padding-top: calc(0.5em - 1px);
-        position: relative;
-        vertical-align: top;
-
-        &:focus {
-            outline: none;
-            box-shadow: none;
-            border: 1px solid $border-color;
-        }
-    }
+  }
 }

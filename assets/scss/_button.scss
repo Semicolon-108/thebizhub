@@ -1,36 +1,33 @@
 button {
-    padding: 10px 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 3px;
+  font-size: $md-font;
+
+  // Size
+  .small {
+    font-size: $sm-font;
+  }
+
+  .large {
+    font-size: $lg-font;
+  }
+
+  // Color
+  &.grey {
+    padding: 10px 30px;
     border: none;
     cursor: pointer;
-    background-color: #fff;
-    border-radius: 3px;
-    @include md-font;
+    background-color: $light-grey-color;
+  }
 
-    // Size
-    .small {
-        @include sm-font;
-    }
-
-    .large {
-        @include lg-font;
-    }
-
-
-
-
-    // Color
-    &.grey {
-        padding: 10px 30px;
-        border: none;
-        cursor: pointer;
-        background-color: $light-grey-color;
-    }
-
-    &.main {
-        padding: 10px 30px;
-        border: none;
-        cursor: pointer;
-        background-color: $sub-color;
-        color: #fff;
-    }
+  &.main {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    background-color: $sub-color;
+    color: #fff;
+  }
 }
