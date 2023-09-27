@@ -1,27 +1,34 @@
 <template>
   <ul class="grids is-3-desktop is-1-mobile gap-20 margin-top-20">
-    <li v-for="(i, index) in 10" :key="index">
-      <div class="card" @click="router.push(`/blog-detail/${index}`)">
+    <li v-for="(i, index) in info" :key="index">
+      <div class="card" @click="router.push(`/blog-detail/${i._id}`)">
         <div class="card-image">
-          <img src="../../assets/images/img-05.jpg" alt="" />
+          <img :src="imageURL + i.coverPage" alt="" />
         </div>
         <div class="card-content">
           <p class="tag-list">
-            <span>Learning</span>
-            <span>SME & Startup</span>
+            <span>{{ i.tag }}</span>
+            <span>{{ i.category }}</span>
           </p>
-          <h3>
-            Home / NETWORK (Wireless) / Range extender & mesh wifi / Whole-home
-            mesh tp-link (deco e4) wireless ac1200 dual band (pack 2)
-          </h3>
+          <h3> {{ i.title }} </h3>
         </div>
       </div>
     </li>
   </ul>
 </template>
 <script lang="ts" setup>
-const router = useRouter();
+useSeoMeta({
+  title: 'thebizhub',
+  ogTitle: 'bizhub',
+  description: 'bizhub',
+  ogDescription: 'bizhub, thebizhub, Thebizhub',
+})
+defineProps(['info'])
+const imageURL = useNuxtApp().$imageURL
+const router = useRouter()
+
 </script>
+
 <style lang="scss" scoped>
 ul {
   li {

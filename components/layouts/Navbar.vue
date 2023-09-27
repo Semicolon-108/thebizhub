@@ -19,34 +19,16 @@
         <ul>
           <li>
             <NuxtLink :to="{ path: '/category', query: { is: 'News & Event' } }"
-              >BIZ Laws</NuxtLink
+              >News & Events</NuxtLink
             >
           </li>
           <li class="has-dropdown">
             <a>Product & Services <i class="fa-light fa-angle-down"></i></a>
             <ul class="dropdown">
-              <li>
+              <li v-for="(i, indx) in productAndService" :key="indx">
                 <NuxtLink
-                  :to="{ path: '/category', query: { is: 'BIZ COACHING' } }"
-                  >BIZ COACHING</NuxtLink
-                >
-              </li>
-              <li>
-                <NuxtLink
-                  :to="{ path: '/category', query: { is: 'BIZ EVENTS' } }"
-                  >BIZ EVENTS</NuxtLink
-                >
-              </li>
-              <li>
-                <NuxtLink
-                  :to="{ path: '/category', query: { is: 'BIZ TOOLS' } }"
-                  >BIZ TOOLS</NuxtLink
-                >
-              </li>
-              <li>
-                <NuxtLink
-                  :to="{ path: '/category', query: { is: 'BIZ COURSES' } }"
-                  >BIZ COURSES</NuxtLink
+                  :to="{ path: '/category', query: { is: `${i.name}` } }"
+                  >{{ i.name }}</NuxtLink
                 >
               </li>
             </ul>
@@ -55,22 +37,27 @@
           <li class="has-dropdown">
             <a>Learning <i class="fa-light fa-angle-down"></i></a>
             <ul class="dropdown">
-              <li>SME & Startup</li>
-              <li>Entrepreneur’s Story</li>
-              <li>Self-Employment</li>
+              <li v-for="(o, index) in learing" :key="index">
+                <NuxtLink
+                  :to="{ path: '/category', query: { is: `${o.name}` } }"
+                  >{{ o.name }}</NuxtLink
+                >
+              </li>
             </ul>
           </li>
-          <!-- <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'BIZ Laws' } }"
+          <li>
+            <NuxtLink :to="{ path: '/category', query: { is: 'Biz Laws' } }"
               >BIZ Laws</NuxtLink
             >
-          </li> -->
+          </li>
           <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'update' } }"
+            <NuxtLink :to="{ path: '/category', query: { is: 'Update' } }"
               >Update</NuxtLink
             >
           </li>
-          <li><NuxtLink to="/about-us">About Us</NuxtLink></li>
+          <li>
+            <NuxtLink to="/about-us">About Us</NuxtLink>
+          </li>
         </ul>
       </div>
       <div class="navbar-end">
@@ -97,8 +84,30 @@
 </template>
 
 <script lang="ts" setup>
+const axios = useNuxtApp().$axios;
 const router = useRouter();
+const productAndService = ref<any>([]);
+const learing = ref<any>([]);
+const fetchProductAndService = async () => {
+  const type = "Product & Services";
+  await axios.post(`get-group/${type}`).then((res) => {
+    if (res.status === 200) {
+      productAndService.value = res.data.info.items;
+    }
+  });
+};
+const fetchLearning = async () => {
+  const type = "Learning";
+  await axios.post(`get-group/${type}`).then((res) => {
+    if (res.status === 200) {
+      learing.value = res.data.info.items;
+    }
+  });
+};
+fetchProductAndService();
+fetchLearning();
 </script>
+
 <style lang="scss" scoped>
 .top-navbar {
   background-color: #000;
@@ -259,9 +268,11 @@ const router = useRouter();
               white-space: pre;
               line-height: 2;
               cursor: pointer;
+
               a {
                 transition: all ease-in-out 0.3s;
                 padding: 0;
+
                 &:hover {
                   color: #fff !important;
                   text-decoration: underline;
