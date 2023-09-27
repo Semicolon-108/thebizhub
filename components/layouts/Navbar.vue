@@ -18,7 +18,7 @@
       <div class="navbar-start">
         <ul>
           <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'News & Event' } }"
+            <NuxtLink :to="{ path: '/category', query: { is: 'NEWS & EVENT' } }"
               >News & Events</NuxtLink
             >
           </li>

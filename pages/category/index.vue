@@ -5,11 +5,7 @@
         <h1 class="page-title">{{ route.query.is }}</h1>
         <div class="tabs-container">
           <ul class="tabs">
-            <li
-              v-for="(i, index) in cateInfo"
-              :key="index"
-              @click="(categoryFilter = i._id), fetch()"
-            >
+            <li v-for="(i, index) in cateInfo" :key="index" @click="(categoryFilter = i._id), fetch()">
               {{ i.name }}
             </li>
           </ul>
@@ -124,11 +120,9 @@ watch(
     width: 50px;
     align-items: center;
     justify-content: flex-end;
-    background: linear-gradient(
-      270deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(270deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%);
 
     @include mobile {
       display: flex;

@@ -5,7 +5,7 @@
         <h1 class="section-title">{{ title }}</h1>
         <ul>
           <li v-for="(i, index) in info" :key="index">
-            <div class="card">
+            <div class="card" @click="router.push(`/blog-detail/${i._id}`)">
               <div class="card-image">
                 <img :src="images + i.coverPage" alt="" />
               </div>
@@ -26,6 +26,7 @@
 <script setup lang="ts">
 const images = useNuxtApp().$imageURL;
 const props = defineProps(["title", "info"]);
+const router = useRouter()
 </script>
 <style lang="scss" scoped>
 ul {

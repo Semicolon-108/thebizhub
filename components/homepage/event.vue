@@ -2,9 +2,9 @@
   <section>
     <div class="container">
       <h1 class="section-title">News & Event</h1>
-      <ul>
+      <ul> 
         <li v-for="(i, index) in info" :key="index">
-          <div class="card">
+          <div class="card" @click="router.push(`/blog-detail/${i._id}`)">
             <div class="card-image fullheight">
               <img :src="images + i.coverPage" alt="" />
             </div>
@@ -23,6 +23,7 @@
 </template>
 <script setup lang="ts">
 const images = useNuxtApp().$imageURL;
+const router = useRouter()
 defineProps(["info"]);
 </script>
 

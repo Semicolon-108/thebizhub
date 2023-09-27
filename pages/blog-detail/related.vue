@@ -23,7 +23,7 @@ defineProps(["relate"]);
 
 const clickHandler = (id: any) => {
   router.push(`/blog-detail/${id}`);
-  window.location.reload();
+  // window.location.reload();
 };
 </script>
 <style lang="scss" scoped>

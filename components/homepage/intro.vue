@@ -15,7 +15,7 @@
               @click="
                 router.push({ path: '/category', query: { is: 'Update' } })
               "
-            >
+            > 
               Update
             </button>
           </div>
