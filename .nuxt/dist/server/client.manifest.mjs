@@ -1,11 +1,11 @@
 export default {
-  "_info-box.5ad00f16.js": {
+  "_info-box.e1e64805.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "info-box.f67ba7a8.css"
     ],
-    "file": "info-box.5ad00f16.js",
+    "file": "info-box.e1e64805.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -14,10 +14,10 @@ export default {
     "file": "info-box.f67ba7a8.css",
     "resourceType": "style"
   },
-  "_nuxt-link.fbbe50a5.js": {
+  "_nuxt-link.47e4a714.js": {
     "resourceType": "script",
     "module": true,
-    "file": "nuxt-link.fbbe50a5.js",
+    "file": "nuxt-link.47e4a714.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -271,9 +271,9 @@ export default {
     "css": [
       "main.39f2d3f4.css"
     ],
-    "file": "main.4896b817.js",
+    "file": "main.a9a82a4e.js",
     "imports": [
-      "_nuxt-link.fbbe50a5.js",
+      "_nuxt-link.47e4a714.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -309,9 +309,9 @@ export default {
     "css": [
       "error-404.23f2309d.css"
     ],
-    "file": "error-404.762bdd4a.js",
+    "file": "error-404.c340ba25.js",
     "imports": [
-      "_nuxt-link.fbbe50a5.js",
+      "_nuxt-link.47e4a714.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -332,7 +332,7 @@ export default {
     "css": [
       "error-500.aa16ed4d.css"
     ],
-    "file": "error-500.ea9ef2c8.js",
+    "file": "error-500.c553d24c.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -390,7 +390,7 @@ export default {
       "layouts/main.vue",
       "virtual:nuxt:D:/Thebizhub/thebizhub/.nuxt/error-component.mjs"
     ],
-    "file": "entry.93649be5.js",
+    "file": "entry.dd84f4d1.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js"
   },
@@ -559,7 +559,7 @@ export default {
     "css": [
       "index.51a9f9d2.css"
     ],
-    "file": "index.3c733a1e.js",
+    "file": "index.7798555e.js",
     "imports": [
       "pages/about-us/product-and-services.vue",
       "pages/about-us/works.vue",
@@ -583,7 +583,7 @@ export default {
     "css": [
       "product-and-services.6920fe41.css"
     ],
-    "file": "product-and-services.97f3ab7f.js",
+    "file": "product-and-services.54d5acce.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -605,7 +605,7 @@ export default {
     "css": [
       "works.cc10838e.css"
     ],
-    "file": "works.0a638703.js",
+    "file": "works.1b492a80.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -627,11 +627,11 @@ export default {
     "css": [
       "login.d63e9e77.css"
     ],
-    "file": "login.7e5a53d4.js",
+    "file": "login.888c7f5f.js",
     "imports": [
-      "_nuxt-link.fbbe50a5.js",
+      "_nuxt-link.47e4a714.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_info-box.5ad00f16.js"
+      "_info-box.e1e64805.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/auth/login.vue"
@@ -651,9 +651,9 @@ export default {
     "css": [
       "password-recovery.0798d13b.css"
     ],
-    "file": "password-recovery.78152b16.js",
+    "file": "password-recovery.b64f4b6d.js",
     "imports": [
-      "_info-box.5ad00f16.js",
+      "_info-box.e1e64805.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -674,10 +674,10 @@ export default {
     "css": [
       "register.470e5370.css"
     ],
-    "file": "register.1d6309af.js",
+    "file": "register.12fe62d8.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_info-box.5ad00f16.js"
+      "_info-box.e1e64805.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/auth/register.vue"
@@ -688,16 +688,16 @@ export default {
   },
   "pages/blog-detail/[id].css": {
     "resourceType": "style",
-    "file": "_id_.0ae0aa40.css",
+    "file": "_id_.df49b5c0.css",
     "src": "pages/blog-detail/[id].css"
   },
   "pages/blog-detail/[id].vue": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "_id_.0ae0aa40.css"
+      "_id_.df49b5c0.css"
     ],
-    "file": "_id_.1b414a8e.js",
+    "file": "_id_.d3a6f4f2.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "pages/blog-detail/related.vue"
@@ -705,57 +705,57 @@ export default {
     "isDynamicEntry": true,
     "src": "pages/blog-detail/[id].vue"
   },
-  "_id_.0ae0aa40.css": {
-    "file": "_id_.0ae0aa40.css",
+  "_id_.df49b5c0.css": {
+    "file": "_id_.df49b5c0.css",
     "resourceType": "style"
   },
   "pages/blog-detail/related.css": {
     "resourceType": "style",
-    "file": "related.185a2e20.css",
+    "file": "related.e375c83b.css",
     "src": "pages/blog-detail/related.css"
   },
   "pages/blog-detail/related.vue": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "related.185a2e20.css"
+      "related.e375c83b.css"
     ],
-    "file": "related.485cafdc.js",
+    "file": "related.723e1be0.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/blog-detail/related.vue"
   },
-  "related.185a2e20.css": {
-    "file": "related.185a2e20.css",
+  "related.e375c83b.css": {
+    "file": "related.e375c83b.css",
     "resourceType": "style"
   },
   "pages/category/index.css": {
     "resourceType": "style",
-    "file": "index.745515bd.css",
+    "file": "index.ac51f7b0.css",
     "src": "pages/category/index.css"
   },
   "pages/category/index.vue": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "index.745515bd.css"
+      "index.ac51f7b0.css"
     ],
-    "file": "index.4e78bacc.js",
+    "file": "index.a64a782b.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/category/index.vue"
   },
-  "index.745515bd.css": {
-    "file": "index.745515bd.css",
+  "index.ac51f7b0.css": {
+    "file": "index.ac51f7b0.css",
     "resourceType": "style"
   },
   "pages/index.css": {
     "resourceType": "style",
-    "file": "index.5d27427a.css",
+    "file": "index.d1cc391c.css",
     "src": "pages/index.css"
   },
   "pages/index.vue": {
@@ -770,17 +770,17 @@ export default {
       "bg.d71fbcd2.jpg"
     ],
     "css": [
-      "index.5d27427a.css"
+      "index.d1cc391c.css"
     ],
-    "file": "index.b8981002.js",
+    "file": "index.7c7a057e.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
   },
-  "index.5d27427a.css": {
-    "file": "index.5d27427a.css",
+  "index.d1cc391c.css": {
+    "file": "index.d1cc391c.css",
     "resourceType": "style"
   },
   "about.faed9c12.png": {
@@ -815,7 +815,7 @@ export default {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "error-component.1aebd242.js",
+    "file": "error-component.5cc0287f.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],

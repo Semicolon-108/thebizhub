@@ -18,8 +18,8 @@
         </li>
         <li>
           <p>
-            <span>{{ tag }}</span
-            ><span>{{ category }}</span>
+            <span v-for="(t, indx) in tag" :key="indx">{{ t.name }}</span>
+            <span v-for="(c, ind) in category" :key="ind">{{ c.name }}</span>
           </p>
         </li>
         <li>{{ createdAt }}</li>
