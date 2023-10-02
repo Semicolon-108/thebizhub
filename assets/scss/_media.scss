@@ -21,7 +21,7 @@ $fullhd-width: 1408px;
 }
 
 @mixin desktop {
-  @media (min-width: #{$desktop-width})and (max-width: #{$fullhd-width - 1px}) {
+  @media (min-width: #{$desktop-width}) {
     @content;
   }
 }
