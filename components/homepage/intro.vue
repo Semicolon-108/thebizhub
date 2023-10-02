@@ -1,8 +1,8 @@
 <template>
   <section class="section">
     <div class="container">
-      <div class="grids gap-20 is-5-desktop is-1-mobile">
-        <div class="left span-2">
+      <div class="grids gap-20-desktop is-5-desktop is-1-mobile">
+        <div class="left span-2-desktop">
           <div class="intro">
             <h1>THE BIZ HUB</h1>
             <h3>
@@ -20,8 +20,8 @@
             </button>
           </div>
         </div>
-        <div class="right span-3">
-          <ul class="grids gap-10 is-2-desktop is-1-mobile">
+        <div class="right span-3-desktop">
+          <ul class="grids gap-10-desktop is-2-desktop is-1-mobile">
             <li>
               <div class="course-info">
                 <h3>BIZ COACHING</h3>

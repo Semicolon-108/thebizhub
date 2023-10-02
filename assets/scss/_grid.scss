@@ -1,46 +1,73 @@
-$columns: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
-$gaps: 10, 15, 20, 30;
-$spans: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
+$columns: 24;
+$gaps: 100;
+$spans: 12;
 
-@each $col in $columns {
-  @each $gap in $gaps {
+@for $col from 1 through $columns {
+  @for $span from 1 through $spans {
     .grids {
-      &.gap-#{$gap} {
-        gap: $gap + px;
-      }
-      @each $span in $spans {
-        .span-#{$span} {
-          grid-column: span $span;
-          @include mobile {
-            grid-column: 1;
+      display: grid;
+      width: 100%;
+
+      // Column
+      &.is-#{$col}-mobile {
+        @include mobile {
+          display: grid;
+          grid-template-columns: repeat($col, minmax(0, 1fr));
+          .span-#{$span}-mobile {
+            grid-column: span $span;
+          }
+        }
+      } // mobile
+      &.is-#{$col}-tablet {
+        @include tablet {
+          grid-template-columns: repeat($col, minmax(0, 1fr));
+          .span-#{$span}-tablet {
+            grid-column: span $span;
+          }
+        }
+      } // tablet
+
+      &.is-#{$col}-desktop {
+        @include desktop {
+          grid-template-columns: repeat($col, minmax(0, 1fr));
+          .span-#{$span}-desktop {
+            grid-column: span $span;
           }
         }
       }
-      &.is-#{$col}-desktop {
-        @include desktop {
-          width: 100%;
-          display: grid;
+      &.is-#{$col}-fullhd {
+        @include fullhd {
           grid-template-columns: repeat($col, minmax(0, 1fr));
+          .span-#{$span}-fullhd {
+            grid-column: span $span;
+          }
         }
-      }
+      } // fullhd
+    } // Grids
+  } // @spans
+} // @columns
 
-      &.is-#{$col}-tablet {
-        @include tablet {
-          width: 100%;
-          display: grid;
-          grid-template-columns: repeat($col, minmax(0, 1fr));
-        }
-      }
-
-      &.is-#{$col}-mobile {
-        @include mobile {
-          width: 100%;
-          display: grid;
-          grid-template-columns: repeat($col, minmax(0, 1fr));
-        }
+@for $gap from 1 through $gaps {
+  .grids {
+    &.gap-#{$gap}-mobile {
+      @include mobile {
+        gap: $gap + px;
       }
     }
-
-    // grids
-  }
-}
+    &.gap-#{$gap}-tablet {
+      @include tablet {
+        gap: $gap + px;
+      }
+    }
+    &.gap-#{$gap}-desktop {
+      @include desktop {
+        gap: $gap + px;
+      }
+    }
+    &.gap-#{$gap}-fullhd {
+      @include fullhd {
+        gap: $gap + px;
+      }
+    }
+  } // Grids
+} // @gaps

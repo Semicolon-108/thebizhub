@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <ul class="image-list grids is-3-desktop is-1-mobile gap-20">
+      <ul class="image-list grids is-3-desktop is-1-mobile gap-20-desktop">
         <li v-for="(i, index) in 3" :key="index">
           <img
             class="image-card"

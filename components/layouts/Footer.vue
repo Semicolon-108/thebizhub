@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <ul class="grids is-14-desktop is-1-mobile">
-        <li class="span-5">
+        <li class="span-5-desktop">
           <div class="logo margin-bottom-10">
             <img src="../../assets/images/Logo.png" alt="" />
             <h3>THE BIZ HUB</h3>
@@ -14,13 +14,13 @@
           <small>020 56463959 | 020 56508160</small>
           <small>thebizhub.info@gmail.com</small>
         </li>
-        <li class="span-3">
+        <li class="span-3-desktop">
           <h3>Who are we?</h3>
           <h3>BIZ Course</h3>
           <h3>BIZ Coaching</h3>
           <h3>BIZ Tools</h3>
         </li>
-        <li class="span-3">
+        <li class="span-3-desktop">
           <h3>Learning</h3>
           <ul>
             <li>- SME & Startup</li>
@@ -30,7 +30,7 @@
           <h3>BIZ Laws</h3>
           <h3>NEWS & Event</h3>
         </li>
-        <li class="span-3">
+        <li class="span-3-desktop">
           <h3>Follow us on</h3>
         </li>
       </ul>

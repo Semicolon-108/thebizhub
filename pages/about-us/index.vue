@@ -4,12 +4,12 @@
       <div class="container">
         <h1 class="page-title">THE BIZ HUB ແມ່ນຫຍັງ?</h1>
         <div class="grids is-2-desktop is-1-mobile gap-20">
-          <div class="box span-2">
+          <div class="box span-2-desktop">
             <div class="grids is-5-desktop is-1-mobile gap-20">
-              <h1 class="span-2">
+              <h1 class="span-2-desktop">
                 PARTNER FOR SUCCESS IN BUSINESS AND ENTREPRENEURSHIP
               </h1>
-              <p class="span-3">
+              <p class="span-3-desktop">
                 ຄູ່ຮ່ວມງານເພື່ອຄວາມສາເລດໃນດ້ານທຸລະກິດ ແລະ ການເປນຜູ້ ປະກອບການ
                 ພວກເຮາມຸ່ງໝັ້ນໃນການສົ່ງເສີມ ແລະ ເສີມສ້າງຜູ້ ປະກອບການລຸ້ນໃໝ່ ຫຼື
                 ຜູ້ທີ່ກາລັງເລີ່ມຕົ້ນເຮດທຸລະກິດທີ່ຕ້ອງ ການພັດທະນາຕົນເອງ

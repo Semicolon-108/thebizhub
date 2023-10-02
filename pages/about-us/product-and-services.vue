@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <h1 class="section-title">ຜະລິດຕະພັນ/ການບໍລິການຂອງເຮົາ</h1>
-      <ul class="image-list grids is-3-desktop is-1-mobile gap-20">
+      <ul class="image-list grids is-3-desktop is-1-mobile gap-20-desktop">
         <li v-for="(i, index) in 3" :key="index">
           <img
             class="image-card"

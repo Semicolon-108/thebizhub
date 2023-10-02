@@ -5,12 +5,8 @@
       <div class="grids is-2-desktop gap-20 is-1-mobile">
         <div class="left">
           <ul class="tabs">
-            <li
-              :class="{ open: selectedTab === i.name }"
-              @click="selectTab(i.name)"
-              v-for="(i, index) in tabs"
-              :key="index"
-            >
+            <li :class="{ open: selectedTab === i.name }" @click="selectTab(i.name)" v-for="(i, index) in tabs"
+              :key="index">
               <h1>{{ i.name }} <i class="fa-light fa-angle-down"></i></h1>
               <p>{{ i.desc }}</p>
             </li>
@@ -57,6 +53,7 @@ const selectTab = async (e: any) => {
 <style lang="scss" scoped>
 section {
   background-color: var(--light-color);
+
   .right {
     .image {
       display: flex;
