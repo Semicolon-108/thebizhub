@@ -4,9 +4,9 @@
     <div class="container">
       <h1 class="page-title">Register</h1>
 
-      <div class="grids is-2-desktop is-1-mobile margin-top-30 gap-30">
+      <div class="grids is-2-desktop is-1-mobile margin-top-30 gap-30-desktop">
         <div class="left">
-          <form action="" class="grids is-2-desktop is-1-mobile gap-20">
+          <form action="" class="grids is-2-desktop is-1-mobile gap-20-desktop">
             <div class="field">
               <label for="">Name <span>*</span></label>
               <div class="control">

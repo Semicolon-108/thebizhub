@@ -116,6 +116,9 @@ fetchLearning();
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url("../../assets/images/bg.jpg");
+  background-size: cover;
+  background-position: tops left;
 
   .mobile-only {
     color: #fff;

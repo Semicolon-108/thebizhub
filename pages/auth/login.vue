@@ -4,9 +4,9 @@
     <div class="container">
       <h1 class="page-title">Login</h1>
 
-      <div class="grids is-5-desktop is-1-mobile margin-top-30 gap-30">
-        <div class="left span-2">
-          <form action="" class="grids is-1-desktop is-1-mobile gap-20">
+      <div class="grids is-5-desktop is-1-mobile margin-top-30 gap-30-desktop">
+        <div class="left span-2-desktop">
+          <form action="" class="grids is-1-desktop is-1-mobile gap-20-desktop">
             <div class="field">
               <label for="">Mobile number (020) <span>*</span></label>
               <div class="control">
@@ -30,7 +30,7 @@
             <a @click="router.push({ path: 'register' })">Register</a>
           </p>
         </div>
-        <div class="right span-3">
+        <div class="right span-3-desktop">
           <InfoBox />
         </div>
       </div>
