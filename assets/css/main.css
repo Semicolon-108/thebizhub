@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 p,
@@ -86,6 +87,7 @@ a {
 :root {
   --font-family: Roboto, Nuanta, sans-serif;
   --main-color: #000000;
+  --main-color-rgb: 0, 0, 0;
   --sub-color: #002c9b;
   --light-color: #e9fbff;
   --info-color: #eed221;
@@ -96,7 +98,7 @@ a {
   --dark-grey-color: hsl(0, 0%, 29%);
   --border-color: #dbdbdb;
   --bg-color: #f4f5f1;
-  --font-color: #000000;
+  --text-color: #000000;
 }
 
 :root {
@@ -30426,6 +30428,61 @@ input.small {
   outline: none;
   box-shadow: none;
   border: 1px solid #dbdbdb;
+}
+
+.blog-detail {
+  color: #000000;
+}
+.blog-detail p {
+  font-size: clamp(0.95rem, 2.5vw, 1rem);
+}
+.blog-detail h4 {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+}
+.blog-detail h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.2rem);
+}
+.blog-detail h2 {
+  font-size: clamp(1.2rem, 2.5vw, 1.3rem);
+}
+.blog-detail ol {
+  margin-left: 20px;
+  list-style-position: outside;
+}
+.blog-detail ul {
+  margin-left: 20px;
+  list-style-position: outside;
+}
+.blog-detail ul li {
+  list-style-type: disc !important;
+}
+.blog-detail blockquote {
+  text-align: center !important;
+  font-size: 1.4em;
+  margin: 50px auto;
+  font-style: italic;
+  color: #000000;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #002c9b !important;
+  line-height: 1.6;
+  position: relative;
+  background: hsl(0, 0%, 90%);
+}
+.blog-detail blockquote::before {
+  font-family: Arial;
+  content: "“";
+  color: #002c9b !important;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+.blog-detail blockquote::after {
+  content: "";
+}
+.blog-detail blockquote p {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 section {

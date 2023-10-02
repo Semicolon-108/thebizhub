@@ -1,0 +1,62 @@
+.blog-detail {
+  color: $text-color;
+
+  // Font Size
+  p {
+    font-size: clamp(0.95rem, 2.5vw, 1rem);
+  }
+  //   heading 3
+  h4 {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+  }
+  //   heading 2
+  h3 {
+    font-size: clamp(1.1rem, 2.5vw, 1.2rem);
+  }
+  //   heading 1
+  h2 {
+    font-size: clamp(1.2rem, 2.5vw, 1.3rem);
+  }
+
+  ol {
+    margin-left: 20px;
+    list-style-position: outside;
+  }
+  ul {
+    margin-left: 20px;
+    list-style-position: outside;
+    li {
+      list-style-type: disc !important;
+    }
+  }
+
+  blockquote {
+    text-align: center !important;
+    font-size: 1.4em;
+    margin: 50px auto;
+    font-style: italic;
+    color: $text-color;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid $sub-color !important;
+    line-height: 1.6;
+    position: relative;
+    background: $light-grey-color;
+    &::before {
+      font-family: Arial;
+      content: "\201C";
+      color: $sub-color !important;
+      font-size: 4em;
+      position: absolute;
+      left: 10px;
+      top: -10px;
+    }
+
+    &::after {
+      content: "";
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+  }
+}

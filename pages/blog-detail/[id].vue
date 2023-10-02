@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="blog-detail">
     <section class="has-bg">
       <div class="container">
         <img :src="imageURL + coverPage" alt="" v-if="coverPage" />
@@ -7,7 +7,6 @@
     </section>
     <div class="container content">
       <h1 class="blog-title">{{ title }}</h1>
-
       <ul class="blog-info">
         <li>
           <p>
@@ -18,8 +17,8 @@
         </li>
         <li>
           <p>
-            <span>{{ tag }}</span
-            ><span>{{ category }}</span>
+            <span>{{ tag.name }}</span
+            ><span>{{ category.name }}</span>
           </p>
         </li>
         <li>{{ createdAt }}</li>

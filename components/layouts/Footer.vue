@@ -15,7 +15,7 @@
           <small>thebizhub.info@gmail.com</small>
         </li>
         <li class="span-3">
-          <h3>Who we are?</h3>
+          <h3>Who are we?</h3>
           <h3>BIZ Course</h3>
           <h3>BIZ Coaching</h3>
           <h3>BIZ Tools</h3>

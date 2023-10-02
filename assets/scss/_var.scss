@@ -22,7 +22,7 @@ $warning-color: 222, 173, 82;
 $border-color: #dbdbdb;
 $bg-color: #f4f5f1;
 // Font color
-$font-color: #000000;
+$text-color: #000000;
 
 // Helper Color
 $light-grey-color: hsl(0, 0%, 90%);
@@ -34,6 +34,7 @@ $dark-grey-color: hsl(0, 0%, 29%);
 
   // Theme
   --main-color: #{$main-color};
+  --main-color-rgb: #{$main-color-rgb};
   --sub-color: #{$sub-color};
   --light-color: #{$light-color};
   --info-color: #{$info-color};
@@ -48,5 +49,5 @@ $dark-grey-color: hsl(0, 0%, 29%);
   --border-color: #{$border-color};
   --bg-color: #{$bg-color};
   // Font color
-  --font-color: #{$font-color};
+  --text-color: #{$text-color};
 }

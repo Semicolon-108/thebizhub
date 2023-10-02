@@ -168,12 +168,12 @@ fetchLearning();
     cursor: pointer;
 
     img {
-      height: 4rem;
+      height: 7rem;
       object-fit: contain;
       display: block;
 
       @include mobile {
-        height: 3rem;
+        height: 5rem;
       }
     }
   }
