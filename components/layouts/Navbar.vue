@@ -118,7 +118,7 @@ fetchLearning();
   flex-direction: column;
   background-image: url("../../assets/images/bg.jpg");
   background-size: cover;
-  background-position: tops left;
+  background-position: bottom right;
 
   .mobile-only {
     color: #fff;

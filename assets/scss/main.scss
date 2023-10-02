@@ -25,7 +25,7 @@ section {
 }
 
 .section-title {
-  font-size: $xxlg-font;
+  font-size: $xlg-font;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -64,31 +64,45 @@ section {
   }
 
   .card-content {
-    .tag-list {
+    ul.tag-list {
       display: flex;
       padding: 5px 0;
       margin: 5px 0;
+      text-transform: uppercase;
 
-      &:not(:last-child) {
-        span {
-          display: flex;
-          align-items: center;
+      li {
+        display: flex;
+        align-items: center;
+        a {
+          text-transform: uppercase !important;
+          transition: all ease-in-out 0.3s;
+          font-size: var(--sm-font);
+          &:hover {
+            color: var(--sub-color);
+          }
+        }
+        &:not(:first-child) {
+          a {
+            display: flex;
+            align-items: center;
 
-          &::after {
-            content: "";
-            width: 1px;
-            height: 15px;
-            border-left: 1px solid $grey-color;
-            display: block;
-            margin: 0 8px;
+            &::before {
+              content: "";
+              width: 1px;
+              height: 15px;
+              background-color: var(--grey-color);
+              display: block;
+              margin: 0 8px;
+            }
           }
         }
       }
 
       span {
+        white-space: pre-line;
         display: flex;
         align-items: center;
-        font-size: $xsm-font;
+        font-size: var(--xsm-font);
       }
     }
   }

@@ -3,7 +3,7 @@
 
   // Font Size
   p {
-    font-size: clamp(0.95rem, 2.5vw, 1rem);
+    font-size: $md-font;
   }
   //   heading 3
   h4 {

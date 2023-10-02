@@ -104,10 +104,10 @@ a {
 :root {
   --xsm-font: clamp(0.7rem, 2.5vw, 0.8rem);
   --sm-font: clamp(0.8rem, 2.5vw, 0.9rem);
-  --md-font: clamp(0.9rem, 2.5vw, 1rem);
+  --md-font: clamp(0.95rem, 2.5vw, 1rem);
   --lg-font: clamp(1.1rem, 2.5vw, 1.3rem);
   --xlg-font: clamp(1.3rem, 2.5vw, 1.5rem);
-  --xxlg-font: clamp(1.5rem, 2.5vw, 1.7rem);
+  --xxlg-font: clamp(1.6rem, 2.5vw, 1.7rem);
   --xxxlg-font: clamp(1.7rem, 2.5vw, 3rem);
 }
 
@@ -15514,7 +15514,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15552,7 +15552,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15590,7 +15590,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15628,7 +15628,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15666,7 +15666,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15704,7 +15704,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15742,7 +15742,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15780,7 +15780,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15818,7 +15818,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15856,7 +15856,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15894,7 +15894,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15932,7 +15932,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-1-desktop {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -15970,7 +15970,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16008,7 +16008,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16046,7 +16046,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16084,7 +16084,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16122,7 +16122,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16160,7 +16160,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16198,7 +16198,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16236,7 +16236,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16274,7 +16274,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16312,7 +16312,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16350,7 +16350,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16388,7 +16388,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-2-desktop {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -16426,7 +16426,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16464,7 +16464,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16502,7 +16502,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16540,7 +16540,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16578,7 +16578,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16616,7 +16616,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16654,7 +16654,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16692,7 +16692,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16730,7 +16730,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16768,7 +16768,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16806,7 +16806,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16844,7 +16844,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-3-desktop {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -16882,7 +16882,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -16920,7 +16920,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -16958,7 +16958,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -16996,7 +16996,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -17034,7 +17034,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -17072,7 +17072,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -17110,7 +17110,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -17148,7 +17148,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -17186,7 +17186,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -17224,7 +17224,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -17262,7 +17262,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -17300,7 +17300,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-4-desktop {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -17338,7 +17338,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17376,7 +17376,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17414,7 +17414,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17452,7 +17452,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17490,7 +17490,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17528,7 +17528,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17566,7 +17566,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17604,7 +17604,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17642,7 +17642,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17680,7 +17680,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17718,7 +17718,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17756,7 +17756,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-5-desktop {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -17794,7 +17794,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -17832,7 +17832,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -17870,7 +17870,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -17908,7 +17908,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -17946,7 +17946,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -17984,7 +17984,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -18022,7 +18022,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -18060,7 +18060,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -18098,7 +18098,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -18136,7 +18136,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -18174,7 +18174,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -18212,7 +18212,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-6-desktop {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -18250,7 +18250,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18288,7 +18288,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18326,7 +18326,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18364,7 +18364,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18402,7 +18402,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18440,7 +18440,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18478,7 +18478,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18516,7 +18516,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18554,7 +18554,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18592,7 +18592,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18630,7 +18630,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18668,7 +18668,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-7-desktop {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
@@ -18706,7 +18706,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -18744,7 +18744,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -18782,7 +18782,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -18820,7 +18820,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -18858,7 +18858,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -18896,7 +18896,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -18934,7 +18934,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -18972,7 +18972,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -19010,7 +19010,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -19048,7 +19048,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -19086,7 +19086,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -19124,7 +19124,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-8-desktop {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -19162,7 +19162,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19200,7 +19200,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19238,7 +19238,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19276,7 +19276,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19314,7 +19314,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19352,7 +19352,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19390,7 +19390,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19428,7 +19428,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19466,7 +19466,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19504,7 +19504,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19542,7 +19542,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19580,7 +19580,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-9-desktop {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
@@ -19618,7 +19618,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -19656,7 +19656,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -19694,7 +19694,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -19732,7 +19732,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -19770,7 +19770,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -19808,7 +19808,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -19846,7 +19846,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -19884,7 +19884,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -19922,7 +19922,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -19960,7 +19960,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -19998,7 +19998,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -20036,7 +20036,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-10-desktop {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -20074,7 +20074,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20112,7 +20112,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20150,7 +20150,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20188,7 +20188,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20226,7 +20226,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20264,7 +20264,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20302,7 +20302,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20340,7 +20340,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20378,7 +20378,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20416,7 +20416,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20454,7 +20454,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20492,7 +20492,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-11-desktop {
     grid-template-columns: repeat(11, minmax(0, 1fr));
   }
@@ -20530,7 +20530,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20568,7 +20568,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20606,7 +20606,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20644,7 +20644,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20682,7 +20682,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20720,7 +20720,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20758,7 +20758,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20796,7 +20796,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20834,7 +20834,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20872,7 +20872,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20910,7 +20910,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20948,7 +20948,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-12-desktop {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -20986,7 +20986,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21024,7 +21024,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21062,7 +21062,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21100,7 +21100,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21138,7 +21138,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21176,7 +21176,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21214,7 +21214,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21252,7 +21252,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21290,7 +21290,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21328,7 +21328,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21366,7 +21366,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21404,7 +21404,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-13-desktop {
     grid-template-columns: repeat(13, minmax(0, 1fr));
   }
@@ -21442,7 +21442,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21480,7 +21480,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21518,7 +21518,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21556,7 +21556,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21594,7 +21594,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21632,7 +21632,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21670,7 +21670,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21708,7 +21708,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21746,7 +21746,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21784,7 +21784,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21822,7 +21822,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21860,7 +21860,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-14-desktop {
     grid-template-columns: repeat(14, minmax(0, 1fr));
   }
@@ -21898,7 +21898,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -21936,7 +21936,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -21974,7 +21974,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -22012,7 +22012,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -22050,7 +22050,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -22088,7 +22088,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -22126,7 +22126,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -22164,7 +22164,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -22202,7 +22202,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -22240,7 +22240,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -22278,7 +22278,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -22316,7 +22316,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-15-desktop {
     grid-template-columns: repeat(15, minmax(0, 1fr));
   }
@@ -22354,7 +22354,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22392,7 +22392,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22430,7 +22430,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22468,7 +22468,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22506,7 +22506,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22544,7 +22544,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22582,7 +22582,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22620,7 +22620,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22658,7 +22658,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22696,7 +22696,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22734,7 +22734,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22772,7 +22772,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-16-desktop {
     grid-template-columns: repeat(16, minmax(0, 1fr));
   }
@@ -22810,7 +22810,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -22848,7 +22848,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -22886,7 +22886,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -22924,7 +22924,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -22962,7 +22962,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -23000,7 +23000,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -23038,7 +23038,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -23076,7 +23076,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -23114,7 +23114,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -23152,7 +23152,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -23190,7 +23190,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -23228,7 +23228,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-17-desktop {
     grid-template-columns: repeat(17, minmax(0, 1fr));
   }
@@ -23266,7 +23266,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23304,7 +23304,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23342,7 +23342,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23380,7 +23380,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23418,7 +23418,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23456,7 +23456,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23494,7 +23494,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23532,7 +23532,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23570,7 +23570,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23608,7 +23608,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23646,7 +23646,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23684,7 +23684,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-18-desktop {
     grid-template-columns: repeat(18, minmax(0, 1fr));
   }
@@ -23722,7 +23722,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -23760,7 +23760,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -23798,7 +23798,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -23836,7 +23836,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -23874,7 +23874,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -23912,7 +23912,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -23950,7 +23950,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -23988,7 +23988,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -24026,7 +24026,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -24064,7 +24064,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -24102,7 +24102,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -24140,7 +24140,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-19-desktop {
     grid-template-columns: repeat(19, minmax(0, 1fr));
   }
@@ -24178,7 +24178,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24216,7 +24216,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24254,7 +24254,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24292,7 +24292,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24330,7 +24330,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24368,7 +24368,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24406,7 +24406,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24444,7 +24444,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24482,7 +24482,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24520,7 +24520,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24558,7 +24558,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24596,7 +24596,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-20-desktop {
     grid-template-columns: repeat(20, minmax(0, 1fr));
   }
@@ -24634,7 +24634,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -24672,7 +24672,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -24710,7 +24710,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -24748,7 +24748,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -24786,7 +24786,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -24824,7 +24824,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -24862,7 +24862,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -24900,7 +24900,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -24938,7 +24938,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -24976,7 +24976,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -25014,7 +25014,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -25052,7 +25052,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-21-desktop {
     grid-template-columns: repeat(21, minmax(0, 1fr));
   }
@@ -25090,7 +25090,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25128,7 +25128,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25166,7 +25166,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25204,7 +25204,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25242,7 +25242,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25280,7 +25280,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25318,7 +25318,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25356,7 +25356,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25394,7 +25394,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25432,7 +25432,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25470,7 +25470,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25508,7 +25508,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-22-desktop {
     grid-template-columns: repeat(22, minmax(0, 1fr));
   }
@@ -25546,7 +25546,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -25584,7 +25584,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -25622,7 +25622,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -25660,7 +25660,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -25698,7 +25698,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -25736,7 +25736,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -25774,7 +25774,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -25812,7 +25812,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -25850,7 +25850,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -25888,7 +25888,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -25926,7 +25926,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -25964,7 +25964,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-23-desktop {
     grid-template-columns: repeat(23, minmax(0, 1fr));
   }
@@ -26002,7 +26002,7 @@ a {
     grid-column: span 1;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26040,7 +26040,7 @@ a {
     grid-column: span 2;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26078,7 +26078,7 @@ a {
     grid-column: span 3;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26116,7 +26116,7 @@ a {
     grid-column: span 4;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26154,7 +26154,7 @@ a {
     grid-column: span 5;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26192,7 +26192,7 @@ a {
     grid-column: span 6;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26230,7 +26230,7 @@ a {
     grid-column: span 7;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26268,7 +26268,7 @@ a {
     grid-column: span 8;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26306,7 +26306,7 @@ a {
     grid-column: span 9;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26344,7 +26344,7 @@ a {
     grid-column: span 10;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26382,7 +26382,7 @@ a {
     grid-column: span 11;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26420,7 +26420,7 @@ a {
     grid-column: span 12;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.is-24-desktop {
     grid-template-columns: repeat(24, minmax(0, 1fr));
   }
@@ -26447,7 +26447,7 @@ a {
     gap: 1px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-1-desktop {
     gap: 1px;
   }
@@ -26468,7 +26468,7 @@ a {
     gap: 2px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-2-desktop {
     gap: 2px;
   }
@@ -26489,7 +26489,7 @@ a {
     gap: 3px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-3-desktop {
     gap: 3px;
   }
@@ -26510,7 +26510,7 @@ a {
     gap: 4px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-4-desktop {
     gap: 4px;
   }
@@ -26531,7 +26531,7 @@ a {
     gap: 5px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-5-desktop {
     gap: 5px;
   }
@@ -26552,7 +26552,7 @@ a {
     gap: 6px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-6-desktop {
     gap: 6px;
   }
@@ -26573,7 +26573,7 @@ a {
     gap: 7px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-7-desktop {
     gap: 7px;
   }
@@ -26594,7 +26594,7 @@ a {
     gap: 8px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-8-desktop {
     gap: 8px;
   }
@@ -26615,7 +26615,7 @@ a {
     gap: 9px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-9-desktop {
     gap: 9px;
   }
@@ -26636,7 +26636,7 @@ a {
     gap: 10px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-10-desktop {
     gap: 10px;
   }
@@ -26657,7 +26657,7 @@ a {
     gap: 11px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-11-desktop {
     gap: 11px;
   }
@@ -26678,7 +26678,7 @@ a {
     gap: 12px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-12-desktop {
     gap: 12px;
   }
@@ -26699,7 +26699,7 @@ a {
     gap: 13px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-13-desktop {
     gap: 13px;
   }
@@ -26720,7 +26720,7 @@ a {
     gap: 14px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-14-desktop {
     gap: 14px;
   }
@@ -26741,7 +26741,7 @@ a {
     gap: 15px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-15-desktop {
     gap: 15px;
   }
@@ -26762,7 +26762,7 @@ a {
     gap: 16px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-16-desktop {
     gap: 16px;
   }
@@ -26783,7 +26783,7 @@ a {
     gap: 17px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-17-desktop {
     gap: 17px;
   }
@@ -26804,7 +26804,7 @@ a {
     gap: 18px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-18-desktop {
     gap: 18px;
   }
@@ -26825,7 +26825,7 @@ a {
     gap: 19px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-19-desktop {
     gap: 19px;
   }
@@ -26846,7 +26846,7 @@ a {
     gap: 20px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-20-desktop {
     gap: 20px;
   }
@@ -26867,7 +26867,7 @@ a {
     gap: 21px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-21-desktop {
     gap: 21px;
   }
@@ -26888,7 +26888,7 @@ a {
     gap: 22px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-22-desktop {
     gap: 22px;
   }
@@ -26909,7 +26909,7 @@ a {
     gap: 23px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-23-desktop {
     gap: 23px;
   }
@@ -26930,7 +26930,7 @@ a {
     gap: 24px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-24-desktop {
     gap: 24px;
   }
@@ -26951,7 +26951,7 @@ a {
     gap: 25px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-25-desktop {
     gap: 25px;
   }
@@ -26972,7 +26972,7 @@ a {
     gap: 26px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-26-desktop {
     gap: 26px;
   }
@@ -26993,7 +26993,7 @@ a {
     gap: 27px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-27-desktop {
     gap: 27px;
   }
@@ -27014,7 +27014,7 @@ a {
     gap: 28px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-28-desktop {
     gap: 28px;
   }
@@ -27035,7 +27035,7 @@ a {
     gap: 29px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-29-desktop {
     gap: 29px;
   }
@@ -27056,7 +27056,7 @@ a {
     gap: 30px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-30-desktop {
     gap: 30px;
   }
@@ -27077,7 +27077,7 @@ a {
     gap: 31px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-31-desktop {
     gap: 31px;
   }
@@ -27098,7 +27098,7 @@ a {
     gap: 32px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-32-desktop {
     gap: 32px;
   }
@@ -27119,7 +27119,7 @@ a {
     gap: 33px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-33-desktop {
     gap: 33px;
   }
@@ -27140,7 +27140,7 @@ a {
     gap: 34px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-34-desktop {
     gap: 34px;
   }
@@ -27161,7 +27161,7 @@ a {
     gap: 35px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-35-desktop {
     gap: 35px;
   }
@@ -27182,7 +27182,7 @@ a {
     gap: 36px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-36-desktop {
     gap: 36px;
   }
@@ -27203,7 +27203,7 @@ a {
     gap: 37px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-37-desktop {
     gap: 37px;
   }
@@ -27224,7 +27224,7 @@ a {
     gap: 38px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-38-desktop {
     gap: 38px;
   }
@@ -27245,7 +27245,7 @@ a {
     gap: 39px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-39-desktop {
     gap: 39px;
   }
@@ -27266,7 +27266,7 @@ a {
     gap: 40px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-40-desktop {
     gap: 40px;
   }
@@ -27287,7 +27287,7 @@ a {
     gap: 41px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-41-desktop {
     gap: 41px;
   }
@@ -27308,7 +27308,7 @@ a {
     gap: 42px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-42-desktop {
     gap: 42px;
   }
@@ -27329,7 +27329,7 @@ a {
     gap: 43px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-43-desktop {
     gap: 43px;
   }
@@ -27350,7 +27350,7 @@ a {
     gap: 44px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-44-desktop {
     gap: 44px;
   }
@@ -27371,7 +27371,7 @@ a {
     gap: 45px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-45-desktop {
     gap: 45px;
   }
@@ -27392,7 +27392,7 @@ a {
     gap: 46px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-46-desktop {
     gap: 46px;
   }
@@ -27413,7 +27413,7 @@ a {
     gap: 47px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-47-desktop {
     gap: 47px;
   }
@@ -27434,7 +27434,7 @@ a {
     gap: 48px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-48-desktop {
     gap: 48px;
   }
@@ -27455,7 +27455,7 @@ a {
     gap: 49px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-49-desktop {
     gap: 49px;
   }
@@ -27476,7 +27476,7 @@ a {
     gap: 50px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-50-desktop {
     gap: 50px;
   }
@@ -27497,7 +27497,7 @@ a {
     gap: 51px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-51-desktop {
     gap: 51px;
   }
@@ -27518,7 +27518,7 @@ a {
     gap: 52px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-52-desktop {
     gap: 52px;
   }
@@ -27539,7 +27539,7 @@ a {
     gap: 53px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-53-desktop {
     gap: 53px;
   }
@@ -27560,7 +27560,7 @@ a {
     gap: 54px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-54-desktop {
     gap: 54px;
   }
@@ -27581,7 +27581,7 @@ a {
     gap: 55px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-55-desktop {
     gap: 55px;
   }
@@ -27602,7 +27602,7 @@ a {
     gap: 56px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-56-desktop {
     gap: 56px;
   }
@@ -27623,7 +27623,7 @@ a {
     gap: 57px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-57-desktop {
     gap: 57px;
   }
@@ -27644,7 +27644,7 @@ a {
     gap: 58px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-58-desktop {
     gap: 58px;
   }
@@ -27665,7 +27665,7 @@ a {
     gap: 59px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-59-desktop {
     gap: 59px;
   }
@@ -27686,7 +27686,7 @@ a {
     gap: 60px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-60-desktop {
     gap: 60px;
   }
@@ -27707,7 +27707,7 @@ a {
     gap: 61px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-61-desktop {
     gap: 61px;
   }
@@ -27728,7 +27728,7 @@ a {
     gap: 62px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-62-desktop {
     gap: 62px;
   }
@@ -27749,7 +27749,7 @@ a {
     gap: 63px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-63-desktop {
     gap: 63px;
   }
@@ -27770,7 +27770,7 @@ a {
     gap: 64px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-64-desktop {
     gap: 64px;
   }
@@ -27791,7 +27791,7 @@ a {
     gap: 65px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-65-desktop {
     gap: 65px;
   }
@@ -27812,7 +27812,7 @@ a {
     gap: 66px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-66-desktop {
     gap: 66px;
   }
@@ -27833,7 +27833,7 @@ a {
     gap: 67px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-67-desktop {
     gap: 67px;
   }
@@ -27854,7 +27854,7 @@ a {
     gap: 68px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-68-desktop {
     gap: 68px;
   }
@@ -27875,7 +27875,7 @@ a {
     gap: 69px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-69-desktop {
     gap: 69px;
   }
@@ -27896,7 +27896,7 @@ a {
     gap: 70px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-70-desktop {
     gap: 70px;
   }
@@ -27917,7 +27917,7 @@ a {
     gap: 71px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-71-desktop {
     gap: 71px;
   }
@@ -27938,7 +27938,7 @@ a {
     gap: 72px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-72-desktop {
     gap: 72px;
   }
@@ -27959,7 +27959,7 @@ a {
     gap: 73px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-73-desktop {
     gap: 73px;
   }
@@ -27980,7 +27980,7 @@ a {
     gap: 74px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-74-desktop {
     gap: 74px;
   }
@@ -28001,7 +28001,7 @@ a {
     gap: 75px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-75-desktop {
     gap: 75px;
   }
@@ -28022,7 +28022,7 @@ a {
     gap: 76px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-76-desktop {
     gap: 76px;
   }
@@ -28043,7 +28043,7 @@ a {
     gap: 77px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-77-desktop {
     gap: 77px;
   }
@@ -28064,7 +28064,7 @@ a {
     gap: 78px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-78-desktop {
     gap: 78px;
   }
@@ -28085,7 +28085,7 @@ a {
     gap: 79px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-79-desktop {
     gap: 79px;
   }
@@ -28106,7 +28106,7 @@ a {
     gap: 80px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-80-desktop {
     gap: 80px;
   }
@@ -28127,7 +28127,7 @@ a {
     gap: 81px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-81-desktop {
     gap: 81px;
   }
@@ -28148,7 +28148,7 @@ a {
     gap: 82px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-82-desktop {
     gap: 82px;
   }
@@ -28169,7 +28169,7 @@ a {
     gap: 83px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-83-desktop {
     gap: 83px;
   }
@@ -28190,7 +28190,7 @@ a {
     gap: 84px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-84-desktop {
     gap: 84px;
   }
@@ -28211,7 +28211,7 @@ a {
     gap: 85px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-85-desktop {
     gap: 85px;
   }
@@ -28232,7 +28232,7 @@ a {
     gap: 86px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-86-desktop {
     gap: 86px;
   }
@@ -28253,7 +28253,7 @@ a {
     gap: 87px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-87-desktop {
     gap: 87px;
   }
@@ -28274,7 +28274,7 @@ a {
     gap: 88px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-88-desktop {
     gap: 88px;
   }
@@ -28295,7 +28295,7 @@ a {
     gap: 89px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-89-desktop {
     gap: 89px;
   }
@@ -28316,7 +28316,7 @@ a {
     gap: 90px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-90-desktop {
     gap: 90px;
   }
@@ -28337,7 +28337,7 @@ a {
     gap: 91px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-91-desktop {
     gap: 91px;
   }
@@ -28358,7 +28358,7 @@ a {
     gap: 92px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-92-desktop {
     gap: 92px;
   }
@@ -28379,7 +28379,7 @@ a {
     gap: 93px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-93-desktop {
     gap: 93px;
   }
@@ -28400,7 +28400,7 @@ a {
     gap: 94px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-94-desktop {
     gap: 94px;
   }
@@ -28421,7 +28421,7 @@ a {
     gap: 95px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-95-desktop {
     gap: 95px;
   }
@@ -28442,7 +28442,7 @@ a {
     gap: 96px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-96-desktop {
     gap: 96px;
   }
@@ -28463,7 +28463,7 @@ a {
     gap: 97px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-97-desktop {
     gap: 97px;
   }
@@ -28484,7 +28484,7 @@ a {
     gap: 98px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-98-desktop {
     gap: 98px;
   }
@@ -28505,7 +28505,7 @@ a {
     gap: 99px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-99-desktop {
     gap: 99px;
   }
@@ -28526,7 +28526,7 @@ a {
     gap: 100px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1407px) {
+@media (min-width: 1024px) {
   .grids.gap-100-desktop {
     gap: 100px;
   }
@@ -28543,7 +28543,7 @@ button {
   cursor: pointer;
   background-color: #fff;
   border-radius: 3px;
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  font-size: clamp(0.95rem, 2.5vw, 1rem);
 }
 button .small {
   font-size: clamp(0.8rem, 2.5vw, 0.9rem);
@@ -28570,7 +28570,7 @@ button.main {
 }
 .field label {
   display: block;
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  font-size: clamp(0.95rem, 2.5vw, 1rem);
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -28608,7 +28608,7 @@ button.main {
 input {
   width: 100%;
   border: 1px solid #dbdbdb;
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  font-size: clamp(0.95rem, 2.5vw, 1rem);
   outline: none;
   box-shadow: none;
   border-radius: 5px;
@@ -28745,7 +28745,7 @@ section {
 }
 
 .section-title {
-  font-size: clamp(1.5rem, 2.5vw, 1.7rem);
+  font-size: clamp(1.3rem, 2.5vw, 1.5rem);
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -28774,27 +28774,41 @@ section {
   display: block;
   aspect-ratio: unset !important;
 }
-.card .card-content .tag-list {
+.card .card-content ul.tag-list {
   display: flex;
   padding: 5px 0;
   margin: 5px 0;
+  text-transform: uppercase;
 }
-.card .card-content .tag-list:not(:last-child) span {
+.card .card-content ul.tag-list li {
   display: flex;
   align-items: center;
 }
-.card .card-content .tag-list:not(:last-child) span::after {
+.card .card-content ul.tag-list li a {
+  text-transform: uppercase !important;
+  transition: all ease-in-out 0.3s;
+  font-size: var(--sm-font);
+}
+.card .card-content ul.tag-list li a:hover {
+  color: var(--sub-color);
+}
+.card .card-content ul.tag-list li:not(:first-child) a {
+  display: flex;
+  align-items: center;
+}
+.card .card-content ul.tag-list li:not(:first-child) a::before {
   content: "";
   width: 1px;
   height: 15px;
-  border-left: 1px solid hsl(0, 0%, 71%);
+  background-color: var(--grey-color);
   display: block;
   margin: 0 8px;
 }
-.card .card-content .tag-list span {
+.card .card-content ul.tag-list span {
+  white-space: pre-line;
   display: flex;
   align-items: center;
-  font-size: clamp(0.7rem, 2.5vw, 0.8rem);
+  font-size: var(--xsm-font);
 }
 .card h3 {
   font-weight: 700;
@@ -28803,7 +28817,7 @@ section {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  font-size: clamp(0.95rem, 2.5vw, 1rem);
 }
 
 @media (max-width: 768px) {

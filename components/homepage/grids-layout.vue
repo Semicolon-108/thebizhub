@@ -10,10 +10,11 @@
                 <img :src="images + i.coverPage" alt="" />
               </div>
               <div class="card-content">
-                <p class="tag-list">
-                  <span v-for="(t, indx) in i.tag" :key="indx">{{ t.name }}</span>
-                  <span v-for="(c, ind) in i.category" :key="ind">{{ c.name }}</span>
-                </p>
+                <ul class="tag-list">
+                  <li v-for="(c, ind) in i.category" :key="ind">
+                    <a>{{ c.name }}</a>
+                  </li>
+                </ul>
                 <h3>{{ i.title }}</h3>
               </div>
             </div>
@@ -26,7 +27,7 @@
 <script setup lang="ts">
 const images = useNuxtApp().$imageURL;
 const props = defineProps(["title", "info"]);
-const router = useRouter()
+const router = useRouter();
 </script>
 <style lang="scss" scoped>
 ul {
@@ -68,32 +69,42 @@ ul {
       }
 
       .card-content {
-        .tag-list {
+        ul.tag-list {
           display: flex;
           padding: 5px 0;
           margin: 5px 0;
+          text-transform: uppercase;
 
-          @include mobile {
-            padding: 0;
-          }
+          li {
+            display: flex;
+            align-items: center;
+            a {
+              text-transform: uppercase !important;
+              transition: all ease-in-out 0.3s;
+              font-size: var(--sm-font);
+              &:hover {
+                color: var(--sub-color);
+              }
+            }
+            &:not(:first-child) {
+              a {
+                display: flex;
+                align-items: center;
 
-          &:not(:last-child) {
-            span {
-              display: flex;
-              align-items: center;
-
-              &::after {
-                content: "";
-                width: 1px;
-                height: 15px;
-                border-left: 1px solid--var(grey-color);
-                display: block;
-                margin: 0 8px;
+                &::before {
+                  content: "";
+                  width: 1px;
+                  height: 15px;
+                  background-color: var(--grey-color);
+                  display: block;
+                  margin: 0 8px;
+                }
               }
             }
           }
 
           span {
+            white-space: pre-line;
             display: flex;
             align-items: center;
             font-size: var(--xsm-font);
