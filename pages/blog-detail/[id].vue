@@ -42,6 +42,7 @@ const route = useRoute();
 const msgError = ref<any>();
 const title = ref<any>();
 const coverPage = ref<any>();
+const videoLink = ref<any>("")
 const tag = ref<any>();
 const category = ref<any>();
 const detail = ref<any>();
@@ -51,25 +52,24 @@ const related = ref<any>([]);
 const fetch = async () => {
   const id = route.params.id;
   if (!id) return;
-  await axios
-    .post(`articles-detail/${id}`)
+  await axios.post(`articles-detail/${id}`)
     .then((res) => {
       if (res.status === 200) {
         title.value = res.data.info.title;
         coverPage.value = res.data.info.coverPage;
+        videoLink.value = res.data.info.videoLink;
         tag.value = res.data.info.tag;
         category.value = res.data.info.category;
         detail.value = res.data.info.details;
         createdAt.value = res.data.info.createdAt;
         related.value = res.data.isRelated;
       }
-    })
-    .catch((e: any) => {
+    }).catch((e: any) => {
       if (e) {
         msgError.value = "Data empty";
       }
-    });
-};
+    })
+}
 
 fetch();
 </script>
