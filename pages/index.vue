@@ -4,11 +4,7 @@
     <WhoWeAre />
     <SmeAndStartup :title="'SME & Startup'" :info="sme" v-show="sme.length" />
     <Story v-show="enterPreInfo.length" :info="enterPreInfo" />
-    <SelftEmployment
-      :title="'Self - Employment'"
-      :info="selftEmpInfo"
-      v-show="selftEmpInfo.length"
-    />
+    <SelftEmployment :title="'Self - Employment'" :info="selftEmpInfo" v-show="selftEmpInfo.length" />
     <Event :info="eventInfo" v-show="eventInfo.length" />
     <BizLaws :info="bizLawInfo" v-show="bizLawInfo.length" />
   </div>
@@ -30,7 +26,7 @@ const eventInfo = ref<any>([]);
 const bizLawInfo = ref<any>([]);
 
 const fetchSME = async () => {
-  const name = "SME & Startup";
+  const name = "651a4c59c2d5c94d6cc3da8a";
   await axios.post(`sme-articles/${name}`).then((res) => {
     if (res.status === 200) {
       sme.value = res.data.info;
@@ -38,7 +34,7 @@ const fetchSME = async () => {
   });
 };
 const fetchEntrepre = async () => {
-  const name = "Entrepreneur’s Story";
+  const name = "651a4ca8c2d5c94d6cc3da9e";
   await axios.post(`reuse-articles/${name}`).then((res) => {
     if (res.status === 200) {
       enterPreInfo.value = res.data.info;
@@ -46,7 +42,7 @@ const fetchEntrepre = async () => {
   });
 };
 const fetchSelftEmp = async () => {
-  const name = "Self-Employment";
+  const name = "651a4cebc2d5c94d6cc3daa7";
   await axios.post(`sme-articles/${name}`).then((res) => {
     if (res.status === 200) {
       selftEmpInfo.value = res.data.info;
@@ -54,7 +50,7 @@ const fetchSelftEmp = async () => {
   });
 };
 const fetchEvent = async () => {
-  const name = "NEWS & EVENT";
+  const name = "651a4d06c2d5c94d6cc3daba";
   await axios.post(`reuse-articles/${name}`).then((res) => {
     if (res.status === 200) {
       eventInfo.value = res.data.info;
@@ -62,7 +58,7 @@ const fetchEvent = async () => {
   });
 };
 const fetchBizLaw = async () => {
-  const name = "BIZ Laws";
+  const name = "651a4d1ac2d5c94d6cc3dac3";
   await axios.post(`reuse-articles/${name}`).then((res) => {
     if (res.status === 200) {
       bizLawInfo.value = res.data.info;

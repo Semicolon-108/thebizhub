@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "date": "2023-10-02T02:17:49.809Z",
-=======
-  "date": "2023-09-28T07:58:08.167Z",
->>>>>>> 84d400822d0fdbb2c7b799037ae6ca16bd93ba6a
+  "date": "2023-10-02T04:47:17.929Z",
   "preset": "node-server",
   "commands": {
     "preview": "node ./server/index.mjs"
