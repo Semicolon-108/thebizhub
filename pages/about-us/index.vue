@@ -35,10 +35,7 @@
         </div>
       </div>
     </section>
-    <img
-      class="top-image"
-      src="https://envato-shoebox-0.imgix.net/4a65/bbee-cd5c-4859-9db4-f17eda923f6f/2439421.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1000&s=c07228076b4d4daa82aa19ee9e50e59d"
-    />
+    <img class="top-image" src="../../assets/images/about-page/team.jpg" />
     <ProductAndServcie />
     <h1 class="section-title">ຜົນງານຂອງ THE BIZ HUB</h1>
     <Works :work="works" />
@@ -54,13 +51,22 @@ const works = ref<any>([
     name: "ຮ່ວມຈັດງານ Job Fest ງານມະຫະກໍາວຽກເຮັດງານທໍາແບບເປີດກ້ວາງ 2023",
     images: [
       {
-        img: "bg.jpg",
+        img: "Jobfest/jobfest20231.jpg",
       },
       {
-        img: "bg.jpg",
+        img: "Jobfest/jobfest20232.jpg",
       },
       {
-        img: "bg.jpg",
+        img: "Jobfest/jobfest20233.jpg",
+      },
+      {
+        img: "Jobfest/jobfest20234.jpg",
+      },
+      {
+        img: "Jobfest/jobfest20235.jpg",
+      },
+      {
+        img: "Jobfest/jobfest20236.jpg",
       },
     ],
   },
@@ -92,9 +98,43 @@ const works = ref<any>([
   },
   {
     name: "ຮ່ວມຈັດງານ ມະຫາກໍາວຽກເຮັດງານທໍາທ່າແຂກ, ແຂວງຄໍາມ່ວນ ແລະ ຈັດຝຶກອົບຮົມ ຫົວຂໍ້: ການປະກອບອາຊີບດ້ວຍຕົນເອງ",
+    images: [
+      {
+        img: "Jobfest/jobfest-thakhek1.jpg",
+      },
+      {
+        img: "Jobfest/jobfest-thakhek2.jpg",
+      },
+      {
+        img: "Jobfest/jobfest-thakhek3.jpg",
+      },
+      {
+        img: "Jobfest/jobfest-thakhek4.jpg",
+      },
+      {
+        img: "Jobfest/jobfest-thakhek5.jpg",
+      },
+      {
+        img: "Jobfest/jobfest-thakhek6.jpg",
+      },
+      {
+        img: "Jobfest/jobfest-thakhek7.jpg",
+      },
+    ],
   },
   {
     name: "ຮ່ວມຈັດງານ ກິດຈະກໍາລະນຶກເຖິງວັນກໍາມະກອນສາກົນ  ແລະ ຈັດຝຶກອົບຮົມ ຫົວຂໍ້: ການປະກອບອາຊີບດ້ວຍຕົນເອງ",
+    images: [
+      {
+        img: "Jobfest/jobfest-labour1.jpg",
+      },
+      {
+        img: "Jobfest/jobfest-labour2.jpg",
+      },
+      {
+        img: "Jobfest/jobfest-labour3.jpg",
+      },
+    ],
   },
   {
     name: "ການຈັດຝຶກອົບຮົມແບບເຊິ່ງໜ້າ",
@@ -165,7 +205,7 @@ const works = ref<any>([
 .top-image {
   display: block;
   width: 100%;
-  aspect-ratio: 16/5;
+  aspect-ratio: 16/9;
   object-fit: cover;
   background-position: center;
 }
