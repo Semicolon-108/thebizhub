@@ -62,6 +62,7 @@
 </template>
 
 <script setup lang="ts">
+
 import Releted from "./related.vue";
 const imageURL = useNuxtApp().$imageURL;
 const axios = useNuxtApp().$axios;
@@ -99,7 +100,11 @@ const fetch = async () => {
     })
 }
 fetch();
-
+useHead({
+  meta: [
+    { name: title.value, content: 'title' }
+  ],
+})
 </script>
 
 <style lang="scss" scoped>

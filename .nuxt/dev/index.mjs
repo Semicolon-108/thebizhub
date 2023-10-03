@@ -974,7 +974,7 @@ const renderer$1 = /*#__PURE__*/Object.freeze({
   default: renderer
 });
 
-const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<title>Thebizhub</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"Thebizhub\" content=\"thebizhub bizhub\">\n<link rel=\"icon\" type=\"image/png\" href=\"/favicon.ico\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
+const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<title>TheBIZHub</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"viewport\" viewport=\"width=device-width, initial-scale=1\">\n<meta name=\"TheBizhub\" content=\"thebizhub bizhub\">\n<meta property=\"og:title\" content=\"thebizhub.la\">\n<meta name=\"keywords\" content=\"thebizhub, Thebizhub, TheBizHub, thebizhub.la, Thebizhub.la, Bizhub, bizhub.la\">\n<link rel=\"icon\" type=\"image/png\" href=\"/favicon.ico\">\n<script src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8866188728269533\" async=\"\"></script>","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
 
 const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,
