@@ -12,7 +12,7 @@
     "jsxFragmentFactory": "Fragment",
     "paths": {
       "#imports": [
-        "D:/Thebizhub/thebizhub/.nuxt/types/nitro-imports"
+        "C:/Code/thebizhub/.nuxt/types/nitro-imports"
       ]
     }
   },

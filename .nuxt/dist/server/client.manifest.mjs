@@ -6,10 +6,10 @@ export default {
     "module": true,
     "resourceType": "script"
   },
-  "D:/Thebizhub/thebizhub/node_modules/nuxt/dist/app/entry.js": {
+  "C:/Code/thebizhub/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "isEntry": true,
-    "file": "D:/Thebizhub/thebizhub/node_modules/nuxt/dist/app/entry.js"
+    "file": "C:/Code/thebizhub/node_modules/nuxt/dist/app/entry.js"
   }
 }
