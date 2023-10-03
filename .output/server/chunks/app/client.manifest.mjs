@@ -1,11 +1,26 @@
 const client_manifest = {
-  "_info-box.fc031db5.js": {
+  "_card-list.1b66cdcb.js": {
+    "resourceType": "script",
+    "module": true,
+    "css": [
+      "card-list.e8a31d82.css"
+    ],
+    "file": "card-list.1b66cdcb.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "card-list.e8a31d82.css": {
+    "file": "card-list.e8a31d82.css",
+    "resourceType": "style"
+  },
+  "_info-box.fe5a98a7.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "info-box.f67ba7a8.css"
     ],
-    "file": "info-box.fc031db5.js",
+    "file": "info-box.fe5a98a7.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -14,13 +29,37 @@ const client_manifest = {
     "file": "info-box.f67ba7a8.css",
     "resourceType": "style"
   },
-  "_nuxt-link.d96399bd.js": {
+  "_nuxt-link.e252dac9.js": {
     "resourceType": "script",
     "module": true,
-    "file": "nuxt-link.d96399bd.js",
+    "file": "nuxt-link.e252dac9.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
+  },
+  "_related.vue.2747ceb0.js": {
+    "resourceType": "script",
+    "module": true,
+    "file": "related.vue.2747ceb0.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_team.9d21a3fb.js": {
+    "resourceType": "script",
+    "module": true,
+    "assets": [
+      "team.ae182b55.jpg"
+    ],
+    "file": "team.9d21a3fb.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "team.ae182b55.jpg": {
+    "file": "team.ae182b55.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
   },
   "assets/images/Logo.png": {
     "resourceType": "image",
@@ -28,41 +67,371 @@ const client_manifest = {
     "file": "Logo.d939d081.png",
     "src": "assets/images/Logo.png"
   },
-  "assets/images/about.png": {
+  "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.24.41.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "WhatsApp Image 2023-09-01 at 11.24.41.80d999c9.jpg",
+    "src": "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.24.41.jpg"
+  },
+  "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.24.42.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "WhatsApp Image 2023-09-01 at 11.24.42.a2211ef1.jpg",
+    "src": "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.24.42.jpg"
+  },
+  "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.24.46.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "WhatsApp Image 2023-09-01 at 11.24.46.2a8a8271.jpg",
+    "src": "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.24.46.jpg"
+  },
+  "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.24.48.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "WhatsApp Image 2023-09-01 at 11.24.48.644fd768.jpg",
+    "src": "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.24.48.jpg"
+  },
+  "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.29.44.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "WhatsApp Image 2023-09-01 at 11.29.44.8df76345.jpg",
+    "src": "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.29.44.jpg"
+  },
+  "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.29.45.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "WhatsApp Image 2023-09-01 at 11.29.45.3f4a070a.jpg",
+    "src": "assets/images/about-page/ESDG/WhatsApp Image 2023-09-01 at 11.29.45.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest-labour1.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest-labour1.ab12b064.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest-labour1.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest-labour2.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest-labour2.b2c1da92.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest-labour2.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest-labour3.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest-labour3.223d3276.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest-labour3.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest-thakhek1.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest-thakhek1.4048ed3c.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest-thakhek1.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest-thakhek2.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest-thakhek2.90f8f744.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest-thakhek2.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest-thakhek3.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest-thakhek3.bc27ba07.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest-thakhek3.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest-thakhek4.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest-thakhek4.1f4715b3.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest-thakhek4.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest-thakhek5.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest-thakhek5.827bea5c.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest-thakhek5.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest-thakhek6.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest-thakhek6.99129145.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest-thakhek6.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest-thakhek7.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest-thakhek7.ba439c46.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest-thakhek7.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest20231.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest20231.ce29ac37.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest20231.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest20232.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest20232.38fa5f41.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest20232.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest20233.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest20233.8ca4df30.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest20233.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest20234.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest20234.ced100a7.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest20234.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest20235.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest20235.6a33d50c.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest20235.jpg"
+  },
+  "assets/images/about-page/Jobfest/jobfest20236.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "jobfest20236.3a480678.jpg",
+    "src": "assets/images/about-page/Jobfest/jobfest20236.jpg"
+  },
+  "assets/images/about-page/Online/1 (1).jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "1 (1).2a0dae0b.jpg",
+    "src": "assets/images/about-page/Online/1 (1).jpg"
+  },
+  "assets/images/about-page/Online/2.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "2.a8585375.jpg",
+    "src": "assets/images/about-page/Online/2.jpg"
+  },
+  "assets/images/about-page/Online/Screenshot (18).png": {
     "resourceType": "image",
     "mimeType": "image/png",
-    "file": "about.faed9c12.png",
-    "src": "assets/images/about.png"
+    "file": "Screenshot (18).1f5827c6.png",
+    "src": "assets/images/about-page/Online/Screenshot (18).png"
+  },
+  "assets/images/about-page/Online/Screenshot (6).png": {
+    "resourceType": "image",
+    "mimeType": "image/png",
+    "file": "Screenshot (6).f1149deb.png",
+    "src": "assets/images/about-page/Online/Screenshot (6).png"
+  },
+  "assets/images/about-page/SoGoodFair/346988702_651501466817597_4251829547740352147_n.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "346988702_651501466817597_4251829547740352147_n.6d60b829.jpg",
+    "src": "assets/images/about-page/SoGoodFair/346988702_651501466817597_4251829547740352147_n.jpg"
+  },
+  "assets/images/about-page/SoGoodFair/347593834_566541415666720_7988247518585961547_n.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "347593834_566541415666720_7988247518585961547_n.7aecbf84.jpg",
+    "src": "assets/images/about-page/SoGoodFair/347593834_566541415666720_7988247518585961547_n.jpg"
+  },
+  "assets/images/about-page/SoGoodFair/347602579_1427841927981451_8406645353514792967_n.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "347602579_1427841927981451_8406645353514792967_n.9979a6ff.jpg",
+    "src": "assets/images/about-page/SoGoodFair/347602579_1427841927981451_8406645353514792967_n.jpg"
+  },
+  "assets/images/about-page/SoGoodFair/347611587_2453856644779275_4021431407894474380_n.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "347611587_2453856644779275_4021431407894474380_n.8cc5f0ba.jpg",
+    "src": "assets/images/about-page/SoGoodFair/347611587_2453856644779275_4021431407894474380_n.jpg"
+  },
+  "assets/images/about-page/WINGS/314944180_426395489701676_5063993454432956773_n (1).jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "314944180_426395489701676_5063993454432956773_n (1).765e2bc5.jpg",
+    "src": "assets/images/about-page/WINGS/314944180_426395489701676_5063993454432956773_n (1).jpg"
+  },
+  "assets/images/about-page/WINGS/314944209_426400639701161_3182658039788438849_n (1).jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "314944209_426400639701161_3182658039788438849_n (1).1e5aaff1.jpg",
+    "src": "assets/images/about-page/WINGS/314944209_426400639701161_3182658039788438849_n (1).jpg"
+  },
+  "assets/images/about-page/WINGS/314952926_426403913034167_4370288741922979927_n.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "314952926_426403913034167_4370288741922979927_n.70d57883.jpg",
+    "src": "assets/images/about-page/WINGS/314952926_426403913034167_4370288741922979927_n.jpg"
+  },
+  "assets/images/about-page/WINGS/315026927_426393946368497_8408788090209316850_n.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "315026927_426393946368497_8408788090209316850_n.70ec49ce.jpg",
+    "src": "assets/images/about-page/WINGS/315026927_426393946368497_8408788090209316850_n.jpg"
+  },
+  "assets/images/about-page/WINGS/316526601_437149161959642_7944801659565772095_n.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "316526601_437149161959642_7944801659565772095_n.839dc9fa.jpg",
+    "src": "assets/images/about-page/WINGS/316526601_437149161959642_7944801659565772095_n.jpg"
+  },
+  "assets/images/about-page/WINGS/316542819_437152118626013_73153722592692895_n.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "316542819_437152118626013_73153722592692895_n.c83ff08c.jpg",
+    "src": "assets/images/about-page/WINGS/316542819_437152118626013_73153722592692895_n.jpg"
+  },
+  "assets/images/about-page/WINGS/316554678_437147545293137_1065244526038064300_n.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "316554678_437147545293137_1065244526038064300_n.80a8d4a0.jpg",
+    "src": "assets/images/about-page/WINGS/316554678_437147545293137_1065244526038064300_n.jpg"
+  },
+  "assets/images/about-page/WINGS/316689269_437152305292661_1561053510148457192_n.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "316689269_437152305292661_1561053510148457192_n.c240d4c2.jpg",
+    "src": "assets/images/about-page/WINGS/316689269_437152305292661_1561053510148457192_n.jpg"
+  },
+  "assets/images/about-page/amen/amen1.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "amen1.f2be4c32.jpg",
+    "src": "assets/images/about-page/amen/amen1.jpg"
+  },
+  "assets/images/about-page/amen/amen2.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "amen2.e0210399.jpg",
+    "src": "assets/images/about-page/amen/amen2.jpg"
+  },
+  "assets/images/about-page/amen/amen3.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "amen3.88116e2f.jpg",
+    "src": "assets/images/about-page/amen/amen3.jpg"
+  },
+  "assets/images/about-page/amen/amen4.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "amen4.aab1d5cc.jpg",
+    "src": "assets/images/about-page/amen/amen4.jpg"
+  },
+  "assets/images/about-page/amen/amen5.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "amen5.bd9aae97.jpg",
+    "src": "assets/images/about-page/amen/amen5.jpg"
+  },
+  "assets/images/about-page/amen/amen6.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "amen6.49b7233d.jpg",
+    "src": "assets/images/about-page/amen/amen6.jpg"
+  },
+  "assets/images/about-page/amen/amen7.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "amen7.2f5e4fbd.jpg",
+    "src": "assets/images/about-page/amen/amen7.jpg"
+  },
+  "assets/images/about-page/bet/bet1.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "bet1.a45f6907.jpg",
+    "src": "assets/images/about-page/bet/bet1.jpg"
+  },
+  "assets/images/about-page/bet/bet10.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "bet10.7b353ef5.jpg",
+    "src": "assets/images/about-page/bet/bet10.jpg"
+  },
+  "assets/images/about-page/bet/bet2.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "bet2.f019a80f.jpg",
+    "src": "assets/images/about-page/bet/bet2.jpg"
+  },
+  "assets/images/about-page/bet/bet3.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "bet3.8ba94761.jpg",
+    "src": "assets/images/about-page/bet/bet3.jpg"
+  },
+  "assets/images/about-page/bet/bet4.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "bet4.c5c5db17.jpg",
+    "src": "assets/images/about-page/bet/bet4.jpg"
+  },
+  "assets/images/about-page/bet/bet5.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "bet5.dfd464de.jpg",
+    "src": "assets/images/about-page/bet/bet5.jpg"
+  },
+  "assets/images/about-page/bet/bet6.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "bet6.40ae2ff3.jpg",
+    "src": "assets/images/about-page/bet/bet6.jpg"
+  },
+  "assets/images/about-page/bet/bet7.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "bet7.871ba50d.jpg",
+    "src": "assets/images/about-page/bet/bet7.jpg"
+  },
+  "assets/images/about-page/bet/bet8.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "bet8.ff5871c2.jpg",
+    "src": "assets/images/about-page/bet/bet8.jpg"
+  },
+  "assets/images/about-page/bet/bet9.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "bet9.5e270ef3.jpg",
+    "src": "assets/images/about-page/bet/bet9.jpg"
+  },
+  "assets/images/about-page/coaching/coaching1.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "coaching1.15e19df4.jpg",
+    "src": "assets/images/about-page/coaching/coaching1.jpg"
+  },
+  "assets/images/about-page/coaching/coaching2.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "coaching2.f3e91453.jpg",
+    "src": "assets/images/about-page/coaching/coaching2.jpg"
+  },
+  "assets/images/about-page/coaching/coaching3.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "coaching3.4a2a589f.jpg",
+    "src": "assets/images/about-page/coaching/coaching3.jpg"
+  },
+  "assets/images/about-page/coaching/coaching4.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "coaching4.1ebc6ea1.jpg",
+    "src": "assets/images/about-page/coaching/coaching4.jpg"
+  },
+  "assets/images/about-page/team.jpg": {
+    "resourceType": "image",
+    "mimeType": "image/jpeg",
+    "file": "team.ae182b55.jpg",
+    "src": "assets/images/about-page/team.jpg"
   },
   "assets/images/bg.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
     "file": "bg.d71fbcd2.jpg",
     "src": "assets/images/bg.jpg"
-  },
-  "assets/images/img-05.jpg": {
-    "resourceType": "image",
-    "mimeType": "image/jpeg",
-    "file": "img-05.7f30b395.jpg",
-    "src": "assets/images/img-05.jpg"
-  },
-  "assets/images/img-06.jpg": {
-    "resourceType": "image",
-    "mimeType": "image/jpeg",
-    "file": "img-06.d615458b.jpg",
-    "src": "assets/images/img-06.jpg"
-  },
-  "assets/images/img-08.jpg": {
-    "resourceType": "image",
-    "mimeType": "image/jpeg",
-    "file": "img-08.41fcd570.jpg",
-    "src": "assets/images/img-08.jpg"
-  },
-  "assets/images/img-09.jpg": {
-    "resourceType": "image",
-    "mimeType": "image/jpeg",
-    "file": "img-09.94201e68.jpg",
-    "src": "assets/images/img-09.jpg"
   },
   "assets/images/thebizhub-logo.jpg": {
     "resourceType": "image",
@@ -145,110 +514,103 @@ const client_manifest = {
   "assets/webfonts/fa-brands-400.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
-    "file": "fa-brands-400.01711d34.ttf",
+    "file": "fa-brands-400.0726ff45.ttf",
     "src": "assets/webfonts/fa-brands-400.ttf"
-  },
-  "assets/webfonts/fa-brands-400.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "fa-brands-400.1a199a66.woff",
-    "src": "assets/webfonts/fa-brands-400.woff"
   },
   "assets/webfonts/fa-brands-400.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "fa-brands-400.ec2e22fd.woff2",
+    "file": "fa-brands-400.7b17fce6.woff2",
     "src": "assets/webfonts/fa-brands-400.woff2"
   },
   "assets/webfonts/fa-duotone-900.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
-    "file": "fa-duotone-900.d98f270f.ttf",
+    "file": "fa-duotone-900.7d194c5b.ttf",
     "src": "assets/webfonts/fa-duotone-900.ttf"
-  },
-  "assets/webfonts/fa-duotone-900.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "fa-duotone-900.b8556db4.woff",
-    "src": "assets/webfonts/fa-duotone-900.woff"
   },
   "assets/webfonts/fa-duotone-900.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "fa-duotone-900.e228b909.woff2",
+    "file": "fa-duotone-900.fc69a3f7.woff2",
     "src": "assets/webfonts/fa-duotone-900.woff2"
   },
   "assets/webfonts/fa-light-300.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
-    "file": "fa-light-300.470ba5e8.ttf",
+    "file": "fa-light-300.a518c2e1.ttf",
     "src": "assets/webfonts/fa-light-300.ttf"
-  },
-  "assets/webfonts/fa-light-300.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "fa-light-300.a7dbdfa8.woff",
-    "src": "assets/webfonts/fa-light-300.woff"
   },
   "assets/webfonts/fa-light-300.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "fa-light-300.2dc0e215.woff2",
+    "file": "fa-light-300.e1ad92ed.woff2",
     "src": "assets/webfonts/fa-light-300.woff2"
   },
   "assets/webfonts/fa-regular-400.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
-    "file": "fa-regular-400.84575bae.ttf",
+    "file": "fa-regular-400.c262547c.ttf",
     "src": "assets/webfonts/fa-regular-400.ttf"
-  },
-  "assets/webfonts/fa-regular-400.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "fa-regular-400.c169747d.woff",
-    "src": "assets/webfonts/fa-regular-400.woff"
   },
   "assets/webfonts/fa-regular-400.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "fa-regular-400.ec686d10.woff2",
+    "file": "fa-regular-400.4bb4c355.woff2",
     "src": "assets/webfonts/fa-regular-400.woff2"
+  },
+  "assets/webfonts/fa-sharp-solid-900.ttf": {
+    "resourceType": "font",
+    "mimeType": "font/ttf",
+    "file": "fa-sharp-solid-900.ef651aac.ttf",
+    "src": "assets/webfonts/fa-sharp-solid-900.ttf"
+  },
+  "assets/webfonts/fa-sharp-solid-900.woff2": {
+    "resourceType": "font",
+    "mimeType": "font/woff2",
+    "file": "fa-sharp-solid-900.8bf483a2.woff2",
+    "src": "assets/webfonts/fa-sharp-solid-900.woff2"
   },
   "assets/webfonts/fa-solid-900.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
-    "file": "fa-solid-900.c3ecc5fe.ttf",
+    "file": "fa-solid-900.c52f0989.ttf",
     "src": "assets/webfonts/fa-solid-900.ttf"
-  },
-  "assets/webfonts/fa-solid-900.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "fa-solid-900.85528db3.woff",
-    "src": "assets/webfonts/fa-solid-900.woff"
   },
   "assets/webfonts/fa-solid-900.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "fa-solid-900.68eb827a.woff2",
+    "file": "fa-solid-900.c0fd7653.woff2",
     "src": "assets/webfonts/fa-solid-900.woff2"
   },
   "assets/webfonts/fa-thin-100.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
-    "file": "fa-thin-100.c5da54a7.ttf",
+    "file": "fa-thin-100.679c81cf.ttf",
     "src": "assets/webfonts/fa-thin-100.ttf"
-  },
-  "assets/webfonts/fa-thin-100.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "fa-thin-100.fde6ef1c.woff",
-    "src": "assets/webfonts/fa-thin-100.woff"
   },
   "assets/webfonts/fa-thin-100.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "fa-thin-100.8f2c37e7.woff2",
+    "file": "fa-thin-100.64cbd3b0.woff2",
     "src": "assets/webfonts/fa-thin-100.woff2"
+  },
+  "assets/webfonts/fa-v4compatibility.ttf": {
+    "resourceType": "font",
+    "mimeType": "font/ttf",
+    "file": "fa-v4compatibility.cacf649a.ttf",
+    "src": "assets/webfonts/fa-v4compatibility.ttf"
+  },
+  "assets/webfonts/fa-v4compatibility.woff2": {
+    "resourceType": "font",
+    "mimeType": "font/woff2",
+    "file": "fa-v4compatibility.aacd78cf.woff2",
+    "src": "assets/webfonts/fa-v4compatibility.woff2"
+  },
+  "card-list.css": {
+    "resourceType": "style",
+    "file": "card-list.e8a31d82.css",
+    "src": "card-list.css"
   },
   "info-box.css": {
     "resourceType": "style",
@@ -257,7 +619,7 @@ const client_manifest = {
   },
   "layouts/main.css": {
     "resourceType": "style",
-    "file": "main.5b12a141.css",
+    "file": "main.dcbb061e.css",
     "src": "layouts/main.css"
   },
   "layouts/main.vue": {
@@ -269,18 +631,18 @@ const client_manifest = {
       "bg.d71fbcd2.jpg"
     ],
     "css": [
-      "main.5b12a141.css"
+      "main.dcbb061e.css"
     ],
-    "file": "main.57028c37.js",
+    "file": "main.d108ba9a.js",
     "imports": [
-      "_nuxt-link.d96399bd.js",
+      "_nuxt-link.e252dac9.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "layouts/main.vue"
   },
-  "main.5b12a141.css": {
-    "file": "main.5b12a141.css",
+  "main.dcbb061e.css": {
+    "file": "main.dcbb061e.css",
     "resourceType": "style"
   },
   "thebizhub-logo.b61d510f.jpg": {
@@ -309,9 +671,9 @@ const client_manifest = {
     "css": [
       "error-404.23f2309d.css"
     ],
-    "file": "error-404.b5dfdd58.js",
+    "file": "error-404.b5c125db.js",
     "imports": [
-      "_nuxt-link.d96399bd.js",
+      "_nuxt-link.e252dac9.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -332,7 +694,7 @@ const client_manifest = {
     "css": [
       "error-500.aa16ed4d.css"
     ],
-    "file": "error-500.e4b98281.js",
+    "file": "error-500.acdd961d.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -345,7 +707,7 @@ const client_manifest = {
   },
   "node_modules/nuxt/dist/app/entry.css": {
     "resourceType": "style",
-    "file": "entry.d5b7e25d.css",
+    "file": "entry.a1cda387.css",
     "src": "node_modules/nuxt/dist/app/entry.css"
   },
   "node_modules/nuxt/dist/app/entry.js": {
@@ -364,38 +726,36 @@ const client_manifest = {
       "Nuanta-Bold.b3349f0d.woff2",
       "Nuanta-Bold.b163285d.woff",
       "Nuanta-Bold.5aa64b5f.ttf",
-      "fa-brands-400.ec2e22fd.woff2",
-      "fa-brands-400.1a199a66.woff",
-      "fa-brands-400.01711d34.ttf",
-      "fa-duotone-900.e228b909.woff2",
-      "fa-duotone-900.b8556db4.woff",
-      "fa-duotone-900.d98f270f.ttf",
-      "fa-light-300.2dc0e215.woff2",
-      "fa-light-300.a7dbdfa8.woff",
-      "fa-light-300.470ba5e8.ttf",
-      "fa-regular-400.ec686d10.woff2",
-      "fa-regular-400.c169747d.woff",
-      "fa-regular-400.84575bae.ttf",
-      "fa-solid-900.68eb827a.woff2",
-      "fa-solid-900.85528db3.woff",
-      "fa-solid-900.c3ecc5fe.ttf",
-      "fa-thin-100.8f2c37e7.woff2",
-      "fa-thin-100.fde6ef1c.woff",
-      "fa-thin-100.c5da54a7.ttf"
+      "fa-brands-400.7b17fce6.woff2",
+      "fa-brands-400.0726ff45.ttf",
+      "fa-duotone-900.fc69a3f7.woff2",
+      "fa-duotone-900.7d194c5b.ttf",
+      "fa-light-300.e1ad92ed.woff2",
+      "fa-light-300.a518c2e1.ttf",
+      "fa-regular-400.4bb4c355.woff2",
+      "fa-regular-400.c262547c.ttf",
+      "fa-solid-900.c0fd7653.woff2",
+      "fa-solid-900.c52f0989.ttf",
+      "fa-thin-100.64cbd3b0.woff2",
+      "fa-thin-100.679c81cf.ttf",
+      "fa-v4compatibility.aacd78cf.woff2",
+      "fa-v4compatibility.cacf649a.ttf",
+      "fa-sharp-solid-900.8bf483a2.woff2",
+      "fa-sharp-solid-900.ef651aac.ttf"
     ],
     "css": [
-      "entry.d5b7e25d.css"
+      "entry.a1cda387.css"
     ],
     "dynamicImports": [
       "layouts/main.vue",
-      "virtual:nuxt:C:/Code/thebizhub/.nuxt/error-component.mjs"
+      "virtual:nuxt:D:/Thebizhub/thebizhub/.nuxt/error-component.mjs"
     ],
-    "file": "entry.d86015b9.js",
+    "file": "entry.ec7abcfb.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js"
   },
-  "entry.d5b7e25d.css": {
-    "file": "entry.d5b7e25d.css",
+  "entry.a1cda387.css": {
+    "file": "entry.a1cda387.css",
     "resourceType": "style"
   },
   "Roboto-Light.c576c506.ttf": {
@@ -458,109 +818,100 @@ const client_manifest = {
     "resourceType": "font",
     "mimeType": "font/ttf"
   },
-  "fa-brands-400.ec2e22fd.woff2": {
-    "file": "fa-brands-400.ec2e22fd.woff2",
+  "fa-brands-400.7b17fce6.woff2": {
+    "file": "fa-brands-400.7b17fce6.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "fa-brands-400.1a199a66.woff": {
-    "file": "fa-brands-400.1a199a66.woff",
-    "resourceType": "font",
-    "mimeType": "font/woff"
-  },
-  "fa-brands-400.01711d34.ttf": {
-    "file": "fa-brands-400.01711d34.ttf",
+  "fa-brands-400.0726ff45.ttf": {
+    "file": "fa-brands-400.0726ff45.ttf",
     "resourceType": "font",
     "mimeType": "font/ttf"
   },
-  "fa-duotone-900.e228b909.woff2": {
-    "file": "fa-duotone-900.e228b909.woff2",
+  "fa-duotone-900.fc69a3f7.woff2": {
+    "file": "fa-duotone-900.fc69a3f7.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "fa-duotone-900.b8556db4.woff": {
-    "file": "fa-duotone-900.b8556db4.woff",
-    "resourceType": "font",
-    "mimeType": "font/woff"
-  },
-  "fa-duotone-900.d98f270f.ttf": {
-    "file": "fa-duotone-900.d98f270f.ttf",
+  "fa-duotone-900.7d194c5b.ttf": {
+    "file": "fa-duotone-900.7d194c5b.ttf",
     "resourceType": "font",
     "mimeType": "font/ttf"
   },
-  "fa-light-300.2dc0e215.woff2": {
-    "file": "fa-light-300.2dc0e215.woff2",
+  "fa-light-300.e1ad92ed.woff2": {
+    "file": "fa-light-300.e1ad92ed.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "fa-light-300.a7dbdfa8.woff": {
-    "file": "fa-light-300.a7dbdfa8.woff",
-    "resourceType": "font",
-    "mimeType": "font/woff"
-  },
-  "fa-light-300.470ba5e8.ttf": {
-    "file": "fa-light-300.470ba5e8.ttf",
+  "fa-light-300.a518c2e1.ttf": {
+    "file": "fa-light-300.a518c2e1.ttf",
     "resourceType": "font",
     "mimeType": "font/ttf"
   },
-  "fa-regular-400.ec686d10.woff2": {
-    "file": "fa-regular-400.ec686d10.woff2",
+  "fa-regular-400.4bb4c355.woff2": {
+    "file": "fa-regular-400.4bb4c355.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "fa-regular-400.c169747d.woff": {
-    "file": "fa-regular-400.c169747d.woff",
-    "resourceType": "font",
-    "mimeType": "font/woff"
-  },
-  "fa-regular-400.84575bae.ttf": {
-    "file": "fa-regular-400.84575bae.ttf",
+  "fa-regular-400.c262547c.ttf": {
+    "file": "fa-regular-400.c262547c.ttf",
     "resourceType": "font",
     "mimeType": "font/ttf"
   },
-  "fa-solid-900.68eb827a.woff2": {
-    "file": "fa-solid-900.68eb827a.woff2",
+  "fa-solid-900.c0fd7653.woff2": {
+    "file": "fa-solid-900.c0fd7653.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "fa-solid-900.85528db3.woff": {
-    "file": "fa-solid-900.85528db3.woff",
-    "resourceType": "font",
-    "mimeType": "font/woff"
-  },
-  "fa-solid-900.c3ecc5fe.ttf": {
-    "file": "fa-solid-900.c3ecc5fe.ttf",
+  "fa-solid-900.c52f0989.ttf": {
+    "file": "fa-solid-900.c52f0989.ttf",
     "resourceType": "font",
     "mimeType": "font/ttf"
   },
-  "fa-thin-100.8f2c37e7.woff2": {
-    "file": "fa-thin-100.8f2c37e7.woff2",
+  "fa-thin-100.64cbd3b0.woff2": {
+    "file": "fa-thin-100.64cbd3b0.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "fa-thin-100.fde6ef1c.woff": {
-    "file": "fa-thin-100.fde6ef1c.woff",
+  "fa-thin-100.679c81cf.ttf": {
+    "file": "fa-thin-100.679c81cf.ttf",
     "resourceType": "font",
-    "mimeType": "font/woff"
+    "mimeType": "font/ttf"
   },
-  "fa-thin-100.c5da54a7.ttf": {
-    "file": "fa-thin-100.c5da54a7.ttf",
+  "fa-v4compatibility.aacd78cf.woff2": {
+    "file": "fa-v4compatibility.aacd78cf.woff2",
+    "resourceType": "font",
+    "mimeType": "font/woff2"
+  },
+  "fa-v4compatibility.cacf649a.ttf": {
+    "file": "fa-v4compatibility.cacf649a.ttf",
+    "resourceType": "font",
+    "mimeType": "font/ttf"
+  },
+  "fa-sharp-solid-900.8bf483a2.woff2": {
+    "file": "fa-sharp-solid-900.8bf483a2.woff2",
+    "resourceType": "font",
+    "mimeType": "font/woff2"
+  },
+  "fa-sharp-solid-900.ef651aac.ttf": {
+    "file": "fa-sharp-solid-900.ef651aac.ttf",
     "resourceType": "font",
     "mimeType": "font/ttf"
   },
   "pages/about-us/index.css": {
     "resourceType": "style",
-    "file": "index.746cc009.css",
+    "file": "index.a3596bce.css",
     "src": "pages/about-us/index.css"
   },
   "pages/about-us/index.vue": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "index.746cc009.css"
+      "index.a3596bce.css"
     ],
-    "file": "index.0765290e.js",
+    "file": "index.4aaeed37.js",
     "imports": [
+      "_team.9d21a3fb.js",
       "pages/about-us/product-and-services.vue",
       "pages/about-us/works.vue",
       "node_modules/nuxt/dist/app/entry.js"
@@ -568,8 +919,8 @@ const client_manifest = {
     "isDynamicEntry": true,
     "src": "pages/about-us/index.vue"
   },
-  "index.746cc009.css": {
-    "file": "index.746cc009.css",
+  "index.a3596bce.css": {
+    "file": "index.a3596bce.css",
     "resourceType": "style"
   },
   "pages/about-us/product-and-services.css": {
@@ -583,7 +934,7 @@ const client_manifest = {
     "css": [
       "product-and-services.0678765f.css"
     ],
-    "file": "product-and-services.a945b46a.js",
+    "file": "product-and-services.f63c8c96.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -596,25 +947,382 @@ const client_manifest = {
   },
   "pages/about-us/works.css": {
     "resourceType": "style",
-    "file": "works.51033d6d.css",
+    "file": "works.7f11f9f0.css",
     "src": "pages/about-us/works.css"
   },
   "pages/about-us/works.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [
-      "works.51033d6d.css"
+    "assets": [
+      "WhatsApp Image 2023-09-01 at 11.24.41.80d999c9.jpg",
+      "WhatsApp Image 2023-09-01 at 11.24.42.a2211ef1.jpg",
+      "WhatsApp Image 2023-09-01 at 11.24.46.2a8a8271.jpg",
+      "WhatsApp Image 2023-09-01 at 11.24.48.644fd768.jpg",
+      "WhatsApp Image 2023-09-01 at 11.29.44.8df76345.jpg",
+      "WhatsApp Image 2023-09-01 at 11.29.45.3f4a070a.jpg",
+      "jobfest-labour1.ab12b064.jpg",
+      "jobfest-labour2.b2c1da92.jpg",
+      "jobfest-labour3.223d3276.jpg",
+      "jobfest-thakhek1.4048ed3c.jpg",
+      "jobfest-thakhek2.90f8f744.jpg",
+      "jobfest-thakhek3.bc27ba07.jpg",
+      "jobfest-thakhek4.1f4715b3.jpg",
+      "jobfest-thakhek5.827bea5c.jpg",
+      "jobfest-thakhek6.99129145.jpg",
+      "jobfest-thakhek7.ba439c46.jpg",
+      "jobfest20231.ce29ac37.jpg",
+      "jobfest20232.38fa5f41.jpg",
+      "jobfest20233.8ca4df30.jpg",
+      "jobfest20234.ced100a7.jpg",
+      "jobfest20235.6a33d50c.jpg",
+      "jobfest20236.3a480678.jpg",
+      "1 (1).2a0dae0b.jpg",
+      "2.a8585375.jpg",
+      "Screenshot (18).1f5827c6.png",
+      "Screenshot (6).f1149deb.png",
+      "346988702_651501466817597_4251829547740352147_n.6d60b829.jpg",
+      "347593834_566541415666720_7988247518585961547_n.7aecbf84.jpg",
+      "347602579_1427841927981451_8406645353514792967_n.9979a6ff.jpg",
+      "347611587_2453856644779275_4021431407894474380_n.8cc5f0ba.jpg",
+      "314944180_426395489701676_5063993454432956773_n (1).765e2bc5.jpg",
+      "314944209_426400639701161_3182658039788438849_n (1).1e5aaff1.jpg",
+      "314952926_426403913034167_4370288741922979927_n.70d57883.jpg",
+      "315026927_426393946368497_8408788090209316850_n.70ec49ce.jpg",
+      "316526601_437149161959642_7944801659565772095_n.839dc9fa.jpg",
+      "316542819_437152118626013_73153722592692895_n.c83ff08c.jpg",
+      "316554678_437147545293137_1065244526038064300_n.80a8d4a0.jpg",
+      "316689269_437152305292661_1561053510148457192_n.c240d4c2.jpg",
+      "amen1.f2be4c32.jpg",
+      "amen2.e0210399.jpg",
+      "amen3.88116e2f.jpg",
+      "amen4.aab1d5cc.jpg",
+      "amen5.bd9aae97.jpg",
+      "amen6.49b7233d.jpg",
+      "amen7.2f5e4fbd.jpg",
+      "bet1.a45f6907.jpg",
+      "bet10.7b353ef5.jpg",
+      "bet2.f019a80f.jpg",
+      "bet3.8ba94761.jpg",
+      "bet4.c5c5db17.jpg",
+      "bet5.dfd464de.jpg",
+      "bet6.40ae2ff3.jpg",
+      "bet7.871ba50d.jpg",
+      "bet8.ff5871c2.jpg",
+      "bet9.5e270ef3.jpg",
+      "coaching1.15e19df4.jpg",
+      "coaching2.f3e91453.jpg",
+      "coaching3.4a2a589f.jpg",
+      "coaching4.1ebc6ea1.jpg",
+      "team.ae182b55.jpg"
     ],
-    "file": "works.5d658d6e.js",
+    "css": [
+      "works.7f11f9f0.css"
+    ],
+    "file": "works.18a4d043.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/about-us/works.vue"
   },
-  "works.51033d6d.css": {
-    "file": "works.51033d6d.css",
+  "works.7f11f9f0.css": {
+    "file": "works.7f11f9f0.css",
     "resourceType": "style"
+  },
+  "WhatsApp Image 2023-09-01 at 11.24.41.80d999c9.jpg": {
+    "file": "WhatsApp Image 2023-09-01 at 11.24.41.80d999c9.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "WhatsApp Image 2023-09-01 at 11.24.42.a2211ef1.jpg": {
+    "file": "WhatsApp Image 2023-09-01 at 11.24.42.a2211ef1.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "WhatsApp Image 2023-09-01 at 11.24.46.2a8a8271.jpg": {
+    "file": "WhatsApp Image 2023-09-01 at 11.24.46.2a8a8271.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "WhatsApp Image 2023-09-01 at 11.24.48.644fd768.jpg": {
+    "file": "WhatsApp Image 2023-09-01 at 11.24.48.644fd768.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "WhatsApp Image 2023-09-01 at 11.29.44.8df76345.jpg": {
+    "file": "WhatsApp Image 2023-09-01 at 11.29.44.8df76345.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "WhatsApp Image 2023-09-01 at 11.29.45.3f4a070a.jpg": {
+    "file": "WhatsApp Image 2023-09-01 at 11.29.45.3f4a070a.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest-labour1.ab12b064.jpg": {
+    "file": "jobfest-labour1.ab12b064.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest-labour2.b2c1da92.jpg": {
+    "file": "jobfest-labour2.b2c1da92.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest-labour3.223d3276.jpg": {
+    "file": "jobfest-labour3.223d3276.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest-thakhek1.4048ed3c.jpg": {
+    "file": "jobfest-thakhek1.4048ed3c.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest-thakhek2.90f8f744.jpg": {
+    "file": "jobfest-thakhek2.90f8f744.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest-thakhek3.bc27ba07.jpg": {
+    "file": "jobfest-thakhek3.bc27ba07.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest-thakhek4.1f4715b3.jpg": {
+    "file": "jobfest-thakhek4.1f4715b3.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest-thakhek5.827bea5c.jpg": {
+    "file": "jobfest-thakhek5.827bea5c.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest-thakhek6.99129145.jpg": {
+    "file": "jobfest-thakhek6.99129145.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest-thakhek7.ba439c46.jpg": {
+    "file": "jobfest-thakhek7.ba439c46.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest20231.ce29ac37.jpg": {
+    "file": "jobfest20231.ce29ac37.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest20232.38fa5f41.jpg": {
+    "file": "jobfest20232.38fa5f41.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest20233.8ca4df30.jpg": {
+    "file": "jobfest20233.8ca4df30.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest20234.ced100a7.jpg": {
+    "file": "jobfest20234.ced100a7.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest20235.6a33d50c.jpg": {
+    "file": "jobfest20235.6a33d50c.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "jobfest20236.3a480678.jpg": {
+    "file": "jobfest20236.3a480678.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "1 (1).2a0dae0b.jpg": {
+    "file": "1 (1).2a0dae0b.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "2.a8585375.jpg": {
+    "file": "2.a8585375.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "Screenshot (18).1f5827c6.png": {
+    "file": "Screenshot (18).1f5827c6.png",
+    "resourceType": "image",
+    "mimeType": "image/png"
+  },
+  "Screenshot (6).f1149deb.png": {
+    "file": "Screenshot (6).f1149deb.png",
+    "resourceType": "image",
+    "mimeType": "image/png"
+  },
+  "346988702_651501466817597_4251829547740352147_n.6d60b829.jpg": {
+    "file": "346988702_651501466817597_4251829547740352147_n.6d60b829.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "347593834_566541415666720_7988247518585961547_n.7aecbf84.jpg": {
+    "file": "347593834_566541415666720_7988247518585961547_n.7aecbf84.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "347602579_1427841927981451_8406645353514792967_n.9979a6ff.jpg": {
+    "file": "347602579_1427841927981451_8406645353514792967_n.9979a6ff.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "347611587_2453856644779275_4021431407894474380_n.8cc5f0ba.jpg": {
+    "file": "347611587_2453856644779275_4021431407894474380_n.8cc5f0ba.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "314944180_426395489701676_5063993454432956773_n (1).765e2bc5.jpg": {
+    "file": "314944180_426395489701676_5063993454432956773_n (1).765e2bc5.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "314944209_426400639701161_3182658039788438849_n (1).1e5aaff1.jpg": {
+    "file": "314944209_426400639701161_3182658039788438849_n (1).1e5aaff1.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "314952926_426403913034167_4370288741922979927_n.70d57883.jpg": {
+    "file": "314952926_426403913034167_4370288741922979927_n.70d57883.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "315026927_426393946368497_8408788090209316850_n.70ec49ce.jpg": {
+    "file": "315026927_426393946368497_8408788090209316850_n.70ec49ce.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "316526601_437149161959642_7944801659565772095_n.839dc9fa.jpg": {
+    "file": "316526601_437149161959642_7944801659565772095_n.839dc9fa.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "316542819_437152118626013_73153722592692895_n.c83ff08c.jpg": {
+    "file": "316542819_437152118626013_73153722592692895_n.c83ff08c.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "316554678_437147545293137_1065244526038064300_n.80a8d4a0.jpg": {
+    "file": "316554678_437147545293137_1065244526038064300_n.80a8d4a0.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "316689269_437152305292661_1561053510148457192_n.c240d4c2.jpg": {
+    "file": "316689269_437152305292661_1561053510148457192_n.c240d4c2.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "amen1.f2be4c32.jpg": {
+    "file": "amen1.f2be4c32.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "amen2.e0210399.jpg": {
+    "file": "amen2.e0210399.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "amen3.88116e2f.jpg": {
+    "file": "amen3.88116e2f.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "amen4.aab1d5cc.jpg": {
+    "file": "amen4.aab1d5cc.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "amen5.bd9aae97.jpg": {
+    "file": "amen5.bd9aae97.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "amen6.49b7233d.jpg": {
+    "file": "amen6.49b7233d.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "amen7.2f5e4fbd.jpg": {
+    "file": "amen7.2f5e4fbd.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "bet1.a45f6907.jpg": {
+    "file": "bet1.a45f6907.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "bet10.7b353ef5.jpg": {
+    "file": "bet10.7b353ef5.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "bet2.f019a80f.jpg": {
+    "file": "bet2.f019a80f.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "bet3.8ba94761.jpg": {
+    "file": "bet3.8ba94761.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "bet4.c5c5db17.jpg": {
+    "file": "bet4.c5c5db17.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "bet5.dfd464de.jpg": {
+    "file": "bet5.dfd464de.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "bet6.40ae2ff3.jpg": {
+    "file": "bet6.40ae2ff3.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "bet7.871ba50d.jpg": {
+    "file": "bet7.871ba50d.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "bet8.ff5871c2.jpg": {
+    "file": "bet8.ff5871c2.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "bet9.5e270ef3.jpg": {
+    "file": "bet9.5e270ef3.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "coaching1.15e19df4.jpg": {
+    "file": "coaching1.15e19df4.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "coaching2.f3e91453.jpg": {
+    "file": "coaching2.f3e91453.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "coaching3.4a2a589f.jpg": {
+    "file": "coaching3.4a2a589f.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
+  },
+  "coaching4.1ebc6ea1.jpg": {
+    "file": "coaching4.1ebc6ea1.jpg",
+    "resourceType": "image",
+    "mimeType": "image/jpeg"
   },
   "pages/auth/login.css": {
     "resourceType": "style",
@@ -627,11 +1335,11 @@ const client_manifest = {
     "css": [
       "login.8d884521.css"
     ],
-    "file": "login.1c32eef2.js",
+    "file": "login.f2ae5e6e.js",
     "imports": [
-      "_nuxt-link.d96399bd.js",
+      "_nuxt-link.e252dac9.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_info-box.fc031db5.js"
+      "_info-box.fe5a98a7.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/auth/login.vue"
@@ -651,9 +1359,9 @@ const client_manifest = {
     "css": [
       "password-recovery.0798d13b.css"
     ],
-    "file": "password-recovery.324d531f.js",
+    "file": "password-recovery.fe76ef89.js",
     "imports": [
-      "_info-box.fc031db5.js",
+      "_info-box.fe5a98a7.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -665,162 +1373,169 @@ const client_manifest = {
   },
   "pages/auth/register.css": {
     "resourceType": "style",
-    "file": "register.1d966c8b.css",
+    "file": "register.6e887773.css",
     "src": "pages/auth/register.css"
   },
   "pages/auth/register.vue": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "register.1d966c8b.css"
+      "register.6e887773.css"
     ],
-    "file": "register.e4006d76.js",
+    "file": "register.75a687ea.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_info-box.fc031db5.js"
+      "_info-box.fe5a98a7.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/auth/register.vue"
   },
-  "register.1d966c8b.css": {
-    "file": "register.1d966c8b.css",
+  "register.6e887773.css": {
+    "file": "register.6e887773.css",
     "resourceType": "style"
   },
   "pages/blog-detail/[id].css": {
     "resourceType": "style",
-    "file": "_id_.deb80442.css",
+    "file": "_id_.a9000c8f.css",
     "src": "pages/blog-detail/[id].css"
   },
   "pages/blog-detail/[id].vue": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "_id_.deb80442.css"
+      "_id_.a9000c8f.css"
     ],
-    "file": "_id_.a29caca5.js",
+    "file": "_id_.087aa3fc.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "pages/blog-detail/related.vue"
+      "_related.vue.2747ceb0.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/blog-detail/[id].vue"
   },
-  "_id_.deb80442.css": {
-    "file": "_id_.deb80442.css",
+  "_id_.a9000c8f.css": {
+    "file": "_id_.a9000c8f.css",
     "resourceType": "style"
-  },
-  "pages/blog-detail/related.css": {
-    "resourceType": "style",
-    "file": "related.985fc2ab.css",
-    "src": "pages/blog-detail/related.css"
   },
   "pages/blog-detail/related.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [
-      "related.985fc2ab.css"
-    ],
-    "file": "related.dd091766.js",
+    "file": "related.1c15cc25.js",
     "imports": [
+      "_related.vue.2747ceb0.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/blog-detail/related.vue"
   },
-  "related.985fc2ab.css": {
-    "file": "related.985fc2ab.css",
-    "resourceType": "style"
-  },
   "pages/category/index.css": {
     "resourceType": "style",
-    "file": "index.1fb784a4.css",
+    "file": "index.6e6e4930.css",
     "src": "pages/category/index.css"
   },
   "pages/category/index.vue": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "index.1fb784a4.css"
+      "index.6e6e4930.css"
     ],
-    "file": "index.efdfa3c3.js",
+    "file": "index.4e092237.js",
     "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
+      "node_modules/nuxt/dist/app/entry.js",
+      "_card-list.1b66cdcb.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/category/index.vue"
   },
-  "index.1fb784a4.css": {
-    "file": "index.1fb784a4.css",
+  "index.6e6e4930.css": {
+    "file": "index.6e6e4930.css",
     "resourceType": "style"
   },
   "pages/index.css": {
     "resourceType": "style",
-    "file": "index.3949d804.css",
+    "file": "index.d58faa15.css",
     "src": "pages/index.css"
   },
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
     "assets": [
-      "about.faed9c12.png",
-      "img-05.7f30b395.jpg",
-      "img-09.94201e68.jpg",
-      "img-06.d615458b.jpg",
-      "img-08.41fcd570.jpg",
       "bg.d71fbcd2.jpg"
     ],
     "css": [
-      "index.3949d804.css"
+      "index.d58faa15.css"
     ],
-    "file": "index.1ddee71d.js",
+    "file": "index.2bc17bcf.js",
     "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
+      "node_modules/nuxt/dist/app/entry.js",
+      "_team.9d21a3fb.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
   },
-  "index.3949d804.css": {
-    "file": "index.3949d804.css",
+  "index.d58faa15.css": {
+    "file": "index.d58faa15.css",
     "resourceType": "style"
   },
-  "about.faed9c12.png": {
-    "file": "about.faed9c12.png",
-    "resourceType": "image",
-    "mimeType": "image/png"
+  "pages/search/index.css": {
+    "resourceType": "style",
+    "file": "index.e68ac1a9.css",
+    "src": "pages/search/index.css"
   },
-  "img-05.7f30b395.jpg": {
-    "file": "img-05.7f30b395.jpg",
-    "resourceType": "image",
-    "mimeType": "image/jpeg"
+  "pages/search/index.vue": {
+    "resourceType": "script",
+    "module": true,
+    "css": [
+      "index.e68ac1a9.css"
+    ],
+    "file": "index.dfcaf81a.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js",
+      "_card-list.1b66cdcb.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "pages/search/index.vue"
   },
-  "img-09.94201e68.jpg": {
-    "file": "img-09.94201e68.jpg",
-    "resourceType": "image",
-    "mimeType": "image/jpeg"
+  "index.e68ac1a9.css": {
+    "file": "index.e68ac1a9.css",
+    "resourceType": "style"
   },
-  "img-06.d615458b.jpg": {
-    "file": "img-06.d615458b.jpg",
-    "resourceType": "image",
-    "mimeType": "image/jpeg"
+  "pages/tag/[id].css": {
+    "resourceType": "style",
+    "file": "_id_.36a069af.css",
+    "src": "pages/tag/[id].css"
   },
-  "img-08.41fcd570.jpg": {
-    "file": "img-08.41fcd570.jpg",
-    "resourceType": "image",
-    "mimeType": "image/jpeg"
+  "pages/tag/[id].vue": {
+    "resourceType": "script",
+    "module": true,
+    "css": [
+      "_id_.36a069af.css"
+    ],
+    "file": "_id_.998e7761.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js",
+      "_card-list.1b66cdcb.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "pages/tag/[id].vue"
   },
-  "virtual:nuxt:C:/Code/thebizhub/.nuxt/error-component.mjs": {
+  "_id_.36a069af.css": {
+    "file": "_id_.36a069af.css",
+    "resourceType": "style"
+  },
+  "virtual:nuxt:D:/Thebizhub/thebizhub/.nuxt/error-component.mjs": {
     "resourceType": "script",
     "module": true,
     "dynamicImports": [
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "error-component.295e0c5d.js",
+    "file": "error-component.778eb2c1.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
-    "src": "virtual:nuxt:C:/Code/thebizhub/.nuxt/error-component.mjs"
+    "src": "virtual:nuxt:D:/Thebizhub/thebizhub/.nuxt/error-component.mjs"
   }
 };
 

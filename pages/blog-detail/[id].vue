@@ -29,7 +29,7 @@
       <div class="blog-detail" v-html="detail"></div>
       <div class="tags">
         <strong>TAGS:</strong>
-        <a v-for="(t, indx) in tag" :key="indx">{{ t.name }}</a>
+        <a v-for="(t, indx) in tag" :key="indx" @click="router.push(`/tag/${t._id}`)">{{ t.name }}</a>
       </div>
       <div class="follow-us">
         <h1>ສາມາດຕິດຕາມ THEBIZHUB</h1>
@@ -67,6 +67,7 @@ import Releted from "./related.vue";
 const imageURL = useNuxtApp().$imageURL;
 const axios = useNuxtApp().$axios;
 const route = useRoute();
+const router = useRouter();
 const msgError = ref<any>();
 const title = ref<any>();
 const coverPage = ref<any>();

@@ -18,18 +18,13 @@
       <div class="navbar-start">
         <ul>
           <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'NEWS & EVENT' } }"
-              >News & Events</NuxtLink
-            >
+            <NuxtLink :to="{ path: '/category', query: { is: 'NEWS & EVENT' } }">News & Events</NuxtLink>
           </li>
           <li class="has-dropdown">
             <a>Product & Services <i class="fa-light fa-angle-down"></i></a>
             <ul class="dropdown">
               <li v-for="(i, indx) in productAndService" :key="indx">
-                <NuxtLink
-                  :to="{ path: '/category', query: { is: `${i.name}` } }"
-                  >{{ i.name }}</NuxtLink
-                >
+                <NuxtLink :to="{ path: '/category', query: { is: `${i.name}` } }">{{ i.name }}</NuxtLink>
               </li>
             </ul>
           </li>
@@ -38,22 +33,15 @@
             <a>Learning <i class="fa-light fa-angle-down"></i></a>
             <ul class="dropdown">
               <li v-for="(o, index) in learing" :key="index">
-                <NuxtLink
-                  :to="{ path: '/category', query: { is: `${o.name}` } }"
-                  >{{ o.name }}</NuxtLink
-                >
+                <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }">{{ o.name }}</NuxtLink>
               </li>
             </ul>
           </li>
           <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'Biz Laws' } }"
-              >BIZ Laws</NuxtLink
-            >
+            <NuxtLink :to="{ path: '/category', query: { is: 'Biz Laws' } }">BIZ Laws</NuxtLink>
           </li>
           <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'Update' } }"
-              >Update</NuxtLink
-            >
+            <NuxtLink :to="{ path: '/category', query: { is: 'Update' } }">Update</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/about-us">About Us</NuxtLink>
@@ -61,11 +49,8 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <input
-          type="text"
-          class="input small"
-          placeholder="Enter keyword and press Enter"
-        />
+        <input type="text" v-model="search" class="input small" placeholder="Enter keyword and press Enter"
+          @keyup.enter="router.push({ path: '/search', query: { search: search } })" />
         <hr class="v" />
         <p class="lang-switch">
           <a class="current">EN</a>
@@ -88,6 +73,7 @@ const axios = useNuxtApp().$axios;
 const router = useRouter();
 const productAndService = ref<any>([]);
 const learing = ref<any>([]);
+const search = ref<any>()
 const fetchProductAndService = async () => {
   const type = "Product & Services";
   await axios.post(`get-group/${type}`).then((res) => {

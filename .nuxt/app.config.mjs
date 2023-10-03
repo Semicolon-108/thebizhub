@@ -1,5 +1,5 @@
 
-import { defuFn } from 'C:/Code/thebizhub/node_modules/defu/dist/defu.mjs'
+import { defuFn } from 'D:/Thebizhub/thebizhub/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 
