@@ -2,15 +2,9 @@
   <div id="blog-detail">
     <section class="has-bg">
       <div class="container">
-        <iframe
-          v-if="youtube"
-          class="youtube"
-          src="https://www.youtube.com/embed/w02a4HmRNmY?si=Kpyg5S899jp-mYMd"
-          title="YouTube video player"
-          frameborder="0"
+        <iframe v-if="videoLink" :src="videoLink" class="youtube" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+          allowfullscreen></iframe>
         <img v-else :src="imageURL + coverPage" alt="" v-if="coverPage" />
       </div>
     </section>
@@ -81,7 +75,6 @@ const category = ref<any>();
 const detail = ref<any>();
 const createdAt = ref<any>();
 const related = ref<any>([]);
-const youtube = ref(true);
 const fetch = async () => {
   const id = route.params.id;
   if (!id) return;
@@ -90,12 +83,14 @@ const fetch = async () => {
       if (res.status === 200) {
         title.value = res.data.info.title;
         coverPage.value = res.data.info.coverPage;
-        videoLink.value = res.data.info.videoLink;
         tag.value = res.data.info.tag;
         category.value = res.data.info.category;
         detail.value = res.data.info.details;
         createdAt.value = res.data.info.createdAt;
         related.value = res.data.isRelated;
+        if (res.data.info.videoLink) {
+          videoLink.value = "https://www.youtube.com/embed/" + res.data.info.videoLink
+        }
       }
     }).catch((e: any) => {
       if (e) {
@@ -103,19 +98,21 @@ const fetch = async () => {
       }
     })
 }
-
 fetch();
+
 </script>
 
 <style lang="scss" scoped>
 .has-bg {
   background-color: var(--light-grey-color);
+
   .youtube {
     width: 100%;
     aspect-ratio: 1.9;
     object-fit: cover;
     display: block;
   }
+
   img {
     width: 100%;
     aspect-ratio: 1.9;
@@ -123,55 +120,69 @@ fetch();
     display: block;
   }
 }
+
 .tags {
   display: flex;
   margin: 20px 0;
+
   strong {
     margin-right: 10px;
   }
+
   a {
     cursor: pointer;
     display: flex;
     white-space: nowrap;
     transition: all ease-in-out 0.3s;
+
     &:hover {
       color: var(--sub-color);
       text-decoration: underline !important;
     }
+
     &::before {
       content: "#";
+      margin-left: 05px;
       display: block;
     }
   }
 }
+
 .follow-us {
   padding: 40px 0;
   text-align: center;
+
   h1 {
     font-weight: 700;
     font-size: var(--lg-font);
     line-height: 2;
   }
+
   p {
     font-size: var(--lg-font);
   }
+
   ul {
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+
     li i {
       font-size: var(--xxlg-font);
     }
   }
 }
+
 .container {
   max-width: 760px;
   margin: 0 auto;
+
   @include fullhd {
     max-width: 1140px;
   }
+
   &.content {
     padding: 2.5rem 0;
   }
@@ -185,8 +196,10 @@ fetch();
 .blog-info {
   padding: 10px 0 30px;
   font-size: var(--md-font);
+
   li {
     line-height: 1.5;
+
     &:not(:last-child) {
       margin-bottom: 5px;
     }
@@ -230,6 +243,7 @@ fetch();
           align-items: center;
           font-weight: 600;
           text-transform: uppercase;
+
           &:not(:last-child) {
             &::after {
               content: "";
