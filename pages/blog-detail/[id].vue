@@ -102,14 +102,24 @@ const fetch = async () => {
 }
 fetch()
 
-useSeoMeta({
+useHead({
   title: title,
-  ogTitle: title,
-  description: detail,
-  ogDescription: detail,
-  ogImage: coverPage,
-  ogUrl: https + 'blog-detail/' + route.params.id
+  meta: [
+    { hid: 'og:title', property: 'og:title', content: title },
+    { hid: 'og:description', property: 'og:description', content: detail },
+    { hid: 'og:type', property: 'og:type', content: 'website' },
+    { hid: 'og:url', property: 'og:url', content: https + 'blog-detail/' + route.params.id },
+    { hid: 'og:image', property: 'og:image', content: coverPage },
+  ]
 })
+// useSeoMeta({
+//   title: title,
+//   ogTitle: title,
+//   description: detail,
+//   ogDescription: detail,
+//   ogImage: coverPage,
+//   ogUrl: https + 'blog-detail/' + route.params.id
+// })
 </script>
 
 <style lang="scss" scoped>

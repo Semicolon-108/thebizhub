@@ -24,7 +24,7 @@ const meta = [
 ]
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  ssr: false,
+  ssr: true,
   modules: ["nuxt-gtag"],
   gtag: {
     id: "G-CVJQT1XPN2",
