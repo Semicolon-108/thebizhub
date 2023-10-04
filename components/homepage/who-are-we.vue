@@ -23,7 +23,13 @@
         </div>
         <div class="right">
           <div class="image">
-            <img src="../../assets/images/about-page/team.jpg" alt="" />
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=HEg8LjkZOaQ"
+            >
+              <i class="fa-solid fa-play"></i>
+              <img src="../../assets/images/about-page/team.jpg" />
+            </a>
           </div>
         </div>
       </div>
@@ -60,13 +66,42 @@ section {
 
   .right {
     .image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
 
-      img {
-        display: block;
-        max-height: 300px;
+        &:hover {
+          &::after {
+            background-color: rgba(#000, 0.4);
+          }
+          i {
+            transform: scale(1.1);
+          }
+        }
+        &::after {
+          content: "";
+          background-color: rgba(#000, 0.3);
+          transition: all ease-in-out 0.15s;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+        }
+        img {
+          display: block;
+          max-height: 300px;
+        }
+        i {
+          transition: all ease-in-out 0.15s;
+          z-index: 1;
+          cursor: pointer;
+          position: absolute;
+          color: rgba(#fff, 0.9);
+          font-size: 3rem;
+        }
       }
     }
   }

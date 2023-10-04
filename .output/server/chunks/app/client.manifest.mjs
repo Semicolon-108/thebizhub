@@ -1,11 +1,11 @@
 const client_manifest = {
-  "_card-list.1b66cdcb.js": {
+  "_card-list.f4df0ebb.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "card-list.e8a31d82.css"
     ],
-    "file": "card-list.1b66cdcb.js",
+    "file": "card-list.f4df0ebb.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -14,13 +14,13 @@ const client_manifest = {
     "file": "card-list.e8a31d82.css",
     "resourceType": "style"
   },
-  "_info-box.fe5a98a7.js": {
+  "_info-box.62a5f067.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "info-box.f67ba7a8.css"
     ],
-    "file": "info-box.fe5a98a7.js",
+    "file": "info-box.62a5f067.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -29,29 +29,29 @@ const client_manifest = {
     "file": "info-box.f67ba7a8.css",
     "resourceType": "style"
   },
-  "_nuxt-link.e252dac9.js": {
+  "_nuxt-link.b16d5d36.js": {
     "resourceType": "script",
     "module": true,
-    "file": "nuxt-link.e252dac9.js",
+    "file": "nuxt-link.b16d5d36.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_related.vue.2747ceb0.js": {
+  "_related.vue.02e6fe28.js": {
     "resourceType": "script",
     "module": true,
-    "file": "related.vue.2747ceb0.js",
+    "file": "related.vue.02e6fe28.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_team.9d21a3fb.js": {
+  "_team.aa3bc483.js": {
     "resourceType": "script",
     "module": true,
     "assets": [
       "team.ae182b55.jpg"
     ],
-    "file": "team.9d21a3fb.js",
+    "file": "team.aa3bc483.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -106,121 +106,121 @@ const client_manifest = {
   "assets/images/about-page/Jobfest/jobfest-labour1.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest-labour1.ab12b064.jpg",
+    "file": "jobfest-labour1.bc876ae1.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest-labour1.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest-labour2.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest-labour2.b2c1da92.jpg",
+    "file": "jobfest-labour2.f9f3b1b9.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest-labour2.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest-labour3.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest-labour3.223d3276.jpg",
+    "file": "jobfest-labour3.5cc16476.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest-labour3.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest-thakhek1.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest-thakhek1.4048ed3c.jpg",
+    "file": "jobfest-thakhek1.4da32787.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest-thakhek1.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest-thakhek2.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest-thakhek2.90f8f744.jpg",
+    "file": "jobfest-thakhek2.4250b892.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest-thakhek2.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest-thakhek3.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest-thakhek3.bc27ba07.jpg",
+    "file": "jobfest-thakhek3.c78963b4.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest-thakhek3.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest-thakhek4.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest-thakhek4.1f4715b3.jpg",
+    "file": "jobfest-thakhek4.8796c7e0.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest-thakhek4.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest-thakhek5.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest-thakhek5.827bea5c.jpg",
+    "file": "jobfest-thakhek5.93f88ddb.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest-thakhek5.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest-thakhek6.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest-thakhek6.99129145.jpg",
+    "file": "jobfest-thakhek6.c23c7831.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest-thakhek6.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest-thakhek7.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest-thakhek7.ba439c46.jpg",
+    "file": "jobfest-thakhek7.18f6972d.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest-thakhek7.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest20231.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest20231.ce29ac37.jpg",
+    "file": "jobfest20231.bfd617e6.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest20231.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest20232.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest20232.38fa5f41.jpg",
+    "file": "jobfest20232.6312998f.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest20232.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest20233.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest20233.8ca4df30.jpg",
+    "file": "jobfest20233.c1622cff.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest20233.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest20234.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest20234.ced100a7.jpg",
+    "file": "jobfest20234.dd9e0fb3.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest20234.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest20235.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest20235.6a33d50c.jpg",
+    "file": "jobfest20235.5896a4d6.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest20235.jpg"
   },
   "assets/images/about-page/Jobfest/jobfest20236.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "jobfest20236.3a480678.jpg",
+    "file": "jobfest20236.a057d0fe.jpg",
     "src": "assets/images/about-page/Jobfest/jobfest20236.jpg"
   },
   "assets/images/about-page/Online/1 (1).jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "1 (1).2a0dae0b.jpg",
+    "file": "1 (1).f6f303c8.jpg",
     "src": "assets/images/about-page/Online/1 (1).jpg"
   },
   "assets/images/about-page/Online/2.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "2.a8585375.jpg",
+    "file": "2.15d2d7db.jpg",
     "src": "assets/images/about-page/Online/2.jpg"
   },
   "assets/images/about-page/Online/Screenshot (18).png": {
     "resourceType": "image",
     "mimeType": "image/png",
-    "file": "Screenshot (18).1f5827c6.png",
+    "file": "Screenshot (18).67574c60.png",
     "src": "assets/images/about-page/Online/Screenshot (18).png"
   },
   "assets/images/about-page/Online/Screenshot (6).png": {
     "resourceType": "image",
     "mimeType": "image/png",
-    "file": "Screenshot (6).f1149deb.png",
+    "file": "Screenshot (6).4b233390.png",
     "src": "assets/images/about-page/Online/Screenshot (6).png"
   },
   "assets/images/about-page/SoGoodFair/346988702_651501466817597_4251829547740352147_n.jpg": {
@@ -250,49 +250,49 @@ const client_manifest = {
   "assets/images/about-page/WINGS/314944180_426395489701676_5063993454432956773_n (1).jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "314944180_426395489701676_5063993454432956773_n (1).765e2bc5.jpg",
+    "file": "314944180_426395489701676_5063993454432956773_n (1).b6ae4e69.jpg",
     "src": "assets/images/about-page/WINGS/314944180_426395489701676_5063993454432956773_n (1).jpg"
   },
   "assets/images/about-page/WINGS/314944209_426400639701161_3182658039788438849_n (1).jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "314944209_426400639701161_3182658039788438849_n (1).1e5aaff1.jpg",
+    "file": "314944209_426400639701161_3182658039788438849_n (1).d329ee81.jpg",
     "src": "assets/images/about-page/WINGS/314944209_426400639701161_3182658039788438849_n (1).jpg"
   },
   "assets/images/about-page/WINGS/314952926_426403913034167_4370288741922979927_n.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "314952926_426403913034167_4370288741922979927_n.70d57883.jpg",
+    "file": "314952926_426403913034167_4370288741922979927_n.de8b7cce.jpg",
     "src": "assets/images/about-page/WINGS/314952926_426403913034167_4370288741922979927_n.jpg"
   },
   "assets/images/about-page/WINGS/315026927_426393946368497_8408788090209316850_n.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "315026927_426393946368497_8408788090209316850_n.70ec49ce.jpg",
+    "file": "315026927_426393946368497_8408788090209316850_n.6e93f714.jpg",
     "src": "assets/images/about-page/WINGS/315026927_426393946368497_8408788090209316850_n.jpg"
   },
   "assets/images/about-page/WINGS/316526601_437149161959642_7944801659565772095_n.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "316526601_437149161959642_7944801659565772095_n.839dc9fa.jpg",
+    "file": "316526601_437149161959642_7944801659565772095_n.96154596.jpg",
     "src": "assets/images/about-page/WINGS/316526601_437149161959642_7944801659565772095_n.jpg"
   },
   "assets/images/about-page/WINGS/316542819_437152118626013_73153722592692895_n.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "316542819_437152118626013_73153722592692895_n.c83ff08c.jpg",
+    "file": "316542819_437152118626013_73153722592692895_n.c238a61d.jpg",
     "src": "assets/images/about-page/WINGS/316542819_437152118626013_73153722592692895_n.jpg"
   },
   "assets/images/about-page/WINGS/316554678_437147545293137_1065244526038064300_n.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "316554678_437147545293137_1065244526038064300_n.80a8d4a0.jpg",
+    "file": "316554678_437147545293137_1065244526038064300_n.8b3527f6.jpg",
     "src": "assets/images/about-page/WINGS/316554678_437147545293137_1065244526038064300_n.jpg"
   },
   "assets/images/about-page/WINGS/316689269_437152305292661_1561053510148457192_n.jpg": {
     "resourceType": "image",
     "mimeType": "image/jpeg",
-    "file": "316689269_437152305292661_1561053510148457192_n.c240d4c2.jpg",
+    "file": "316689269_437152305292661_1561053510148457192_n.8cdd5be1.jpg",
     "src": "assets/images/about-page/WINGS/316689269_437152305292661_1561053510148457192_n.jpg"
   },
   "assets/images/about-page/amen/amen1.jpg": {
@@ -439,78 +439,6 @@ const client_manifest = {
     "file": "thebizhub-logo.b61d510f.jpg",
     "src": "assets/images/thebizhub-logo.jpg"
   },
-  "assets/webfonts/Nuanta-Bold.eot": {
-    "resourceType": "font",
-    "mimeType": "font/eot",
-    "file": "Nuanta-Bold.0b6f7ce4.eot",
-    "src": "assets/webfonts/Nuanta-Bold.eot"
-  },
-  "assets/webfonts/Nuanta-Bold.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "Nuanta-Bold.5aa64b5f.ttf",
-    "src": "assets/webfonts/Nuanta-Bold.ttf"
-  },
-  "assets/webfonts/Nuanta-Bold.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "Nuanta-Bold.b163285d.woff",
-    "src": "assets/webfonts/Nuanta-Bold.woff"
-  },
-  "assets/webfonts/Nuanta-Bold.woff2": {
-    "resourceType": "font",
-    "mimeType": "font/woff2",
-    "file": "Nuanta-Bold.b3349f0d.woff2",
-    "src": "assets/webfonts/Nuanta-Bold.woff2"
-  },
-  "assets/webfonts/Nuanta-Regular.eot": {
-    "resourceType": "font",
-    "mimeType": "font/eot",
-    "file": "Nuanta-Regular.ad2a0711.eot",
-    "src": "assets/webfonts/Nuanta-Regular.eot"
-  },
-  "assets/webfonts/Nuanta-Regular.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "Nuanta-Regular.bbea65bb.ttf",
-    "src": "assets/webfonts/Nuanta-Regular.ttf"
-  },
-  "assets/webfonts/Nuanta-Regular.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "Nuanta-Regular.76e2bbfb.woff",
-    "src": "assets/webfonts/Nuanta-Regular.woff"
-  },
-  "assets/webfonts/Nuanta-Regular.woff2": {
-    "resourceType": "font",
-    "mimeType": "font/woff2",
-    "file": "Nuanta-Regular.d317fc24.woff2",
-    "src": "assets/webfonts/Nuanta-Regular.woff2"
-  },
-  "assets/webfonts/Roboto-Black.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "Roboto-Black.5ace0d08.ttf",
-    "src": "assets/webfonts/Roboto-Black.ttf"
-  },
-  "assets/webfonts/Roboto-Bold.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "Roboto-Bold.ec685a46.ttf",
-    "src": "assets/webfonts/Roboto-Bold.ttf"
-  },
-  "assets/webfonts/Roboto-Light.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "Roboto-Light.c576c506.ttf",
-    "src": "assets/webfonts/Roboto-Light.ttf"
-  },
-  "assets/webfonts/Roboto-Regular.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "Roboto-Regular.4e147ab6.ttf",
-    "src": "assets/webfonts/Roboto-Regular.ttf"
-  },
   "assets/webfonts/fa-brands-400.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
@@ -619,7 +547,7 @@ const client_manifest = {
   },
   "layouts/main.css": {
     "resourceType": "style",
-    "file": "main.dcbb061e.css",
+    "file": "main.f1fe2f1e.css",
     "src": "layouts/main.css"
   },
   "layouts/main.vue": {
@@ -631,18 +559,18 @@ const client_manifest = {
       "bg.d71fbcd2.jpg"
     ],
     "css": [
-      "main.dcbb061e.css"
+      "main.f1fe2f1e.css"
     ],
-    "file": "main.d108ba9a.js",
+    "file": "main.6c827429.js",
     "imports": [
-      "_nuxt-link.e252dac9.js",
+      "_nuxt-link.b16d5d36.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "layouts/main.vue"
   },
-  "main.dcbb061e.css": {
-    "file": "main.dcbb061e.css",
+  "main.f1fe2f1e.css": {
+    "file": "main.f1fe2f1e.css",
     "resourceType": "style"
   },
   "thebizhub-logo.b61d510f.jpg": {
@@ -671,9 +599,9 @@ const client_manifest = {
     "css": [
       "error-404.23f2309d.css"
     ],
-    "file": "error-404.b5c125db.js",
+    "file": "error-404.e7145896.js",
     "imports": [
-      "_nuxt-link.e252dac9.js",
+      "_nuxt-link.b16d5d36.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -694,7 +622,7 @@ const client_manifest = {
     "css": [
       "error-500.aa16ed4d.css"
     ],
-    "file": "error-500.acdd961d.js",
+    "file": "error-500.d99b7573.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -707,25 +635,13 @@ const client_manifest = {
   },
   "node_modules/nuxt/dist/app/entry.css": {
     "resourceType": "style",
-    "file": "entry.a1cda387.css",
+    "file": "entry.469ea4bf.css",
     "src": "node_modules/nuxt/dist/app/entry.css"
   },
   "node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "assets": [
-      "Roboto-Light.c576c506.ttf",
-      "Roboto-Regular.4e147ab6.ttf",
-      "Roboto-Bold.ec685a46.ttf",
-      "Roboto-Black.5ace0d08.ttf",
-      "Nuanta-Regular.ad2a0711.eot",
-      "Nuanta-Regular.d317fc24.woff2",
-      "Nuanta-Regular.76e2bbfb.woff",
-      "Nuanta-Regular.bbea65bb.ttf",
-      "Nuanta-Bold.0b6f7ce4.eot",
-      "Nuanta-Bold.b3349f0d.woff2",
-      "Nuanta-Bold.b163285d.woff",
-      "Nuanta-Bold.5aa64b5f.ttf",
       "fa-brands-400.7b17fce6.woff2",
       "fa-brands-400.0726ff45.ttf",
       "fa-duotone-900.fc69a3f7.woff2",
@@ -744,79 +660,19 @@ const client_manifest = {
       "fa-sharp-solid-900.ef651aac.ttf"
     ],
     "css": [
-      "entry.a1cda387.css"
+      "entry.469ea4bf.css"
     ],
     "dynamicImports": [
       "layouts/main.vue",
       "virtual:nuxt:D:/Thebizhub/thebizhub/.nuxt/error-component.mjs"
     ],
-    "file": "entry.ec7abcfb.js",
+    "file": "entry.cc3671af.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js"
   },
-  "entry.a1cda387.css": {
-    "file": "entry.a1cda387.css",
+  "entry.469ea4bf.css": {
+    "file": "entry.469ea4bf.css",
     "resourceType": "style"
-  },
-  "Roboto-Light.c576c506.ttf": {
-    "file": "Roboto-Light.c576c506.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
-  },
-  "Roboto-Regular.4e147ab6.ttf": {
-    "file": "Roboto-Regular.4e147ab6.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
-  },
-  "Roboto-Bold.ec685a46.ttf": {
-    "file": "Roboto-Bold.ec685a46.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
-  },
-  "Roboto-Black.5ace0d08.ttf": {
-    "file": "Roboto-Black.5ace0d08.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
-  },
-  "Nuanta-Regular.ad2a0711.eot": {
-    "file": "Nuanta-Regular.ad2a0711.eot",
-    "resourceType": "font",
-    "mimeType": "font/eot"
-  },
-  "Nuanta-Regular.d317fc24.woff2": {
-    "file": "Nuanta-Regular.d317fc24.woff2",
-    "resourceType": "font",
-    "mimeType": "font/woff2"
-  },
-  "Nuanta-Regular.76e2bbfb.woff": {
-    "file": "Nuanta-Regular.76e2bbfb.woff",
-    "resourceType": "font",
-    "mimeType": "font/woff"
-  },
-  "Nuanta-Regular.bbea65bb.ttf": {
-    "file": "Nuanta-Regular.bbea65bb.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
-  },
-  "Nuanta-Bold.0b6f7ce4.eot": {
-    "file": "Nuanta-Bold.0b6f7ce4.eot",
-    "resourceType": "font",
-    "mimeType": "font/eot"
-  },
-  "Nuanta-Bold.b3349f0d.woff2": {
-    "file": "Nuanta-Bold.b3349f0d.woff2",
-    "resourceType": "font",
-    "mimeType": "font/woff2"
-  },
-  "Nuanta-Bold.b163285d.woff": {
-    "file": "Nuanta-Bold.b163285d.woff",
-    "resourceType": "font",
-    "mimeType": "font/woff"
-  },
-  "Nuanta-Bold.5aa64b5f.ttf": {
-    "file": "Nuanta-Bold.5aa64b5f.ttf",
-    "resourceType": "font",
-    "mimeType": "font/ttf"
   },
   "fa-brands-400.7b17fce6.woff2": {
     "file": "fa-brands-400.7b17fce6.woff2",
@@ -909,9 +765,9 @@ const client_manifest = {
     "css": [
       "index.a3596bce.css"
     ],
-    "file": "index.4aaeed37.js",
+    "file": "index.14b8694b.js",
     "imports": [
-      "_team.9d21a3fb.js",
+      "_team.aa3bc483.js",
       "pages/about-us/product-and-services.vue",
       "pages/about-us/works.vue",
       "node_modules/nuxt/dist/app/entry.js"
@@ -934,7 +790,7 @@ const client_manifest = {
     "css": [
       "product-and-services.0678765f.css"
     ],
-    "file": "product-and-services.f63c8c96.js",
+    "file": "product-and-services.0b4eeb85.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -960,38 +816,38 @@ const client_manifest = {
       "WhatsApp Image 2023-09-01 at 11.24.48.644fd768.jpg",
       "WhatsApp Image 2023-09-01 at 11.29.44.8df76345.jpg",
       "WhatsApp Image 2023-09-01 at 11.29.45.3f4a070a.jpg",
-      "jobfest-labour1.ab12b064.jpg",
-      "jobfest-labour2.b2c1da92.jpg",
-      "jobfest-labour3.223d3276.jpg",
-      "jobfest-thakhek1.4048ed3c.jpg",
-      "jobfest-thakhek2.90f8f744.jpg",
-      "jobfest-thakhek3.bc27ba07.jpg",
-      "jobfest-thakhek4.1f4715b3.jpg",
-      "jobfest-thakhek5.827bea5c.jpg",
-      "jobfest-thakhek6.99129145.jpg",
-      "jobfest-thakhek7.ba439c46.jpg",
-      "jobfest20231.ce29ac37.jpg",
-      "jobfest20232.38fa5f41.jpg",
-      "jobfest20233.8ca4df30.jpg",
-      "jobfest20234.ced100a7.jpg",
-      "jobfest20235.6a33d50c.jpg",
-      "jobfest20236.3a480678.jpg",
-      "1 (1).2a0dae0b.jpg",
-      "2.a8585375.jpg",
-      "Screenshot (18).1f5827c6.png",
-      "Screenshot (6).f1149deb.png",
+      "jobfest-labour1.bc876ae1.jpg",
+      "jobfest-labour2.f9f3b1b9.jpg",
+      "jobfest-labour3.5cc16476.jpg",
+      "jobfest-thakhek1.4da32787.jpg",
+      "jobfest-thakhek2.4250b892.jpg",
+      "jobfest-thakhek3.c78963b4.jpg",
+      "jobfest-thakhek4.8796c7e0.jpg",
+      "jobfest-thakhek5.93f88ddb.jpg",
+      "jobfest-thakhek6.c23c7831.jpg",
+      "jobfest-thakhek7.18f6972d.jpg",
+      "jobfest20231.bfd617e6.jpg",
+      "jobfest20232.6312998f.jpg",
+      "jobfest20233.c1622cff.jpg",
+      "jobfest20234.dd9e0fb3.jpg",
+      "jobfest20235.5896a4d6.jpg",
+      "jobfest20236.a057d0fe.jpg",
+      "1 (1).f6f303c8.jpg",
+      "2.15d2d7db.jpg",
+      "Screenshot (18).67574c60.png",
+      "Screenshot (6).4b233390.png",
       "346988702_651501466817597_4251829547740352147_n.6d60b829.jpg",
       "347593834_566541415666720_7988247518585961547_n.7aecbf84.jpg",
       "347602579_1427841927981451_8406645353514792967_n.9979a6ff.jpg",
       "347611587_2453856644779275_4021431407894474380_n.8cc5f0ba.jpg",
-      "314944180_426395489701676_5063993454432956773_n (1).765e2bc5.jpg",
-      "314944209_426400639701161_3182658039788438849_n (1).1e5aaff1.jpg",
-      "314952926_426403913034167_4370288741922979927_n.70d57883.jpg",
-      "315026927_426393946368497_8408788090209316850_n.70ec49ce.jpg",
-      "316526601_437149161959642_7944801659565772095_n.839dc9fa.jpg",
-      "316542819_437152118626013_73153722592692895_n.c83ff08c.jpg",
-      "316554678_437147545293137_1065244526038064300_n.80a8d4a0.jpg",
-      "316689269_437152305292661_1561053510148457192_n.c240d4c2.jpg",
+      "314944180_426395489701676_5063993454432956773_n (1).b6ae4e69.jpg",
+      "314944209_426400639701161_3182658039788438849_n (1).d329ee81.jpg",
+      "314952926_426403913034167_4370288741922979927_n.de8b7cce.jpg",
+      "315026927_426393946368497_8408788090209316850_n.6e93f714.jpg",
+      "316526601_437149161959642_7944801659565772095_n.96154596.jpg",
+      "316542819_437152118626013_73153722592692895_n.c238a61d.jpg",
+      "316554678_437147545293137_1065244526038064300_n.8b3527f6.jpg",
+      "316689269_437152305292661_1561053510148457192_n.8cdd5be1.jpg",
       "amen1.f2be4c32.jpg",
       "amen2.e0210399.jpg",
       "amen3.88116e2f.jpg",
@@ -1018,7 +874,7 @@ const client_manifest = {
     "css": [
       "works.7f11f9f0.css"
     ],
-    "file": "works.18a4d043.js",
+    "file": "works.ba8dfa74.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -1059,103 +915,103 @@ const client_manifest = {
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest-labour1.ab12b064.jpg": {
-    "file": "jobfest-labour1.ab12b064.jpg",
+  "jobfest-labour1.bc876ae1.jpg": {
+    "file": "jobfest-labour1.bc876ae1.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest-labour2.b2c1da92.jpg": {
-    "file": "jobfest-labour2.b2c1da92.jpg",
+  "jobfest-labour2.f9f3b1b9.jpg": {
+    "file": "jobfest-labour2.f9f3b1b9.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest-labour3.223d3276.jpg": {
-    "file": "jobfest-labour3.223d3276.jpg",
+  "jobfest-labour3.5cc16476.jpg": {
+    "file": "jobfest-labour3.5cc16476.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest-thakhek1.4048ed3c.jpg": {
-    "file": "jobfest-thakhek1.4048ed3c.jpg",
+  "jobfest-thakhek1.4da32787.jpg": {
+    "file": "jobfest-thakhek1.4da32787.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest-thakhek2.90f8f744.jpg": {
-    "file": "jobfest-thakhek2.90f8f744.jpg",
+  "jobfest-thakhek2.4250b892.jpg": {
+    "file": "jobfest-thakhek2.4250b892.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest-thakhek3.bc27ba07.jpg": {
-    "file": "jobfest-thakhek3.bc27ba07.jpg",
+  "jobfest-thakhek3.c78963b4.jpg": {
+    "file": "jobfest-thakhek3.c78963b4.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest-thakhek4.1f4715b3.jpg": {
-    "file": "jobfest-thakhek4.1f4715b3.jpg",
+  "jobfest-thakhek4.8796c7e0.jpg": {
+    "file": "jobfest-thakhek4.8796c7e0.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest-thakhek5.827bea5c.jpg": {
-    "file": "jobfest-thakhek5.827bea5c.jpg",
+  "jobfest-thakhek5.93f88ddb.jpg": {
+    "file": "jobfest-thakhek5.93f88ddb.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest-thakhek6.99129145.jpg": {
-    "file": "jobfest-thakhek6.99129145.jpg",
+  "jobfest-thakhek6.c23c7831.jpg": {
+    "file": "jobfest-thakhek6.c23c7831.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest-thakhek7.ba439c46.jpg": {
-    "file": "jobfest-thakhek7.ba439c46.jpg",
+  "jobfest-thakhek7.18f6972d.jpg": {
+    "file": "jobfest-thakhek7.18f6972d.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest20231.ce29ac37.jpg": {
-    "file": "jobfest20231.ce29ac37.jpg",
+  "jobfest20231.bfd617e6.jpg": {
+    "file": "jobfest20231.bfd617e6.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest20232.38fa5f41.jpg": {
-    "file": "jobfest20232.38fa5f41.jpg",
+  "jobfest20232.6312998f.jpg": {
+    "file": "jobfest20232.6312998f.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest20233.8ca4df30.jpg": {
-    "file": "jobfest20233.8ca4df30.jpg",
+  "jobfest20233.c1622cff.jpg": {
+    "file": "jobfest20233.c1622cff.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest20234.ced100a7.jpg": {
-    "file": "jobfest20234.ced100a7.jpg",
+  "jobfest20234.dd9e0fb3.jpg": {
+    "file": "jobfest20234.dd9e0fb3.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest20235.6a33d50c.jpg": {
-    "file": "jobfest20235.6a33d50c.jpg",
+  "jobfest20235.5896a4d6.jpg": {
+    "file": "jobfest20235.5896a4d6.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "jobfest20236.3a480678.jpg": {
-    "file": "jobfest20236.3a480678.jpg",
+  "jobfest20236.a057d0fe.jpg": {
+    "file": "jobfest20236.a057d0fe.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "1 (1).2a0dae0b.jpg": {
-    "file": "1 (1).2a0dae0b.jpg",
+  "1 (1).f6f303c8.jpg": {
+    "file": "1 (1).f6f303c8.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "2.a8585375.jpg": {
-    "file": "2.a8585375.jpg",
+  "2.15d2d7db.jpg": {
+    "file": "2.15d2d7db.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "Screenshot (18).1f5827c6.png": {
-    "file": "Screenshot (18).1f5827c6.png",
+  "Screenshot (18).67574c60.png": {
+    "file": "Screenshot (18).67574c60.png",
     "resourceType": "image",
     "mimeType": "image/png"
   },
-  "Screenshot (6).f1149deb.png": {
-    "file": "Screenshot (6).f1149deb.png",
+  "Screenshot (6).4b233390.png": {
+    "file": "Screenshot (6).4b233390.png",
     "resourceType": "image",
     "mimeType": "image/png"
   },
@@ -1179,43 +1035,43 @@ const client_manifest = {
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "314944180_426395489701676_5063993454432956773_n (1).765e2bc5.jpg": {
-    "file": "314944180_426395489701676_5063993454432956773_n (1).765e2bc5.jpg",
+  "314944180_426395489701676_5063993454432956773_n (1).b6ae4e69.jpg": {
+    "file": "314944180_426395489701676_5063993454432956773_n (1).b6ae4e69.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "314944209_426400639701161_3182658039788438849_n (1).1e5aaff1.jpg": {
-    "file": "314944209_426400639701161_3182658039788438849_n (1).1e5aaff1.jpg",
+  "314944209_426400639701161_3182658039788438849_n (1).d329ee81.jpg": {
+    "file": "314944209_426400639701161_3182658039788438849_n (1).d329ee81.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "314952926_426403913034167_4370288741922979927_n.70d57883.jpg": {
-    "file": "314952926_426403913034167_4370288741922979927_n.70d57883.jpg",
+  "314952926_426403913034167_4370288741922979927_n.de8b7cce.jpg": {
+    "file": "314952926_426403913034167_4370288741922979927_n.de8b7cce.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "315026927_426393946368497_8408788090209316850_n.70ec49ce.jpg": {
-    "file": "315026927_426393946368497_8408788090209316850_n.70ec49ce.jpg",
+  "315026927_426393946368497_8408788090209316850_n.6e93f714.jpg": {
+    "file": "315026927_426393946368497_8408788090209316850_n.6e93f714.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "316526601_437149161959642_7944801659565772095_n.839dc9fa.jpg": {
-    "file": "316526601_437149161959642_7944801659565772095_n.839dc9fa.jpg",
+  "316526601_437149161959642_7944801659565772095_n.96154596.jpg": {
+    "file": "316526601_437149161959642_7944801659565772095_n.96154596.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "316542819_437152118626013_73153722592692895_n.c83ff08c.jpg": {
-    "file": "316542819_437152118626013_73153722592692895_n.c83ff08c.jpg",
+  "316542819_437152118626013_73153722592692895_n.c238a61d.jpg": {
+    "file": "316542819_437152118626013_73153722592692895_n.c238a61d.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "316554678_437147545293137_1065244526038064300_n.80a8d4a0.jpg": {
-    "file": "316554678_437147545293137_1065244526038064300_n.80a8d4a0.jpg",
+  "316554678_437147545293137_1065244526038064300_n.8b3527f6.jpg": {
+    "file": "316554678_437147545293137_1065244526038064300_n.8b3527f6.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
-  "316689269_437152305292661_1561053510148457192_n.c240d4c2.jpg": {
-    "file": "316689269_437152305292661_1561053510148457192_n.c240d4c2.jpg",
+  "316689269_437152305292661_1561053510148457192_n.8cdd5be1.jpg": {
+    "file": "316689269_437152305292661_1561053510148457192_n.8cdd5be1.jpg",
     "resourceType": "image",
     "mimeType": "image/jpeg"
   },
@@ -1335,11 +1191,11 @@ const client_manifest = {
     "css": [
       "login.8d884521.css"
     ],
-    "file": "login.f2ae5e6e.js",
+    "file": "login.7053b6ed.js",
     "imports": [
-      "_nuxt-link.e252dac9.js",
+      "_nuxt-link.b16d5d36.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_info-box.fe5a98a7.js"
+      "_info-box.62a5f067.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/auth/login.vue"
@@ -1359,9 +1215,9 @@ const client_manifest = {
     "css": [
       "password-recovery.0798d13b.css"
     ],
-    "file": "password-recovery.fe76ef89.js",
+    "file": "password-recovery.96ad2089.js",
     "imports": [
-      "_info-box.fe5a98a7.js",
+      "_info-box.62a5f067.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -1373,56 +1229,56 @@ const client_manifest = {
   },
   "pages/auth/register.css": {
     "resourceType": "style",
-    "file": "register.6e887773.css",
+    "file": "register.1174d1b8.css",
     "src": "pages/auth/register.css"
   },
   "pages/auth/register.vue": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "register.6e887773.css"
+      "register.1174d1b8.css"
     ],
-    "file": "register.75a687ea.js",
+    "file": "register.07575364.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_info-box.fe5a98a7.js"
+      "_info-box.62a5f067.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/auth/register.vue"
   },
-  "register.6e887773.css": {
-    "file": "register.6e887773.css",
+  "register.1174d1b8.css": {
+    "file": "register.1174d1b8.css",
     "resourceType": "style"
   },
   "pages/blog-detail/[id].css": {
     "resourceType": "style",
-    "file": "_id_.a9000c8f.css",
+    "file": "_id_.9344844a.css",
     "src": "pages/blog-detail/[id].css"
   },
   "pages/blog-detail/[id].vue": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "_id_.a9000c8f.css"
+      "_id_.9344844a.css"
     ],
-    "file": "_id_.087aa3fc.js",
+    "file": "_id_.362f7fe9.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_related.vue.2747ceb0.js"
+      "_related.vue.02e6fe28.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/blog-detail/[id].vue"
   },
-  "_id_.a9000c8f.css": {
-    "file": "_id_.a9000c8f.css",
+  "_id_.9344844a.css": {
+    "file": "_id_.9344844a.css",
     "resourceType": "style"
   },
   "pages/blog-detail/related.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "related.1c15cc25.js",
+    "file": "related.8fac39c2.js",
     "imports": [
-      "_related.vue.2747ceb0.js",
+      "_related.vue.02e6fe28.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -1430,30 +1286,30 @@ const client_manifest = {
   },
   "pages/category/index.css": {
     "resourceType": "style",
-    "file": "index.6e6e4930.css",
+    "file": "index.05d7e8b1.css",
     "src": "pages/category/index.css"
   },
   "pages/category/index.vue": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "index.6e6e4930.css"
+      "index.05d7e8b1.css"
     ],
-    "file": "index.4e092237.js",
+    "file": "index.303ab1bc.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.1b66cdcb.js"
+      "_card-list.f4df0ebb.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/category/index.vue"
   },
-  "index.6e6e4930.css": {
-    "file": "index.6e6e4930.css",
+  "index.05d7e8b1.css": {
+    "file": "index.05d7e8b1.css",
     "resourceType": "style"
   },
   "pages/index.css": {
     "resourceType": "style",
-    "file": "index.d58faa15.css",
+    "file": "index.08de6a58.css",
     "src": "pages/index.css"
   },
   "pages/index.vue": {
@@ -1463,18 +1319,18 @@ const client_manifest = {
       "bg.d71fbcd2.jpg"
     ],
     "css": [
-      "index.d58faa15.css"
+      "index.08de6a58.css"
     ],
-    "file": "index.2bc17bcf.js",
+    "file": "index.fb955a07.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_team.9d21a3fb.js"
+      "_team.aa3bc483.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
   },
-  "index.d58faa15.css": {
-    "file": "index.d58faa15.css",
+  "index.08de6a58.css": {
+    "file": "index.08de6a58.css",
     "resourceType": "style"
   },
   "pages/search/index.css": {
@@ -1488,10 +1344,10 @@ const client_manifest = {
     "css": [
       "index.e68ac1a9.css"
     ],
-    "file": "index.dfcaf81a.js",
+    "file": "index.fc23b3e9.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.1b66cdcb.js"
+      "_card-list.f4df0ebb.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/search/index.vue"
@@ -1511,10 +1367,10 @@ const client_manifest = {
     "css": [
       "_id_.36a069af.css"
     ],
-    "file": "_id_.998e7761.js",
+    "file": "_id_.403037bd.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.1b66cdcb.js"
+      "_card-list.f4df0ebb.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/tag/[id].vue"
@@ -1530,7 +1386,7 @@ const client_manifest = {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "error-component.778eb2c1.js",
+    "file": "error-component.72393405.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],

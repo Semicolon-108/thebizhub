@@ -17,8 +17,13 @@
     <div class="navbar">
       <div class="navbar-start">
         <ul>
-          <li>
+          <!-- <li>
             <NuxtLink :to="{ path: '/category', query: { is: 'NEWS & EVENT' } }">News & Events</NuxtLink>
+          </li> -->
+
+          <li v-for="(i, indx) in cateInfo" :key="indx">
+            <NuxtLink :to="{ path: '/category', query: { is: `${i.name}` } }"> {{ i.name }}
+            </NuxtLink>
           </li>
           <li class="has-dropdown">
             <a>Product & Services <i class="fa-light fa-angle-down"></i></a>
@@ -37,9 +42,9 @@
               </li>
             </ul>
           </li>
-          <li>
+          <!-- <li>
             <NuxtLink :to="{ path: '/category', query: { is: 'Biz Laws' } }">BIZ Laws</NuxtLink>
-          </li>
+          </li> -->
           <li>
             <NuxtLink :to="{ path: '/category', query: { is: 'Update' } }">Update</NuxtLink>
           </li>
@@ -74,6 +79,7 @@ const router = useRouter();
 const productAndService = ref<any>([]);
 const learing = ref<any>([]);
 const search = ref<any>()
+const cateInfo = ref<any>();
 const fetchProductAndService = async () => {
   const type = "Product & Services";
   await axios.post(`get-group/${type}`).then((res) => {
@@ -90,6 +96,11 @@ const fetchLearning = async () => {
     }
   });
 };
+const fetchCategory = async () => {
+  const data = await axios.post(`get-category-filter/Category`);
+  cateInfo.value = data.data.info
+}
+fetchCategory()
 fetchProductAndService();
 fetchLearning();
 </script>

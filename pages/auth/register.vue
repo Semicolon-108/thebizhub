@@ -14,7 +14,7 @@
               </div>
             </div>
             <div class="field">
-              <label for="">Birt Year <span>*</span></label>
+              <label for="">Year Of Birth: <span>*</span></label>
               <div class="control">
                 <input type="number" v-model="state.birtYear" class="input" placeholder="1999" />
                 <div v-if="v$.birtYear.$error" class="err">{{ v$.birtYear.required.$message }}</div>

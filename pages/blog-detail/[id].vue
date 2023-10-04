@@ -99,13 +99,17 @@ const fetch = async () => {
     }
   })
 }
-fetch();
-useSeoMeta({
+fetch()
+
+useHead({
   title: title,
-  ogTitle: title,
-  description: detail,
-  ogDescription: detail,
-  ogImage: coverPage
+  meta: [
+    { property: 'og:title', content: title },
+    { property: 'og:description', content: detail },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://thebizhub.la' },
+    { property: 'og:image', content: coverPage },
+  ]
 })
 </script>
 

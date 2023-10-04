@@ -2,14 +2,14 @@
   <section>
     <div class="container">
       <h1 class="page-title">{{ route.query.is }}</h1>
-      <div class="tabs-container">
+      <!-- <div class="tabs-container">
         <ul class="tabs">
           <li v-for="(i, index) in cateInfo" :key="index" @click="(categoryFilter = i._id), fetch()">
             {{ i.name }}
           </li>
         </ul>
         <p><i class="fa-regular fa-angle-right"></i></p>
-      </div>
+      </div> -->
       <CategoryCardList :info="info" />
     </div>
   </section>
@@ -28,7 +28,7 @@ const tagId = ref("");
 const categoryFilter = ref<any>("");
 const totals = ref<any>(0);
 const msgError = ref<any>();
-
+const search = ref<any>("")
 const fetchCategory = async () => {
   const data = await axios.post(`get-reuses-list/Category`);
   const isFilter = data.data.info.filter((f: any) => !f.groupStatus);
@@ -37,7 +37,7 @@ const fetchCategory = async () => {
 }
 const fetch = async () => {
   await axios.post(
-    `get-articles?page=${page.value}&perPage=${perPage.value}&tagId=${tagId.value}&categoryId=${categoryFilter.value}`
+    `get-articles?page=${page.value}&perPage=${perPage.value}&tagId=${tagId.value}&categoryId=${categoryFilter.value}&search=${search.value}`
   ).then((res) => {
     if (res.status === 200) {
       info.value = res.data.info;
@@ -52,11 +52,20 @@ const fetch = async () => {
 
 const isFilter = () => {
   const cateName = route.query.is;
-  const data = isCate.value.find((i: any) => i.name === cateName);
-  if (data) {
-    categoryFilter.value = data._id;
-  } else {
+  const update = "Update"
+  if (cateName === update) {
+    search.value = update
     categoryFilter.value = ""
+  } else {
+    search.value = ""
+    const data = isCate.value.find((i: any) => i.name === cateName);
+    if (data) {
+      categoryFilter.value = data._id;
+      search.value = ""
+    } else {
+      categoryFilter.value = ""
+      search.value = ""
+    }
   }
 }
 await fetchCategory()
@@ -72,6 +81,7 @@ watch(
   { immediate: true, deep: true }
 );
 </script>
+
 
 <style lang="scss" scoped>
 .tabs-container {
