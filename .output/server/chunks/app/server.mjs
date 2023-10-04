@@ -523,7 +523,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_-234140a3.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_-36353c2e.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-detail-related",

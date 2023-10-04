@@ -19,9 +19,14 @@
         <li class="post-date">{{ createdAt }}</li>
         <li class="social">
           <p>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-light fa-link"></i>
+            <a :href="`https://www.facebook.com/sharer/sharer.php?u=${https}blog-detail/${route.params.id}`"
+              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a :href="`whatsapp://send?text=${https}blog-detail/${route.params.id}`"
+              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+              <i class="fa-brands fa-whatsapp"></i></a>
+            <i class="fa-light fa-link" @click="isCopy()" v-if="copy"></i>
+            <i class="fa-light fa-check checkStatus" v-else></i>
           </p>
         </li>
       </ul>
@@ -78,6 +83,7 @@ const category = ref<any>();
 const detail = ref<any>();
 const createdAt = ref<any>();
 const related = ref<any>([]);
+const copy = ref<any>(true)
 const fetch = async () => {
   const id = route.params.id;
   if (!id) return;
@@ -101,7 +107,10 @@ const fetch = async () => {
   })
 }
 await fetch()
-
+const isCopy = () => {
+  navigator.clipboard.writeText(https + 'blog-detail/' + route.params.id)
+  copy.value = false
+}
 useHead({
   title: title,
   meta: [
@@ -112,14 +121,6 @@ useHead({
     { hid: 'og:image', property: 'og:image', content: coverPage },
   ]
 })
-// useSeoMeta({
-//   title: title,
-//   ogTitle: title,
-//   description: detail,
-//   ogDescription: detail,
-//   ogImage: coverPage,
-//   ogUrl: https + 'blog-detail/' + route.params.id
-// })
 </script>
 
 <style lang="scss" scoped>
@@ -245,6 +246,14 @@ useHead({
           &:nth-child(3) {
             color: --var(grey-color);
           }
+        }
+
+        i.checkStatus {
+          background-color: rgb(255, 255, 255);
+          border-style: ridge;
+          border: 2px solid rgba(26, 17, 196, 0.6);
+          font-size: auto;
+          padding: 1px 4px
         }
       }
     }

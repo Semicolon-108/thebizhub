@@ -1,11 +1,11 @@
 const client_manifest = {
-  "_card-list.401b52ef.js": {
+  "_card-list.d2f9ae27.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "card-list.e8a31d82.css"
     ],
-    "file": "card-list.401b52ef.js",
+    "file": "card-list.d2f9ae27.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -14,13 +14,13 @@ const client_manifest = {
     "file": "card-list.e8a31d82.css",
     "resourceType": "style"
   },
-  "_info-box.6d3cfcb1.js": {
+  "_info-box.bd45b1a2.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "info-box.f67ba7a8.css"
     ],
-    "file": "info-box.6d3cfcb1.js",
+    "file": "info-box.bd45b1a2.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -29,29 +29,29 @@ const client_manifest = {
     "file": "info-box.f67ba7a8.css",
     "resourceType": "style"
   },
-  "_nuxt-link.196da2e9.js": {
+  "_nuxt-link.f176c831.js": {
     "resourceType": "script",
     "module": true,
-    "file": "nuxt-link.196da2e9.js",
+    "file": "nuxt-link.f176c831.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_related.vue.1390dc9b.js": {
+  "_related.vue.8de77224.js": {
     "resourceType": "script",
     "module": true,
-    "file": "related.vue.1390dc9b.js",
+    "file": "related.vue.8de77224.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_team.6b892146.js": {
+  "_team.4b073bc5.js": {
     "resourceType": "script",
     "module": true,
     "assets": [
       "team.ae182b55.jpg"
     ],
-    "file": "team.6b892146.js",
+    "file": "team.4b073bc5.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -439,6 +439,174 @@ const client_manifest = {
     "file": "thebizhub-logo.b61d510f.jpg",
     "src": "assets/images/thebizhub-logo.jpg"
   },
+  "assets/webfonts/NotoSansLao-Black.eot": {
+    "resourceType": "font",
+    "mimeType": "font/eot",
+    "file": "NotoSansLao-Black.ef799f72.eot",
+    "src": "assets/webfonts/NotoSansLao-Black.eot"
+  },
+  "assets/webfonts/NotoSansLao-Black.ttf": {
+    "resourceType": "font",
+    "mimeType": "font/ttf",
+    "file": "NotoSansLao-Black.0824945a.ttf",
+    "src": "assets/webfonts/NotoSansLao-Black.ttf"
+  },
+  "assets/webfonts/NotoSansLao-Black.woff": {
+    "resourceType": "font",
+    "mimeType": "font/woff",
+    "file": "NotoSansLao-Black.53441980.woff",
+    "src": "assets/webfonts/NotoSansLao-Black.woff"
+  },
+  "assets/webfonts/NotoSansLao-Black.woff2": {
+    "resourceType": "font",
+    "mimeType": "font/woff2",
+    "file": "NotoSansLao-Black.909733e6.woff2",
+    "src": "assets/webfonts/NotoSansLao-Black.woff2"
+  },
+  "assets/webfonts/NotoSansLao-Bold.eot": {
+    "resourceType": "font",
+    "mimeType": "font/eot",
+    "file": "NotoSansLao-Bold.c26e01f6.eot",
+    "src": "assets/webfonts/NotoSansLao-Bold.eot"
+  },
+  "assets/webfonts/NotoSansLao-Bold.ttf": {
+    "resourceType": "font",
+    "mimeType": "font/ttf",
+    "file": "NotoSansLao-Bold.12a4aed0.ttf",
+    "src": "assets/webfonts/NotoSansLao-Bold.ttf"
+  },
+  "assets/webfonts/NotoSansLao-Bold.woff": {
+    "resourceType": "font",
+    "mimeType": "font/woff",
+    "file": "NotoSansLao-Bold.f92d04f0.woff",
+    "src": "assets/webfonts/NotoSansLao-Bold.woff"
+  },
+  "assets/webfonts/NotoSansLao-Bold.woff2": {
+    "resourceType": "font",
+    "mimeType": "font/woff2",
+    "file": "NotoSansLao-Bold.032ee902.woff2",
+    "src": "assets/webfonts/NotoSansLao-Bold.woff2"
+  },
+  "assets/webfonts/NotoSansLao-ExtraBold.eot": {
+    "resourceType": "font",
+    "mimeType": "font/eot",
+    "file": "NotoSansLao-ExtraBold.6324da2f.eot",
+    "src": "assets/webfonts/NotoSansLao-ExtraBold.eot"
+  },
+  "assets/webfonts/NotoSansLao-ExtraBold.ttf": {
+    "resourceType": "font",
+    "mimeType": "font/ttf",
+    "file": "NotoSansLao-ExtraBold.54691bff.ttf",
+    "src": "assets/webfonts/NotoSansLao-ExtraBold.ttf"
+  },
+  "assets/webfonts/NotoSansLao-ExtraBold.woff": {
+    "resourceType": "font",
+    "mimeType": "font/woff",
+    "file": "NotoSansLao-ExtraBold.a2e142ad.woff",
+    "src": "assets/webfonts/NotoSansLao-ExtraBold.woff"
+  },
+  "assets/webfonts/NotoSansLao-ExtraBold.woff2": {
+    "resourceType": "font",
+    "mimeType": "font/woff2",
+    "file": "NotoSansLao-ExtraBold.5fbb37c3.woff2",
+    "src": "assets/webfonts/NotoSansLao-ExtraBold.woff2"
+  },
+  "assets/webfonts/NotoSansLao-Light.eot": {
+    "resourceType": "font",
+    "mimeType": "font/eot",
+    "file": "NotoSansLao-Light.cccc109f.eot",
+    "src": "assets/webfonts/NotoSansLao-Light.eot"
+  },
+  "assets/webfonts/NotoSansLao-Light.ttf": {
+    "resourceType": "font",
+    "mimeType": "font/ttf",
+    "file": "NotoSansLao-Light.d7eb3176.ttf",
+    "src": "assets/webfonts/NotoSansLao-Light.ttf"
+  },
+  "assets/webfonts/NotoSansLao-Light.woff": {
+    "resourceType": "font",
+    "mimeType": "font/woff",
+    "file": "NotoSansLao-Light.f81de9d1.woff",
+    "src": "assets/webfonts/NotoSansLao-Light.woff"
+  },
+  "assets/webfonts/NotoSansLao-Light.woff2": {
+    "resourceType": "font",
+    "mimeType": "font/woff2",
+    "file": "NotoSansLao-Light.1709ffe5.woff2",
+    "src": "assets/webfonts/NotoSansLao-Light.woff2"
+  },
+  "assets/webfonts/NotoSansLao-Medium.eot": {
+    "resourceType": "font",
+    "mimeType": "font/eot",
+    "file": "NotoSansLao-Medium.6441aa41.eot",
+    "src": "assets/webfonts/NotoSansLao-Medium.eot"
+  },
+  "assets/webfonts/NotoSansLao-Medium.ttf": {
+    "resourceType": "font",
+    "mimeType": "font/ttf",
+    "file": "NotoSansLao-Medium.2069af6f.ttf",
+    "src": "assets/webfonts/NotoSansLao-Medium.ttf"
+  },
+  "assets/webfonts/NotoSansLao-Medium.woff": {
+    "resourceType": "font",
+    "mimeType": "font/woff",
+    "file": "NotoSansLao-Medium.6e80ea72.woff",
+    "src": "assets/webfonts/NotoSansLao-Medium.woff"
+  },
+  "assets/webfonts/NotoSansLao-Medium.woff2": {
+    "resourceType": "font",
+    "mimeType": "font/woff2",
+    "file": "NotoSansLao-Medium.c20dbff3.woff2",
+    "src": "assets/webfonts/NotoSansLao-Medium.woff2"
+  },
+  "assets/webfonts/NotoSansLao-Regular.eot": {
+    "resourceType": "font",
+    "mimeType": "font/eot",
+    "file": "NotoSansLao-Regular.a0b552bd.eot",
+    "src": "assets/webfonts/NotoSansLao-Regular.eot"
+  },
+  "assets/webfonts/NotoSansLao-Regular.ttf": {
+    "resourceType": "font",
+    "mimeType": "font/ttf",
+    "file": "NotoSansLao-Regular.4de25d63.ttf",
+    "src": "assets/webfonts/NotoSansLao-Regular.ttf"
+  },
+  "assets/webfonts/NotoSansLao-Regular.woff": {
+    "resourceType": "font",
+    "mimeType": "font/woff",
+    "file": "NotoSansLao-Regular.997d63ee.woff",
+    "src": "assets/webfonts/NotoSansLao-Regular.woff"
+  },
+  "assets/webfonts/NotoSansLao-Regular.woff2": {
+    "resourceType": "font",
+    "mimeType": "font/woff2",
+    "file": "NotoSansLao-Regular.2d3fb0a7.woff2",
+    "src": "assets/webfonts/NotoSansLao-Regular.woff2"
+  },
+  "assets/webfonts/NotoSansLao-SemiBold.eot": {
+    "resourceType": "font",
+    "mimeType": "font/eot",
+    "file": "NotoSansLao-SemiBold.41780e49.eot",
+    "src": "assets/webfonts/NotoSansLao-SemiBold.eot"
+  },
+  "assets/webfonts/NotoSansLao-SemiBold.ttf": {
+    "resourceType": "font",
+    "mimeType": "font/ttf",
+    "file": "NotoSansLao-SemiBold.cdc974c7.ttf",
+    "src": "assets/webfonts/NotoSansLao-SemiBold.ttf"
+  },
+  "assets/webfonts/NotoSansLao-SemiBold.woff": {
+    "resourceType": "font",
+    "mimeType": "font/woff",
+    "file": "NotoSansLao-SemiBold.5e05302c.woff",
+    "src": "assets/webfonts/NotoSansLao-SemiBold.woff"
+  },
+  "assets/webfonts/NotoSansLao-SemiBold.woff2": {
+    "resourceType": "font",
+    "mimeType": "font/woff2",
+    "file": "NotoSansLao-SemiBold.bcdc8085.woff2",
+    "src": "assets/webfonts/NotoSansLao-SemiBold.woff2"
+  },
   "assets/webfonts/fa-brands-400.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
@@ -561,9 +729,9 @@ const client_manifest = {
     "css": [
       "main.f1fe2f1e.css"
     ],
-    "file": "main.da115990.js",
+    "file": "main.e0005229.js",
     "imports": [
-      "_nuxt-link.196da2e9.js",
+      "_nuxt-link.f176c831.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -597,9 +765,9 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-404.ca5d83ad.js",
+    "file": "error-404.9837abbb.js",
     "imports": [
-      "_nuxt-link.196da2e9.js",
+      "_nuxt-link.f176c831.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -618,7 +786,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-500.9cdf8a7d.js",
+    "file": "error-500.031e6e6f.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -631,13 +799,41 @@ const client_manifest = {
   },
   "node_modules/nuxt/dist/app/entry.css": {
     "resourceType": "style",
-    "file": "entry.469ea4bf.css",
+    "file": "entry.8e2a56b9.css",
     "src": "node_modules/nuxt/dist/app/entry.css"
   },
   "node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "assets": [
+      "NotoSansLao-Black.ef799f72.eot",
+      "NotoSansLao-Black.909733e6.woff2",
+      "NotoSansLao-Black.53441980.woff",
+      "NotoSansLao-Black.0824945a.ttf",
+      "NotoSansLao-ExtraBold.6324da2f.eot",
+      "NotoSansLao-ExtraBold.5fbb37c3.woff2",
+      "NotoSansLao-ExtraBold.a2e142ad.woff",
+      "NotoSansLao-ExtraBold.54691bff.ttf",
+      "NotoSansLao-Bold.c26e01f6.eot",
+      "NotoSansLao-Bold.032ee902.woff2",
+      "NotoSansLao-Bold.f92d04f0.woff",
+      "NotoSansLao-Bold.12a4aed0.ttf",
+      "NotoSansLao-SemiBold.41780e49.eot",
+      "NotoSansLao-SemiBold.bcdc8085.woff2",
+      "NotoSansLao-SemiBold.5e05302c.woff",
+      "NotoSansLao-SemiBold.cdc974c7.ttf",
+      "NotoSansLao-Medium.6441aa41.eot",
+      "NotoSansLao-Medium.c20dbff3.woff2",
+      "NotoSansLao-Medium.6e80ea72.woff",
+      "NotoSansLao-Medium.2069af6f.ttf",
+      "NotoSansLao-Regular.a0b552bd.eot",
+      "NotoSansLao-Regular.2d3fb0a7.woff2",
+      "NotoSansLao-Regular.997d63ee.woff",
+      "NotoSansLao-Regular.4de25d63.ttf",
+      "NotoSansLao-Light.cccc109f.eot",
+      "NotoSansLao-Light.1709ffe5.woff2",
+      "NotoSansLao-Light.f81de9d1.woff",
+      "NotoSansLao-Light.d7eb3176.ttf",
       "fa-brands-400.7b17fce6.woff2",
       "fa-brands-400.0726ff45.ttf",
       "fa-duotone-900.fc69a3f7.woff2",
@@ -656,19 +852,159 @@ const client_manifest = {
       "fa-sharp-solid-900.ef651aac.ttf"
     ],
     "css": [
-      "entry.469ea4bf.css"
+      "entry.8e2a56b9.css"
     ],
     "dynamicImports": [
       "layouts/main.vue",
       "virtual:nuxt:D:/Thebizhub/thebizhub/.nuxt/error-component.mjs"
     ],
-    "file": "entry.5b491641.js",
+    "file": "entry.5c8915c9.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js"
   },
-  "entry.469ea4bf.css": {
-    "file": "entry.469ea4bf.css",
+  "entry.8e2a56b9.css": {
+    "file": "entry.8e2a56b9.css",
     "resourceType": "style"
+  },
+  "NotoSansLao-Black.ef799f72.eot": {
+    "file": "NotoSansLao-Black.ef799f72.eot",
+    "resourceType": "font",
+    "mimeType": "font/eot"
+  },
+  "NotoSansLao-Black.909733e6.woff2": {
+    "file": "NotoSansLao-Black.909733e6.woff2",
+    "resourceType": "font",
+    "mimeType": "font/woff2"
+  },
+  "NotoSansLao-Black.53441980.woff": {
+    "file": "NotoSansLao-Black.53441980.woff",
+    "resourceType": "font",
+    "mimeType": "font/woff"
+  },
+  "NotoSansLao-Black.0824945a.ttf": {
+    "file": "NotoSansLao-Black.0824945a.ttf",
+    "resourceType": "font",
+    "mimeType": "font/ttf"
+  },
+  "NotoSansLao-ExtraBold.6324da2f.eot": {
+    "file": "NotoSansLao-ExtraBold.6324da2f.eot",
+    "resourceType": "font",
+    "mimeType": "font/eot"
+  },
+  "NotoSansLao-ExtraBold.5fbb37c3.woff2": {
+    "file": "NotoSansLao-ExtraBold.5fbb37c3.woff2",
+    "resourceType": "font",
+    "mimeType": "font/woff2"
+  },
+  "NotoSansLao-ExtraBold.a2e142ad.woff": {
+    "file": "NotoSansLao-ExtraBold.a2e142ad.woff",
+    "resourceType": "font",
+    "mimeType": "font/woff"
+  },
+  "NotoSansLao-ExtraBold.54691bff.ttf": {
+    "file": "NotoSansLao-ExtraBold.54691bff.ttf",
+    "resourceType": "font",
+    "mimeType": "font/ttf"
+  },
+  "NotoSansLao-Bold.c26e01f6.eot": {
+    "file": "NotoSansLao-Bold.c26e01f6.eot",
+    "resourceType": "font",
+    "mimeType": "font/eot"
+  },
+  "NotoSansLao-Bold.032ee902.woff2": {
+    "file": "NotoSansLao-Bold.032ee902.woff2",
+    "resourceType": "font",
+    "mimeType": "font/woff2"
+  },
+  "NotoSansLao-Bold.f92d04f0.woff": {
+    "file": "NotoSansLao-Bold.f92d04f0.woff",
+    "resourceType": "font",
+    "mimeType": "font/woff"
+  },
+  "NotoSansLao-Bold.12a4aed0.ttf": {
+    "file": "NotoSansLao-Bold.12a4aed0.ttf",
+    "resourceType": "font",
+    "mimeType": "font/ttf"
+  },
+  "NotoSansLao-SemiBold.41780e49.eot": {
+    "file": "NotoSansLao-SemiBold.41780e49.eot",
+    "resourceType": "font",
+    "mimeType": "font/eot"
+  },
+  "NotoSansLao-SemiBold.bcdc8085.woff2": {
+    "file": "NotoSansLao-SemiBold.bcdc8085.woff2",
+    "resourceType": "font",
+    "mimeType": "font/woff2"
+  },
+  "NotoSansLao-SemiBold.5e05302c.woff": {
+    "file": "NotoSansLao-SemiBold.5e05302c.woff",
+    "resourceType": "font",
+    "mimeType": "font/woff"
+  },
+  "NotoSansLao-SemiBold.cdc974c7.ttf": {
+    "file": "NotoSansLao-SemiBold.cdc974c7.ttf",
+    "resourceType": "font",
+    "mimeType": "font/ttf"
+  },
+  "NotoSansLao-Medium.6441aa41.eot": {
+    "file": "NotoSansLao-Medium.6441aa41.eot",
+    "resourceType": "font",
+    "mimeType": "font/eot"
+  },
+  "NotoSansLao-Medium.c20dbff3.woff2": {
+    "file": "NotoSansLao-Medium.c20dbff3.woff2",
+    "resourceType": "font",
+    "mimeType": "font/woff2"
+  },
+  "NotoSansLao-Medium.6e80ea72.woff": {
+    "file": "NotoSansLao-Medium.6e80ea72.woff",
+    "resourceType": "font",
+    "mimeType": "font/woff"
+  },
+  "NotoSansLao-Medium.2069af6f.ttf": {
+    "file": "NotoSansLao-Medium.2069af6f.ttf",
+    "resourceType": "font",
+    "mimeType": "font/ttf"
+  },
+  "NotoSansLao-Regular.a0b552bd.eot": {
+    "file": "NotoSansLao-Regular.a0b552bd.eot",
+    "resourceType": "font",
+    "mimeType": "font/eot"
+  },
+  "NotoSansLao-Regular.2d3fb0a7.woff2": {
+    "file": "NotoSansLao-Regular.2d3fb0a7.woff2",
+    "resourceType": "font",
+    "mimeType": "font/woff2"
+  },
+  "NotoSansLao-Regular.997d63ee.woff": {
+    "file": "NotoSansLao-Regular.997d63ee.woff",
+    "resourceType": "font",
+    "mimeType": "font/woff"
+  },
+  "NotoSansLao-Regular.4de25d63.ttf": {
+    "file": "NotoSansLao-Regular.4de25d63.ttf",
+    "resourceType": "font",
+    "mimeType": "font/ttf"
+  },
+  "NotoSansLao-Light.cccc109f.eot": {
+    "file": "NotoSansLao-Light.cccc109f.eot",
+    "resourceType": "font",
+    "mimeType": "font/eot"
+  },
+  "NotoSansLao-Light.1709ffe5.woff2": {
+    "file": "NotoSansLao-Light.1709ffe5.woff2",
+    "resourceType": "font",
+    "mimeType": "font/woff2"
+  },
+  "NotoSansLao-Light.f81de9d1.woff": {
+    "file": "NotoSansLao-Light.f81de9d1.woff",
+    "resourceType": "font",
+    "mimeType": "font/woff"
+  },
+  "NotoSansLao-Light.d7eb3176.ttf": {
+    "file": "NotoSansLao-Light.d7eb3176.ttf",
+    "resourceType": "font",
+    "mimeType": "font/ttf"
   },
   "fa-brands-400.7b17fce6.woff2": {
     "file": "fa-brands-400.7b17fce6.woff2",
@@ -759,9 +1095,9 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "index.426318d2.js",
+    "file": "index.e5ad4b3f.js",
     "imports": [
-      "_team.6b892146.js",
+      "_team.4b073bc5.js",
       "pages/about-us/product-and-services.vue",
       "pages/about-us/works.vue",
       "node_modules/nuxt/dist/app/entry.js"
@@ -782,7 +1118,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "product-and-services.eaab2646.js",
+    "file": "product-and-services.5f32bc0e.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -864,7 +1200,7 @@ const client_manifest = {
       "team.ae182b55.jpg"
     ],
     "css": [],
-    "file": "works.132d4e44.js",
+    "file": "works.975b2bfb.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -1179,11 +1515,11 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "login.1361b287.js",
+    "file": "login.1f88f23a.js",
     "imports": [
-      "_nuxt-link.196da2e9.js",
+      "_nuxt-link.f176c831.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_info-box.6d3cfcb1.js"
+      "_info-box.bd45b1a2.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/auth/login.vue"
@@ -1201,9 +1537,9 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "password-recovery.87964bc3.js",
+    "file": "password-recovery.a39bff5a.js",
     "imports": [
-      "_info-box.6d3cfcb1.js",
+      "_info-box.bd45b1a2.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -1222,10 +1558,10 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "register.156d6195.js",
+    "file": "register.e60e8c76.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_info-box.6d3cfcb1.js"
+      "_info-box.bd45b1a2.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/auth/register.vue"
@@ -1236,31 +1572,31 @@ const client_manifest = {
   },
   "pages/blog-detail/[id].css": {
     "resourceType": "style",
-    "file": "_id_.c00491fe.css",
+    "file": "_id_.80321e2d.css",
     "src": "pages/blog-detail/[id].css"
   },
   "pages/blog-detail/[id].vue": {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "_id_.03bfa561.js",
+    "file": "_id_.54ce4ee4.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_related.vue.1390dc9b.js"
+      "_related.vue.8de77224.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/blog-detail/[id].vue"
   },
-  "_id_.c00491fe.css": {
-    "file": "_id_.c00491fe.css",
+  "_id_.80321e2d.css": {
+    "file": "_id_.80321e2d.css",
     "resourceType": "style"
   },
   "pages/blog-detail/related.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "related.3f79c551.js",
+    "file": "related.c7fb5ac0.js",
     "imports": [
-      "_related.vue.1390dc9b.js",
+      "_related.vue.8de77224.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -1275,10 +1611,10 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "index.6811568e.js",
+    "file": "index.64031363.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.401b52ef.js"
+      "_card-list.d2f9ae27.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/category/index.vue"
@@ -1299,10 +1635,10 @@ const client_manifest = {
       "bg.d71fbcd2.jpg"
     ],
     "css": [],
-    "file": "index.5779e3a9.js",
+    "file": "index.f0acabb3.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_team.6b892146.js"
+      "_team.4b073bc5.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
@@ -1320,10 +1656,10 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "index.5a15cfe0.js",
+    "file": "index.32992d4b.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.401b52ef.js"
+      "_card-list.d2f9ae27.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/search/index.vue"
@@ -1341,10 +1677,10 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "_id_.8a272149.js",
+    "file": "_id_.2f5c17ce.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.401b52ef.js"
+      "_card-list.d2f9ae27.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/tag/[id].vue"
@@ -1360,7 +1696,7 @@ const client_manifest = {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "error-component.6f9ebccb.js",
+    "file": "error-component.fc8038ec.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
