@@ -596,7 +596,9 @@
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [],
+    "css": [
+      "error-404.23f2309d.css"
+    ],
     "file": "error-404.99507c98.js",
     "imports": [
       "_nuxt-link.ee47f6a9.js",
@@ -617,7 +619,9 @@
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [],
+    "css": [
+      "error-500.aa16ed4d.css"
+    ],
     "file": "error-500.51fc3d22.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -758,7 +762,9 @@
   "pages/about-us/index.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [],
+    "css": [
+      "index.a3596bce.css"
+    ],
     "file": "index.c74d4850.js",
     "imports": [
       "_team.0c4e3510.js",
@@ -781,7 +787,9 @@
   "pages/about-us/product-and-services.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [],
+    "css": [
+      "product-and-services.0678765f.css"
+    ],
     "file": "product-and-services.27ada8e1.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -863,7 +871,9 @@
       "coaching4.1ebc6ea1.jpg",
       "team.ae182b55.jpg"
     ],
-    "css": [],
+    "css": [
+      "works.7f11f9f0.css"
+    ],
     "file": "works.132c325a.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -1178,7 +1188,9 @@
   "pages/auth/login.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [],
+    "css": [
+      "login.8d884521.css"
+    ],
     "file": "login.690163f2.js",
     "imports": [
       "_nuxt-link.ee47f6a9.js",
@@ -1200,7 +1212,9 @@
   "pages/auth/password-recovery.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [],
+    "css": [
+      "password-recovery.0798d13b.css"
+    ],
     "file": "password-recovery.0a05d5c0.js",
     "imports": [
       "_info-box.74cf4667.js",
@@ -1221,7 +1235,9 @@
   "pages/auth/register.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [],
+    "css": [
+      "register.1174d1b8.css"
+    ],
     "file": "register.60a808df.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
@@ -1242,7 +1258,9 @@
   "pages/blog-detail/[id].vue": {
     "resourceType": "script",
     "module": true,
-    "css": [],
+    "css": [
+      "_id_.9f2ebf4e.css"
+    ],
     "file": "_id_.d3a5a408.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
@@ -1274,7 +1292,9 @@
   "pages/category/index.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [],
+    "css": [
+      "index.05d7e8b1.css"
+    ],
     "file": "index.c6a37769.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
@@ -1298,7 +1318,9 @@
     "assets": [
       "bg.d71fbcd2.jpg"
     ],
-    "css": [],
+    "css": [
+      "index.08de6a58.css"
+    ],
     "file": "index.84184a56.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
@@ -1319,7 +1341,9 @@
   "pages/search/index.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [],
+    "css": [
+      "index.e68ac1a9.css"
+    ],
     "file": "index.a7563e47.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
@@ -1340,7 +1364,9 @@
   "pages/tag/[id].vue": {
     "resourceType": "script",
     "module": true,
-    "css": [],
+    "css": [
+      "_id_.36a069af.css"
+    ],
     "file": "_id_.366eaf81.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
