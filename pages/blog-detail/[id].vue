@@ -66,6 +66,7 @@
 import Releted from "./related.vue";
 const imageURL = useNuxtApp().$imageURL;
 const axios = useNuxtApp().$axios;
+const https = useNuxtApp().$https
 const route = useRoute();
 const router = useRouter();
 const msgError = ref<any>();
@@ -101,22 +102,13 @@ const fetch = async () => {
 }
 fetch()
 
-// useHead({
-//   title: title,
-//   meta: [
-//     { property: 'og:title', content: title },
-//     { property: 'og:description', content: detail },
-//     { property: 'og:type', content: 'website' },
-//     { property: 'og:url', content: 'https://thebizhub.la' },
-//     { property: 'og:image', content: coverPage },
-//   ]
-// })
 useSeoMeta({
   title: title,
   ogTitle: title,
   description: detail,
   ogDescription: detail,
-  ogImage: coverPage
+  ogImage: coverPage,
+  ogUrl: https + 'blog-detail/' + route.params.id
 })
 </script>
 

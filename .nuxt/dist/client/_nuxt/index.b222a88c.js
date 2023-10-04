@@ -1,1 +1,0 @@
-import{r as u,R as c,S as f,T as l,U as p}from"./entry.ec4254af.js";function d(t,a){const e=u({});return c(()=>{const s=l(t),{title:n,titleTemplate:o,...r}=s;e.value={title:n,titleTemplate:o,meta:p(r)}}),f(e,a)}export{d as u};
