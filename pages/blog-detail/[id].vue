@@ -100,7 +100,7 @@ const fetch = async () => {
     }
   })
 }
-fetch()
+await fetch()
 
 useHead({
   title: title,
