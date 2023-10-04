@@ -789,7 +789,7 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
   }
 }, 1);
 const axios_QMFgzss1s4 = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
-  const defaultUrl = "http://localhost:4000/client-api/";
+  const defaultUrl = " https://db.thebizhub.la/client-api/";
   axios.defaults.baseURL = defaultUrl;
   return {
     provide: {
