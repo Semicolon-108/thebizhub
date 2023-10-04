@@ -123,25 +123,25 @@ const router = useRouter();
       display: flex;
       align-items: flex-end;
 
-      &:nth-child(1) {
-        background: url("../../assets/images/img-05.jpg")
-          rgba(var(--main-color-rgb), 0.7);
-      }
+      // &:nth-child(1) {
+      //   background: url("../../assets/images/img-05.jpg")
+      //     rgba(var(--main-color-rgb), 0.7);
+      // }
 
-      &:nth-child(2) {
-        background: url("../../assets/images/img-09.jpg")
-          rgba(var(--main-color-rgb), 0.7);
-      }
+      // &:nth-child(2) {
+      //   background: url("../../assets/images/img-09.jpg")
+      //     rgba(var(--main-color-rgb), 0.7);
+      // }
 
-      &:nth-child(3) {
-        background: url("../../assets/images/img-06.jpg")
-          rgba(var(--main-color-rgb), 0.7);
-      }
+      // &:nth-child(3) {
+      //   background: url("../../assets/images/img-06.jpg")
+      //     rgba(var(--main-color-rgb), 0.7);
+      // }
 
-      &:nth-child(4) {
-        background: url("../../assets/images/img-08.jpg")
-          rgba(var(--main-color-rgb), 0.7);
-      }
+      // &:nth-child(4) {
+      //   background: url("../../assets/images/img-08.jpg")
+      //     rgba(var(--main-color-rgb), 0.7);
+      // }
 
       &:hover {
         .course-info {

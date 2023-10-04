@@ -547,7 +547,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-4a2794e7.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-338fb9e6.mjs').then((m) => m.default || m)
   },
   {
     name: "search",
@@ -789,7 +789,7 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
   }
 }, 1);
 const axios_QMFgzss1s4 = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
-  const defaultUrl = " https://db.thebizhub.la/client-api/";
+  const defaultUrl = "http://localhost:4000/client-api/";
   axios.defaults.baseURL = defaultUrl;
   return {
     provide: {
