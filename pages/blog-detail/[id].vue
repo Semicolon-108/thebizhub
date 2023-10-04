@@ -101,15 +101,22 @@ const fetch = async () => {
 }
 fetch()
 
-useHead({
+// useHead({
+//   title: title,
+//   meta: [
+//     { property: 'og:title', content: title },
+//     { property: 'og:description', content: detail },
+//     { property: 'og:type', content: 'website' },
+//     { property: 'og:url', content: 'https://thebizhub.la' },
+//     { property: 'og:image', content: coverPage },
+//   ]
+// })
+useSeoMeta({
   title: title,
-  meta: [
-    { property: 'og:title', content: title },
-    { property: 'og:description', content: detail },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://thebizhub.la' },
-    { property: 'og:image', content: coverPage },
-  ]
+  ogTitle: title,
+  description: detail,
+  ogDescription: detail,
+  ogImage: coverPage
 })
 </script>
 
