@@ -5,7 +5,7 @@
         <iframe v-if="videoLink" :src="videoLink" class="youtube" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
-        <img v-else :src="imageURL + coverPage" alt="" v-if="coverPage" />
+        <img v-else :src="coverPage" alt="" v-if="coverPage" />
       </div>
     </section>
     <div class="container content">
@@ -80,31 +80,32 @@ const related = ref<any>([]);
 const fetch = async () => {
   const id = route.params.id;
   if (!id) return;
-  await axios.post(`articles-detail/${id}`)
-    .then((res) => {
-      if (res.status === 200) {
-        title.value = res.data.info.title;
-        coverPage.value = res.data.info.coverPage;
-        tag.value = res.data.info.tag;
-        category.value = res.data.info.category;
-        detail.value = res.data.info.details;
-        createdAt.value = res.data.info.createdAt;
-        related.value = res.data.isRelated;
-        if (res.data.info.videoLink) {
-          videoLink.value = "https://www.youtube.com/embed/" + res.data.info.videoLink
-        }
+  await axios.post(`articles-detail/${id}`).then((res) => {
+    if (res.status === 200) {
+      title.value = res.data.info.title;
+      coverPage.value = imageURL + res.data.info.coverPage;
+      tag.value = res.data.info.tag;
+      category.value = res.data.info.category;
+      detail.value = res.data.info.details;
+      createdAt.value = res.data.info.createdAt;
+      related.value = res.data.isRelated;
+      if (res.data.info.videoLink) {
+        videoLink.value = "https://www.youtube.com/embed/" + res.data.info.videoLink
       }
-    }).catch((e: any) => {
-      if (e) {
-        msgError.value = "Data empty";
-      }
-    })
+    }
+  }).catch((e: any) => {
+    if (e) {
+      msgError.value = "Data empty";
+    }
+  })
 }
 fetch();
-useHead({
-  meta: [
-    { name: title.value, content: 'title' }
-  ],
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: detail,
+  ogDescription: detail,
+  ogImage: coverPage
 })
 </script>
 

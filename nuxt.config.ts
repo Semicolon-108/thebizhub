@@ -17,10 +17,9 @@ const meta = [
     content: title
   },
   {
-    hid: "keywords",
-    name: "keywords",
+    name: 'description',
     content: keywords
-  },
+  }
 ]
 export default defineNuxtConfig({
   devtools: { enabled: false },
