@@ -523,7 +523,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_-36353c2e.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_-19768bfe.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-detail-related",
@@ -830,7 +830,7 @@ const _wrapIf = (component, props, slots) => {
   } };
 };
 const layouts = {
-  main: () => import('./_nuxt/main-5c08aa69.mjs').then((m) => m.default || m)
+  main: () => import('./_nuxt/main-327ef655.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = /* @__PURE__ */ defineComponent({
   name: "LayoutLoader",

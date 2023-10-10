@@ -1,0 +1,5 @@
+const Footer_vue_vue_type_style_index_0_scoped_3c5711cc_lang = ".socials[data-v-3c5711cc]{display:flex;gap:15px}.socials li i[data-v-3c5711cc]{font-size:var(--xlg-font)}section[data-v-3c5711cc]{background-image:url(" + __buildAssetsURL("bg.d71fbcd2.jpg") + ");background-position:100% 100%;color:#fff}section ul li[data-v-3c5711cc]{padding:20px}section ul li .logo[data-v-3c5711cc]{align-items:center;display:flex;gap:10px}section ul li .logo img[data-v-3c5711cc]{height:4rem}section ul li .logo h3[data-v-3c5711cc]{font-size:var(--xlg-font)}section ul li h3[data-v-3c5711cc]{font-weight:700;text-transform:uppercase}section ul li small[data-v-3c5711cc]{display:block;font-size:var(--sm-font);font-weight:500;line-height:1.5}section ul li ul[data-v-3c5711cc]{margin-bottom:10px;margin-top:10px}section ul li ul li[data-v-3c5711cc]{display:block;line-height:1.5;padding:0}.footer[data-v-3c5711cc]{background-color:#000;color:#fff;padding:10px;text-align:center}.footer p[data-v-3c5711cc]{font-size:var(--xsm-font)}";
+export {
+  Footer_vue_vue_type_style_index_0_scoped_3c5711cc_lang as default
+};
+//# sourceMappingURL=Footer-styles-1.mjs-20ce8ea6.js.map
