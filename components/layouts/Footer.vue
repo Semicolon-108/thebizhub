@@ -32,6 +32,26 @@
         </li>
         <li class="span-3-desktop">
           <h3>Follow us on</h3>
+          <ul class="socials">
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100091801856212"
+                target="_blank"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@thebizhublaos" target="_blank">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@TheBIZHUB" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -44,6 +64,13 @@
   </div>
 </template>
 <style lang="scss" scoped>
+.socials {
+  display: flex;
+  gap: 15px;
+  li i {
+    font-size: var(--xlg-font);
+  }
+}
 section {
   background-image: url("../../assets/images/bg.jpg");
   background-position: bottom right;

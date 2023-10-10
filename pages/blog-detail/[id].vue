@@ -2,9 +2,15 @@
   <div id="blog-detail">
     <section class="has-bg">
       <div class="container">
-        <iframe v-if="videoLink" :src="videoLink" class="youtube" title="YouTube video player" frameborder="0"
+        <iframe
+          v-if="videoLink"
+          :src="videoLink"
+          class="youtube"
+          title="YouTube video player"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+          allowfullscreen
+        ></iframe>
         <img v-else :src="coverPage" alt="" v-if="coverPage" />
       </div>
     </section>
@@ -19,12 +25,17 @@
         <li class="post-date">{{ createdAt }}</li>
         <li class="social">
           <p>
-            <a :href="`https://www.facebook.com/sharer/sharer.php?u=${https}blog-detail/${route.params.id}`"
-              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i
-                class="fa-brands fa-facebook"></i></a>
-            <a :href="`whatsapp://send?text=${https}blog-detail/${route.params.id}`"
-              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-              <i class="fa-brands fa-whatsapp"></i></a>
+            <a
+              :href="`https://www.facebook.com/sharer/sharer.php?u=${https}blog-detail/${route.params.id}`"
+              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              :href="`whatsapp://send?text=${https}blog-detail/${route.params.id}`"
+              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+            >
+              <i class="fa-brands fa-whatsapp"></i
+            ></a>
             <i class="fa-light fa-link" @click="isCopy()" v-if="copy"></i>
             <i class="fa-light fa-check checkStatus" v-else></i>
           </p>
@@ -34,24 +45,32 @@
       <div class="blog-detail" v-html="detail"></div>
       <div class="tags">
         <strong>TAGS:</strong>
-        <a v-for="(t, indx) in tag" :key="indx" @click="router.push(`/tag/${t._id}`)">{{ t.name }}</a>
+        <a
+          v-for="(t, indx) in tag"
+          :key="indx"
+          @click="router.push(`/tag/${t._id}`)"
+          >{{ t.name }}</a
+        >
       </div>
       <div class="follow-us">
         <h1>ສາມາດຕິດຕາມ THEBIZHUB</h1>
         <p>ຜ່ານແອັບພິເຄຊັ້ນຕ່າງໆ ທີ່ທ່ານສະດວກ ຫຼື ໃຊ້ງານຢູ່ແລ້ວໄດ້ເລີຍ</p>
         <ul>
           <li>
-            <a href="" target="_blank">
+            <a
+              href="https://www.facebook.com/profile.php?id=100091801856212"
+              target="_blank"
+            >
               <i class="fa-brands fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a href="" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.tiktok.com/@thebizhublaos" target="_blank">
+              <i class="fa-brands fa-tiktok"></i>
             </a>
           </li>
           <li>
-            <a href="" target="_blank">
+            <a href="https://www.youtube.com/@TheBIZHUB" target="_blank">
               <i class="fa-brands fa-youtube"></i>
             </a>
           </li>
@@ -67,60 +86,67 @@
 </template>
 
 <script setup lang="ts">
-
 import Releted from "./related.vue";
 const imageURL = useNuxtApp().$imageURL;
 const axios = useNuxtApp().$axios;
-const https = useNuxtApp().$https
+const https = useNuxtApp().$https;
 const route = useRoute();
 const router = useRouter();
 const msgError = ref<any>();
 const title = ref<any>();
 const coverPage = ref<any>();
-const videoLink = ref<any>("")
+const videoLink = ref<any>("");
 const tag = ref<any>();
 const category = ref<any>();
 const detail = ref<any>();
 const createdAt = ref<any>();
 const related = ref<any>([]);
-const copy = ref<any>(true)
+const copy = ref<any>(true);
 const fetch = async () => {
   const id = route.params.id;
   if (!id) return;
-  await axios.post(`articles-detail/${id}`).then((res) => {
-    if (res.status === 200) {
-      title.value = res.data.info.title;
-      coverPage.value = imageURL + res.data.info.coverPage;
-      tag.value = res.data.info.tag;
-      category.value = res.data.info.category;
-      detail.value = res.data.info.details;
-      createdAt.value = res.data.info.createdAt;
-      related.value = res.data.isRelated;
-      if (res.data.info.videoLink) {
-        videoLink.value = "https://www.youtube.com/embed/" + res.data.info.videoLink
+  await axios
+    .post(`articles-detail/${id}`)
+    .then((res) => {
+      if (res.status === 200) {
+        title.value = res.data.info.title;
+        coverPage.value = imageURL + res.data.info.coverPage;
+        tag.value = res.data.info.tag;
+        category.value = res.data.info.category;
+        detail.value = res.data.info.details;
+        createdAt.value = res.data.info.createdAt;
+        related.value = res.data.isRelated;
+        if (res.data.info.videoLink) {
+          videoLink.value =
+            "https://www.youtube.com/embed/" + res.data.info.videoLink;
+        }
       }
-    }
-  }).catch((e: any) => {
-    if (e) {
-      msgError.value = "Data empty";
-    }
-  })
-}
-await fetch()
+    })
+    .catch((e: any) => {
+      if (e) {
+        msgError.value = "Data empty";
+      }
+    });
+};
+await fetch();
 const isCopy = () => {
-  navigator.clipboard.writeText(https + 'blog-detail/' + route.params.id)
-  copy.value = false
-}
+  navigator.clipboard.writeText(https + "blog-detail/" + route.params.id);
+  copy.value = false;
+};
 useHead({
   title: title,
   meta: [
-    { hid: 'og:title', property: 'og:title', content: title },
-    { hid: 'og:description', property: 'og:description', content: detail },
-    { hid: 'og:type', property: 'og:type', content: 'website' },
-    { hid: 'og:url', property: 'og:url', content: https + 'blog-detail/' + route.params.id },
-    { hid: 'og:image', property: 'og:image', content: coverPage },
-  ]
-})
+    { hid: "og:title", property: "og:title", content: title },
+    { hid: "og:description", property: "og:description", content: detail },
+    { hid: "og:type", property: "og:type", content: "website" },
+    {
+      hid: "og:url",
+      property: "og:url",
+      content: https + "blog-detail/" + route.params.id,
+    },
+    { hid: "og:image", property: "og:image", content: coverPage },
+  ],
+});
 </script>
 
 <style lang="scss" scoped>
@@ -188,7 +214,7 @@ useHead({
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 
     li i {
       font-size: var(--xxlg-font);
@@ -253,7 +279,7 @@ useHead({
           border-style: ridge;
           border: 2px solid rgba(26, 17, 196, 0.6);
           font-size: auto;
-          padding: 1px 4px
+          padding: 1px 4px;
         }
       }
     }
