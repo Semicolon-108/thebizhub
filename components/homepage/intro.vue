@@ -110,6 +110,7 @@ const router = useRouter();
 .right {
   ul {
     li {
+      overflow: hidden;
       cursor: pointer;
       position: relative;
       aspect-ratio: 5/3;
@@ -122,24 +123,27 @@ const router = useRouter();
 
       display: flex;
       align-items: flex-end;
-
+      h3 {
+        position: sticky;
+        top: 0;
+      }
       &:nth-child(1) {
-        background: url("../../assets/images/img-05.jpg")
+        background: url("../../assets/images/bg.jpg")
           rgba(var(--main-color-rgb), 0.7);
       }
 
       &:nth-child(2) {
-        background: url("../../assets/images/img-09.jpg")
+        background: url("../../assets/images/bg.jpg")
           rgba(var(--main-color-rgb), 0.7);
       }
 
       &:nth-child(3) {
-        background: url("../../assets/images/img-06.jpg")
+        background: url("../../assets/images/bg.jpg")
           rgba(var(--main-color-rgb), 0.7);
       }
 
       &:nth-child(4) {
-        background: url("../../assets/images/img-08.jpg")
+        background: url("../../assets/images/bg.jpg")
           rgba(var(--main-color-rgb), 0.7);
       }
 
@@ -148,6 +152,10 @@ const router = useRouter();
           p {
             display: block;
             animation: slideUp ease-in-out 0.3s;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
 
             @keyframes slideUp {
               from {
