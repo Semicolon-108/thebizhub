@@ -120,13 +120,9 @@ const router = useRouter();
       background-size: cover !important;
       color: #fff;
       background-blend-mode: multiply;
-
       display: flex;
       align-items: flex-end;
-      h3 {
-        position: sticky;
-        top: 0;
-      }
+
       &:nth-child(1) {
         background: url("../../assets/images/bg.jpg")
           rgba(var(--main-color-rgb), 0.7);
@@ -149,7 +145,8 @@ const router = useRouter();
 
       &:hover {
         .course-info {
-          p {
+          p,
+          h3 {
             display: block;
             animation: slideUp ease-in-out 0.3s;
             display: -webkit-box;
@@ -159,12 +156,10 @@ const router = useRouter();
 
             @keyframes slideUp {
               from {
-                opacity: 0;
                 transform: translateY(100px);
               }
 
               to {
-                opacity: 1;
                 transform: translateY(0px);
               }
             }

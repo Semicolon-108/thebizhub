@@ -1,15 +1,1 @@
-export default {
-  "@vite/client": {
-    "isEntry": true,
-    "file": "@vite/client",
-    "css": [],
-    "module": true,
-    "resourceType": "script"
-  },
-  "C:/Code/thebizhub/node_modules/nuxt/dist/app/entry.js": {
-    "resourceType": "script",
-    "module": true,
-    "isEntry": true,
-    "file": "C:/Code/thebizhub/node_modules/nuxt/dist/app/entry.js"
-  }
-}
+export { default } from "file:///C:/Code/thebizhub/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

@@ -5,7 +5,7 @@
         <iframe v-if="videoLink" :src="videoLink" class="youtube" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
-        <img v-else :src="imageURL + coverPage" alt="" v-if="coverPage" />
+        <img v-else :src="coverPage" alt="" v-if="coverPage" />
       </div>
     </section>
     <div class="container content">
@@ -19,9 +19,14 @@
         <li class="post-date">{{ createdAt }}</li>
         <li class="social">
           <p>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-light fa-link"></i>
+            <a :href="`https://www.facebook.com/sharer/sharer.php?u=${https}blog-detail/${route.params.id}`"
+              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a :href="`whatsapp://send?text=${https}blog-detail/${route.params.id}`"
+              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+              <i class="fa-brands fa-whatsapp"></i></a>
+            <i class="fa-light fa-link" @click="isCopy()" v-if="copy"></i>
+            <i class="fa-light fa-check checkStatus" v-else></i>
           </p>
         </li>
       </ul>
@@ -66,6 +71,7 @@
 import Releted from "./related.vue";
 const imageURL = useNuxtApp().$imageURL;
 const axios = useNuxtApp().$axios;
+const https = useNuxtApp().$https
 const route = useRoute();
 const router = useRouter();
 const msgError = ref<any>();
@@ -77,34 +83,43 @@ const category = ref<any>();
 const detail = ref<any>();
 const createdAt = ref<any>();
 const related = ref<any>([]);
+const copy = ref<any>(true)
 const fetch = async () => {
   const id = route.params.id;
   if (!id) return;
-  await axios.post(`articles-detail/${id}`)
-    .then((res) => {
-      if (res.status === 200) {
-        title.value = res.data.info.title;
-        coverPage.value = res.data.info.coverPage;
-        tag.value = res.data.info.tag;
-        category.value = res.data.info.category;
-        detail.value = res.data.info.details;
-        createdAt.value = res.data.info.createdAt;
-        related.value = res.data.isRelated;
-        if (res.data.info.videoLink) {
-          videoLink.value = "https://www.youtube.com/embed/" + res.data.info.videoLink
-        }
+  await axios.post(`articles-detail/${id}`).then((res) => {
+    if (res.status === 200) {
+      title.value = res.data.info.title;
+      coverPage.value = imageURL + res.data.info.coverPage;
+      tag.value = res.data.info.tag;
+      category.value = res.data.info.category;
+      detail.value = res.data.info.details;
+      createdAt.value = res.data.info.createdAt;
+      related.value = res.data.isRelated;
+      if (res.data.info.videoLink) {
+        videoLink.value = "https://www.youtube.com/embed/" + res.data.info.videoLink
       }
-    }).catch((e: any) => {
-      if (e) {
-        msgError.value = "Data empty";
-      }
-    })
+    }
+  }).catch((e: any) => {
+    if (e) {
+      msgError.value = "Data empty";
+    }
+  })
 }
-fetch();
+await fetch()
+const isCopy = () => {
+  navigator.clipboard.writeText(https + 'blog-detail/' + route.params.id)
+  copy.value = false
+}
 useHead({
+  title: title,
   meta: [
-    { name: title.value, content: 'title' }
-  ],
+    { hid: 'og:title', property: 'og:title', content: title },
+    { hid: 'og:description', property: 'og:description', content: detail },
+    { hid: 'og:type', property: 'og:type', content: 'website' },
+    { hid: 'og:url', property: 'og:url', content: https + 'blog-detail/' + route.params.id },
+    { hid: 'og:image', property: 'og:image', content: coverPage },
+  ]
 })
 </script>
 
@@ -231,6 +246,14 @@ useHead({
           &:nth-child(3) {
             color: --var(grey-color);
           }
+        }
+
+        i.checkStatus {
+          background-color: rgb(255, 255, 255);
+          border-style: ridge;
+          border: 2px solid rgba(26, 17, 196, 0.6);
+          font-size: auto;
+          padding: 1px 4px
         }
       }
     }
