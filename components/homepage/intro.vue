@@ -21,7 +21,11 @@
           </div>
         </div>
         <div class="right span-3-desktop">
-          <ul class="grids gap-10-desktop is-2-desktop is-1-mobile">
+          <img
+            src="https://contentshifu.com/wp-content/uploads/2020/11/home-image.svg"
+            alt=""
+          />
+          <!-- <ul class="grids gap-10-desktop is-2-desktop is-1-mobile">
             <li>
               <div class="course-info">
                 <h3>BIZ COACHING</h3>
@@ -66,7 +70,7 @@
                 </p>
               </div>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>

@@ -66,7 +66,6 @@ section {
   .card-content {
     ul.tag-list {
       display: flex;
-      padding: 5px 0;
       margin: 5px 0;
       text-transform: uppercase;
 
@@ -76,7 +75,10 @@ section {
         a {
           text-transform: uppercase !important;
           transition: all ease-in-out 0.3s;
-          font-size: var(--sm-font);
+          font-size: var(--xsm-font);
+          background-color: $sub-color;
+          color: #fff;
+          padding: 3px 8px;
           &:hover {
             color: var(--sub-color);
           }
@@ -108,7 +110,7 @@ section {
   }
 
   h3 {
-    font-weight: 700;
+    font-weight: 500;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;

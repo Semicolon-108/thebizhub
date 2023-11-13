@@ -1,0 +1,6 @@
+const app_vue_vue_type_style_index_0_lang = "body,html{background-color:var(--bg-color);font-family:var(--font-family)}.page-enter-active,.page-leave-active{transition:all .4s}.page-enter-from,.page-leave-to{filter:blur(1rem);opacity:0}";
+
+const appStyles_d2bd17d8 = [app_vue_vue_type_style_index_0_lang];
+
+export { appStyles_d2bd17d8 as default };
+//# sourceMappingURL=app-styles.d2bd17d8.mjs.map

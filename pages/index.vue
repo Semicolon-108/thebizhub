@@ -1,35 +1,50 @@
 <template>
   <div>
     <Intro />
+    <OurService />
     <WhoWeAre />
-    <SmeAndStartup :title="'SME & Startup'" :info="sme" v-show="sme.length" />
+    <SmeAndStartup :title="'MSMEs'" :info="msmes" v-show="msmes.length" />
     <Story v-show="enterPreInfo.length" :info="enterPreInfo" />
     <SelftEmployment :title="'Self - Employment'" :info="selftEmpInfo" v-show="selftEmpInfo.length" />
-    <Event :info="eventInfo" v-show="eventInfo.length" />
-    <BizLaws :info="bizLawInfo" v-show="bizLawInfo.length" />
+
+    <NewsAndActivitiesInfo :title="`News & Activities`" :info="newsAndActivitiesInfo"
+      v-show="newsAndActivitiesInfo.length" />
+
+    <BizLaws :title="`BIZ Laws`" :info="bizLawInfo" v-show="bizLawInfo.length" />
+
+    <TSNS :title="`TSNS - Thao Sang Nang Sa`" :info="TSNSInfo" v-show="TSNSInfo.length" />
+
+    <Wing :title="`WINGS - Women's Income Generating Support`" :info="wingInfo" v-show="wingInfo.length" />
   </div>
 </template>
 
 <script setup lang="ts">
 import Intro from "../components/homepage/intro.vue";
+import OurService from "../components/homepage/our-services.vue";
 import WhoWeAre from "../components/homepage/who-are-we.vue";
-import SmeAndStartup from "../components/homepage/grids-layout.vue";
 import Story from "../components/homepage/story.vue";
-import SelftEmployment from "../components/homepage/grids-layout.vue";
-import Event from "../components/homepage/event.vue";
-import BizLaws from "~/components/homepage/biz-laws.vue";
+import NewsAndActivitiesInfo from "../components/homepage/reuse/column-layout.vue";
+import BizLaws from "~/components/homepage/reuse/column-layout.vue";
+
+import SmeAndStartup from "../components/homepage/reuse/grids-layout.vue";
+import SelftEmployment from "../components/homepage/reuse/grids-layout.vue";
+import Wing from "../components/homepage/reuse/column-layout.vue";
+import TSNS from "../components/homepage/reuse/column-layout.vue";
+
 const axios = useNuxtApp().$axios;
 const enterPreInfo = ref<any>([]);
 const selftEmpInfo = ref<any>([]);
-const sme = ref<any>([]);
-const eventInfo = ref<any>([]);
+const msmes = ref<any>([]);
+const newsAndActivitiesInfo = ref<any>([]);
 const bizLawInfo = ref<any>([]);
+const wingInfo = ref<any>([]);
+const TSNSInfo = ref<any>([]);
 
-const fetchSME = async () => {
-  const name = "651a4c59c2d5c94d6cc3da8a";
+const fetchMSMEs = async () => {
+  const name = "654d868d4040f0af2207e5eb";
   await axios.post(`sme-articles/${name}`).then((res) => {
     if (res.status === 200) {
-      sme.value = res.data.info;
+      msmes.value = res.data.info;
     }
   });
 };
@@ -49,11 +64,11 @@ const fetchSelftEmp = async () => {
     }
   });
 };
-const fetchEvent = async () => {
+const fetchNewAndActivities = async () => {
   const name = "651a4d06c2d5c94d6cc3daba";
   await axios.post(`reuse-articles/${name}`).then((res) => {
     if (res.status === 200) {
-      eventInfo.value = res.data.info;
+      newsAndActivitiesInfo.value = res.data.info;
     }
   });
 };
@@ -65,16 +80,36 @@ const fetchBizLaw = async () => {
     }
   });
 };
-await fetchSME();
+
+const fetchTSNS = async () => {
+  const name = "654d86c14040f0af2207e5f4";
+  await axios.post(`reuse-articles/${name}`).then((res) => {
+    if (res.status === 200) {
+      TSNSInfo.value = res.data.info;
+    }
+  });
+};
+
+const fetchWing = async () => {
+  const name = "654d86dc4040f0af2207e5fd";
+  await axios.post(`reuse-articles/${name}`).then((res) => {
+    if (res.status === 200) {
+      wingInfo.value = res.data.info;
+    }
+  });
+};
+await fetchMSMEs();
 await fetchEntrepre();
 await fetchSelftEmp();
-await fetchEvent();
+await fetchNewAndActivities();
 await fetchBizLaw();
+await fetchTSNS();
+await fetchWing();
 </script>
 
 <style lang="scss">
 section {
-  padding: 3.25rem 2rem;
+  padding: 3rem 2rem;
 
   @include mobile {
     padding: 2rem 1rem;
@@ -88,9 +123,9 @@ section {
 }
 
 .section-title {
-  font-size: var(--xxlg-font);
+  font-size: var(--xlg-font);
   font-weight: 700;
-  //   text-transform: uppercase;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 </style>

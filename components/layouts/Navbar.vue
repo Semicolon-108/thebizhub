@@ -20,42 +20,53 @@
           <!-- <li>
             <NuxtLink :to="{ path: '/category', query: { is: 'NEWS & EVENT' } }">News & Events</NuxtLink>
           </li> -->
-
-          <li v-for="(i, indx) in cateInfo" :key="indx">
-            <NuxtLink :to="{ path: '/category', query: { is: `${i.name}` } }"> {{ i.name }}
-            </NuxtLink>
-          </li>
           <li class="has-dropdown">
             <a>Product & Services <i class="fa-light fa-angle-down"></i></a>
             <ul class="dropdown">
               <li v-for="(i, indx) in productAndService" :key="indx">
-                <NuxtLink :to="{ path: '/category', query: { is: `${i.name}` } }">{{ i.name }}</NuxtLink>
+                <NuxtLink
+                  :to="{ path: '/category', query: { is: `${i.name}` } }"
+                  >{{ i.name }}</NuxtLink
+                >
               </li>
             </ul>
           </li>
-
           <li class="has-dropdown">
             <a>Learning <i class="fa-light fa-angle-down"></i></a>
             <ul class="dropdown">
               <li v-for="(o, index) in learing" :key="index">
-                <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }">{{ o.name }}</NuxtLink>
+                <NuxtLink
+                  :to="{ path: '/category', query: { is: `${o.name}` } }"
+                  >{{ o.name }}</NuxtLink
+                >
               </li>
             </ul>
           </li>
+          <li v-for="(i, indx) in cateInfo" :key="indx">
+            <NuxtLink :to="{ path: '/category', query: { is: `${i.name}` } }">
+              {{ i.name }}
+            </NuxtLink>
+          </li>
+
           <!-- <li>
             <NuxtLink :to="{ path: '/category', query: { is: 'Biz Laws' } }">BIZ Laws</NuxtLink>
           </li> -->
-          <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'Update' } }">Update</NuxtLink>
-          </li>
+
           <li>
             <NuxtLink to="/about-us">About Us</NuxtLink>
           </li>
         </ul>
       </div>
       <div class="navbar-end">
-        <input type="text" v-model="search" class="input small" placeholder="Enter keyword and press Enter"
-          @keyup.enter="router.push({ path: '/search', query: { search: search } })" />
+        <input
+          type="text"
+          v-model="search"
+          class="input small"
+          placeholder="Enter keyword and press Enter"
+          @keyup.enter="
+            router.push({ path: '/search', query: { search: search } })
+          "
+        />
         <hr class="v" />
         <p class="lang-switch">
           <a class="current">EN</a>
@@ -78,7 +89,7 @@ const axios = useNuxtApp().$axios;
 const router = useRouter();
 const productAndService = ref<any>([]);
 const learing = ref<any>([]);
-const search = ref<any>()
+const search = ref<any>();
 const cateInfo = ref<any>();
 const fetchProductAndService = async () => {
   const type = "Product & Services";
@@ -98,9 +109,9 @@ const fetchLearning = async () => {
 };
 const fetchCategory = async () => {
   const data = await axios.post(`get-category-filter/Category`);
-  cateInfo.value = data.data.info
-}
-fetchCategory()
+  cateInfo.value = data.data.info;
+};
+fetchCategory();
 fetchProductAndService();
 fetchLearning();
 </script>
@@ -241,7 +252,7 @@ fetchLearning();
             display: none;
             position: absolute;
             z-index: 999;
-            top: 2.5rem;
+            top: 3rem;
             right: 0;
             border-radius: 5px;
             background-color: var(--sub-color);
@@ -256,7 +267,7 @@ fetchLearning();
               content: "";
               position: absolute;
               top: -7px;
-              right: 10px;
+              right: 7px;
               width: 0;
               height: 0;
               border-left: 8px solid transparent;
@@ -304,8 +315,12 @@ fetchLearning();
 
       a {
         background-color: var(--light-grey-color);
-        padding: 5px;
         cursor: pointer;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
         font-size: var(--xsm-font);
 
         &.current {

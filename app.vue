@@ -8,6 +8,7 @@
 <style lang="scss">
 html,
 body {
+  background-color: var(--bg-color);
   font-family: var(--font-family);
 }
 

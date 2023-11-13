@@ -24,11 +24,16 @@
 
   <p class="social-icons margin-top-10">
     <span
-      ><a><i class="fa-brands fa-youtube"></i></a
+      ><a href="https://www.youtube.com/@TheBIZHUB" target="_blank"
+        ><i class="fa-brands fa-youtube"></i></a
     ></span>
-    <span
-      ><a><i class="fa-brands fa-facebook"></i></a
-    ></span>
+    <span>
+      <a
+        href="https://www.facebook.com/profile.php?id=100091801856212"
+        target="_blank"
+        ><i class="fa-brands fa-facebook"></i>
+      </a>
+    </span>
   </p>
 </template>
 

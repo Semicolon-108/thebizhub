@@ -499,7 +499,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/login-63ca6b5e.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/login-fa019391.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-password-recovery",
@@ -507,7 +507,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/password-recovery-74f6dfda.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/password-recovery-3f0e02a7.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-register",
@@ -515,7 +515,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/register-c5b9164e.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/register-6af53b1f.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-detail-id",
@@ -547,7 +547,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-da547480.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-10b543d0.mjs').then((m) => m.default || m)
   },
   {
     name: "search",
@@ -830,7 +830,7 @@ const _wrapIf = (component, props, slots) => {
   } };
 };
 const layouts = {
-  main: () => import('./_nuxt/main-327ef655.mjs').then((m) => m.default || m)
+  main: () => import('./_nuxt/main-fee7f521.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = /* @__PURE__ */ defineComponent({
   name: "LayoutLoader",

@@ -97,16 +97,16 @@ a {
   --grey-color: hsl(0, 0%, 71%);
   --dark-grey-color: hsl(0, 0%, 29%);
   --border-color: #dbdbdb;
-  --bg-color: #f4f5f1;
+  --bg-color: #fcfcff;
   --text-color: #000000;
 }
 
 :root {
-  --xsm-font: clamp(0.7rem, 2.5vw, 0.8rem);
+  --xsm-font: clamp(0.6rem, 2.5vw, 0.7rem);
   --sm-font: clamp(0.8rem, 2.5vw, 0.9rem);
   --md-font: clamp(0.95rem, 2.5vw, 1rem);
-  --lg-font: clamp(1.1rem, 2.5vw, 1.3rem);
-  --xlg-font: clamp(1.3rem, 2.5vw, 1.5rem);
+  --lg-font: clamp(1.1rem, 2.5vw, 1.2rem);
+  --xlg-font: clamp(1.3rem, 2.5vw, 1.4rem);
   --xxlg-font: clamp(1.6rem, 2.5vw, 1.7rem);
   --xxxlg-font: clamp(1.7rem, 2.5vw, 3rem);
 }
@@ -28549,7 +28549,7 @@ button .small {
   font-size: clamp(0.8rem, 2.5vw, 0.9rem);
 }
 button .large {
-  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-size: clamp(1.1rem, 2.5vw, 1.2rem);
 }
 button.grey {
   padding: 10px 30px;
@@ -28745,7 +28745,7 @@ section {
 }
 
 .section-title {
-  font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.3rem, 2.5vw, 1.4rem);
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -28776,7 +28776,6 @@ section {
 }
 .card .card-content ul.tag-list {
   display: flex;
-  padding: 5px 0;
   margin: 5px 0;
   text-transform: uppercase;
 }
@@ -28787,7 +28786,10 @@ section {
 .card .card-content ul.tag-list li a {
   text-transform: uppercase !important;
   transition: all ease-in-out 0.3s;
-  font-size: var(--sm-font);
+  font-size: var(--xsm-font);
+  background-color: #002c9b;
+  color: #fff;
+  padding: 3px 8px;
 }
 .card .card-content ul.tag-list li a:hover {
   color: var(--sub-color);
@@ -28811,7 +28813,7 @@ section {
   font-size: var(--xsm-font);
 }
 .card h3 {
-  font-weight: 700;
+  font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
