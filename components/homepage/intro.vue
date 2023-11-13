@@ -10,21 +10,13 @@
               in business and <br class="is-hidden-mobile" />
               entrepreneurship
             </h3>
-            <button
-              class="main margin-top-20 large"
-              @click="
-                router.push({ path: '/category', query: { is: 'Update' } })
-              "
-            >
-              Update
-            </button>
+            <button class="main margin-top-20 large" @click="
+              router.push({ path: '/category', query: { is: 'Update' } })
+              "> {{ $t("update") }}</button>
           </div>
         </div>
         <div class="right span-3-desktop">
-          <img
-            src="https://contentshifu.com/wp-content/uploads/2020/11/home-image.svg"
-            alt=""
-          />
+          <img src="https://contentshifu.com/wp-content/uploads/2020/11/home-image.svg" alt="" />
           <!-- <ul class="grids gap-10-desktop is-2-desktop is-1-mobile">
             <li>
               <div class="course-info">
@@ -77,7 +69,23 @@
   </section>
 </template>
 <script lang="ts" setup>
+
 const router = useRouter();
+const route = useRoute();
+const language = ref<any>()
+const useCookies = useCookie('lang')
+watch(useCookies, (value) => {
+  if (value === "lao") {
+    language.value
+  }
+  else if (value === "en") {
+    language.value
+  }
+  else {
+    language.value
+  }
+}, { deep: true, immediate: true })
+
 </script>
 <style lang="scss" scoped>
 .left {
@@ -128,27 +136,24 @@ const router = useRouter();
       align-items: flex-end;
 
       &:nth-child(1) {
-        background: url("../../assets/images/bg.jpg")
-          rgba(var(--main-color-rgb), 0.7);
+        background: url("../../assets/images/bg.jpg") rgba(var(--main-color-rgb), 0.7);
       }
 
       &:nth-child(2) {
-        background: url("../../assets/images/bg.jpg")
-          rgba(var(--main-color-rgb), 0.7);
+        background: url("../../assets/images/bg.jpg") rgba(var(--main-color-rgb), 0.7);
       }
 
       &:nth-child(3) {
-        background: url("../../assets/images/bg.jpg")
-          rgba(var(--main-color-rgb), 0.7);
+        background: url("../../assets/images/bg.jpg") rgba(var(--main-color-rgb), 0.7);
       }
 
       &:nth-child(4) {
-        background: url("../../assets/images/bg.jpg")
-          rgba(var(--main-color-rgb), 0.7);
+        background: url("../../assets/images/bg.jpg") rgba(var(--main-color-rgb), 0.7);
       }
 
       &:hover {
         .course-info {
+
           p,
           h3 {
             display: block;

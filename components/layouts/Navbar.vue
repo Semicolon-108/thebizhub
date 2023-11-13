@@ -24,10 +24,7 @@
             <a>Product & Services <i class="fa-light fa-angle-down"></i></a>
             <ul class="dropdown">
               <li v-for="(i, indx) in productAndService" :key="indx">
-                <NuxtLink
-                  :to="{ path: '/category', query: { is: `${i.name}` } }"
-                  >{{ i.name }}</NuxtLink
-                >
+                <NuxtLink :to="{ path: '/category', query: { is: `${i.name}` } }">{{ i.name }}</NuxtLink>
               </li>
             </ul>
           </li>
@@ -35,10 +32,7 @@
             <a>Learning <i class="fa-light fa-angle-down"></i></a>
             <ul class="dropdown">
               <li v-for="(o, index) in learing" :key="index">
-                <NuxtLink
-                  :to="{ path: '/category', query: { is: `${o.name}` } }"
-                  >{{ o.name }}</NuxtLink
-                >
+                <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }">{{ o.name }}</NuxtLink>
               </li>
             </ul>
           </li>
@@ -53,30 +47,24 @@
           </li> -->
 
           <li>
-            <NuxtLink to="/about-us">About Us</NuxtLink>
+            <NuxtLink to="/about-us">{{ $t('about') }}</NuxtLink>
           </li>
         </ul>
       </div>
       <div class="navbar-end">
-        <input
-          type="text"
-          v-model="search"
-          class="input small"
-          placeholder="Enter keyword and press Enter"
-          @keyup.enter="
-            router.push({ path: '/search', query: { search: search } })
-          "
-        />
+        <input type="text" v-model="search" class="input small" :placeholder="$t('search')" @keyup.enter="
+          router.push({ path: '/search', query: { search: search } })
+          " />
         <hr class="v" />
         <p class="lang-switch">
-          <a class="current">EN</a>
-          <a>LA</a>
+          <a :class="[{ 'current': enStatus }]" @click="setLan('en')">EN</a>
+          <a :class="[{ 'current': laoStatus }]" @click="setLan('lao')">LA</a>
         </p>
         <hr class="v" />
         <div class="button-groups">
-          <button @click="router.push({ path: '/auth/login' })">Login</button>
+          <button @click="router.push({ path: '/auth/login' })">{{ $t('login') }}</button>
           <button class="main" @click="router.push({ path: '/auth/register' })">
-            Register
+            {{ $t("register") }}
           </button>
         </div>
       </div>
@@ -85,12 +73,23 @@
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
 const axios = useNuxtApp().$axios;
 const router = useRouter();
 const productAndService = ref<any>([]);
 const learing = ref<any>([]);
 const search = ref<any>();
 const cateInfo = ref<any>();
+
+const enStatus = ref<any>(false)
+const laoStatus = ref<any>(false)
+const useCookies: any = useCookie('lang')
+const i18n = useI18n()
+i18n.locale.value = useCookies.value || "en"
+enStatus.value = useCookies.value === 'en'
+laoStatus.value = useCookies.value === 'lao'
+
 const fetchProductAndService = async () => {
   const type = "Product & Services";
   await axios.post(`get-group/${type}`).then((res) => {
@@ -111,6 +110,24 @@ const fetchCategory = async () => {
   const data = await axios.post(`get-category-filter/Category`);
   cateInfo.value = data.data.info;
 };
+
+//Language syntax
+const setLan = (key: any) => {
+  i18n.locale.value = key
+  if (key === "lao") {
+    const lang = useCookie('lang')
+    lang.value = key
+    laoStatus.value = true
+    enStatus.value = false
+  }
+  if (key === "en") {
+    const cookies = useCookie('lang')
+    cookies.value = key
+    laoStatus.value = false
+    enStatus.value = true
+  }
+}
+
 fetchCategory();
 fetchProductAndService();
 fetchLearning();

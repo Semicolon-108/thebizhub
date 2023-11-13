@@ -22,6 +22,7 @@ const meta = [
     content: keywords
   },
 ]
+
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
@@ -63,4 +64,4 @@ export default defineNuxtConfig({
     "@/assets/css/all.min.css",
     "@/assets/css/main.css",
   ],
-});
+})
