@@ -39,7 +39,7 @@
 
 <script lang="ts" setup>
 const router = useRouter();
-const selectedTab = ref();
+const selectedTab = ref("WHO ARE WE?");
 const tabs = ref<any>([
   {
     name: "WHO ARE WE?",
@@ -62,8 +62,7 @@ const selectTab = async (e: any) => {
 
 <style lang="scss" scoped>
 section {
-  background-color: var(--light-color);
-
+  position: relative;
   .right {
     .image {
       a {
@@ -115,7 +114,7 @@ section {
 
     h1 {
       cursor: pointer;
-      background-color: #fff;
+      background-color: var(--light-color);
       padding: 10px 15px;
       font-weight: 700;
       display: flex;
