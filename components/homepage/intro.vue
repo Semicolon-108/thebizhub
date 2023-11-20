@@ -10,82 +10,49 @@
               in business and <br class="is-hidden-mobile" />
               entrepreneurship
             </h3>
-            <button class="main margin-top-20 large" @click="
-              router.push({ path: '/category', query: { is: 'Update' } })
-              "> {{ $t("update") }}</button>
+            <button
+              class="main margin-top-20 large"
+              @click="
+                router.push({ path: '/category', query: { is: 'Update' } })
+              "
+            >
+              {{ $t("update") }}
+            </button>
           </div>
         </div>
         <div class="right span-3-desktop">
-          <img src="https://contentshifu.com/wp-content/uploads/2020/11/home-image.svg" alt="" />
-          <!-- <ul class="grids gap-10-desktop is-2-desktop is-1-mobile">
-            <li>
-              <div class="course-info">
-                <h3>BIZ COACHING</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                  quibusdam quia recusandae illo rerum voluptates, consequatur
-                  fugiat repudiandae cum labore nobis praesentium voluptate hic.
-                  Eos, dolorem! Inventore, vitae! At, ipsa.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="course-info">
-                <h3>BIZ EVENTS</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                  quibusdam quia recusandae illo rerum voluptates, consequatur
-                  fugiat repudiandae cum labore nobis praesentium voluptate hic.
-                  Eos, dolorem! Inventore, vitae! At, ipsa.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="course-info">
-                <h3>BIZ TOOLS</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                  quibusdam quia recusandae illo rerum voluptates, consequatur
-                  fugiat repudiandae cum labore nobis praesentium voluptate hic.
-                  Eos, dolorem! Inventore, vitae! At, ipsa.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="course-info">
-                <h3>BIZ COURSES</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                  quibusdam quia recusandae illo rerum voluptates, consequatur
-                  fugiat repudiandae cum labore nobis praesentium voluptate hic.
-                  Eos, dolorem! Inventore, vitae! At, ipsa.
-                </p>
-              </div>
-            </li>
-          </ul> -->
+          <div class="video">
+            <!-- <i class="fa-solid fa-play"></i> -->
+            <iframe
+              src="https://www.youtube.com/embed/HEg8LjkZOaQ?si=dULR1XN-DrTBTyXD"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
   </section>
 </template>
 <script lang="ts" setup>
-
 const router = useRouter();
 const route = useRoute();
-const language = ref<any>()
-const useCookies = useCookie('lang')
-watch(useCookies, (value) => {
-  if (value === "lao") {
-    language.value
-  }
-  else if (value === "en") {
-    language.value
-  }
-  else {
-    language.value
-  }
-}, { deep: true, immediate: true })
-
+const language = ref<any>();
+const useCookies = useCookie("lang");
+watch(
+  useCookies,
+  (value) => {
+    if (value === "lao") {
+      language.value;
+    } else if (value === "en") {
+      language.value;
+    } else {
+      language.value;
+    }
+  },
+  { deep: true, immediate: true }
+);
 </script>
 <style lang="scss" scoped>
 .left {
@@ -120,79 +87,90 @@ watch(useCookies, (value) => {
 }
 
 .right {
-  ul {
-    li {
-      overflow: hidden;
-      cursor: pointer;
-      position: relative;
-      aspect-ratio: 5/3;
-      padding: 20px;
-      border-radius: 10px;
-      background-position: center !important;
-      background-size: cover !important;
-      color: #fff;
-      background-blend-mode: multiply;
-      display: flex;
-      align-items: flex-end;
-
-      &:nth-child(1) {
-        background: url("../../assets/images/bg.jpg") rgba(var(--main-color-rgb), 0.7);
-      }
-
-      &:nth-child(2) {
-        background: url("../../assets/images/bg.jpg") rgba(var(--main-color-rgb), 0.7);
-      }
-
-      &:nth-child(3) {
-        background: url("../../assets/images/bg.jpg") rgba(var(--main-color-rgb), 0.7);
-      }
-
-      &:nth-child(4) {
-        background: url("../../assets/images/bg.jpg") rgba(var(--main-color-rgb), 0.7);
-      }
-
-      &:hover {
-        .course-info {
-
-          p,
-          h3 {
-            display: block;
-            animation: slideUp ease-in-out 0.3s;
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-
-            @keyframes slideUp {
-              from {
-                transform: translateY(100px);
-              }
-
-              to {
-                transform: translateY(0px);
-              }
-            }
-          }
-        }
-      }
-
-      .course-info {
-        display: inline-block;
-
-        h3 {
-          font-weight: 600;
-          font-size: var(--md-font);
-        }
-
-        p {
-          transition: ease 0.5s;
-          margin-top: 5px;
-          font-size: var(--sm-font);
-          overflow: hidden;
-          display: none;
-        }
-      }
+  .video {
+    width: 100%;
+    iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: block;
     }
   }
+  // ul {
+  //   li {
+  //     overflow: hidden;
+  //     cursor: pointer;
+  //     position: relative;
+  //     aspect-ratio: 5/3;
+  //     padding: 20px;
+  //     border-radius: 10px;
+  //     background-position: center !important;
+  //     background-size: cover !important;
+  //     color: #fff;
+  //     background-blend-mode: multiply;
+  //     display: flex;
+  //     align-items: flex-end;
+
+  //     &:nth-child(1) {
+  //       background: url("../../assets/images/bg.jpg")
+  //         rgba(var(--main-color-rgb), 0.7);
+  //     }
+
+  //     &:nth-child(2) {
+  //       background: url("../../assets/images/bg.jpg")
+  //         rgba(var(--main-color-rgb), 0.7);
+  //     }
+
+  //     &:nth-child(3) {
+  //       background: url("../../assets/images/bg.jpg")
+  //         rgba(var(--main-color-rgb), 0.7);
+  //     }
+
+  //     &:nth-child(4) {
+  //       background: url("../../assets/images/bg.jpg")
+  //         rgba(var(--main-color-rgb), 0.7);
+  //     }
+
+  //     &:hover {
+  //       .course-info {
+  //         p,
+  //         h3 {
+  //           display: block;
+  //           animation: slideUp ease-in-out 0.3s;
+  //           display: -webkit-box;
+  //           -webkit-line-clamp: 4;
+  //           -webkit-box-orient: vertical;
+  //           overflow: hidden;
+
+  //           @keyframes slideUp {
+  //             from {
+  //               transform: translateY(100px);
+  //             }
+
+  //             to {
+  //               transform: translateY(0px);
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+
+  //     .course-info {
+  //       display: inline-block;
+
+  //       h3 {
+  //         font-weight: 600;
+  //         font-size: var(--md-font);
+  //       }
+
+  //       p {
+  //         transition: ease 0.5s;
+  //         margin-top: 5px;
+  //         font-size: var(--sm-font);
+  //         overflow: hidden;
+  //         display: none;
+  //       }
+  //     }
+  //   }
+  // }
 }
 </style>

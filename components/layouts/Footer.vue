@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <ul class="grids is-14-desktop is-1-mobile">
-        <li class="span-5-desktop">
+        <li class="span-4-desktop">
           <div class="logo margin-bottom-10">
             <img src="../../assets/images/Logo.png" alt="" />
             <h3>THE BIZ HUB</h3>
@@ -14,44 +14,48 @@
           <small>020 56463959 | 020 56508160</small>
           <small>thebizhub.info@gmail.com</small>
         </li>
-        <li class="span-3-desktop">
-          <h3>Who are we?</h3>
-          <h3>BIZ Course</h3>
-          <h3>BIZ Coaching</h3>
-          <h3>BIZ Tools</h3>
-        </li>
-        <li class="span-3-desktop">
+        <li class="span-5-desktop">
           <h3>Learning</h3>
           <ul>
-            <li>- SME & Startup</li>
-            <li>- Entrepreneur’s story</li>
-            <li>- Self-employment</li>
-          </ul>
-          <h3>BIZ Laws</h3>
-          <h3>NEWS & Event</h3>
-        </li>
-        <li class="span-3-desktop">
-          <h3>Follow us on</h3>
-          <ul class="socials">
-            <li>
-              <a
-                href="https://www.facebook.com/profile.php?id=100091801856212"
-                target="_blank"
+            <li v-for="(o, index) in learing" :key="index">
+              <NuxtLink
+                :to="{ path: '/category', query: { is: `${o.name}` } }"
+                >{{ o.name }}</NuxtLink
               >
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.tiktok.com/@thebizhublaos" target="_blank">
-                <i class="fa-brands fa-tiktok"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@TheBIZHUB" target="_blank">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
             </li>
           </ul>
+        </li>
+        <li class="span-5-desktop">
+          <h3>Product & Services</h3>
+          <ul>
+            <li>BIZ COACHING</li>
+            <li>BIZ COURSES</li>
+            <li>PROJECT BUSINESS CONSULTANT</li>
+          </ul>
+
+          <div class="socials">
+            <h3>Follow us on</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100091801856212"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@thebizhublaos" target="_blank">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@TheBIZHUB" target="_blank">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
@@ -63,12 +67,90 @@
     </p>
   </div>
 </template>
+<script lang="ts" setup>
+import { useI18n } from "vue-i18n";
+
+const axios = useNuxtApp().$axios;
+const router = useRouter();
+const productAndService = ref<any>([]);
+const learing = ref<any>([]);
+const search = ref<any>();
+const cateInfo = ref<any>();
+
+const enStatus = ref<any>(false);
+const laoStatus = ref<any>(false);
+const useCookies: any = useCookie("lang");
+const i18n = useI18n();
+i18n.locale.value = useCookies.value || "en";
+enStatus.value = useCookies.value === "en";
+laoStatus.value = useCookies.value === "lao";
+
+const fetchProductAndService = async () => {
+  const type = "Product & Services";
+  await axios.post(`get-group/${type}`).then((res) => {
+    if (res.status === 200) {
+      productAndService.value = res.data.info.items;
+    }
+  });
+};
+const fetchLearning = async () => {
+  const type = "Learning";
+  await axios.post(`get-group/${type}`).then((res) => {
+    if (res.status === 200) {
+      learing.value = res.data.info.items;
+    }
+  });
+};
+const fetchCategory = async () => {
+  const data = await axios.post(`get-category-filter/Category`);
+  cateInfo.value = data.data.info;
+};
+
+//Language syntax
+const setLan = (key: any) => {
+  i18n.locale.value = key;
+  if (key === "lao") {
+    const lang = useCookie("lang");
+    lang.value = key;
+    laoStatus.value = true;
+    enStatus.value = false;
+  }
+  if (key === "en") {
+    const cookies = useCookie("lang");
+    cookies.value = key;
+    laoStatus.value = false;
+    enStatus.value = true;
+  }
+};
+
+fetchCategory();
+fetchProductAndService();
+fetchLearning();
+</script>
 <style lang="scss" scoped>
 .socials {
   display: flex;
-  gap: 15px;
-  li i {
-    font-size: var(--xlg-font);
+  flex-direction: column;
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 20px 0 10px;
+  }
+  h3 {
+    text-transform: capitalize;
+    font-weight: normal;
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+    li {
+      i {
+        font-size: var(--xlg-font);
+      }
+    }
   }
 }
 section {
@@ -107,13 +189,14 @@ section {
       }
 
       ul {
-        margin-top: 10px;
-        margin-bottom: 10px;
-
+        margin-top: 5px;
+        margin-bottom: 5px;
         li {
           padding: 0;
-          display: block;
-          line-height: 1.5;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
         }
       }
     }

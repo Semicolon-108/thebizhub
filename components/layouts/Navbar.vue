@@ -5,65 +5,117 @@
         <p class="left">
           <i class="fa-regular fa-magnifying-glass"></i>
         </p>
-        <p class="right">
+        <p class="right" @click="openMobileNav = true">
           <i class="fa-regular fa-bars"></i>
         </p>
       </div>
       <div class="logo" @click="router.push({ path: '/' })">
         <img src="../../assets/images/thebizhub-logo.jpg" />
       </div>
-      <h1>Partner for Success in Business and Entrepreneurship</h1>
+      <h1>{{ $t("slogan") }}</h1>
+
+      <Transition name="slide-down">
+        <LayoutsMobileNavbar
+          v-if="openMobileNav"
+          @closeMobileNavbar="openMobileNav = false"
+        />
+      </Transition>
     </div>
-    <div class="navbar">
+    <div class="navbar is-hidden-mobile">
       <div class="navbar-start">
         <ul>
-          <!-- <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'NEWS & EVENT' } }">News & Events</NuxtLink>
-          </li> -->
           <li class="has-dropdown">
-            <a>Product & Services <i class="fa-light fa-angle-down"></i></a>
-            <ul class="dropdown">
-              <li v-for="(i, indx) in productAndService" :key="indx">
-                <NuxtLink :to="{ path: '/category', query: { is: `${i.name}` } }">{{ i.name }}</NuxtLink>
-              </li>
-            </ul>
+            <a class="hoverable"
+              >{{ $t("products") }}<i class="fa-light fa-angle-down"></i>
+              <ul class="dropdown">
+                <li>
+                  <NuxtLink
+                    :to="{
+                      path: '/product-and-services/biz-coaching',
+                    }"
+                    >BIZ COACHING</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink
+                    :to="{
+                      path: '/product-and-services/biz-course',
+                    }"
+                    >BIZ COURSES</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink
+                    :to="{
+                      path: '/product-and-services/project-business-consultant',
+                    }"
+                    >BUSINESS CONSULTANT</NuxtLink
+                  >
+                </li>
+              </ul>
+            </a>
           </li>
           <li class="has-dropdown">
-            <a>Learning <i class="fa-light fa-angle-down"></i></a>
-            <ul class="dropdown">
-              <li v-for="(o, index) in learing" :key="index">
-                <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }">{{ o.name }}</NuxtLink>
-              </li>
-            </ul>
+            <a class="hoverable"
+              >{{ $t("learning") }} <i class="fa-light fa-angle-down"></i>
+              <ul class="dropdown">
+                <li v-for="(o, index) in learing" :key="index">
+                  <NuxtLink
+                    :to="{ path: '/category', query: { is: `${o.name}` } }"
+                    >{{ o.name }}</NuxtLink
+                  >
+                </li>
+              </ul>
+            </a>
           </li>
-          <li v-for="(i, indx) in cateInfo" :key="indx">
-            <NuxtLink :to="{ path: '/category', query: { is: `${i.name}` } }">
-              {{ i.name }}
-            </NuxtLink>
-          </li>
-
-          <!-- <li>
-            <NuxtLink :to="{ path: '/category', query: { is: 'Biz Laws' } }">BIZ Laws</NuxtLink>
-          </li> -->
-
           <li>
-            <NuxtLink to="/about-us">{{ $t('about') }}</NuxtLink>
+            <a
+              @click="$router.replace('/category?is=TSNS - Thao Sang Nang Sa')"
+              >{{ $t("article_tsns") }}</a
+            >
+          </li>
+          <li>
+            <a
+              @click="
+                $router.replace(
+                  `/category?is=WINGS - Women's Income Generating Support`
+                )
+              "
+              >{{ $t("article_wing") }}</a
+            >
+          </li>
+          <li>
+            <NuxtLink to="/about-us">{{ $t("about_us") }}</NuxtLink>
           </li>
         </ul>
       </div>
       <div class="navbar-end">
-        <input type="text" v-model="search" class="input small" :placeholder="$t('search')" @keyup.enter="
-          router.push({ path: '/search', query: { search: search } })
-          " />
+        <input
+          type="text"
+          v-model="search"
+          class="input small"
+          :placeholder="$t('search')"
+          @keyup.enter="
+            router.push({ path: '/search', query: { search: search } })
+          "
+        />
         <hr class="v" />
         <p class="lang-switch">
-          <a :class="[{ 'current': enStatus }]" @click="setLan('en')">EN</a>
-          <a :class="[{ 'current': laoStatus }]" @click="setLan('lao')">LA</a>
+          <a :class="[{ current: enStatus }]" @click="setLan('en')">EN</a>
+          <a :class="[{ current: laoStatus }]" @click="setLan('lao')">LA</a>
         </p>
         <hr class="v" />
         <div class="button-groups">
-          <button @click="router.push({ path: '/auth/login' })">{{ $t('login') }}</button>
-          <button class="main" @click="router.push({ path: '/auth/register' })">
+          <button
+            class="button small"
+            @click="router.push({ path: '/auth/login' })"
+          >
+            {{ $t("login") }}
+          </button>
+          <button
+            class="button main small"
+            @click="router.push({ path: '/auth/register' })"
+          >
             {{ $t("register") }}
           </button>
         </div>
@@ -73,7 +125,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useI18n } from 'vue-i18n';
+import { useI18n } from "vue-i18n";
 
 const axios = useNuxtApp().$axios;
 const router = useRouter();
@@ -82,13 +134,15 @@ const learing = ref<any>([]);
 const search = ref<any>();
 const cateInfo = ref<any>();
 
-const enStatus = ref<any>(false)
-const laoStatus = ref<any>(false)
-const useCookies: any = useCookie('lang')
-const i18n = useI18n()
-i18n.locale.value = useCookies.value || "en"
-enStatus.value = useCookies.value === 'en'
-laoStatus.value = useCookies.value === 'lao'
+const enStatus = ref<any>(false);
+const laoStatus = ref<any>(false);
+const useCookies: any = useCookie("lang");
+const i18n = useI18n();
+i18n.locale.value = useCookies.value || "en";
+enStatus.value = useCookies.value === "en";
+laoStatus.value = useCookies.value === "lao";
+
+const openMobileNav = ref(false);
 
 const fetchProductAndService = async () => {
   const type = "Product & Services";
@@ -113,20 +167,20 @@ const fetchCategory = async () => {
 
 //Language syntax
 const setLan = (key: any) => {
-  i18n.locale.value = key
+  i18n.locale.value = key;
   if (key === "lao") {
-    const lang = useCookie('lang')
-    lang.value = key
-    laoStatus.value = true
-    enStatus.value = false
+    const lang = useCookie("lang");
+    lang.value = key;
+    laoStatus.value = true;
+    enStatus.value = false;
   }
   if (key === "en") {
-    const cookies = useCookie('lang')
-    cookies.value = key
-    laoStatus.value = false
-    enStatus.value = true
+    const cookies = useCookie("lang");
+    cookies.value = key;
+    laoStatus.value = false;
+    enStatus.value = true;
   }
-}
+};
 
 fetchCategory();
 fetchProductAndService();
@@ -220,12 +274,102 @@ fetchLearning();
 .navbar {
   border-bottom: 1px solid var(--border-color);
   display: flex;
-  align-items: center;
   padding: 0 10px;
+  // Mobile Navbar
 
-  @include mobile {
-    display: none;
-  }
+  // &.mobile-nav-active {
+  //   background-color: #000;
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   z-index: 999;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-self: center;
+  //   padding: 30px 50px;
+  //   overflow-y: auto;
+
+  //   .navbar-start {
+  //     align-self: flex-start;
+  //     ul {
+  //       display: flex;
+  //       flex-direction: column;
+  //       li {
+  //         align-self: flex-start;
+  //         flex-direction: column;
+  //         text-align: left;
+  //         display: flex;
+  //         &.has-dropdown {
+  //           margin-bottom: 10px;
+  //           &:hover ul.dropdown {
+  //             display: none !important;
+  //           }
+
+  //           ul {
+  //             &.dropdown {
+  //               display: none !important;
+  //             }
+  //             &.is-mobile {
+  //               display: block !important;
+  //             }
+  //           }
+
+  //           a {
+  //             &.hoverable {
+  //               text-transform: uppercase;
+  //             }
+  //           }
+  //         }
+  //         a {
+  //           height: 2rem;
+  //           padding: 0 !important;
+  //           color: #fff;
+  //           i {
+  //             display: none !important;
+  //           }
+  //         }
+  //         ul {
+  //           margin-left: 15px;
+  //           li {
+  //             a {
+  //               display: flex;
+  //               gap: 5px;
+  //               &::before {
+  //                 content: "";
+  //                 width: 10px;
+  //                 height: 1px;
+  //                 background-color: #fff;
+  //               }
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   } // navbar-start
+  //   .navbar-end {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: flex-start;
+  //     justify-content: flex-start;
+  //     margin: 0 !important;
+  //     padding: 20px 0;
+  //     width: 100%;
+  //     .lang-switch {
+  //       text-align: left;
+  //       align-self: flex-start;
+  //       margin: 10px 0;
+  //     }
+  //     .button-groups {
+  //       align-self: flex-start;
+  //     }
+  //     hr {
+  //       display: none !important;
+  //     }
+  //   }
+  // }
 
   @include tablet {
     display: none;
@@ -244,15 +388,32 @@ fetchLearning();
           transition: all ease-in-out 0.15s;
           white-space: nowrap;
           display: flex;
-          align-items: flex-end;
+          align-items: center;
           cursor: pointer;
 
           i {
             margin-left: 5px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              width: 0;
+              height: 0;
+              display: none;
+              border-left: 8px solid transparent;
+              border-right: 8px solid transparent;
+              border-bottom: 8px solid var(--sub-color);
+            }
           }
 
           &:hover {
             color: var(--sub-color);
+            i::after {
+              display: flex !important;
+            }
           }
         }
 
@@ -260,7 +421,6 @@ fetchLearning();
           position: absolute;
           position: relative;
           z-index: 999;
-
           &:hover ul.dropdown {
             display: flex !important;
           }
@@ -269,28 +429,15 @@ fetchLearning();
             display: none;
             position: absolute;
             z-index: 999;
-            top: 3rem;
-            right: 0;
+            top: 2.7rem;
+            left: 0;
             border-radius: 5px;
             background-color: var(--sub-color);
             color: #fff;
             padding: 15px;
             height: auto;
-            // display: flex;
             flex-direction: column;
             align-items: flex-start;
-
-            &::after {
-              content: "";
-              position: absolute;
-              top: -7px;
-              right: 7px;
-              width: 0;
-              height: 0;
-              border-left: 8px solid transparent;
-              border-right: 8px solid transparent;
-              border-bottom: 8px solid var(--sub-color);
-            }
 
             li {
               white-space: pre;
@@ -300,7 +447,6 @@ fetchLearning();
               a {
                 transition: all ease-in-out 0.3s;
                 padding: 0;
-
                 &:hover {
                   color: #fff !important;
                   text-decoration: underline;

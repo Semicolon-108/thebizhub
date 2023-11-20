@@ -11,37 +11,43 @@
           <li>
             <div class="card">
               <div class="card-icon">
-                <img
-                  src="https://contentshifu.com/wp-content/uploads/2020/11/icon-learners.svg"
-                  alt=""
-                />
+                <img src="../../assets/images/services/biz-coaching.png" />
               </div>
               <h3 class="card-title">BIZ COACHING</h3>
-              <p>ບໍລິການໃຫ້ຄໍາປຶກສາທາງທຸລະກິດ</p>
+              <p>
+                ບໍລິການໃຫ້ຄຳປຶກສາ ວ່າທີ່ຜູ້ປະກອບການ, ຜູ້ປະກອບການຂັ້ນເລີ່ມຕົ້ນ
+                ຫຼື ເຈົ້າຂອງທຸລະກິດຂະໜາດນ້ອຍ ຜ່ານການຮັບຟັງ, ວິເຄາະບັນຫາ,
+                ໃຫ້ແນວທາງ ແລະ ເຄື່ອງມືທີ່ຈຳເປັນໃນການແກ້ໄຂບັນຫາທຸລະກິດ.
+              </p>
             </div>
           </li>
           <li>
             <div class="card">
               <div class="card-icon">
-                <img
-                  src="https://contentshifu.com/wp-content/uploads/2020/11/icon-partners.svg"
-                  alt=""
-                />
+                <img src="../../assets/images/services/biz-course.png" />
               </div>
               <h3 class="card-title">BIZ COURSES</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <p>
+                ຫຼັກສູດການຝຶກອົບຮົມທາງທຸລະກິດ ໄລຍະສັ້ນ ເພື່ອກຽມຄວາມພ້ອມ ແລະ
+                ສ້າງຄວາມເຂັ້ມແຂງ ໃຫ້ກັບວ່າທີ່ຜູ້ປະກອບການ,
+                ຜູ້ປະກອບການຂັ້ນເລີ່ມຕົ້ນ ຫຼື ເຈົ້າຂອງທຸລະກິດຂະໜາດນ້ອຍ.
+              </p>
             </div>
           </li>
           <li>
             <div class="card">
               <div class="card-icon">
                 <img
-                  src="https://contentshifu.com/wp-content/uploads/2020/11/icon-businesses.svg"
-                  alt=""
+                  src="../../assets/images/services/project-business-consultancy.png"
                 />
               </div>
               <h3 class="card-title">Project Business Consultant</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <p>
+                ບໍລິການທີ່ປຶກສາໂຄງການ ແລະ ທຸລະກິດ ໃຫ້ບໍລິການເປັນທີ່ປຶກສາ
+                ໃນການວາງແຜນ, ຈັດຕັ້ງປະຕິບັດ ແລະ ປະເມີນຜົນສຳເລັດຂອງໂຄງການ
+                ທີ່ກ່ຽວຂ້ອງກັບການປະກອບອາຊີບດ້ວຍຕົນເອງ, ການປະກອບທຸລະກິດ ແລະ
+                ການເຕີບໂຕຂອງທຸລະກິດ.
+              </p>
             </div>
           </li>
         </ul>

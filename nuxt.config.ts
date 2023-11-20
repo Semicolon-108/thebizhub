@@ -19,14 +19,14 @@ const meta = [
   {
     hid: "keywords",
     name: "keywords",
-    content: keywords
+    content: keywords,
   },
-]
+];
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
-  modules: ["nuxt-gtag"],
+  modules: ["nuxt-gtag", "nuxt-swiper"],
   gtag: {
     id: "G-CVJQT1XPN2",
     config: {
@@ -64,4 +64,4 @@ export default defineNuxtConfig({
     "@/assets/css/all.min.css",
     "@/assets/css/main.css",
   ],
-})
+});

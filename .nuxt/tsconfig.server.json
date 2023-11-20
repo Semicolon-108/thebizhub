@@ -59,6 +59,7 @@
   "include": [
     "./types/nitro-nuxt.d.ts",
     "../node_modules/nuxt-gtag/runtime/server",
+    "../node_modules/nuxt-swiper/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "./types/nitro.d.ts",
     "../**/*",

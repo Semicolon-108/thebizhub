@@ -28544,11 +28544,13 @@ button {
   background-color: #fff;
   border-radius: 3px;
   font-size: clamp(0.95rem, 2.5vw, 1rem);
+  white-space: pre;
+  font-family: "Noto Sans Lao", sans-serif;
 }
-button .small {
-  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+button.small {
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem) !important;
 }
-button .large {
+button.large {
   font-size: clamp(1.1rem, 2.5vw, 1.2rem);
 }
 button.grey {

@@ -3,19 +3,31 @@
     <div class="container">
       <h1 class="section-title">ຜະລິດຕະພັນ/ການບໍລິການຂອງເຮົາ</h1>
       <ul class="image-list grids is-3-desktop is-1-mobile gap-20-desktop">
-        <li v-for="(i, index) in 3" :key="index">
+        <li>
+          <img src="../../assets/images/services/biz-course.png" />
+          <h3>ຫຼັກສູດຝຶກອົບຮົມທາງທຸລະກິດ (BIZ COURSES)</h3>
+          <!-- <h3>Business Courses (BIZ COURSES)</h3> -->
+        </li>
+        <li>
+          <img src="../../assets/images/services/biz-coaching.png" />
+          <h3>ບໍລິການໃຫ້ຄໍາປຶກສາທາງທຸລະກິດ ( BIZ COACHING )</h3>
+          <!-- <h3>Business Coaching (BIZ COACHING)</h3> -->
+        </li>
+        <li>
           <img
-            class="image-card"
-            src="https://envato-shoebox-0.imgix.net/4a65/bbee-cd5c-4859-9db4-f17eda923f6f/2439421.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1000&s=c07228076b4d4daa82aa19ee9e50e59d"
+            src="../../assets/images/services/project-business-consultancy.png"
           />
-          <h3>ບໍລິການໃຫ້ຄາປຶກສາ ກ່ຽວກັບທຸລະກິດ</h3>
+          <h3>Project/Business Consultancy (BIZ CONSULTING)</h3>
+          <!-- <h3>
+            ບໍລິການທີ່ປຶກສາໂຄງການ ແລະ ທຸລະກິດ (Project/Business Consultancy)
+          </h3> -->
         </li>
       </ul>
     </div>
   </section>
 </template>
 
-<script setup></script>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped>
 .section-title {
@@ -25,9 +37,11 @@
 
 .image-list {
   li {
+    text-align: center;
     img {
       aspect-ratio: 1/1;
       object-fit: cover;
+      max-width: 130px;
     }
     h3 {
       text-align: center;

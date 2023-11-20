@@ -5,16 +5,35 @@
     <WhoWeAre />
     <SmeAndStartup :title="'MSMEs'" :info="msmes" v-show="msmes.length" />
     <Story v-show="enterPreInfo.length" :info="enterPreInfo" />
-    <SelftEmployment :title="'Self - Employment'" :info="selftEmpInfo" v-show="selftEmpInfo.length" />
+    <SelftEmployment
+      :title="'Self - Employment'"
+      :info="selftEmpInfo"
+      v-show="selftEmpInfo.length"
+    />
 
-    <NewsAndActivitiesInfo :title="`News & Activities`" :info="newsAndActivitiesInfo"
-      v-show="newsAndActivitiesInfo.length" />
+    <NewsAndActivitiesInfo
+      :title="`News & Activities`"
+      :info="newsAndActivitiesInfo"
+      v-show="newsAndActivitiesInfo.length"
+    />
 
-    <BizLaws :title="`BIZ Laws`" :info="bizLawInfo" v-show="bizLawInfo.length" />
+    <BizLaws
+      :title="`BIZ Laws`"
+      :info="bizLawInfo"
+      v-show="bizLawInfo.length"
+    />
 
-    <TSNS :title="`TSNS - Thao Sang Nang Sa`" :info="TSNSInfo" v-show="TSNSInfo.length" />
+    <TSNS
+      :title="`TSNS - Thao Sang Nang Sa`"
+      :info="TSNSInfo"
+      v-show="TSNSInfo.length"
+    />
 
-    <Wing :title="`WINGS - Women's Income Generating Support`" :info="wingInfo" v-show="wingInfo.length" />
+    <Wing
+      :title="`WINGS - Women's Income Generating Support`"
+      :info="wingInfo"
+      v-show="wingInfo.length"
+    />
   </div>
 </template>
 

@@ -13,7 +13,9 @@
     "strict": true,
     "noImplicitThis": true,
     "esModuleInterop": true,
-    "types": [],
+    "types": [
+      "swiper/vue"
+    ],
     "verbatimModuleSyntax": true,
     "allowJs": true,
     "noEmit": true,
@@ -86,6 +88,7 @@
     "./nuxt.d.ts",
     "../**/*",
     "../node_modules/nuxt-gtag/runtime",
+    "../node_modules/nuxt-swiper/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
@@ -93,6 +96,7 @@
     "../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/nuxt-gtag/runtime/server",
+    "../node_modules/nuxt-swiper/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"

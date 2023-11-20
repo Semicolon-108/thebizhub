@@ -1,29 +1,31 @@
 <template>
-  <ul class="grids is-3-desktop is-1-mobile gap-20-desktop margin-top-20">
-    <li v-for="(i, index) in info" :key="index">
-      <div class="card" @click="router.push(`/blog-detail/${i._id}`)">
-        <div class="card-image">
-          <img :src="imageURL + i.coverPage" alt="" />
+  <div>
+    <ul class="grids is-3-desktop is-1-mobile gap-20-desktop margin-top-20">
+      <li v-for="(i, index) in info" :key="index">
+        <div class="card" @click="router.push(`/blog-detail/${i._id}`)">
+          <div class="card-image">
+            <img :src="imageURL + i.coverPage" alt="" />
+          </div>
+          <div class="card-content">
+            <ul class="tag-list">
+              <!-- <span v-for="(t, indx) in i.tag" :key="indx">{{ t.name }}</span> -->
+              <li v-for="(c, ind) in i.category" :key="ind">
+                <a>{{ c.name }}</a>
+              </li>
+            </ul>
+            <h3>{{ i.title }}</h3>
+          </div>
         </div>
-        <div class="card-content">
-          <ul class="tag-list">
-            <!-- <span v-for="(t, indx) in i.tag" :key="indx">{{ t.name }}</span> -->
-            <li v-for="(c, ind) in i.category" :key="ind">
-              <a>{{ c.name }}</a>
-            </li>
-          </ul>
-          <h3>{{ i.title }}</h3>
-        </div>
-      </div>
-    </li>
-  </ul>
+      </li>
+    </ul>
+  </div>
 </template>
 <script lang="ts" setup>
 useSeoMeta({
-  title: "thebizhub",
-  ogTitle: "bizhub",
-  description: "bizhub",
-  ogDescription: "bizhub, thebizhub, Thebizhub",
+  title: "TheBIZHub",
+  ogTitle: "Partner for success in business and entrepreneurship",
+  description: "Partner for success in business and entrepreneurship",
+  ogDescription: "Partner for success in business and entrepreneurship",
 });
 defineProps(["info"]);
 const imageURL = useNuxtApp().$imageURL;

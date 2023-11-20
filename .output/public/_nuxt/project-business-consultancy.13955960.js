@@ -1,0 +1,1 @@
+import"./entry.ff0dbf35.js";const t=""+new URL("biz-course.58ea336f.png",import.meta.url).href,e=""+new URL("biz-coaching.69856799.png",import.meta.url).href,o=""+new URL("project-business-consultancy.5f79db5e.png",import.meta.url).href;export{t as _,e as a,o as b};

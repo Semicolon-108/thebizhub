@@ -5,13 +5,15 @@ button {
   background-color: #fff;
   border-radius: 3px;
   font-size: $md-font;
+  white-space: pre;
+  font-family: $font-family;
 
   // Size
-  .small {
-    font-size: $sm-font;
+  &.small {
+    font-size: $sm-font !important;
   }
 
-  .large {
+  &.large {
     font-size: $lg-font;
   }
 
