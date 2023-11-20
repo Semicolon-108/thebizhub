@@ -15,28 +15,19 @@
             <a class="navbar-item">{{ $t("products") }}</a>
             <ul>
               <li>
-                <NuxtLink
-                  :to="{
-                    path: '/product-and-services/biz-coaching',
-                  }"
-                  >BIZ COACHING</NuxtLink
-                >
+                <NuxtLink :to="{
+                  path: '/product-and-services/biz-coaching',
+                }" @click="closeMobileNavbar()">BIZ COACHING</NuxtLink>
               </li>
               <li>
-                <NuxtLink
-                  :to="{
-                    path: '/product-and-services/biz-course',
-                  }"
-                  >BIZ COURSES</NuxtLink
-                >
+                <NuxtLink :to="{
+                  path: '/product-and-services/biz-course',
+                }" @click="closeMobileNavbar()">BIZ COURSES</NuxtLink>
               </li>
               <li>
-                <NuxtLink
-                  :to="{
-                    path: '/product-and-services/project-business-consultant',
-                  }"
-                  >BUSINESS CONSULTANT</NuxtLink
-                >
+                <NuxtLink :to="{
+                  path: '/product-and-services/project-business-consultant',
+                }" @click="closeMobileNavbar()">BUSINESS CONSULTANT</NuxtLink>
               </li>
             </ul>
           </li>
@@ -44,55 +35,35 @@
             <a class="navbar-item">{{ $t("learning") }}</a>
             <ul>
               <li v-for="(o, index) in learing" :key="index">
-                <NuxtLink
-                  :to="{ path: '/category', query: { is: `${o.name}` } }"
-                  >{{ o.name }}</NuxtLink
-                >
+                <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }" @click="closeMobileNavbar()">{{ o.name
+                }}</NuxtLink>
               </li>
             </ul>
           </li>
           <li>
-            <a
-              @click="$router.replace('/category?is=TSNS - Thao Sang Nang Sa')"
-              >{{ $t("article_tsns") }}</a
-            >
+            <a @click="$router.replace('/category?is=TSNS - Thao Sang Nang Sa'), closeMobileNavbar()">{{
+              $t("article_tsns")
+            }}</a>
           </li>
           <li>
-            <a
-              @click="
-                $router.replace(
-                  `/category?is=WINGS - Women's Income Generating Support`
-                )
-              "
-              >{{ $t("article_wing") }}
+            <a @click="$router.replace(`/category?is=WINGS - Women's Income Generating Support`), closeMobileNavbar()
+              ">{{ $t("article_wing") }}
             </a>
           </li>
           <li>
-            <NuxtLink to="/about-us">{{ $t("about_us") }}</NuxtLink>
+            <NuxtLink to="/about-us" @click="closeMobileNavbar()">{{ $t("about_us") }}</NuxtLink>
           </li>
         </ul>
       </div>
       <div class="navbar-end">
-        <input
-          type="text"
-          v-model="search"
-          class="input small"
-          :placeholder="$t('search')"
-          @keyup.enter="
-            router.push({ path: '/search', query: { search: search } })
-          "
-        />
+        <input type="text" v-model="search" class="input small" :placeholder="$t('search')" @keyup.enter="
+          router.push({ path: '/search', query: { search: search } }), closeMobileNavbar()
+          " />
         <div class="button-groups">
-          <button
-            class="button small"
-            @click="router.push({ path: '/auth/login' })"
-          >
+          <button class="button small" @click="router.push({ path: '/auth/login' }), closeMobileNavbar()">
             {{ $t("login") }}
           </button>
-          <button
-            class="button main small"
-            @click="router.push({ path: '/auth/register' })"
-          >
+          <button class="button main small" @click="router.push({ path: '/auth/register' }), closeMobileNavbar()">
             {{ $t("register") }}
           </button>
         </div>
@@ -177,10 +148,12 @@ fetchLearning();
   background-color: #000;
   justify-content: space-between;
   cursor: pointer;
+
   i {
     color: #fff;
   }
 }
+
 .mobile-navbar {
   position: fixed;
   top: 0;
@@ -192,6 +165,7 @@ fetchLearning();
   display: flex;
   background-color: #000;
   flex-direction: column;
+
   .navbar {
     padding: 20px 30px;
     display: flex;
@@ -200,25 +174,31 @@ fetchLearning();
     flex-grow: 1;
     overflow-y: auto;
   }
+
   a {
     color: #fff;
     line-height: 2.3;
     cursor: pointer;
   }
+
   .nabar-item-list {
     color: #fff;
+
     .parant {
       position: relative;
+
       .navbar-item {
         display: flex;
         align-items: center;
       }
+
       ul {
         li {
           margin-left: 20px;
           display: flex;
           align-items: center;
           position: relative;
+
           &::before {
             content: "";
             display: block;
@@ -231,10 +211,13 @@ fetchLearning();
         }
       }
     }
+
     .navbar-item {
       display: block;
     }
-  } // nabar-item-list
+  }
+
+  // nabar-item-list
 
   input {
     margin: 20px 0;
@@ -251,6 +234,7 @@ fetchLearning();
     font-size: var(--xsm-font);
     cursor: pointer;
     padding: 5px 10px;
+
     &.current {
       background-color: var(--sub-color);
     }
