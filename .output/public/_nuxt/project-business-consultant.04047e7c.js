@@ -1,1 +1,0 @@
-import{_ as e}from"./entry.ff0dbf35.js";import{P as t,D as n}from"./swiper-vue.6b947493.js";const o={};function r(c,s){return n(),t("div",null,"PROJECT BUSINESS CONSULTANT")}const f=e(o,[["render",r]]);export{f as default};

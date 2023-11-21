@@ -154,8 +154,10 @@ fetchLearning();
   }
 }
 section {
-  background-image: url("../../assets/images/bg.jpg");
-  background-position: bottom right;
+  background-image: url("../../assets/images/footer-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   color: #fff;
 
   ul {
