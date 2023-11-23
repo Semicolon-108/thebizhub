@@ -98,7 +98,7 @@ const productAndService = ref<any>([]);
 const learing = ref<any>([]);
 const search = ref<any>();
 const cateInfo = ref<any>();
-
+ 
 const enStatus = ref<any>(false);
 const laoStatus = ref<any>(false);
 const useCookies: any = useCookie("lang");

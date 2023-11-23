@@ -645,7 +645,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-1a6d3d82.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-38466aee.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -653,7 +653,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-coaching-b8d6f084.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-coaching-5d17fbe1.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
@@ -661,7 +661,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-course-9833c258.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-course-008c26c1.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
@@ -677,7 +677,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/project-business-consultant-b0aacb42.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/project-business-consultant-928776d2.mjs').then((m) => m.default || m)
   },
   {
     name: "search",
@@ -986,7 +986,7 @@ const components_plugin_KR1HBZs4kY = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:global-components"
 });
 const axios_QMFgzss1s4 = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
-  const defaultUrl = " https://db.thebizhub.la/client-api/";
+  const defaultUrl = "https://db.thebizhub.la/client-api/";
   axios.defaults.baseURL = defaultUrl;
   return {
     provide: {
@@ -1203,7 +1203,7 @@ const plugins = [
   image_u014LPA7JK
 ];
 const layouts = {
-  main: () => import('./_nuxt/main-f4546458.mjs').then((m) => m.default || m)
+  main: () => import('./_nuxt/main-511ab4e0.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
