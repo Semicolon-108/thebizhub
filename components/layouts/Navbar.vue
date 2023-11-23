@@ -106,7 +106,7 @@ const i18n = useI18n();
 i18n.locale.value = useCookies.value || "en";
 enStatus.value = useCookies.value === "en";
 laoStatus.value = useCookies.value === "lao";
-
+if (!enStatus.value && !laoStatus.value) enStatus.value = true
 const openMobileNav = ref(false);
 
 const fetchProductAndService = async () => {
