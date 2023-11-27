@@ -98,17 +98,17 @@ const closeMobileNavbar = async () => {
 
 const fetchProductAndService = async () => {
   const type = "Product & Services";
-  await axios.post(`get-group/${type}`).then((res) => {
+  await axios.post(`get-group?type=${type}&lang=${i18n.locale.value}`).then((res) => {
     if (res.status === 200) {
-      productAndService.value = res.data.info.items;
+      productAndService.value = res.data.info;
     }
   });
 };
 const fetchLearning = async () => {
   const type = "Learning";
-  await axios.post(`get-group/${type}`).then((res) => {
+  await axios.post(`get-group?type=${type}&lang=${i18n.locale.value}`).then((res) => {
     if (res.status === 200) {
-      learing.value = res.data.info.items;
+      learing.value = res.data.info;
     }
   });
 };
@@ -133,6 +133,10 @@ const setLan = (key: any) => {
     enStatus.value = true;
   }
 };
+watch(() => i18n.locale.value, (value) => {
+  fetchLearning()
+  fetchProductAndService()
+}, { immediate: true, deep: true })
 
 fetchCategory();
 fetchProductAndService();

@@ -7,10 +7,8 @@
             <img src="../../assets/images/Logo.png" alt="" />
             <h3>THE BIZ HUB</h3>
           </div>
-          <small class="margin-bottom-15"
-            >1st Floor, 108Hill Building Dongpaina Road, Saphanthong Village,
-            Sisattanak District, Vientiane Capital, Lao PDR.</small
-          >
+          <small class="margin-bottom-15">1st Floor, 108Hill Building Dongpaina Road, Saphanthong Village,
+            Sisattanak District, Vientiane Capital, Lao PDR.</small>
           <small>020 56463959 | 020 56508160</small>
           <small>thebizhub.info@gmail.com</small>
         </li>
@@ -18,10 +16,7 @@
           <h3>{{ $t("navbar_learning") }}</h3>
           <ul>
             <li v-for="(o, index) in learing" :key="index">
-              <NuxtLink
-                :to="{ path: '/category', query: { is: `${o.name}` } }"
-                >{{ o.name }}</NuxtLink
-              >
+              <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }">{{ o.name }}</NuxtLink>
             </li>
           </ul>
         </li>
@@ -37,10 +32,7 @@
             <h3>{{ $t("follow_us") }}</h3>
             <ul>
               <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100091801856212"
-                  target="_blank"
-                >
+                <a href="https://www.facebook.com/profile.php?id=100091801856212" target="_blank">
                   <i class="fa-brands fa-facebook"></i>
                 </a>
               </li>
@@ -87,17 +79,17 @@ laoStatus.value = useCookies.value === "lao";
 
 const fetchProductAndService = async () => {
   const type = "Product & Services";
-  await axios.post(`get-group/${type}`).then((res) => {
+  await axios.post(`get-group?type=${type}&lang=${i18n.locale.value}`).then((res) => {
     if (res.status === 200) {
-      productAndService.value = res.data.info.items;
+      productAndService.value = res.data.info;
     }
   });
 };
 const fetchLearning = async () => {
   const type = "Learning";
-  await axios.post(`get-group/${type}`).then((res) => {
+  await axios.post(`get-group?type=${type}&lang=${i18n.locale.value}`).then((res) => {
     if (res.status === 200) {
-      learing.value = res.data.info.items;
+      learing.value = res.data.info;
     }
   });
 };
@@ -131,6 +123,7 @@ fetchLearning();
 .socials {
   display: flex;
   flex-direction: column;
+
   &::before {
     content: "";
     display: block;
@@ -139,13 +132,16 @@ fetchLearning();
     background-color: #fff;
     margin: 20px 0 10px;
   }
+
   h3 {
     text-transform: capitalize;
     font-weight: normal;
   }
+
   ul {
     display: flex;
     gap: 20px;
+
     li {
       i {
         font-size: var(--xlg-font);
@@ -153,6 +149,7 @@ fetchLearning();
     }
   }
 }
+
 section {
   background-image: url("../../assets/images/footer-bg.svg");
   background-repeat: no-repeat;
@@ -193,6 +190,7 @@ section {
       ul {
         margin-top: 5px;
         margin-bottom: 5px;
+
         li {
           padding: 0;
           display: flex;

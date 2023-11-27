@@ -1204,7 +1204,7 @@ const plugins = [
   image_u014LPA7JK
 ];
 const layouts = {
-  main: () => import("./_nuxt/main-c5af8896.js").then((m) => m.default || m)
+  main: () => import("./_nuxt/main-41b20b9f.js").then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
