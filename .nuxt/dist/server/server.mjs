@@ -478,7 +478,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-08c5f9dd.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-45e52970.js").then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -486,7 +486,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/product-and-services-6bcb9999.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/product-and-services-eaf9bf27.js").then((m) => m.default || m)
   },
   {
     name: "about-us-works",
@@ -542,7 +542,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-7172bb3e.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-8a2a7286.js").then((m) => m.default || m)
   },
   {
     name: "index",
@@ -550,7 +550,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-38466aee.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-f8a82080.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -1143,6 +1143,21 @@ const language = [
     key: "achievements",
     la: "ຜົນງານຂອງ ເດິບິດຮັບ",
     en: "OUR ACHIEVEMTENTS"
+  },
+  {
+    key: "who_are_we",
+    la: "ພວກເຮົາແມ່ນໃຜ?",
+    en: "WHO ARE WE?"
+  },
+  {
+    key: "MORE_ABOUT_US",
+    la: "ຂໍ້ມູນເພີ່ມຕື່ມກ່ຽວກັບເຮົາ",
+    en: "MORE ABOUT US"
+  },
+  {
+    key: "Our Services",
+    la: "ບໍລິການຂອງພວກເຮົາ",
+    en: "Our Services"
   }
 ];
 const getKeyFunc = (lang) => {
@@ -1189,7 +1204,7 @@ const plugins = [
   image_u014LPA7JK
 ];
 const layouts = {
-  main: () => import("./_nuxt/main-18d86a67.js").then((m) => m.default || m)
+  main: () => import("./_nuxt/main-c5af8896.js").then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",

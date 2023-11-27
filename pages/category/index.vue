@@ -72,12 +72,10 @@ isFilter();
 await fetch();
 // });
 
-watch(
-  () => route.path,
-  () => {
-    isFilter();
-    fetch();
-  },
+watch(() => route.path, () => {
+  isFilter();
+  fetch();
+},
   { deep: true }
 );
 </script>
@@ -126,11 +124,9 @@ watch(
     width: 50px;
     align-items: center;
     justify-content: flex-end;
-    background: linear-gradient(
-      270deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(270deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%);
 
     @include mobile {
       display: flex;

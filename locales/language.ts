@@ -235,4 +235,19 @@ export const language = [
     la: "ຜົນງານຂອງ ເດິບິດຮັບ",
     en: "OUR ACHIEVEMTENTS",
   },
+  {
+    key:"who_are_we",
+    la:"ພວກເຮົາແມ່ນໃຜ?",
+    en:"WHO ARE WE?"
+  },
+  {
+    key:"MORE_ABOUT_US",
+    la:"ຂໍ້ມູນເພີ່ມຕື່ມກ່ຽວກັບເຮົາ",
+    en:"MORE ABOUT US"
+  },
+  {
+    key:"Our Services",
+    la:"ບໍລິການຂອງພວກເຮົາ",
+    en:"Our Services"
+  },
 ];

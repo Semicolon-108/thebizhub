@@ -15,75 +15,52 @@
       <h1>{{ $t("slogan") }}</h1>
 
       <Transition name="slide-down">
-        <LayoutsMobileNavbar
-          v-if="openMobileNav"
-          @closeMobileNavbar="openMobileNav = false"
-        />
+        <LayoutsMobileNavbar v-if="openMobileNav" @closeMobileNavbar="openMobileNav = false" />
       </Transition>
     </div>
     <div class="navbar is-hidden-mobile">
       <div class="navbar-start">
         <ul>
           <li class="has-dropdown">
-            <a class="hoverable"
-              >{{ $t("products") }}<i class="fa-light fa-angle-down"></i>
+            <a class="hoverable">{{ $t("products") }}<i class="fa-light fa-angle-down"></i>
               <ul class="dropdown">
                 <li>
-                  <NuxtLink
-                    :to="{
-                      path: '/product-and-services/biz-coaching',
-                    }"
-                    >BIZ COACHING</NuxtLink
-                  >
+                  <NuxtLink :to="{
+                    path: '/product-and-services/biz-coaching',
+                  }">BIZ COACHING</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink
-                    :to="{
-                      path: '/product-and-services/biz-course',
-                    }"
-                    >BIZ COURSES</NuxtLink
-                  >
+                  <NuxtLink :to="{
+                    path: '/product-and-services/biz-course',
+                  }">BIZ COURSES</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink
-                    :to="{
-                      path: '/product-and-services/project-business-consultant',
-                    }"
-                    >BUSINESS CONSULTANT</NuxtLink
-                  >
+                  <NuxtLink :to="{
+                    path: '/product-and-services/project-business-consultant',
+                  }">BUSINESS CONSULTANT</NuxtLink>
                 </li>
               </ul>
             </a>
           </li>
           <li class="has-dropdown">
-            <a class="hoverable"
-              >{{ $t("navbar_learning") }}
+            <a class="hoverable">{{ $t("navbar_learning") }}
               <i class="fa-light fa-angle-down"></i>
               <ul class="dropdown">
                 <li v-for="(o, index) in learing" :key="index">
-                  <NuxtLink
-                    :to="{ path: '/category', query: { is: `${o.name}` } }"
-                    >{{ o.name }}</NuxtLink
-                  >
+                  <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }">{{ o.name }}</NuxtLink>
                 </li>
               </ul>
             </a>
           </li>
           <li>
-            <a
-              @click="$router.replace('/category?is=TSNS - Thao Sang Nang Sa')"
-              >{{ $t("navbar_tsns") }}</a
-            >
+            <a @click="$router.replace('/category?is=TSNS - Thao Sang Nang Sa')">{{ $t("navbar_tsns") }}</a>
           </li>
           <li>
-            <a
-              @click="
-                $router.replace(
-                  `/category?is=WINGS - Women's Income Generating Support`
-                )
-              "
-              >{{ $t("navbar_wing") }}</a
-            >
+            <a @click="
+              $router.replace(
+                `/category?is=WINGS - Women's Income Generating Support`
+              )
+              ">{{ $t("navbar_wing") }}</a>
           </li>
           <li>
             <NuxtLink to="/about-us">{{ $t("about_us") }}</NuxtLink>
@@ -91,15 +68,9 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <input
-          type="text"
-          v-model="search"
-          class="input small"
-          :placeholder="$t('search')"
-          @keyup.enter="
-            router.push({ path: '/search', query: { search: search } })
-          "
-        />
+        <input type="text" v-model="search" class="input small" :placeholder="$t('search')" @keyup.enter="
+          router.push({ path: '/search', query: { search: search } })
+          " />
         <hr class="v" />
         <p class="lang-switch">
           <a :class="[{ current: enStatus }]" @click="setLan('en')">EN</a>
@@ -107,16 +78,10 @@
         </p>
         <hr class="v" />
         <div class="button-groups">
-          <button
-            class="button small"
-            @click="router.push({ path: '/auth/login' })"
-          >
+          <button class="button small" @click="router.push({ path: '/auth/login' })">
             {{ $t("login") }}
           </button>
-          <button
-            class="button main small"
-            @click="router.push({ path: '/auth/register' })"
-          >
+          <button class="button main small" @click="router.push({ path: '/auth/register' })">
             {{ $t("register") }}
           </button>
         </div>
@@ -276,6 +241,7 @@ fetchLearning();
   border-bottom: 1px solid var(--border-color);
   display: flex;
   padding: 0 10px;
+
   @include tablet {
     display: none;
   }
@@ -372,6 +338,7 @@ fetchLearning();
     display: flex;
     align-items: center;
     margin-left: auto;
+
     hr.v {
       height: 1.5rem;
       width: 1px;
