@@ -30,7 +30,7 @@
       </div>
     </section>
 
-    <section>
+    <!-- <section>
       <div class="container">
         <blockquote>
           <i class="fa-duotone fa-quote-left"></i>
@@ -52,104 +52,28 @@
           ເພື່ອກຽມຄວາມພ້ອມໃຫ້ກັບຜູ້ປະກອບການຂັ້ນເລີ່ມຕົ້ນ ແລະ ວ່າທີ່ຜູ້ປະກອບການ.
         </blockquote>
       </div>
-    </section>
+    </section> -->
 
     <section>
       <div class="container">
-        <div class="grids is-5-desktop gap-10-desktop">
+        <div class="grids is-2-desktop gap-10-desktop">
           <div class="element">
             <img
               src="../../assets/images/services/about/Enterpreneurs-story_Page_1.jpg"
             />
-            <p>ວ່າທີ່ຜູ້ປະກອບການ</p>
-            <p>(Future Entrepreneur)</p>
+            <p>ບໍລິສັດ/ອົງກອນ</p>
           </div>
           <div class="element">
             <img
               src="../../assets/images/services/about/Enterpreneurs-story_Page_2.jpg"
               alt=""
             />
-            <p>ຜູ້ປະກອບອາຊີບດ້ວຍຕົນເອງ</p>
-            <p>(Self-employed)</p>
-          </div>
-          <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_3.jpg"
-              alt=""
-            />
-            <p>ຜູ້ປະກອບການໃໝ່</p>
-            <p>(new entrepreneur)</p>
-          </div>
-          <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_4.jpg"
-              alt=""
-            />
-            <p>ຈຸນລະວິສາຫະກິດ</p>
-            <p>(Micro entreprise)</p>
-          </div>
-          <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_5.jpg"
-              alt=""
-            />
-            <p>ວິສາຫະກິດຂະໜາດນ້ອຍ</p>
-            <p>(Small entreprise)</p>
+            <p>
+              ໂຄງການທີ່ປິ່ນອ້ອມວຽກງານ ການປະກອບອາຊີບດ້ວຍຕົນເອງ ແລະ
+              ການປະກອບທຸລະກິດ
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <patternDivider style="margin-bottom: 50px" />
-        <div class="grids is-12-desktop gap-50-desktop">
-          <div class="span-5-desktop">
-            <img
-              src="https://contentshifu.com/wp-content/uploads/2022/07/in-house-image-1-1024x1024.png.webp"
-            />
-          </div>
-          <div class="takeaway span-7-desktop">
-            <h3>ເຂົ້າຮ່ວມ BIZ Courses ຈະໄດ້ຫຍັງ?</h3>
-            <p>ທຸກຫຼັກສູດຂອງ BIZ Courses, ຜູ້ເຂົ້າຮ່ວມຝຶກ ຕາມເງື່ອນໄຂ* ຈະໄດ້</p>
-            <ul>
-              <li>
-                <i class="fa-solid fa-square-check"></i>
-                <p>
-                  ພັດທະນາຄວາມຮູ້ຄວາມສາມາດ, ຝຶກຝົນການຄິດວິເຄາະ, ວາງແຜນ ແລະ
-                  ກຽມຄວາມພ້ອມຢ່າງເໝາະສົມ ຜ່ານຂະບວນການ ແລະ
-                  ຂັ້ນຕອນກິດຈະກຳການຝຶກອົບຮົມ (Competency development)
-                </p>
-              </li>
-              <li>
-                <i class="fa-solid fa-square-check"></i>
-                <p>
-                  ເຄື່ອງມືທີ່ເປັນປະໂຫຍດ ເພື່ອນຳໄປພັດທະນາທຸລະກິດ (Business tools)
-                </p>
-              </li>
-              <li>
-                <i class="fa-solid fa-square-check"></i>
-                <p>ພັດທະນາແນວຄວາມຄິດແບບຜູ້ປະກອບການ (Entrepreneurial mindset)</p>
-              </li>
-              <li>
-                <i class="fa-solid fa-square-check"></i>
-                <p>
-                  ນຳໃຊ້ສິ່ງທີ່ໄດ້ຮັບຈາກການຝຶກໄປນຳໃຊ້ ເພື່ອຫຼຸດຜ່ອນຄວາມສ່ຽງ ແລະ
-                  ເພີ່ມໂອກາດໃນການປະກອບທຸລະກິດໃຫ້ປະສົບຜົນສຳເລັດຫຼາຍຂຶ້ນ
-                  (Application)
-                </p>
-              </li>
-              <li>
-                <i class="fa-solid fa-square-check"></i>
-                <p>
-                  ຮັບໃບຢັ້ງຢືນການເຂົ້າຮ່ວມຝຶກອົບຮົມ ຈາກຜູ້ຈັດ (Certificate of
-                  Participation)
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <patternDivider style="margin-top: 50px" />
       </div>
     </section>
 
@@ -174,49 +98,44 @@
             }"
           >
             <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-1.png" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-1.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-2.png" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-2.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-3.png" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-3.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-4.png" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-4.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-5.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-5.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-6.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-6.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-7.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-7.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-8.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-9.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-10.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-11.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-12.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-13.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-14.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-15.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-8.jpg"
+              />
             </SwiperSlide>
           </Swiper>
         </div>

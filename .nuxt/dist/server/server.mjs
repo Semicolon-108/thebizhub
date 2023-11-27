@@ -558,7 +558,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/biz-coaching-5d17fbe1.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/biz-coaching-e2aa0b04.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
@@ -566,7 +566,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/biz-course-008c26c1.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/biz-course-18d228e4.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
@@ -582,7 +582,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/project-business-consultant-928776d2.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/project-business-consultant-de328d88.js").then((m) => m.default || m)
   },
   {
     name: "search",
@@ -984,11 +984,6 @@ const language = [
     en: "About Us"
   },
   {
-    key: "update",
-    la: "ອັບເດດ",
-    en: "Updates"
-  },
-  {
     key: "achievements",
     la: "ຜົນງານຂອງ ເດີບິດຮັບ",
     en: "Achievements"
@@ -999,14 +994,19 @@ const language = [
     en: "Products & Services"
   },
   {
-    key: "biz_coaching",
+    key: "product_biz_coaching",
     la: "ບໍລິການໃຫ້ຄໍາປຶກສາດ້ານທຸລະກິດ",
     en: "Business Coaching "
   },
   {
-    key: "biz_course",
-    la: "ຫຼັກສູດການຝຶກອົບຮົມກ່ຽວກັບທຸລະກິດ",
-    en: "BIZ COURSES"
+    key: "product_biz_course",
+    la: "ຫຼັກສູດຝຶກອົບຮົມກ່ຽວກັບທຸລະກິດ",
+    en: "Business Courses"
+  },
+  {
+    key: "product_business_consultant",
+    la: "ບໍລິການທີ່ປຶກສາໂຄງການ ແລະ ທຸລະກິດ",
+    en: "Project/Business Consultancy"
   },
   {
     key: "purpose",
@@ -1045,23 +1045,104 @@ const language = [
   },
   {
     key: "follow_us",
-    la: "ຕິດຕໍ່າມພວກເຮົາໄດ້ທີ່",
+    la: "ຕິດຕາມພວກເຮົາໄດ້ທີ່",
     en: "Follow Us on"
   },
   {
-    key: "article_tsns",
+    key: "navbar_tsns",
     la: "ທ້າວສ້າງນາງສາ",
     en: "TSNS"
   },
   {
-    key: "article_wing",
-    la: "ວິ້ງ",
+    key: "navbar_wing",
+    la: "WINGS ",
     en: "WINGS"
   },
   {
-    key: "learning",
-    la: "ການຮຽນຮູ້",
+    key: "navbar_learning",
+    la: "ແຫຼ່ງຄວາມຮູ້",
     en: "Learning"
+  },
+  {
+    key: "article_biz_laws",
+    la: "ກົດໝາຍທຸລະກິດ",
+    en: "BIZ Laws"
+  },
+  {
+    key: "more_article",
+    la: "ບົດຄວາມເພີ່ມເຕີມ",
+    en: "More Articels"
+  },
+  {
+    key: "related_article",
+    la: "ບົດຄວາມທີ່ກ່ຽວຂ້ອງ",
+    en: "Related articles"
+  },
+  {
+    key: "tricks_tips",
+    la: "Tricks & Tips",
+    en: "Tricks & Tips"
+  },
+  {
+    key: "aritlcle_entrepreneur_story",
+    la: "ເລື່ອງເລົ່າແຮງບັນດານໃຈ ຈາກຜູ້ປະກອບການ",
+    en: "Entrepreneur's story"
+  },
+  {
+    key: "article_wings",
+    la: "WINGS ເພາະຜູ້ຍິງກໍເປັນຜູ້ປະກອບການໄດ້",
+    en: "WINGS - Women's Income Generating Support"
+  },
+  {
+    key: "article_tsns",
+    la: "ທ້າວສ້າງນາງສາຄູ່ຄິດທຸລະກິດຊຸມຊົນ",
+    en: "TSNS - Thao Sang Nang Sa Grassroot Community Business"
+  },
+  {
+    key: "article_events",
+    la: "ຂ່າວສານກິດຈະກໍາ",
+    en: "Events & Activities"
+  },
+  {
+    key: "button_donate",
+    la: "ແຫຼ່ງສະໜັບສະໜູນທຸລະກິດ",
+    en: "Business Supporters"
+  },
+  {
+    key: "about_thebiz",
+    la: "ກ່ຽວກັບ ເດິບິດຮັບ",
+    en: "About The BIZ HUB"
+  },
+  {
+    key: "vision",
+    la: "ວິໄສທັດ",
+    en: "VISION"
+  },
+  {
+    key: "about_vision",
+    la: "ເປັນຂົວຕໍ່ໃຫ້ກັບບັນດາຜູ້ທີ່ເລີ່ມຕົ້ນເຮັດທຸລະກິດສາມາດກ້າວໄປສູ່ຄວາມສໍາເລັດ.",
+    en: "To Be the Bridge for the New-Generation Entrepreneurs to Success."
+  },
+  {
+    key: "mission",
+    la: "ພາລະກິດ",
+    en: "MISSION"
+  },
+  {
+    key: "about_mission",
+    la: '"ເພື່ອສະໜອງບໍລິການໃຫ້ຄຳປຶກສາ, ຂໍ້ມູນຂ່າວສານທີ່ຈຳເປັນ, ການຝຶກອົບຮົມ ແລະ ເຄື່ອງມືທາງທຸລະກິດ '
+  },
+  {
+    key: 'ເພື່ອສ້າງຄວາມເຂັ້ມແຂງໃຫ້ກັບທຸລະກິດ ແລະ ສ້າງການປ່ຽນແປງທີ່ດີສູ່ສັງຄົມ. "',
+    la: '"​​To Provide Consulting Services, Essential Information, Courses and Business tools to strengthen Businesses '
+  },
+  {
+    key: 'and Create Positive Changes in the Community."'
+  },
+  {
+    key: "achievements",
+    la: "ຜົນງານຂອງ ເດິບິດຮັບ",
+    en: "OUR ACHIEVEMTENTS"
   }
 ];
 const getKeyFunc = (lang) => {
@@ -1108,7 +1189,7 @@ const plugins = [
   image_u014LPA7JK
 ];
 const layouts = {
-  main: () => import("./_nuxt/main-511ab4e0.js").then((m) => m.default || m)
+  main: () => import("./_nuxt/main-18d86a67.js").then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",

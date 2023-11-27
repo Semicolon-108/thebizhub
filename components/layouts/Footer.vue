@@ -15,7 +15,7 @@
           <small>thebizhub.info@gmail.com</small>
         </li>
         <li class="span-5-desktop">
-          <h3>Learning</h3>
+          <h3>{{ $t("navbar_learning") }}</h3>
           <ul>
             <li v-for="(o, index) in learing" :key="index">
               <NuxtLink
@@ -26,15 +26,15 @@
           </ul>
         </li>
         <li class="span-5-desktop">
-          <h3>Product & Services</h3>
+          <h3>{{ $t("products") }}</h3>
           <ul>
-            <li>BIZ COACHING</li>
-            <li>BIZ COURSES</li>
-            <li>PROJECT BUSINESS CONSULTANT</li>
+            <li>{{ $t("product_biz_coaching") }}</li>
+            <li>{{ $t("product_biz_course") }}</li>
+            <li>{{ $t("product_business_consultant") }}</li>
           </ul>
 
           <div class="socials">
-            <h3>Follow us on</h3>
+            <h3>{{ $t("follow_us") }}</h3>
             <ul>
               <li>
                 <a

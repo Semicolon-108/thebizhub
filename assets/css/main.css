@@ -28611,6 +28611,7 @@ input {
   width: 100%;
   border: 1px solid #dbdbdb;
   font-size: clamp(0.95rem, 2.5vw, 1rem);
+  font-family: "Noto Sans Lao", sans-serif;
   outline: none;
   box-shadow: none;
   border-radius: 5px;
