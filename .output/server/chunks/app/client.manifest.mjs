@@ -1,5 +1,5 @@
 const client_manifest = {
-  "_Enterpreneurs-story_Page_2.afeeecba.js": {
+  "_Enterpreneurs-story_Page_2.95dd2b66.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -8,7 +8,7 @@ const client_manifest = {
       "Enterpreneurs-story_Page_1.50830638.jpg",
       "Enterpreneurs-story_Page_2.7ce88021.jpg"
     ],
-    "file": "Enterpreneurs-story_Page_2.afeeecba.js",
+    "file": "Enterpreneurs-story_Page_2.95dd2b66.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -25,7 +25,7 @@ const client_manifest = {
     "prefetch": true,
     "mimeType": "image/jpeg"
   },
-  "_Enterpreneurs-story_Page_5.cb8dc84a.js": {
+  "_Enterpreneurs-story_Page_5.f094c424.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -35,7 +35,7 @@ const client_manifest = {
       "Enterpreneurs-story_Page_4.1427d63d.jpg",
       "Enterpreneurs-story_Page_5.76f849dc.jpg"
     ],
-    "file": "Enterpreneurs-story_Page_5.cb8dc84a.js",
+    "file": "Enterpreneurs-story_Page_5.f094c424.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -58,7 +58,7 @@ const client_manifest = {
     "prefetch": true,
     "mimeType": "image/jpeg"
   },
-  "_card-list.68bfad53.js": {
+  "_card-list.66683aeb.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -66,7 +66,7 @@ const client_manifest = {
     "css": [
       "card-list.80220403.css"
     ],
-    "file": "card-list.68bfad53.js",
+    "file": "card-list.66683aeb.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
@@ -78,18 +78,18 @@ const client_manifest = {
     "prefetch": true,
     "preload": true
   },
-  "_cookie.478b6f48.js": {
+  "_cookie.f2cc52ec.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "cookie.478b6f48.js",
+    "file": "cookie.f2cc52ec.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
     ]
   },
-  "_info-box.b519f5f4.js": {
+  "_info-box.22c3e1be.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -97,7 +97,7 @@ const client_manifest = {
     "css": [
       "info-box.69ae7513.css"
     ],
-    "file": "info-box.b519f5f4.js",
+    "file": "info-box.22c3e1be.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
@@ -109,23 +109,23 @@ const client_manifest = {
     "prefetch": true,
     "preload": true
   },
-  "_nuxt-link.8be4fddd.js": {
+  "_nuxt-link.9c5b25d3.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "nuxt-link.8be4fddd.js",
+    "file": "nuxt-link.9c5b25d3.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
     ]
   },
-  "_related.vue.37883e73.js": {
+  "_related.vue.6da3bce0.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "related.vue.37883e73.js",
+    "file": "related.vue.6da3bce0.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
@@ -147,7 +147,7 @@ const client_manifest = {
     "prefetch": true,
     "preload": true
   },
-  "_team.61d120cb.js": {
+  "_team.20163a8d.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -155,7 +155,7 @@ const client_manifest = {
     "assets": [
       "team.ae182b55.jpg"
     ],
-    "file": "team.61d120cb.js",
+    "file": "team.20163a8d.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -1177,12 +1177,12 @@ const client_manifest = {
       "footer-bg.f96727d2.svg"
     ],
     "css": [],
-    "file": "main.24b7496b.js",
+    "file": "main.840fb490.js",
     "imports": [
-      "_nuxt-link.8be4fddd.js",
+      "_nuxt-link.9c5b25d3.js",
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js",
-      "_cookie.478b6f48.js"
+      "_cookie.f2cc52ec.js"
     ],
     "isDynamicEntry": true,
     "src": "layouts/main.vue"
@@ -1230,9 +1230,9 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-404.4c92af4e.js",
+    "file": "error-404.7262f8bd.js",
     "imports": [
-      "_nuxt-link.8be4fddd.js",
+      "_nuxt-link.9c5b25d3.js",
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
     ],
@@ -1258,7 +1258,7 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-500.22e0df60.js",
+    "file": "error-500.e17673b9.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
@@ -1292,7 +1292,7 @@ const client_manifest = {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.56c6a5ff.js",
+    "file": "entry.d8752cb2.js",
     "imports": [
       "_swiper-vue.6b947493.js"
     ],
@@ -1319,9 +1319,9 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "index.6b82a79e.js",
+    "file": "index.3391dd5c.js",
     "imports": [
-      "_team.61d120cb.js",
+      "_team.20163a8d.js",
       "pages/about-us/product-and-services.vue",
       "pages/about-us/works.vue",
       "_swiper-vue.6b947493.js",
@@ -1354,7 +1354,7 @@ const client_manifest = {
       "project-business-consultancy.5f79db5e.png"
     ],
     "css": [],
-    "file": "product-and-services.1528b12d.js",
+    "file": "product-and-services.adc795f3.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
@@ -1461,7 +1461,7 @@ const client_manifest = {
       "team.ae182b55.jpg"
     ],
     "css": [],
-    "file": "works.a75193f4.js",
+    "file": "works.c03652c3.js",
     "imports": [
       "_swiper-vue.6b947493.js",
       "node_modules/nuxt/dist/app/entry.js"
@@ -1842,11 +1842,11 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "login.b87359c9.js",
+    "file": "login.e7183027.js",
     "imports": [
-      "_nuxt-link.8be4fddd.js",
+      "_nuxt-link.9c5b25d3.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_info-box.b519f5f4.js",
+      "_info-box.22c3e1be.js",
       "_swiper-vue.6b947493.js"
     ],
     "isDynamicEntry": true,
@@ -1871,9 +1871,9 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "password-recovery.8187de1e.js",
+    "file": "password-recovery.2da7c2bb.js",
     "imports": [
-      "_info-box.b519f5f4.js",
+      "_info-box.22c3e1be.js",
       "_swiper-vue.6b947493.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -1899,11 +1899,11 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "register.b7773fbb.js",
+    "file": "register.0295843a.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js",
-      "_info-box.b519f5f4.js"
+      "_info-box.22c3e1be.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/auth/register.vue"
@@ -1927,10 +1927,10 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "_id_.46982359.js",
+    "file": "_id_.28582eaa.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_related.vue.37883e73.js",
+      "_related.vue.6da3bce0.js",
       "_swiper-vue.6b947493.js"
     ],
     "isDynamicEntry": true,
@@ -1947,9 +1947,9 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "related.1a3fd5b6.js",
+    "file": "related.1997f819.js",
     "imports": [
-      "_related.vue.37883e73.js",
+      "_related.vue.6da3bce0.js",
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
     ],
@@ -1960,7 +1960,7 @@ const client_manifest = {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "index.641303b4.css",
+    "file": "index.1ff3cdea.css",
     "src": "pages/category/index.css"
   },
   "pages/category/index.vue": {
@@ -1969,17 +1969,17 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "index.1557e267.js",
+    "file": "index.cfff1347.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.68bfad53.js",
+      "_card-list.66683aeb.js",
       "_swiper-vue.6b947493.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/category/index.vue"
   },
-  "index.641303b4.css": {
-    "file": "index.641303b4.css",
+  "index.1ff3cdea.css": {
+    "file": "index.1ff3cdea.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -2000,12 +2000,12 @@ const client_manifest = {
       "bg.d71fbcd2.jpg"
     ],
     "css": [],
-    "file": "index.a97ffb19.js",
+    "file": "index.d2212bef.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js",
-      "_cookie.478b6f48.js",
-      "_team.61d120cb.js"
+      "_cookie.f2cc52ec.js",
+      "_team.20163a8d.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
@@ -2038,11 +2038,11 @@ const client_manifest = {
       "biz-coaching-7.4a3ca400.jpg"
     ],
     "css": [],
-    "file": "biz-coaching.fffd3980.js",
+    "file": "biz-coaching.0f3687db.js",
     "imports": [
       "_swiper-vue.6b947493.js",
-      "_Enterpreneurs-story_Page_2.afeeecba.js",
-      "_Enterpreneurs-story_Page_5.cb8dc84a.js",
+      "_Enterpreneurs-story_Page_2.95dd2b66.js",
+      "_Enterpreneurs-story_Page_5.f094c424.js",
       "node_modules/nuxt/dist/app/entry.js",
       "pages/product-and-services/pattern.vue"
     ],
@@ -2127,11 +2127,11 @@ const client_manifest = {
       "biz-course-15.617cf397.jpg"
     ],
     "css": [],
-    "file": "biz-course.88462415.js",
+    "file": "biz-course.c4ddd25b.js",
     "imports": [
       "_swiper-vue.6b947493.js",
-      "_Enterpreneurs-story_Page_2.afeeecba.js",
-      "_Enterpreneurs-story_Page_5.cb8dc84a.js",
+      "_Enterpreneurs-story_Page_2.95dd2b66.js",
+      "_Enterpreneurs-story_Page_5.f094c424.js",
       "node_modules/nuxt/dist/app/entry.js",
       "pages/product-and-services/pattern.vue"
     ],
@@ -2211,7 +2211,7 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "pattern.1b0e2385.js",
+    "file": "pattern.74ae9885.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
@@ -2248,10 +2248,10 @@ const client_manifest = {
       "business-consultant-8.8910cadc.jpg"
     ],
     "css": [],
-    "file": "project-business-consultant.8a2155e6.js",
+    "file": "project-business-consultant.dd780aaa.js",
     "imports": [
       "_swiper-vue.6b947493.js",
-      "_Enterpreneurs-story_Page_2.afeeecba.js",
+      "_Enterpreneurs-story_Page_2.95dd2b66.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -2300,10 +2300,10 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "index.a24f6127.js",
+    "file": "index.8da2fd5f.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.68bfad53.js",
+      "_card-list.66683aeb.js",
       "_swiper-vue.6b947493.js"
     ],
     "isDynamicEntry": true,
@@ -2328,10 +2328,10 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "_id_.8f3693f0.js",
+    "file": "_id_.6ce0a3bb.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.68bfad53.js",
+      "_card-list.66683aeb.js",
       "_swiper-vue.6b947493.js"
     ],
     "isDynamicEntry": true,

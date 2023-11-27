@@ -1,6 +1,0 @@
-const index_vue_vue_type_style_index_0_scoped_e084cd2a_lang = ".tabs-container[data-v-e084cd2a],.tabs-container .tabs[data-v-e084cd2a]{align-items:center;display:flex;position:relative}.tabs-container .tabs[data-v-e084cd2a]{flex-grow:1;justify-content:center;overflow-x:auto;overflow-y:hidden}@media (max-width:768px){.tabs-container .tabs[data-v-e084cd2a]{justify-content:flex-start}}.tabs-container .tabs li[data-v-e084cd2a]{align-items:flex-end;cursor:pointer;display:flex;padding:5px 10px;white-space:pre!important}.tabs-container .tabs li.current[data-v-e084cd2a]{color:var(--sub-color)}.tabs-container .tabs li i[data-v-e084cd2a]{line-height:1;margin-left:5px}.tabs-container p[data-v-e084cd2a]{align-items:center;background:linear-gradient(270deg,#fff,hsla(0,0%,100%,0));display:none;justify-content:flex-end;position:absolute;right:0;width:50px}@media (max-width:768px){.tabs-container p[data-v-e084cd2a]{display:flex}}@media (min-width:768px) and (max-width:1023px){.tabs-container p[data-v-e084cd2a]{display:flex}}";
-
-const indexStyles_255c68c1 = [index_vue_vue_type_style_index_0_scoped_e084cd2a_lang, index_vue_vue_type_style_index_0_scoped_e084cd2a_lang];
-
-export { indexStyles_255c68c1 as default };
-//# sourceMappingURL=index-styles.255c68c1.mjs.map

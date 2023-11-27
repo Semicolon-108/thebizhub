@@ -55,9 +55,14 @@ const isFilter = () => {
     categoryFilter.value = "";
   } else {
     search.value = "";
-    const data = isCate.value.find((i: any) => i.name === cateName);
-    if (data) {
-      categoryFilter.value = data._id;
+    const dataEn = isCate.value.find((i: any) => i.name === cateName);
+    const dataLao = isCate.value.find((i: any) => i.laoName === cateName);
+
+    if (dataEn) {
+      categoryFilter.value = dataEn._id;
+      search.value = "";
+    } else if (dataLao) {
+      categoryFilter.value = dataLao._id;
       search.value = "";
     } else {
       categoryFilter.value = "";
