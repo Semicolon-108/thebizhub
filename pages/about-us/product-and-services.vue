@@ -6,21 +6,16 @@
         <li>
           <img src="../../assets/images/services/biz-course.png" />
           <h3>ຫຼັກສູດຝຶກອົບຮົມທາງທຸລະກິດ (BIZ COURSES)</h3>
-          <!-- <h3>Business Courses (BIZ COURSES)</h3> -->
         </li>
         <li>
           <img src="../../assets/images/services/biz-coaching.png" />
           <h3>ບໍລິການໃຫ້ຄໍາປຶກສາທາງທຸລະກິດ ( BIZ COACHING )</h3>
-          <!-- <h3>Business Coaching (BIZ COACHING)</h3> -->
         </li>
         <li>
           <img
             src="../../assets/images/services/project-business-consultancy.png"
           />
           <h3>Project/Business Consultancy (BIZ CONSULTING)</h3>
-          <!-- <h3>
-            ບໍລິການທີ່ປຶກສາໂຄງການ ແລະ ທຸລະກິດ (Project/Business Consultancy)
-          </h3> -->
         </li>
       </ul>
     </div>

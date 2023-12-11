@@ -1,65 +1,65 @@
 /* @font-face {
-  font-family: 'Roboto';
-  src: url('../webfonts/Roboto-Light.ttf');
+  font-family: "Roboto";
+  src: url("../webfonts/Roboto-Light.ttf");
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../webfonts/Roboto-Regular.ttf');
+  font-family: "Roboto";
+  src: url("../webfonts/Roboto-Regular.ttf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../webfonts/Roboto-Bold.ttf');
+  font-family: "Roboto";
+  src: url("../webfonts/Roboto-Bold.ttf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../webfonts/Roboto-Black.ttf');
+  font-family: "Roboto";
+  src: url("../webfonts/Roboto-Black.ttf");
   font-weight: 700;
   font-style: normal;
-} */
+}
 
-/* @font-face {
-  font-family: 'Nuanta';
-  src: url('../webfonts/Nuanta-Regular.eot');
-  src: url('../webfonts/Nuanta-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../webfonts/Nuanta-Regular.woff2') format('woff2'),
-    url('../webfonts/Nuanta-Regular.woff') format('woff'),
-    url('../webfonts/Nuanta-Regular.ttf') format('truetype');
+@font-face {
+  font-family: "Nuanta";
+  src: url("../webfonts/Nuanta-Regular.eot");
+  src: url("../webfonts/Nuanta-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/Nuanta-Regular.woff2") format("woff2"),
+    url("../webfonts/Nuanta-Regular.woff") format("woff"),
+    url("../webfonts/Nuanta-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
-} */
+}
 
-/* @font-face {
-  font-family: 'Nuanta';
-  src: url('../webfonts/Nuanta-Regular.eot');
-  src: url('../webfonts/Nuanta-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../webfonts/Nuanta-Regular.woff2') format('woff2'),
-    url('../webfonts/Nuanta-Regular.woff') format('woff'),
-    url('../webfonts/Nuanta-Regular.ttf') format('truetype');
+@font-face {
+  font-family: "Nuanta";
+  src: url("../webfonts/Nuanta-Regular.eot");
+  src: url("../webfonts/Nuanta-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/Nuanta-Regular.woff2") format("woff2"),
+    url("../webfonts/Nuanta-Regular.woff") format("woff"),
+    url("../webfonts/Nuanta-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Nuanta';
-  src: url('../webfonts/Nuanta-Bold.eot');
-  src: url('../webfonts/Nuanta-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../webfonts/Nuanta-Bold.woff2') format('woff2'),
-    url('../webfonts/Nuanta-Bold.woff') format('woff'),
-    url('../webfonts/Nuanta-Bold.ttf') format('truetype');
+  font-family: "Nuanta";
+  src: url("../webfonts/Nuanta-Bold.eot");
+  src: url("../webfonts/Nuanta-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/Nuanta-Bold.woff2") format("woff2"),
+    url("../webfonts/Nuanta-Bold.woff") format("woff"),
+    url("../webfonts/Nuanta-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
-} */
+}
 
-@font-face {
+/* @font-face {
   font-family: "Noto Sans Lao";
   src: url("../webfonts/NotoSansLao-Black.eot");
   src: url("../webfonts/NotoSansLao-Black.eot?#iefix") format("embedded-opentype"),
@@ -142,4 +142,4 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-}
+} */

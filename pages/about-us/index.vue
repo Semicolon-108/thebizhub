@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <section class="xx">
       <div class="container">
         <h1 class="page-title">THE BIZ HUB ແມ່ນຫຍັງ?</h1>
         <div class="grids is-2-desktop is-1-mobile gap-20-desktop">
@@ -183,6 +183,9 @@ const works = ref<any>([
 </script>
 
 <style lang="scss" scoped>
+.xx {
+  background-color: var(--sub-color);
+}
 .box {
   background-color: var(--light-color);
   padding: 20px;
