@@ -65,7 +65,6 @@ const fetchEntrepre = async () => {
   const name = "651a4ca8c2d5c94d6cc3da9e";
   await axios.post(`reuse-articles/${name}`).then((res) => {
     if (res.status === 200) {
-      console.log(res.data.info)
       enterPreInfo.value = res.data.info;
     }
   });
