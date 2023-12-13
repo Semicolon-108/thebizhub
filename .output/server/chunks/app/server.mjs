@@ -645,7 +645,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-b28ef2d3.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-960e6ee4.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -1114,6 +1114,11 @@ const language = [
     en: "PURPOSE"
   },
   {
+    key: "who_are_we",
+    la: "ກ່ຽວກັບພວກເຮົົາ",
+    en: "WHO ARE WE?"
+  },
+  {
     key: "vision",
     la: "ວິໄສທັດ",
     en: "VISION"
@@ -1124,7 +1129,7 @@ const language = [
     en: "MISSION"
   },
   {
-    key: "more_info",
+    key: "more_about_us",
     la: "ຂໍ້ມູນເພີ່ມເຕີມ",
     en: "MORE ABOUT US"
   },

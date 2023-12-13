@@ -110,6 +110,11 @@ export const language = [
     en: "PURPOSE",
   },
   {
+    key: "who_are_we",
+    la: "ກ່ຽວກັບພວກເຮົົາ",
+    en: "WHO ARE WE?",
+  },
+  {
     key: "vision",
     la: "ວິໄສທັດ",
     en: "VISION",
@@ -120,7 +125,7 @@ export const language = [
     en: "MISSION",
   },
   {
-    key: "more_info",
+    key: "more_about_us",
     la: "ຂໍ້ມູນເພີ່ມເຕີມ",
     en: "MORE ABOUT US",
   },

@@ -1,25 +1,32 @@
 <template>
   <section>
     <div class="container">
-      <h1 class="section-title margin-bottom-10">{{$t('who_are_we')}}</h1>
+      <h1 class="section-title margin-bottom-10">{{ $t("who_are_we") }}</h1>
       <div class="grids is-2-desktop gap-20-desktop is-1-mobile">
         <div class="left">
           <ul class="tabs">
-            <li :class="{ open: selectedTab === i.key }" @click="selectTab(i.key)" v-for="(i, index) in tabs"
-              :key="index">
+            <li
+              :class="{ open: selectedTab === i.key }"
+              @click="selectTab(i.key)"
+              v-for="(i, index) in tabs"
+              :key="index"
+            >
               <h1>{{ i.key }} <i class="fa-light fa-angle-down"></i></h1>
               <p>{{ i.desc }}</p>
             </li>
             <li>
               <h1 @click="router.push({ path: '/about-us' })">
-                {{ $t('MORE_ABOUT_US') }}<i class="fa-light fa-angle-right"></i>
+                {{ $t("more_about_us") }}<i class="fa-light fa-angle-right"></i>
               </h1>
             </li>
           </ul>
         </div>
         <div class="right">
           <div class="image">
-            <a target="_blank" href="https://www.youtube.com/watch?v=HEg8LjkZOaQ">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=HEg8LjkZOaQ"
+            >
               <i class="fa-solid fa-play"></i>
               <img src="../../assets/images/about-page/team.jpg" />
             </a>
@@ -37,8 +44,8 @@ const selectedTab = ref("WHO ARE WE?");
 const axios = useNuxtApp().$axios;
 import { useI18n } from "vue-i18n";
 
-const tabs = ref<any>([])
-const { locale }: any = useI18n()
+const tabs = ref<any>([]);
+const { locale }: any = useI18n();
 // const tabs = ref<any>([
 //   {
 //     name: "WHO ARE WE?",
@@ -54,22 +61,24 @@ const { locale }: any = useI18n()
 //   },
 // ]);
 const fetchIntro = async () => {
-  const isLang = locale.value ? locale.value : "en"
+  const isLang = locale.value ? locale.value : "en";
   const data = await axios.post(`get-intro-api?lang=${isLang}`);
   tabs.value = data.data.info;
-  selectedTab.value=data.data.info[0].key
-}
+  selectedTab.value = data.data.info[0].key;
+};
 const selectTab = async (e: any) => {
   selectedTab.value = e;
 };
 
-watch(() => locale.value, (value) => {
-  fetchIntro()
-}, { immediate: true, deep: true })
-fetchIntro()
-
+watch(
+  () => locale.value,
+  (value) => {
+    fetchIntro();
+  },
+  { immediate: true, deep: true }
+);
+fetchIntro();
 </script>
-
 
 <style lang="scss" scoped>
 section {
