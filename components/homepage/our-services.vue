@@ -2,7 +2,7 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <div class="section-title">{{ $t("Our Services") }}</div>
+        <div class="section-title">{{ $t("products") }}</div>
       </div>
       <div class="section-body">
         <ul

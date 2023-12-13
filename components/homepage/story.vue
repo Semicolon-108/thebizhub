@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h1 class="section-title">{{title}}</h1>
+      <h1 class="section-title">{{ title }}</h1>
       <ul>
         <li v-for="(i, index) in info" :key="index">
           <div class="card dark" @click="router.push(`/blog-detail/${i._id}`)">
@@ -9,12 +9,12 @@
               <img :src="images + i.coverPage" alt="" />
             </div>
             <div class="card-content">
-              <p class="tag-list">
-                <!-- <span v-for="(t, indx) in i.tag" :key="indx">{{ t.name }}</span> -->
+              <!-- <p class="tag-list">
+                <span v-for="(t, indx) in i.tag" :key="indx">{{ t.name }}</span>
                 <span v-for="(c, ind) in i.category" :key="ind">{{
                   c.name
                 }}</span>
-              </p>
+              </p> -->
               <h3>{{ i.title }}</h3>
             </div>
           </div>
@@ -24,7 +24,7 @@
   </section>
 </template>
 <script setup lang="ts">
-defineProps(["info",'title']);
+defineProps(["info", "title"]);
 const router = useRouter();
 const images = useNuxtApp().$imageURL;
 </script>

@@ -9,12 +9,12 @@
               <img :src="images + i.coverPage" alt="" />
             </div>
             <div class="card-content">
-              <ul class="tag-list">
+              <!-- <ul class="tag-list">
                 <li v-for="(c, ind) in i.category" :key="ind">
                   <a>{{ c.name }}</a>
                 </li>
-              </ul>
-              <h3>{{ i.title }}</h3>
+              </ul> -->
+              <h3 class="card-title">{{ i.title }}</h3>
             </div>
           </div>
         </li>
