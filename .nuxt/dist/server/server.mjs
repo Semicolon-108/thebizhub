@@ -478,7 +478,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-45e52970.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-abb5fc69.js").then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -486,7 +486,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/product-and-services-eaf9bf27.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/product-and-services-b17f6dd7.js").then((m) => m.default || m)
   },
   {
     name: "about-us-works",
@@ -550,7 +550,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-f8a82080.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-b28ef2d3.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -558,7 +558,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/biz-coaching-e2aa0b04.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/biz-coaching-3e8fedd9.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
@@ -566,7 +566,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/biz-course-18d228e4.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/biz-course-07a30535.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
@@ -582,7 +582,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/project-business-consultant-de328d88.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/project-business-consultant-d1aa90b9.js").then((m) => m.default || m)
   },
   {
     name: "search",
@@ -909,6 +909,11 @@ const http_U6xsJGI3U5 = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
 });
 const language = [
   {
+    key: "updates",
+    la: "ອັບເດດ",
+    en: "Updates"
+  },
+  {
     key: "website_name",
     la: "The BIZ HUB (ເດິ ບິດ ຮັບ)",
     en: "The BIZ HUB"
@@ -1064,9 +1069,24 @@ const language = [
     en: "Learning"
   },
   {
+    key: "navbar_partner",
+    la: "ຜູ້ສະໜັບສະໜູນ",
+    en: "Partner"
+  },
+  {
+    key: "navbar_donate",
+    la: "ບໍລິຈາກ",
+    en: "Donate"
+  },
+  {
     key: "article_biz_laws",
     la: "ກົດໝາຍທຸລະກິດ",
     en: "BIZ Laws"
+  },
+  {
+    key: "",
+    la: "ເຄື່ອງມືການພັດທະນາທຸລະກິດ",
+    en: "BIZ Tools"
   },
   {
     key: "more_article",
@@ -1119,25 +1139,9 @@ const language = [
     en: "VISION"
   },
   {
-    key: "about_vision",
-    la: "ເປັນຂົວຕໍ່ໃຫ້ກັບບັນດາຜູ້ທີ່ເລີ່ມຕົ້ນເຮັດທຸລະກິດສາມາດກ້າວໄປສູ່ຄວາມສໍາເລັດ.",
-    en: "To Be the Bridge for the New-Generation Entrepreneurs to Success."
-  },
-  {
     key: "mission",
     la: "ພາລະກິດ",
     en: "MISSION"
-  },
-  {
-    key: "about_mission",
-    la: '"ເພື່ອສະໜອງບໍລິການໃຫ້ຄຳປຶກສາ, ຂໍ້ມູນຂ່າວສານທີ່ຈຳເປັນ, ການຝຶກອົບຮົມ ແລະ ເຄື່ອງມືທາງທຸລະກິດ '
-  },
-  {
-    key: 'ເພື່ອສ້າງຄວາມເຂັ້ມແຂງໃຫ້ກັບທຸລະກິດ ແລະ ສ້າງການປ່ຽນແປງທີ່ດີສູ່ສັງຄົມ. "',
-    la: '"​​To Provide Consulting Services, Essential Information, Courses and Business tools to strengthen Businesses '
-  },
-  {
-    key: 'and Create Positive Changes in the Community."'
   },
   {
     key: "achievements",
@@ -1145,19 +1149,19 @@ const language = [
     en: "OUR ACHIEVEMTENTS"
   },
   {
-    key: "who_are_we",
-    la: "ພວກເຮົາແມ່ນໃຜ?",
-    en: "WHO ARE WE?"
+    key: "about_thebiz_text",
+    la: "ພວກເຮົາແມ່ນ ຄູ່ຮ່ວມງານເພື່ອຄວາມສໍາເລັດໃນດ້ານທຸລະກິດ ແລະ ການເປັນຜູ້ປະກອບການ. ພວກເຮົາມຸ່ງໝັ້ນໃນການສົ່ງເສີມ ແລະ ເສີມສ້າງຜູ້ປະກອບການລຸ້ນໃໝ່ ໂດຍສະເພາະແມ່ນຜູ້ທີ່ກຳລັງຢູ່ໃນຂັ້ນກຽມຕົວ ຫຼື ກຳລັງເລີ່ມຕົ້ນເຮັດທຸລະກິດ ທີ່ຕ້ອງການພັດທະນາຕົນເອງ ແລະ ທຸລະກິດໃຫ້ເຕີບໂຕຢ່າງບໍ່ຢຸດຢັ້ງ.",
+    en: "We are Partner for Success in Business and Entrepreneurship. We are committed to promote and empower the new-generation entrepreneurs; specifically, those who are in the Seed & Development and startup stage of business lifecycle to develop themselves and grow their business continuously."
   },
   {
-    key: "MORE_ABOUT_US",
-    la: "ຂໍ້ມູນເພີ່ມຕື່ມກ່ຽວກັບເຮົາ",
-    en: "MORE ABOUT US"
+    key: "about_vision_text",
+    la: "ເປັນຂົວຕໍ່ໃຫ້ກັບບັນດາຜູ້ທີ່ເລີ່ມຕົ້ນເຮັດທຸລະກິດສາມາດກ້າວໄປສູ່ຄວາມສໍາເລັດ.",
+    en: "To Be the Bridge for the New-Generation Entrepreneurs to Success."
   },
   {
-    key: "Our Services",
-    la: "ບໍລິການຂອງພວກເຮົາ",
-    en: "Our Services"
+    key: "about_mission_text",
+    la: "ເພື່ອສະໜອງບໍລິການໃຫ້ຄຳປຶກສາ, ຂໍ້ມູນຂ່າວສານທີ່ຈຳເປັນ, ການຝຶກອົບຮົມ ແລະ ເຄື່ອງມືທາງທຸລະກິດ ເພື່ອສ້າງຄວາມເຂັ້ມແຂງໃຫ້ກັບທຸລະກິດ ແລະ ສ້າງການປ່ຽນແປງທີ່ດີສູ່ສັງຄົມ.",
+    en: "​​To Provide Consulting Services, Essential Information, Courses and Business tools to strengthen Businesses and Create Positive Changes in the Community."
   }
 ];
 const getKeyFunc = (lang) => {
@@ -1204,7 +1208,7 @@ const plugins = [
   image_u014LPA7JK
 ];
 const layouts = {
-  main: () => import("./_nuxt/main-41b20b9f.js").then((m) => m.default || m)
+  main: () => import("./_nuxt/main-7e9940df.js").then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",

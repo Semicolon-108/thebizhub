@@ -5,7 +5,9 @@
         <div class="section-title">{{ $t("Our Services") }}</div>
       </div>
       <div class="section-body">
-        <ul class="grids is-3-desktop is-1-mobile gap-10-tablet gap-10-tablet gap-20-desktop gap-10-mobile">
+        <ul
+          class="grids is-3-desktop is-1-mobile gap-10-tablet gap-10-tablet gap-20-desktop gap-10-mobile"
+        >
           <li v-for="(i, index) in info" :key="index">
             <div class="card">
               <div class="card-icon">
@@ -17,33 +19,6 @@
               </p>
             </div>
           </li>
-          <!-- <li>
-            <div class="card">
-              <div class="card-icon">
-                <img src="../../assets/images/services/biz-course.png" />
-              </div>
-              <h3 class="card-title">BIZ COURSES</h3>
-              <p>
-                ຫຼັກສູດການຝຶກອົບຮົມທາງທຸລະກິດ ໄລຍະສັ້ນ ເພື່ອກຽມຄວາມພ້ອມ ແລະ
-                ສ້າງຄວາມເຂັ້ມແຂງ ໃຫ້ກັບວ່າທີ່ຜູ້ປະກອບການ,
-                ຜູ້ປະກອບການຂັ້ນເລີ່ມຕົ້ນ ຫຼື ເຈົ້າຂອງທຸລະກິດຂະໜາດນ້ອຍ.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="card-icon">
-                <img src="../../assets/images/services/project-business-consultancy.png" />
-              </div>
-              <h3 class="card-title">Project Business Consultant</h3>
-              <p>
-                ບໍລິການທີ່ປຶກສາໂຄງການ ແລະ ທຸລະກິດ ໃຫ້ບໍລິການເປັນທີ່ປຶກສາ
-                ໃນການວາງແຜນ, ຈັດຕັ້ງປະຕິບັດ ແລະ ປະເມີນຜົນສຳເລັດຂອງໂຄງການ
-                ທີ່ກ່ຽວຂ້ອງກັບການປະກອບອາຊີບດ້ວຍຕົນເອງ, ການປະກອບທຸລະກິດ ແລະ
-                ການເຕີບໂຕຂອງທຸລະກິດ.
-              </p>
-            </div>
-          </li> -->
         </ul>
       </div>
     </div>
@@ -53,21 +28,24 @@
 <script setup lang="ts">
 // get-our-service-api
 const axios = useNuxtApp().$axios;
-const urlImage = useNuxtApp().$imageURL
+const urlImage = useNuxtApp().$imageURL;
 import { useI18n } from "vue-i18n";
-const { locale }: any = useI18n()
-const info = ref<any>()
+const { locale }: any = useI18n();
+const info = ref<any>();
 
 const fetchOurService = async () => {
-  const isLang = locale.value ? locale.value : "en"
+  const isLang = locale.value ? locale.value : "en";
   const data = await axios.post(`get-our-service-api?lang=${isLang}`);
   info.value = data.data.info;
-}
-watch(() => locale.value, (value) => {
-  fetchOurService()
-}, { immediate: true, deep: true })
-fetchOurService()
-
+};
+watch(
+  () => locale.value,
+  (value) => {
+    fetchOurService();
+  },
+  { immediate: true, deep: true }
+);
+fetchOurService();
 </script>
 
 <style lang="scss" scoped>

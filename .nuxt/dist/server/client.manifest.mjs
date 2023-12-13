@@ -1,5 +1,5 @@
 export default {
-  "_Enterpreneurs-story_Page_2.95dd2b66.js": {
+  "_Enterpreneurs-story_Page_2.b838e576.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -8,7 +8,7 @@ export default {
       "Enterpreneurs-story_Page_1.50830638.jpg",
       "Enterpreneurs-story_Page_2.7ce88021.jpg"
     ],
-    "file": "Enterpreneurs-story_Page_2.95dd2b66.js",
+    "file": "Enterpreneurs-story_Page_2.b838e576.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -25,7 +25,7 @@ export default {
     "prefetch": true,
     "mimeType": "image/jpeg"
   },
-  "_Enterpreneurs-story_Page_5.f094c424.js": {
+  "_Enterpreneurs-story_Page_5.3635caab.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -35,7 +35,7 @@ export default {
       "Enterpreneurs-story_Page_4.1427d63d.jpg",
       "Enterpreneurs-story_Page_5.76f849dc.jpg"
     ],
-    "file": "Enterpreneurs-story_Page_5.f094c424.js",
+    "file": "Enterpreneurs-story_Page_5.3635caab.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -58,7 +58,45 @@ export default {
     "prefetch": true,
     "mimeType": "image/jpeg"
   },
-  "_card-list.66683aeb.js": {
+  "_biz-coaching.28d4164c.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "assets": [
+      "biz-coaching.69856799.png"
+    ],
+    "file": "biz-coaching.28d4164c.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "biz-coaching.69856799.png": {
+    "file": "biz-coaching.69856799.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "_biz-course.6b81094d.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "assets": [
+      "biz-course.58ea336f.png"
+    ],
+    "file": "biz-course.6b81094d.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "biz-course.58ea336f.png": {
+    "file": "biz-course.58ea336f.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "_card-list.70a3a1bd.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -66,7 +104,7 @@ export default {
     "css": [
       "card-list.80220403.css"
     ],
-    "file": "card-list.66683aeb.js",
+    "file": "card-list.70a3a1bd.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
@@ -78,18 +116,18 @@ export default {
     "prefetch": true,
     "preload": true
   },
-  "_cookie.f2cc52ec.js": {
+  "_cookie.60482ac3.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "cookie.f2cc52ec.js",
+    "file": "cookie.60482ac3.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
     ]
   },
-  "_info-box.22c3e1be.js": {
+  "_info-box.f377cba3.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -97,7 +135,7 @@ export default {
     "css": [
       "info-box.69ae7513.css"
     ],
-    "file": "info-box.22c3e1be.js",
+    "file": "info-box.f377cba3.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
@@ -109,23 +147,23 @@ export default {
     "prefetch": true,
     "preload": true
   },
-  "_nuxt-link.9c5b25d3.js": {
+  "_nuxt-link.cfe36dbc.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "nuxt-link.9c5b25d3.js",
+    "file": "nuxt-link.cfe36dbc.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
     ]
   },
-  "_related.vue.6da3bce0.js": {
+  "_related.vue.3c85cbd9.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "related.vue.6da3bce0.js",
+    "file": "related.vue.3c85cbd9.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
@@ -147,7 +185,7 @@ export default {
     "prefetch": true,
     "preload": true
   },
-  "_team.20163a8d.js": {
+  "_team.09c525fb.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -155,7 +193,7 @@ export default {
     "assets": [
       "team.ae182b55.jpg"
     ],
-    "file": "team.20163a8d.js",
+    "file": "team.09c525fb.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -593,13 +631,6 @@ export default {
     "file": "team.ae182b55.jpg",
     "src": "assets/images/about-page/team.jpg"
   },
-  "assets/images/bg.jpg": {
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg",
-    "file": "bg.d71fbcd2.jpg",
-    "src": "assets/images/bg.jpg"
-  },
   "assets/images/biz-coaching/biz-coaching-1.jpg": {
     "resourceType": "image",
     "prefetch": true,
@@ -880,173 +911,71 @@ export default {
     "file": "thebizhub-logo.b61d510f.jpg",
     "src": "assets/images/thebizhub-logo.jpg"
   },
-  "assets/webfonts/NotoSansLao-Black.eot": {
+  "assets/webfonts/Nuanta-Bold.eot": {
     "resourceType": "font",
     "mimeType": "font/eot",
-    "file": "NotoSansLao-Black.ef799f72.eot",
-    "src": "assets/webfonts/NotoSansLao-Black.eot"
+    "file": "Nuanta-Bold.0b6f7ce4.eot",
+    "src": "assets/webfonts/Nuanta-Bold.eot"
   },
-  "assets/webfonts/NotoSansLao-Black.ttf": {
+  "assets/webfonts/Nuanta-Bold.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
-    "file": "NotoSansLao-Black.0824945a.ttf",
-    "src": "assets/webfonts/NotoSansLao-Black.ttf"
+    "file": "Nuanta-Bold.5aa64b5f.ttf",
+    "src": "assets/webfonts/Nuanta-Bold.ttf"
   },
-  "assets/webfonts/NotoSansLao-Black.woff": {
+  "assets/webfonts/Nuanta-Bold.woff": {
     "resourceType": "font",
     "mimeType": "font/woff",
-    "file": "NotoSansLao-Black.53441980.woff",
-    "src": "assets/webfonts/NotoSansLao-Black.woff"
+    "file": "Nuanta-Bold.b163285d.woff",
+    "src": "assets/webfonts/Nuanta-Bold.woff"
   },
-  "assets/webfonts/NotoSansLao-Black.woff2": {
+  "assets/webfonts/Nuanta-Bold.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "NotoSansLao-Black.909733e6.woff2",
-    "src": "assets/webfonts/NotoSansLao-Black.woff2"
+    "file": "Nuanta-Bold.b3349f0d.woff2",
+    "src": "assets/webfonts/Nuanta-Bold.woff2"
   },
-  "assets/webfonts/NotoSansLao-Bold.eot": {
+  "assets/webfonts/Nuanta-Regular.eot": {
     "resourceType": "font",
     "mimeType": "font/eot",
-    "file": "NotoSansLao-Bold.c26e01f6.eot",
-    "src": "assets/webfonts/NotoSansLao-Bold.eot"
+    "file": "Nuanta-Regular.ad2a0711.eot",
+    "src": "assets/webfonts/Nuanta-Regular.eot"
   },
-  "assets/webfonts/NotoSansLao-Bold.ttf": {
+  "assets/webfonts/Nuanta-Regular.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
-    "file": "NotoSansLao-Bold.12a4aed0.ttf",
-    "src": "assets/webfonts/NotoSansLao-Bold.ttf"
+    "file": "Nuanta-Regular.bbea65bb.ttf",
+    "src": "assets/webfonts/Nuanta-Regular.ttf"
   },
-  "assets/webfonts/NotoSansLao-Bold.woff": {
+  "assets/webfonts/Nuanta-Regular.woff": {
     "resourceType": "font",
     "mimeType": "font/woff",
-    "file": "NotoSansLao-Bold.f92d04f0.woff",
-    "src": "assets/webfonts/NotoSansLao-Bold.woff"
+    "file": "Nuanta-Regular.76e2bbfb.woff",
+    "src": "assets/webfonts/Nuanta-Regular.woff"
   },
-  "assets/webfonts/NotoSansLao-Bold.woff2": {
+  "assets/webfonts/Nuanta-Regular.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "NotoSansLao-Bold.032ee902.woff2",
-    "src": "assets/webfonts/NotoSansLao-Bold.woff2"
+    "file": "Nuanta-Regular.d317fc24.woff2",
+    "src": "assets/webfonts/Nuanta-Regular.woff2"
   },
-  "assets/webfonts/NotoSansLao-ExtraBold.eot": {
-    "resourceType": "font",
-    "mimeType": "font/eot",
-    "file": "NotoSansLao-ExtraBold.6324da2f.eot",
-    "src": "assets/webfonts/NotoSansLao-ExtraBold.eot"
-  },
-  "assets/webfonts/NotoSansLao-ExtraBold.ttf": {
+  "assets/webfonts/Roboto-Black.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
-    "file": "NotoSansLao-ExtraBold.54691bff.ttf",
-    "src": "assets/webfonts/NotoSansLao-ExtraBold.ttf"
+    "file": "Roboto-Black.5ace0d08.ttf",
+    "src": "assets/webfonts/Roboto-Black.ttf"
   },
-  "assets/webfonts/NotoSansLao-ExtraBold.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "NotoSansLao-ExtraBold.a2e142ad.woff",
-    "src": "assets/webfonts/NotoSansLao-ExtraBold.woff"
-  },
-  "assets/webfonts/NotoSansLao-ExtraBold.woff2": {
-    "resourceType": "font",
-    "mimeType": "font/woff2",
-    "file": "NotoSansLao-ExtraBold.5fbb37c3.woff2",
-    "src": "assets/webfonts/NotoSansLao-ExtraBold.woff2"
-  },
-  "assets/webfonts/NotoSansLao-Light.eot": {
-    "resourceType": "font",
-    "mimeType": "font/eot",
-    "file": "NotoSansLao-Light.cccc109f.eot",
-    "src": "assets/webfonts/NotoSansLao-Light.eot"
-  },
-  "assets/webfonts/NotoSansLao-Light.ttf": {
+  "assets/webfonts/Roboto-Bold.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
-    "file": "NotoSansLao-Light.d7eb3176.ttf",
-    "src": "assets/webfonts/NotoSansLao-Light.ttf"
+    "file": "Roboto-Bold.ec685a46.ttf",
+    "src": "assets/webfonts/Roboto-Bold.ttf"
   },
-  "assets/webfonts/NotoSansLao-Light.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "NotoSansLao-Light.f81de9d1.woff",
-    "src": "assets/webfonts/NotoSansLao-Light.woff"
-  },
-  "assets/webfonts/NotoSansLao-Light.woff2": {
-    "resourceType": "font",
-    "mimeType": "font/woff2",
-    "file": "NotoSansLao-Light.1709ffe5.woff2",
-    "src": "assets/webfonts/NotoSansLao-Light.woff2"
-  },
-  "assets/webfonts/NotoSansLao-Medium.eot": {
-    "resourceType": "font",
-    "mimeType": "font/eot",
-    "file": "NotoSansLao-Medium.6441aa41.eot",
-    "src": "assets/webfonts/NotoSansLao-Medium.eot"
-  },
-  "assets/webfonts/NotoSansLao-Medium.ttf": {
+  "assets/webfonts/Roboto-Regular.ttf": {
     "resourceType": "font",
     "mimeType": "font/ttf",
-    "file": "NotoSansLao-Medium.2069af6f.ttf",
-    "src": "assets/webfonts/NotoSansLao-Medium.ttf"
-  },
-  "assets/webfonts/NotoSansLao-Medium.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "NotoSansLao-Medium.6e80ea72.woff",
-    "src": "assets/webfonts/NotoSansLao-Medium.woff"
-  },
-  "assets/webfonts/NotoSansLao-Medium.woff2": {
-    "resourceType": "font",
-    "mimeType": "font/woff2",
-    "file": "NotoSansLao-Medium.c20dbff3.woff2",
-    "src": "assets/webfonts/NotoSansLao-Medium.woff2"
-  },
-  "assets/webfonts/NotoSansLao-Regular.eot": {
-    "resourceType": "font",
-    "mimeType": "font/eot",
-    "file": "NotoSansLao-Regular.a0b552bd.eot",
-    "src": "assets/webfonts/NotoSansLao-Regular.eot"
-  },
-  "assets/webfonts/NotoSansLao-Regular.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "NotoSansLao-Regular.4de25d63.ttf",
-    "src": "assets/webfonts/NotoSansLao-Regular.ttf"
-  },
-  "assets/webfonts/NotoSansLao-Regular.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "NotoSansLao-Regular.997d63ee.woff",
-    "src": "assets/webfonts/NotoSansLao-Regular.woff"
-  },
-  "assets/webfonts/NotoSansLao-Regular.woff2": {
-    "resourceType": "font",
-    "mimeType": "font/woff2",
-    "file": "NotoSansLao-Regular.2d3fb0a7.woff2",
-    "src": "assets/webfonts/NotoSansLao-Regular.woff2"
-  },
-  "assets/webfonts/NotoSansLao-SemiBold.eot": {
-    "resourceType": "font",
-    "mimeType": "font/eot",
-    "file": "NotoSansLao-SemiBold.41780e49.eot",
-    "src": "assets/webfonts/NotoSansLao-SemiBold.eot"
-  },
-  "assets/webfonts/NotoSansLao-SemiBold.ttf": {
-    "resourceType": "font",
-    "mimeType": "font/ttf",
-    "file": "NotoSansLao-SemiBold.cdc974c7.ttf",
-    "src": "assets/webfonts/NotoSansLao-SemiBold.ttf"
-  },
-  "assets/webfonts/NotoSansLao-SemiBold.woff": {
-    "resourceType": "font",
-    "mimeType": "font/woff",
-    "file": "NotoSansLao-SemiBold.5e05302c.woff",
-    "src": "assets/webfonts/NotoSansLao-SemiBold.woff"
-  },
-  "assets/webfonts/NotoSansLao-SemiBold.woff2": {
-    "resourceType": "font",
-    "mimeType": "font/woff2",
-    "file": "NotoSansLao-SemiBold.bcdc8085.woff2",
-    "src": "assets/webfonts/NotoSansLao-SemiBold.woff2"
+    "file": "Roboto-Regular.4e147ab6.ttf",
+    "src": "assets/webfonts/Roboto-Regular.ttf"
   },
   "assets/webfonts/fa-brands-400.ttf": {
     "resourceType": "font",
@@ -1162,7 +1091,7 @@ export default {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "main.65a0ade6.css",
+    "file": "main.8a49eb54.css",
     "src": "layouts/main.css"
   },
   "layouts/main.vue": {
@@ -1173,22 +1102,21 @@ export default {
     "assets": [
       "thebizhub-logo.b61d510f.jpg",
       "Logo.d939d081.png",
-      "bg.d71fbcd2.jpg",
       "footer-bg.f96727d2.svg"
     ],
     "css": [],
-    "file": "main.840fb490.js",
+    "file": "main.eb166e6e.js",
     "imports": [
-      "_nuxt-link.9c5b25d3.js",
+      "_nuxt-link.cfe36dbc.js",
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js",
-      "_cookie.f2cc52ec.js"
+      "_cookie.60482ac3.js"
     ],
     "isDynamicEntry": true,
     "src": "layouts/main.vue"
   },
-  "main.65a0ade6.css": {
-    "file": "main.65a0ade6.css",
+  "main.8a49eb54.css": {
+    "file": "main.8a49eb54.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -1204,12 +1132,6 @@ export default {
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/png"
-  },
-  "bg.d71fbcd2.jpg": {
-    "file": "bg.d71fbcd2.jpg",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg"
   },
   "footer-bg.f96727d2.svg": {
     "file": "footer-bg.f96727d2.svg",
@@ -1230,9 +1152,9 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-404.7262f8bd.js",
+    "file": "error-404.416c9698.js",
     "imports": [
-      "_nuxt-link.9c5b25d3.js",
+      "_nuxt-link.cfe36dbc.js",
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
     ],
@@ -1258,7 +1180,7 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-500.e17673b9.js",
+    "file": "error-500.defe6ef0.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
@@ -1292,7 +1214,7 @@ export default {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.d8752cb2.js",
+    "file": "entry.a39cafcc.js",
     "imports": [
       "_swiper-vue.6b947493.js"
     ],
@@ -1310,7 +1232,7 @@ export default {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "index.090dc78d.css",
+    "file": "index.149537ff.css",
     "src": "pages/about-us/index.css"
   },
   "pages/about-us/index.vue": {
@@ -1319,19 +1241,21 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "index.3391dd5c.js",
+    "file": "index.3b13f709.js",
     "imports": [
-      "_team.20163a8d.js",
+      "_team.09c525fb.js",
       "pages/about-us/product-and-services.vue",
       "pages/about-us/works.vue",
       "_swiper-vue.6b947493.js",
-      "node_modules/nuxt/dist/app/entry.js"
+      "node_modules/nuxt/dist/app/entry.js",
+      "_biz-course.6b81094d.js",
+      "_biz-coaching.28d4164c.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/about-us/index.vue"
   },
-  "index.090dc78d.css": {
-    "file": "index.090dc78d.css",
+  "index.149537ff.css": {
+    "file": "index.149537ff.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -1340,7 +1264,7 @@ export default {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "product-and-services.6b62460a.css",
+    "file": "product-and-services.56b32895.css",
     "src": "pages/about-us/product-and-services.css"
   },
   "pages/about-us/product-and-services.vue": {
@@ -1349,36 +1273,24 @@ export default {
     "prefetch": true,
     "preload": true,
     "assets": [
-      "biz-course.58ea336f.png",
-      "biz-coaching.69856799.png",
       "project-business-consultancy.5f79db5e.png"
     ],
     "css": [],
-    "file": "product-and-services.adc795f3.js",
+    "file": "product-and-services.5b881be3.js",
     "imports": [
+      "_biz-course.6b81094d.js",
+      "_biz-coaching.28d4164c.js",
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/about-us/product-and-services.vue"
   },
-  "product-and-services.6b62460a.css": {
-    "file": "product-and-services.6b62460a.css",
+  "product-and-services.56b32895.css": {
+    "file": "product-and-services.56b32895.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
-  },
-  "biz-course.58ea336f.png": {
-    "file": "biz-course.58ea336f.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "biz-coaching.69856799.png": {
-    "file": "biz-coaching.69856799.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
   },
   "project-business-consultancy.5f79db5e.png": {
     "file": "project-business-consultancy.5f79db5e.png",
@@ -1461,7 +1373,7 @@ export default {
       "team.ae182b55.jpg"
     ],
     "css": [],
-    "file": "works.c03652c3.js",
+    "file": "works.d5e04609.js",
     "imports": [
       "_swiper-vue.6b947493.js",
       "node_modules/nuxt/dist/app/entry.js"
@@ -1842,11 +1754,11 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "login.e7183027.js",
+    "file": "login.7c87f705.js",
     "imports": [
-      "_nuxt-link.9c5b25d3.js",
+      "_nuxt-link.cfe36dbc.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_info-box.22c3e1be.js",
+      "_info-box.f377cba3.js",
       "_swiper-vue.6b947493.js"
     ],
     "isDynamicEntry": true,
@@ -1871,9 +1783,9 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "password-recovery.2da7c2bb.js",
+    "file": "password-recovery.7ac14103.js",
     "imports": [
-      "_info-box.22c3e1be.js",
+      "_info-box.f377cba3.js",
       "_swiper-vue.6b947493.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -1899,11 +1811,11 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "register.0295843a.js",
+    "file": "register.723e05fc.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js",
-      "_info-box.22c3e1be.js"
+      "_info-box.f377cba3.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/auth/register.vue"
@@ -1927,10 +1839,10 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "_id_.28582eaa.js",
+    "file": "_id_.f99302cd.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_related.vue.6da3bce0.js",
+      "_related.vue.3c85cbd9.js",
       "_swiper-vue.6b947493.js"
     ],
     "isDynamicEntry": true,
@@ -1947,9 +1859,9 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "related.1997f819.js",
+    "file": "related.25b70202.js",
     "imports": [
-      "_related.vue.6da3bce0.js",
+      "_related.vue.3c85cbd9.js",
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
     ],
@@ -1969,10 +1881,10 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "index.cfff1347.js",
+    "file": "index.f4ceb698.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.66683aeb.js",
+      "_card-list.70a3a1bd.js",
       "_swiper-vue.6b947493.js"
     ],
     "isDynamicEntry": true,
@@ -1988,7 +1900,7 @@ export default {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "index.060bba62.css",
+    "file": "index.3e91a866.css",
     "src": "pages/index.css"
   },
   "pages/index.vue": {
@@ -1997,21 +1909,21 @@ export default {
     "prefetch": true,
     "preload": true,
     "assets": [
-      "bg.d71fbcd2.jpg"
+      "footer-bg.f96727d2.svg"
     ],
     "css": [],
-    "file": "index.d2212bef.js",
+    "file": "index.49798121.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js",
-      "_cookie.f2cc52ec.js",
-      "_team.20163a8d.js"
+      "_cookie.60482ac3.js",
+      "_team.09c525fb.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
   },
-  "index.060bba62.css": {
-    "file": "index.060bba62.css",
+  "index.3e91a866.css": {
+    "file": "index.3e91a866.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -2020,7 +1932,7 @@ export default {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "biz-coaching.eee8109c.css",
+    "file": "biz-coaching.4a13ba5e.css",
     "src": "pages/product-and-services/biz-coaching.css"
   },
   "pages/product-and-services/biz-coaching.vue": {
@@ -2038,19 +1950,20 @@ export default {
       "biz-coaching-7.4a3ca400.jpg"
     ],
     "css": [],
-    "file": "biz-coaching.0f3687db.js",
+    "file": "biz-coaching.6c0d4fa1.js",
     "imports": [
       "_swiper-vue.6b947493.js",
-      "_Enterpreneurs-story_Page_2.95dd2b66.js",
-      "_Enterpreneurs-story_Page_5.f094c424.js",
+      "_biz-coaching.28d4164c.js",
+      "_Enterpreneurs-story_Page_2.b838e576.js",
+      "_Enterpreneurs-story_Page_5.3635caab.js",
       "node_modules/nuxt/dist/app/entry.js",
       "pages/product-and-services/pattern.vue"
     ],
     "isDynamicEntry": true,
     "src": "pages/product-and-services/biz-coaching.vue"
   },
-  "biz-coaching.eee8109c.css": {
-    "file": "biz-coaching.eee8109c.css",
+  "biz-coaching.4a13ba5e.css": {
+    "file": "biz-coaching.4a13ba5e.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -2101,7 +2014,7 @@ export default {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "biz-course.e11272ba.css",
+    "file": "biz-course.eb455965.css",
     "src": "pages/product-and-services/biz-course.css"
   },
   "pages/product-and-services/biz-course.vue": {
@@ -2127,19 +2040,20 @@ export default {
       "biz-course-15.617cf397.jpg"
     ],
     "css": [],
-    "file": "biz-course.c4ddd25b.js",
+    "file": "biz-course.b59babb9.js",
     "imports": [
       "_swiper-vue.6b947493.js",
-      "_Enterpreneurs-story_Page_2.95dd2b66.js",
-      "_Enterpreneurs-story_Page_5.f094c424.js",
+      "_biz-course.6b81094d.js",
+      "_Enterpreneurs-story_Page_2.b838e576.js",
+      "_Enterpreneurs-story_Page_5.3635caab.js",
       "node_modules/nuxt/dist/app/entry.js",
       "pages/product-and-services/pattern.vue"
     ],
     "isDynamicEntry": true,
     "src": "pages/product-and-services/biz-course.vue"
   },
-  "biz-course.e11272ba.css": {
-    "file": "biz-course.e11272ba.css",
+  "biz-course.eb455965.css": {
+    "file": "biz-course.eb455965.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -2211,7 +2125,7 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "pattern.74ae9885.js",
+    "file": "pattern.b5f0cb00.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_swiper-vue.6b947493.js"
@@ -2229,7 +2143,7 @@ export default {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "project-business-consultant.d02bbddd.css",
+    "file": "project-business-consultant.714afad4.css",
     "src": "pages/product-and-services/project-business-consultant.css"
   },
   "pages/product-and-services/project-business-consultant.vue": {
@@ -2248,17 +2162,18 @@ export default {
       "business-consultant-8.8910cadc.jpg"
     ],
     "css": [],
-    "file": "project-business-consultant.dd780aaa.js",
+    "file": "project-business-consultant.36f30b59.js",
     "imports": [
       "_swiper-vue.6b947493.js",
-      "_Enterpreneurs-story_Page_2.95dd2b66.js",
+      "_biz-course.6b81094d.js",
+      "_Enterpreneurs-story_Page_2.b838e576.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/product-and-services/project-business-consultant.vue"
   },
-  "project-business-consultant.d02bbddd.css": {
-    "file": "project-business-consultant.d02bbddd.css",
+  "project-business-consultant.714afad4.css": {
+    "file": "project-business-consultant.714afad4.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -2300,10 +2215,10 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "index.8da2fd5f.js",
+    "file": "index.19411469.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.66683aeb.js",
+      "_card-list.70a3a1bd.js",
       "_swiper-vue.6b947493.js"
     ],
     "isDynamicEntry": true,
@@ -2328,10 +2243,10 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "_id_.6ce0a3bb.js",
+    "file": "_id_.0d1e8f00.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_card-list.66683aeb.js",
+      "_card-list.70a3a1bd.js",
       "_swiper-vue.6b947493.js"
     ],
     "isDynamicEntry": true,

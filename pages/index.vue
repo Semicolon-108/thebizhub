@@ -3,18 +3,18 @@
     <Intro />
     <OurService />
     <WhoWeAre />
-    <SmeAndStartup :title="'MSMEs'" :info="msmes" v-show="msmes.length" />
-    <Story v-show="enterPreInfo.length" :info="enterPreInfo" />
-    <SelftEmployment :title="'Self - Employment'" :info="selftEmpInfo" v-show="selftEmpInfo.length" />
+    <SmeAndStartup :title="smeTitle" :info="msmes" v-show="msmes.length" />
+    <Story v-show="enterPreInfo.length" :info="enterPreInfo" :title="enterPreInfoTitle" />
+    <SelftEmployment :title="selftEmpInfoTitle" :info="selftEmpInfo" v-show="selftEmpInfo.length" />
 
-    <NewsAndActivitiesInfo :title="`News & Activities`" :info="newsAndActivitiesInfo"
+    <NewsAndActivitiesInfo :title="newActivityTitle" :info="newsAndActivitiesInfo"
       v-show="newsAndActivitiesInfo.length" />
 
-    <BizLaws :title="`BIZ Laws`" :info="bizLawInfo" v-show="bizLawInfo.length" />
+    <BizLaws :title="bizLawInfoTItle" :info="bizLawInfo" v-show="bizLawInfo.length" />
 
-    <TSNS :title="`TSNS - Thao Sang Nang Sa`" :info="TSNSInfo" v-show="TSNSInfo.length" />
+    <TSNS :title="TSNSInfoTItle" :info="TSNSInfo" v-show="TSNSInfo.length" />
 
-    <Wing :title="`WINGS - Women's Income Generating Support`" :info="wingInfo" v-show="wingInfo.length" />
+    <Wing :title="wingInfoTitle" :info="wingInfo" v-show="wingInfo.length" />
   </div>
 </template>
 
@@ -39,7 +39,18 @@ const newsAndActivitiesInfo = ref<any>([]);
 const bizLawInfo = ref<any>([]);
 const wingInfo = ref<any>([]);
 const TSNSInfo = ref<any>([]);
-
+//title
+const smeTitle = ref<any>("")
+const selftEmpInfoTitle = ref<any>("")
+const newActivityTitle = ref<any>("")
+const bizLawInfoTItle = ref<any>("")
+const TSNSInfoTItle = ref<any>("")
+const enterPreInfoTitle = ref<any>("")
+const wingInfoTitle =ref<any>("")
+//end title
+import { useI18n } from "vue-i18n";
+const { locale }: any = useI18n();
+const isLang = ref<any>()
 const fetchMSMEs = async () => {
   const name = "654d868d4040f0af2207e5eb";
   await axios.post(`sme-articles/${name}`).then((res) => {
@@ -47,6 +58,8 @@ const fetchMSMEs = async () => {
       msmes.value = res.data.info;
     }
   });
+  const res = await axios.post(`get-section-home-page?_id=${name}&lang=${isLang.value}`)
+  smeTitle.value = res.data.info.name
 };
 const fetchEntrepre = async () => {
   const name = "651a4ca8c2d5c94d6cc3da9e";
@@ -55,6 +68,8 @@ const fetchEntrepre = async () => {
       enterPreInfo.value = res.data.info;
     }
   });
+  const res = await axios.post(`get-section-home-page?_id=${name}&lang=${isLang.value}`)
+  enterPreInfoTitle.value = res.data.info.name
 };
 const fetchSelftEmp = async () => {
   const name = "651a4cebc2d5c94d6cc3daa7";
@@ -63,6 +78,8 @@ const fetchSelftEmp = async () => {
       selftEmpInfo.value = res.data.info;
     }
   });
+  const res = await axios.post(`get-section-home-page?_id=${name}&lang=${isLang.value}`)
+  selftEmpInfoTitle.value = res.data.info.name
 };
 const fetchNewAndActivities = async () => {
   const name = "651a4d06c2d5c94d6cc3daba";
@@ -71,6 +88,8 @@ const fetchNewAndActivities = async () => {
       newsAndActivitiesInfo.value = res.data.info;
     }
   });
+  const res = await axios.post(`get-section-home-page?_id=${name}&lang=${isLang.value}`)
+  newActivityTitle.value = res.data.info.name
 };
 const fetchBizLaw = async () => {
   const name = "651a4d1ac2d5c94d6cc3dac3";
@@ -79,6 +98,8 @@ const fetchBizLaw = async () => {
       bizLawInfo.value = res.data.info;
     }
   });
+  const res = await axios.post(`get-section-home-page?_id=${name}&lang=${isLang.value}`)
+  bizLawInfoTItle.value = res.data.info.name
 };
 
 const fetchTSNS = async () => {
@@ -88,6 +109,8 @@ const fetchTSNS = async () => {
       TSNSInfo.value = res.data.info;
     }
   });
+  const res = await axios.post(`get-section-home-page?_id=${name}&lang=${isLang.value}`)
+  TSNSInfoTItle.value = res.data.info.name
 };
 
 const fetchWing = async () => {
@@ -97,6 +120,8 @@ const fetchWing = async () => {
       wingInfo.value = res.data.info;
     }
   });
+  const res = await axios.post(`get-section-home-page?_id=${name}&lang=${isLang.value}`)
+  wingInfoTitle.value = res.data.info.name
 };
 fetchMSMEs();
 fetchEntrepre();
@@ -105,6 +130,20 @@ fetchNewAndActivities();
 fetchBizLaw();
 fetchTSNS();
 fetchWing();
+watch(
+  () => locale.value,
+  (value) => {
+    isLang.value = value
+    fetchMSMEs();
+    fetchEntrepre();
+    fetchSelftEmp();
+    fetchNewAndActivities();
+    fetchBizLaw();
+    fetchTSNS();
+    fetchWing();
+  },
+  { immediate: true, deep: true }
+);
 </script>
 
 <style lang="scss">
@@ -120,6 +159,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   max-width: 1024px;
+  line-height: 1.5;
 }
 
 .section-title {

@@ -7,8 +7,10 @@
             <img src="../../assets/images/Logo.png" alt="" />
             <h3>THE BIZ HUB</h3>
           </div>
-          <small class="margin-bottom-15">1st Floor, 108Hill Building Dongpaina Road, Saphanthong Village,
-            Sisattanak District, Vientiane Capital, Lao PDR.</small>
+          <small class="margin-bottom-15"
+            >1st Floor, 108Hill Building Dongpaina Road, Saphanthong Village,
+            Sisattanak District, Vientiane Capital, Lao PDR.</small
+          >
           <small>020 56463959 | 020 56508160</small>
           <small>thebizhub.info@gmail.com</small>
         </li>
@@ -16,23 +18,50 @@
           <h3>{{ $t("navbar_learning") }}</h3>
           <ul>
             <li v-for="(o, index) in learing" :key="index">
-              <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }">{{ o.name }}</NuxtLink>
+              <NuxtLink
+                :to="{ path: '/category', query: { is: `${o.name}` } }"
+                >{{ o.name }}</NuxtLink
+              >
             </li>
           </ul>
         </li>
         <li class="span-5-desktop">
           <h3>{{ $t("products") }}</h3>
           <ul>
-            <li>{{ $t("product_biz_coaching") }}</li>
-            <li>{{ $t("product_biz_course") }}</li>
-            <li>{{ $t("product_business_consultant") }}</li>
+            <li>
+              <NuxtLink
+                :to="{
+                  path: '/product-and-services/biz-coaching',
+                }"
+                >{{ $t("product_biz_coaching") }}</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                :to="{
+                  path: '/product-and-services/biz-course',
+                }"
+                >{{ $t("product_biz_course") }}</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                :to="{
+                  path: '/product-and-services/project-business-consultant',
+                }"
+                >{{ $t("product_business_consultant") }}</NuxtLink
+              >
+            </li>
           </ul>
 
           <div class="socials">
             <h3>{{ $t("follow_us") }}</h3>
             <ul>
               <li>
-                <a href="https://www.facebook.com/profile.php?id=100091801856212" target="_blank">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100091801856212"
+                  target="_blank"
+                >
                   <i class="fa-brands fa-facebook"></i>
                 </a>
               </li>
@@ -79,19 +108,23 @@ laoStatus.value = useCookies.value === "lao";
 
 const fetchProductAndService = async () => {
   const type = "Product & Services";
-  await axios.post(`get-group?type=${type}&lang=${i18n.locale.value}`).then((res) => {
-    if (res.status === 200) {
-      productAndService.value = res.data.info;
-    }
-  });
+  await axios
+    .post(`get-group?type=${type}&lang=${i18n.locale.value}`)
+    .then((res) => {
+      if (res.status === 200) {
+        productAndService.value = res.data.info;
+      }
+    });
 };
 const fetchLearning = async () => {
   const type = "Learning";
-  await axios.post(`get-group?type=${type}&lang=${i18n.locale.value}`).then((res) => {
-    if (res.status === 200) {
-      learing.value = res.data.info;
-    }
-  });
+  await axios
+    .post(`get-group?type=${type}&lang=${i18n.locale.value}`)
+    .then((res) => {
+      if (res.status === 200) {
+        learing.value = res.data.info;
+      }
+    });
 };
 const fetchCategory = async () => {
   const data = await axios.post(`get-category-filter/Category`);
@@ -160,7 +193,7 @@ section {
   ul {
     li {
       padding: 20px;
-
+      line-height: 1.5;
       .logo {
         display: flex;
         align-items: center;

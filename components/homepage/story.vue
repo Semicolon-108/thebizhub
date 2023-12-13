@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h1 class="section-title">Entrepreneur's Story</h1>
+      <h1 class="section-title">{{title}}</h1>
       <ul>
         <li v-for="(i, index) in info" :key="index">
           <div class="card dark" @click="router.push(`/blog-detail/${i._id}`)">
@@ -24,14 +24,14 @@
   </section>
 </template>
 <script setup lang="ts">
-defineProps(["info"]);
+defineProps(["info",'title']);
 const router = useRouter();
 const images = useNuxtApp().$imageURL;
 </script>
 
 <style lang="scss" scoped>
 section {
-  background-image: url("../../assets/images/bg.jpg");
+  background-image: url("../../assets/images/footer-bg.svg");
   // background-repeat: no-repeat;
   // background-size: cover;
   background-position: center center;

@@ -5,8 +5,7 @@
         <div
           class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile"
         >
-          <div class="video">
-            <!-- <i class="fa-solid fa-play"></i> -->
+          <!-- <div class="video">
             <iframe
               width="560"
               height="315"
@@ -15,6 +14,9 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+          </div> -->
+          <div class="image">
+            <img src="../../assets/images/services/biz-course.png" alt="" />
           </div>
           <div class="text">
             <h3>BIZ Courses ແມ່ນ…</h3>

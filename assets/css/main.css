@@ -85,10 +85,10 @@ a {
 }
 
 :root {
-  --font-family: Noto Sans Lao, sans-serif;
+  --font-family: Roboto, Nuanta, sans-serif;
   --main-color: #000000;
   --main-color-rgb: 0, 0, 0;
-  --sub-color: #002c9b;
+  --sub-color: #111a5b;
   --light-color: #e9fbff;
   --info-color: #eed221;
   --alert-color: 231, 70, 21;
@@ -103,7 +103,7 @@ a {
 
 :root {
   --xsm-font: clamp(0.6rem, 2.5vw, 0.7rem);
-  --sm-font: clamp(0.8rem, 2.5vw, 0.9rem);
+  --sm-font: clamp(0.8rem, 2.5vw, 0.8rem);
   --md-font: clamp(0.95rem, 2.5vw, 1rem);
   --lg-font: clamp(1.1rem, 2.5vw, 1.2rem);
   --xlg-font: clamp(1.3rem, 2.5vw, 1.4rem);
@@ -28545,10 +28545,10 @@ button {
   border-radius: 3px;
   font-size: clamp(0.95rem, 2.5vw, 1rem);
   white-space: pre;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: "Roboto", "Nuanta", sans-serif;
 }
 button.small {
-  font-size: clamp(0.8rem, 2.5vw, 0.9rem) !important;
+  font-size: clamp(0.8rem, 2.5vw, 0.8rem) !important;
 }
 button.large {
   font-size: clamp(1.1rem, 2.5vw, 1.2rem);
@@ -28563,7 +28563,7 @@ button.main {
   padding: 10px 30px;
   border: none;
   cursor: pointer;
-  background-color: #002c9b;
+  background-color: #111a5b;
   color: #fff;
 }
 
@@ -28581,7 +28581,7 @@ button.main {
 }
 .field .control a {
   text-decoration: underline;
-  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  font-size: clamp(0.8rem, 2.5vw, 0.8rem);
   display: block;
   cursor: pointer;
   margin-top: 10px;
@@ -28611,7 +28611,7 @@ input {
   width: 100%;
   border: 1px solid #dbdbdb;
   font-size: clamp(0.95rem, 2.5vw, 1rem);
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: "Roboto", "Nuanta", sans-serif;
   outline: none;
   box-shadow: none;
   border-radius: 5px;
@@ -28625,7 +28625,7 @@ input:disabled {
   background-color: hsl(0, 0%, 90%);
 }
 input.small {
-  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  font-size: clamp(0.8rem, 2.5vw, 0.8rem);
   padding: 8px 12px;
 }
 
@@ -28710,7 +28710,7 @@ input.small {
   font-style: italic;
   color: #000000;
   padding: 1.2em 30px 1.2em 75px;
-  border-left: 8px solid #002c9b !important;
+  border-left: 8px solid #111a5b !important;
   line-height: 1.6;
   position: relative;
   background: hsl(0, 0%, 90%);
@@ -28718,7 +28718,7 @@ input.small {
 .blog-detail blockquote::before {
   font-family: Arial;
   content: "“";
-  color: #002c9b !important;
+  color: #111a5b !important;
   font-size: 4em;
   position: absolute;
   left: 10px;
@@ -28790,7 +28790,7 @@ section {
   text-transform: uppercase !important;
   transition: all ease-in-out 0.3s;
   font-size: var(--xsm-font);
-  background-color: #002c9b;
+  background-color: #111a5b;
   color: #fff;
   padding: 3px 8px;
 }

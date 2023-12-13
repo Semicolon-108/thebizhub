@@ -10,17 +10,25 @@
               in business and <br class="is-hidden-mobile" />
               entrepreneurship
             </h3>
-            <button class="main margin-top-20 large" @click="
-              router.push({ path: '/category', query: { is: 'Update' } })
-              "> {{ $t("update") }} </button>
+            <button
+              class="main margin-top-20"
+              @click="
+                router.push({ path: '/category', query: { is: 'Update' } })
+              "
+            >
+              {{ $t("updates") }}
+            </button>
           </div>
         </div>
         <div class="right span-3-desktop">
           <div class="video">
             <!-- <i class="fa-solid fa-play"></i> -->
-            <iframe src="https://www.youtube.com/embed/HEg8LjkZOaQ?si=dULR1XN-DrTBTyXD" frameborder="0"
+            <iframe
+              src="https://www.youtube.com/embed/HEg8LjkZOaQ?si=dULR1XN-DrTBTyXD"
+              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
@@ -61,15 +69,14 @@ watch(
       font-weight: 700;
 
       @include mobile {
-        line-height: 1;
+        line-height: 1.5;
       }
     }
 
     h3 {
-      font-size: 2rem;
-      line-height: 1.1;
+      font-size: 1.8rem;
+      line-height: 1.3;
       font-weight: 600;
-
       @include mobile {
         margin-top: 10px;
         font-size: 1.5rem;
