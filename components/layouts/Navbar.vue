@@ -91,10 +91,16 @@
             }}</a>
           </li>
           <li>
-            <NuxtLink to="/about-us">{{ $t("navbar_partner") }}</NuxtLink>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfsRhORbsNje2WzOdWGCLJAdKuyEGDlUejL2qr4e-gzencLcw/viewform"
+              target="_blank"
+              >{{ $t("navbar_partner_with_us") }}</a
+            >
           </li>
           <li>
-            <NuxtLink to="/about-us">{{ $t("navbar_donate") }}</NuxtLink>
+            <NuxtLink to="/about-us">{{
+              $t("navbar_bussiness_supporter")
+            }}</NuxtLink>
           </li>
           <!-- <li>
             <NuxtLink to="/about-us">{{ $t("about_us") }}</NuxtLink>

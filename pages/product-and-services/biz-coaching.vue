@@ -59,41 +59,27 @@
         <h3 class="section-title">ເນື້ອຫາທີ່ຈະໄດ້ຮັບ</h3>
         <div class="grids is-5-desktop gap-10-desktop">
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_1.jpg"
-            />
+            <img src="../../assets/images/biz-coaching/icons/1.png" />
             <p>ວ່າທີ່ຜູ້ປະກອບການ</p>
             <p>(Future Entrepreneur)</p>
           </div>
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_2.jpg"
-              alt=""
-            />
+            <img src="../../assets/images/biz-coaching/icons/2.png" alt="" />
             <p>ຜູ້ປະກອບອາຊີບດ້ວຍຕົນເອງ</p>
             <p>(Self-employed)</p>
           </div>
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_3.jpg"
-              alt=""
-            />
+            <img src="../../assets/images/biz-coaching/icons/3.png" alt="" />
             <p>ຜູ້ປະກອບການໃໝ່</p>
-            <p>(new entrepreneur)</p>
+            <p>(New entrepreneur)</p>
           </div>
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_4.jpg"
-              alt=""
-            />
+            <img src="../../assets/images/biz-coaching/icons/4.png" alt="" />
             <p>ຈຸນລະວິສາຫະກິດ</p>
             <p>(Micro entreprise)</p>
           </div>
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_5.jpg"
-              alt=""
-            />
+            <img src="../../assets/images/biz-coaching/icons/5.png" alt="" />
             <p>ວິສາຫະກິດຂະໜາດນ້ອຍ</p>
             <p>(Small entreprise)</p>
           </div>
@@ -109,12 +95,34 @@
           <div class="benefits">
             <h3>ເນື້ອຫາທີ່ຈະໄດ້ຮັບ</h3>
             <ul>
-              <li>Business Identity</li>
-              <li>Market Survey</li>
-              <li>Get to Know your customer</li>
-              <li>Cost & revenue</li>
-              <li>Marketing Team & key roles</li>
-              <li>Future thinking</li>
+              <li>
+                <i class="fa-solid fa-square-check"></i>ການກໍານົດເອກະລັກທຸລະກິດ
+                (Business Identity)
+              </li>
+              <li>
+                <i class="fa-solid fa-square-check"></i
+                >ການສໍາຫຼວດຕະຫຼາດສໍາລັບທຸລະກິດ (Market Survey)
+              </li>
+              <li>
+                <i class="fa-solid fa-square-check"></i>ທໍາຄວາມເຂົ້າໃຈກັບລູກຄ້າ
+                (Get to Know your customer)
+              </li>
+              <li>
+                <i class="fa-solid fa-square-check"></i>ໂຄງສ້າງຕົ້ນທຶນ ແລະ
+                ລາຍໄດ້ (Cost & revenue)
+              </li>
+              <li>
+                <i class="fa-solid fa-square-check"></i>ການເຮັດການຕະຫຼາດ
+                (Marketing)
+              </li>
+              <li>
+                <i class="fa-solid fa-square-check"></i>ການບໍລິຫານທີມ ແລະ
+                ໜ້າທີ່ຫຼັກຂອງການເຮັດທຸລະກິດ (Team & key roles)
+              </li>
+              <li>
+                <i class="fa-solid fa-square-check"></i
+                >ການວາງແຜນທຸລະກິດສໍາລັບທຸລະກິດ (Future thinking)
+              </li>
             </ul>
           </div>
           <div>

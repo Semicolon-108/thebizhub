@@ -58,4 +58,10 @@ ul {
     }
   }
 }
+
+.card-title {
+  font-weight: 700;
+  margin-top: 10px;
+  line-height: 1.8;
+}
 </style>

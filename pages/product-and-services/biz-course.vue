@@ -106,7 +106,8 @@
         <div class="grids is-12-desktop gap-50-desktop">
           <div class="span-5-desktop">
             <img
-              src="https://contentshifu.com/wp-content/uploads/2022/07/in-house-image-1-1024x1024.png.webp"
+              src="../../assets/images/biz-course/biz-course-element-1.png"
+              alt=""
             />
           </div>
           <div class="takeaway span-7-desktop">

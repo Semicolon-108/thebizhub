@@ -165,14 +165,14 @@ export const language = [
     en: "Learning",
   },
   {
-    key: "navbar_partner",
-    la: "ຜູ້ສະໜັບສະໜູນ",
-    en: "Partner",
+    key: "navbar_partner_with_us",
+    la: "ສົມທົບທຶນກັບພວກເຮົາ",
+    en: "Partner with us",
   },
   {
-    key: "navbar_donate",
-    la: "ບໍລິຈາກ",
-    en: "Donate",
+    key: "navbar_bussiness_supporter",
+    la: "ແຫຼ່ງສະໜັບສະໜູນທຸລະກິດ",
+    en: "Business Supporters",
   },
   {
     key: "article_biz_laws",
@@ -219,11 +219,7 @@ export const language = [
     la: "ຂ່າວສານກິດຈະກໍາ",
     en: "Events & Activities",
   },
-  {
-    key: "button_donate",
-    la: "ແຫຼ່ງສະໜັບສະໜູນທຸລະກິດ",
-    en: "Business Supporters",
-  },
+
   {
     key: "about_thebiz",
     la: "ກ່ຽວກັບ ເດິບິດຮັບ",
