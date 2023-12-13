@@ -10,7 +10,7 @@
             </div>
             <div class="card-content">
               <p class="tag-list">
-                <span v-for="(t, indx) in i.tag" :key="indx">{{ t.name }}</span>
+                <!-- <span v-for="(t, indx) in i.tag" :key="indx">{{ t.name }}</span> -->
                 <span v-for="(c, ind) in i.category" :key="ind">{{
                   c.name
                 }}</span>
