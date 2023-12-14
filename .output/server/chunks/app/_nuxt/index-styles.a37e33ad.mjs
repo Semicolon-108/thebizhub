@@ -1,6 +1,0 @@
-const index_vue_vue_type_style_index_0_scoped_98459e75_lang = ".tabs-container[data-v-98459e75],.tabs-container .tabs[data-v-98459e75]{align-items:center;display:flex;position:relative}.tabs-container .tabs[data-v-98459e75]{flex-grow:1;justify-content:center;overflow-x:auto;overflow-y:hidden}@media (max-width:768px){.tabs-container .tabs[data-v-98459e75]{justify-content:flex-start}}.tabs-container .tabs li[data-v-98459e75]{align-items:flex-end;cursor:pointer;display:flex;padding:5px 10px;white-space:pre!important}.tabs-container .tabs li.current[data-v-98459e75]{color:var(--sub-color)}.tabs-container .tabs li i[data-v-98459e75]{line-height:1;margin-left:5px}.tabs-container p[data-v-98459e75]{align-items:center;background:linear-gradient(270deg,#fff,hsla(0,0%,100%,0));display:none;justify-content:flex-end;position:absolute;right:0;width:50px}@media (max-width:768px){.tabs-container p[data-v-98459e75]{display:flex}}@media (min-width:768px) and (max-width:1023px){.tabs-container p[data-v-98459e75]{display:flex}}";
-
-const indexStyles_a37e33ad = [index_vue_vue_type_style_index_0_scoped_98459e75_lang, index_vue_vue_type_style_index_0_scoped_98459e75_lang];
-
-export { indexStyles_a37e33ad as default };
-//# sourceMappingURL=index-styles.a37e33ad.mjs.map

@@ -5,20 +5,42 @@
     <WhoWeAre />
     <!-- <p>Event and Activity</p>
     <p>BIZ Tool</p> -->
-    <EventsAndActivitys :title="eventsAndActivityTitle" :info="eventsAndActivityInfo"
-      v-show="eventsAndActivityInfo.length" />
-    <BizTool :title="bizToolTitle" :info="bizToolInfo" v-show="bizToolInfo.length" />
-    <Story v-show="enterPreInfo.length" :info="enterPreInfo" :title="enterPreInfoTitle" />
-    <BizLaws :title="bizLawInfoTItle" :info="bizLawInfo" v-show="bizLawInfo.length" />
+    <EventsAndActivitys
+      :title="eventsAndActivityTitle"
+      :info="eventsAndActivityInfo"
+      v-show="eventsAndActivityInfo.length"
+    />
+    <BizTool
+      :title="bizToolTitle"
+      :info="bizToolInfo"
+      v-show="bizToolInfo.length"
+    />
+    <Story
+      v-show="enterPreInfo.length"
+      :info="enterPreInfo"
+      :title="enterPreInfoTitle"
+    />
+    <BizLaws
+      :title="bizLawInfoTItle"
+      :info="bizLawInfo"
+      v-show="bizLawInfo.length"
+    />
     <TSNS :title="TSNSInfoTItle" :info="TSNSInfo" v-show="TSNSInfo.length" />
     <TricksAndTips :title="smeTitle" :info="msmes" v-show="msmes.length" />
     <Wing :title="wingInfoTitle" :info="wingInfo" v-show="wingInfo.length" />
 
-    <SelftEmployment :title="selftEmpInfoTitle" :info="selftEmpInfo" v-show="selftEmpInfo.length" />
+    <SelftEmployment
+      :title="selftEmpInfoTitle"
+      :info="selftEmpInfo"
+      v-show="selftEmpInfo.length"
+    />
 
     <!-- <p>Business Supporters</p> -->
-    <BusinessSupporters :title="businessSupportersTitle" :info="businessSupportersInfo"
-      v-show="businessSupportersInfo.length" />
+    <BusinessSupporters
+      :title="businessSupportersTitle"
+      :info="businessSupportersInfo"
+      v-show="businessSupportersInfo.length"
+    />
     <!-- <NewsAndActivitiesInfo
       :title="newActivityTitle"
       :info="newsAndActivitiesInfo"
@@ -32,7 +54,7 @@ import Intro from "../components/homepage/intro.vue";
 import OurService from "../components/homepage/our-services.vue";
 import WhoWeAre from "../components/homepage/who-are-we.vue";
 import Story from "../components/homepage/story.vue";
-import NewsAndActivitiesInfo from "../components/homepage/reuse/column-layout.vue";
+// import NewsAndActivitiesInfo from "../components/homepage/reuse/column-layout.vue";
 import BizLaws from "~/components/homepage/reuse/column-layout.vue";
 
 import EventsAndActivitys from "../components/homepage/reuse/grids-layout.vue";
@@ -44,19 +66,19 @@ import TSNS from "../components/homepage/reuse/column-layout.vue";
 import BusinessSupporters from "../components/homepage/reuse/column-layout.vue";
 
 const axios = useNuxtApp().$axios;
-const eventsAndActivityInfo = ref<any>([])
-const bizToolInfo = ref<any>([])
+const eventsAndActivityInfo = ref<any>([]);
+const bizToolInfo = ref<any>([]);
 const enterPreInfo = ref<any>([]);
 const selftEmpInfo = ref<any>([]);
 const msmes = ref<any>([]);
-const newsAndActivitiesInfo = ref<any>([]);
+// const newsAndActivitiesInfo = ref<any>([]);
 const bizLawInfo = ref<any>([]);
 const wingInfo = ref<any>([]);
 const TSNSInfo = ref<any>([]);
-const businessSupportersInfo = ref<any>([])
+const businessSupportersInfo = ref<any>([]);
 //title
-const eventsAndActivityTitle = ref<any>("")
-const bizToolTitle = ref<any>("")
+const eventsAndActivityTitle = ref<any>("");
+const bizToolTitle = ref<any>("");
 const smeTitle = ref<any>("");
 const selftEmpInfoTitle = ref<any>("");
 const newActivityTitle = ref<any>("");
@@ -64,7 +86,7 @@ const bizLawInfoTItle = ref<any>("");
 const TSNSInfoTItle = ref<any>("");
 const enterPreInfoTitle = ref<any>("");
 const wingInfoTitle = ref<any>("");
-const businessSupportersTitle = ref<any>("")
+const businessSupportersTitle = ref<any>("");
 //end title
 import { useI18n } from "vue-i18n";
 const { locale }: any = useI18n();
@@ -193,9 +215,8 @@ const fetchBusinessSupporters = async () => {
   businessSupportersTitle.value = res.data.info.name;
 };
 
-
-fetchEventAndActivity()
-fetchBizTool()
+fetchEventAndActivity();
+fetchBizTool();
 fetchMSMEs();
 fetchEntrepre();
 fetchSelftEmp();
@@ -203,13 +224,13 @@ fetchNewAndActivities();
 fetchBizLaw();
 fetchTSNS();
 fetchWing();
-fetchBusinessSupporters()
+fetchBusinessSupporters();
 watch(
   () => locale.value,
   (value) => {
     isLang.value = value;
-    fetchEventAndActivity()
-    fetchBizTool()
+    fetchEventAndActivity();
+    fetchBizTool();
     fetchMSMEs();
     fetchEntrepre();
     fetchSelftEmp();
@@ -217,12 +238,11 @@ watch(
     fetchBizLaw();
     fetchTSNS();
     fetchWing();
-    fetchBusinessSupporters()
+    fetchBusinessSupporters();
   },
   { immediate: true, deep: true }
 );
 </script>
-
 
 <style lang="scss">
 section {

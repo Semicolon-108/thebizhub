@@ -2,7 +2,9 @@
   <div>
     <section>
       <div class="container video-container">
-        <div class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile">
+        <div
+          class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile"
+        >
           <!-- <div class="video">
             <iframe
               width="560"
@@ -58,11 +60,11 @@
       <div class="container">
         <div class="grids is-2-desktop gap-10-desktop">
           <div class="element">
-            <img src="../../assets/images/services/about/Enterpreneurs-story_Page_1.jpg" />
+            <!-- <img src="../../assets/images/services/about/Enterpreneurs-story_Page_1.jpg" /> -->
             <p>ບໍລິສັດ/ອົງກອນ</p>
           </div>
           <div class="element">
-            <img src="../../assets/images/services/about/Enterpreneurs-story_Page_2.jpg" alt="" />
+            <!-- <img src="../../assets/images/services/about/Enterpreneurs-story_Page_2.jpg" alt="" /> -->
             <p>
               ໂຄງການທີ່ປິ່ນອ້ອມວຽກງານ ການປະກອບອາຊີບດ້ວຍຕົນເອງ ແລະ
               ການປະກອບທຸລະກິດ
@@ -76,37 +78,61 @@
       <div class="container">
         <div class="gallery">
           <h3>ຜົນງານທີ່ຜ່ານມາ</h3>
-          <Swiper :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]" :slides-per-view="2" :space-between="20"
-            :loop="false" :effect="'creative'" navigation :pagination="{
+          <Swiper
+            :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
+            :slides-per-view="2"
+            :space-between="20"
+            :loop="false"
+            :effect="'creative'"
+            navigation
+            :pagination="{
               clickable: true,
               el: '.swiper-pagination',
-            }" :autoplay="{
-  delay: 8000,
-  disableOnInteraction: true,
-}">
+            }"
+            :autoplay="{
+              delay: 8000,
+              disableOnInteraction: true,
+            }"
+          >
             <SwiperSlide>
-              <img src="../../assets/images/business-consultant/business-consultant-1.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-1.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/business-consultant/business-consultant-2.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-2.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/business-consultant/business-consultant-3.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-3.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/business-consultant/business-consultant-4.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-4.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/business-consultant/business-consultant-5.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-5.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/business-consultant/business-consultant-6.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-6.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/business-consultant/business-consultant-7.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-7.jpg"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="../../assets/images/business-consultant/business-consultant-8.jpg" />
+              <img
+                src="../../assets/images/business-consultant/business-consultant-8.jpg"
+              />
             </SwiperSlide>
           </Swiper>
         </div>

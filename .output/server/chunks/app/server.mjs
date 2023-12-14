@@ -573,7 +573,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-abb5fc69.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-9610701c.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -589,7 +589,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/works-23fce75c.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/works-463d9672.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-login",
@@ -637,7 +637,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-94e3e4c8.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-cf9a7159.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -645,7 +645,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-b38fc80a.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-5b6cec95.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -653,7 +653,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-coaching-3e8fedd9.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-coaching-87ef3135.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
@@ -661,7 +661,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-course-07a30535.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-course-89103741.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
@@ -677,7 +677,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/project-business-consultant-d1aa90b9.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/project-business-consultant-08bf5bb3.mjs').then((m) => m.default || m)
   },
   {
     name: "search",
@@ -1169,14 +1169,14 @@ const language = [
     en: "Learning"
   },
   {
-    key: "navbar_partner",
-    la: "ຜູ້ສະໜັບສະໜູນ",
-    en: "Partner"
+    key: "navbar_partner_with_us",
+    la: "ສົມທົບທຶນກັບພວກເຮົາ",
+    en: "Partner with us"
   },
   {
-    key: "navbar_donate",
-    la: "ບໍລິຈາກ",
-    en: "Donate"
+    key: "navbar_bussiness_supporter",
+    la: "ແຫຼ່ງສະໜັບສະໜູນທຸລະກິດ",
+    en: "Business Supporters"
   },
   {
     key: "article_biz_laws",
@@ -1222,11 +1222,6 @@ const language = [
     key: "article_events",
     la: "ຂ່າວສານກິດຈະກໍາ",
     en: "Events & Activities"
-  },
-  {
-    key: "button_donate",
-    la: "ແຫຼ່ງສະໜັບສະໜູນທຸລະກິດ",
-    en: "Business Supporters"
   },
   {
     key: "about_thebiz",
@@ -1308,7 +1303,7 @@ const plugins = [
   image_u014LPA7JK
 ];
 const layouts = {
-  main: () => import('./_nuxt/main-7e9940df.mjs').then((m) => m.default || m)
+  main: () => import('./_nuxt/main-5441115e.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
