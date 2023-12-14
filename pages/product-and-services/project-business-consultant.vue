@@ -2,9 +2,7 @@
   <div>
     <section>
       <div class="container video-container">
-        <div
-          class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile"
-        >
+        <div class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile">
           <!-- <div class="video">
             <iframe
               width="560"
@@ -60,16 +58,11 @@
       <div class="container">
         <div class="grids is-2-desktop gap-10-desktop">
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_1.jpg"
-            />
+            <img src="../../assets/images/services/about/Enterpreneurs-story_Page_1.jpg" />
             <p>ບໍລິສັດ/ອົງກອນ</p>
           </div>
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_2.jpg"
-              alt=""
-            />
+            <img src="../../assets/images/services/about/Enterpreneurs-story_Page_2.jpg" alt="" />
             <p>
               ໂຄງການທີ່ປິ່ນອ້ອມວຽກງານ ການປະກອບອາຊີບດ້ວຍຕົນເອງ ແລະ
               ການປະກອບທຸລະກິດ
@@ -83,61 +76,37 @@
       <div class="container">
         <div class="gallery">
           <h3>ຜົນງານທີ່ຜ່ານມາ</h3>
-          <Swiper
-            :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
-            :slides-per-view="2"
-            :space-between="20"
-            :loop="false"
-            :effect="'creative'"
-            navigation
-            :pagination="{
+          <Swiper :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]" :slides-per-view="2" :space-between="20"
+            :loop="false" :effect="'creative'" navigation :pagination="{
               clickable: true,
               el: '.swiper-pagination',
-            }"
-            :autoplay="{
-              delay: 8000,
-              disableOnInteraction: true,
-            }"
-          >
+            }" :autoplay="{
+  delay: 8000,
+  disableOnInteraction: true,
+}">
             <SwiperSlide>
-              <img
-                src="../../assets/images/business-consultant/business-consultant-1.jpg"
-              />
+              <img src="../../assets/images/business-consultant/business-consultant-1.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src="../../assets/images/business-consultant/business-consultant-2.jpg"
-              />
+              <img src="../../assets/images/business-consultant/business-consultant-2.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src="../../assets/images/business-consultant/business-consultant-3.jpg"
-              />
+              <img src="../../assets/images/business-consultant/business-consultant-3.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src="../../assets/images/business-consultant/business-consultant-4.jpg"
-              />
+              <img src="../../assets/images/business-consultant/business-consultant-4.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src="../../assets/images/business-consultant/business-consultant-5.jpg"
-              />
+              <img src="../../assets/images/business-consultant/business-consultant-5.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src="../../assets/images/business-consultant/business-consultant-6.jpg"
-              />
+              <img src="../../assets/images/business-consultant/business-consultant-6.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src="../../assets/images/business-consultant/business-consultant-7.jpg"
-              />
+              <img src="../../assets/images/business-consultant/business-consultant-7.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img
-                src="../../assets/images/business-consultant/business-consultant-8.jpg"
-              />
+              <img src="../../assets/images/business-consultant/business-consultant-8.jpg" />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -153,10 +122,12 @@ import patternDivider from "./pattern.vue";
 <style lang="scss" scoped>
 section {
   padding: 4rem 2rem;
+
   @include mobile {
     padding: 1rem;
   }
 }
+
 blockquote {
   text-align: center;
   line-height: 2;
@@ -165,6 +136,7 @@ blockquote {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+
   i {
     font-size: 10rem;
     position: absolute;
@@ -173,6 +145,7 @@ blockquote {
     opacity: 0.2;
     color: var(--sub-color);
   }
+
   h3 {
     font-size: var(--xlg-font);
     font-weight: 700;
@@ -180,13 +153,16 @@ blockquote {
     color: var(--sub-color);
   }
 }
+
 .element {
   text-align: center;
+
   img {
     width: 80px;
     object-fit: cover;
   }
 }
+
 .video-container {
   .video {
     background-color: var(--light-grey-color);
@@ -194,9 +170,11 @@ blockquote {
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover i {
       color: var(--dark-grey-color) !important;
     }
+
     i {
       pointer-events: all;
       position: absolute;
@@ -206,19 +184,23 @@ blockquote {
       transition: all ease-in-out 0.15s;
     }
   }
+
   .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     h3 {
       font-weight: 700;
       color: var(--sub-color);
       font-size: var(--xxlg-font);
       margin-bottom: 10px;
     }
+
     ul {
       border: 2px dashed var(--sub-color);
       padding: 20px;
+
       li {
         list-style-type: none !important;
         font-size: var(--lg-font);
@@ -226,10 +208,12 @@ blockquote {
         display: flex;
         align-items: flex-start;
         gap: 10px;
+
         i {
           color: var(--sub-color);
           margin-top: 8px;
         }
+
         p {
           font-size: var(--lg-font);
           line-height: 2;
@@ -238,20 +222,24 @@ blockquote {
     }
   }
 }
+
 .benefits,
 .takeaway {
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
+
   h3 {
     font-size: var(--xlg-font);
     font-weight: 700;
     color: var(--sub-color);
     margin-bottom: 10px;
   }
+
   ul {
     list-style-type: none !important;
+
     li {
       list-style-type: none !important;
       font-size: var(--lg-font);
@@ -259,6 +247,7 @@ blockquote {
       display: flex;
       align-items: flex-start;
       gap: 10px;
+
       i {
         color: var(--sub-color);
         margin-top: 8px;
@@ -266,6 +255,7 @@ blockquote {
     }
   }
 }
+
 .gallery {
   h3 {
     text-align: center;
@@ -274,6 +264,7 @@ blockquote {
     font-weight: 700;
     margin-bottom: 20px;
   }
+
   img {
     aspect-ratio: 4/3;
     object-fit: cover;

@@ -2,27 +2,18 @@
   <div class="container">
     <div class="work" v-for="(i, index) in work" :key="index">
       <div class="header">
-        <h3>{{ i.name }}</h3>
+        <h3>{{ i.title }}</h3>
       </div>
       <div class="body">
-        <Swiper
-          :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
-          :slides-per-view="3"
-          :space-between="20"
-          :loop="false"
-          :effect="'creative'"
-          navigation
-          :pagination="{
+        <Swiper :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]" :slides-per-view="3" :space-between="20"
+          :loop="false" :effect="'creative'" navigation :pagination="{
             clickable: true,
             el: '.swiper-pagination',
-          }"
-          :autoplay="{
-            delay: 8000,
-            disableOnInteraction: true,
-          }"
-        >
-          <SwiperSlide v-for="i in i.images">
-            <img :src="getImageUrl(i.img)" alt="" />
+          }" :autoplay="{
+  delay: 8000, disableOnInteraction: true,
+}">
+          <SwiperSlide v-for="i in i.image">
+            <img :src="urlImage + i" alt="" />
           </SwiperSlide>
           <div class="swiper-pagination"></div>
         </Swiper>
@@ -33,6 +24,7 @@
 
 <script setup>
 const { work } = defineProps(["work"]);
+const urlImage = useNuxtApp().$imageURL;
 
 const getImageUrl = (imagename) => {
   const imageUrl = new URL(
@@ -41,6 +33,7 @@ const getImageUrl = (imagename) => {
   ).href;
   return imageUrl;
 };
+
 </script>
 
 <style lang="scss">
@@ -49,10 +42,12 @@ const getImageUrl = (imagename) => {
   margin-top: 30px;
   margin-bottom: 60px;
   border: 3px solid var(--sub-color);
+
   .header {
     padding: 20px;
     color: #fff;
     background-color: var(--sub-color);
+
     h3 {
       margin-left: auto;
       margin-right: auto;
@@ -61,9 +56,12 @@ const getImageUrl = (imagename) => {
       font-size: var(--lg-font);
       max-width: 850px;
     }
-  } // header
+  }
+
+  // header
   .body {
     padding: 20px !important;
+
     img {
       display: block;
       aspect-ratio: 1/1;

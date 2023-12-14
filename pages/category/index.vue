@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h1 class="page-title">{{ route.query.is }}</h1>
+      <h1 class="page-title">{{ routerName }}</h1>
       <CategoryCardList :info="info" />
     </div>
   </section>
@@ -22,6 +22,7 @@ const categoryFilter = ref<any>("");
 const totals = ref<any>(0);
 const msgError = ref<any>();
 const search = ref<any>("");
+const routerName = ref<any>("")
 const fetchCategory = async () => {
   const data = await axios.post(`get-reuses-list/Category`);
   const isFilter = data.data.info.filter((f: any) => !f.groupStatus);
@@ -49,10 +50,17 @@ const fetch = async () => {
 
 const isFilter = () => {
   const cateName = route.query.is;
+  routerName.value = route.query.is
+  const events = "Events "
   const update = "Update";
   if (cateName === update) {
     search.value = update;
     categoryFilter.value = "";
+  } else if (cateName === events) {
+    // 6514fbff51ce087ae07926dc
+    routerName.value = "Events & Activities"
+    categoryFilter.value = "6514fbff51ce087ae07926dc"
+    search.value = "";
   } else {
     search.value = "";
     const dataEn = isCate.value.find((i: any) => i.name === cateName);

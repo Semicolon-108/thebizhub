@@ -1,50 +1,51 @@
 <template>
   <div>
-    <section class="xx">
-      <div class="container">
-        <h1 class="page-title">THE BIZ HUB ແມ່ນຫຍັງ?</h1>
-        <div class="grids is-2-desktop is-1-mobile gap-20-desktop">
-          <div class="box span-2-desktop">
-            <div class="grids is-5-desktop is-1-mobile gap-20-desktop">
-              <h1 class="span-2-desktop">
-                PARTNER FOR SUCCESS IN BUSINESS AND ENTREPRENEURSHIP
-              </h1>
-              <p class="span-3-desktop">
-                ພວກເຮົາມຸ່ງໝັ້ນໃນການສົ່ງເສີມ ແລະ ເສີມສ້າງຜູ້ປະກອບການລຸ້ນໃໝ່
-                ໂດຍສະເພາະແມ່ນ ຜູ້ທີ່ກຳລັງຢູ່ໃນຂັ້ນກຽມຕົວ ຫຼື
-                ກຳລັງເລີ່ມຕົ້ນເຮັດທຸລະກິດ ທີ່ຕ້ອງການພັດທະນາຕົນເອງ ແລະ
-                ທຸລະກິດໃຫ້ເຕີບໂຕຢ່າງບໍ່ຢຸດຢັ້ງ.
-              </p>
-            </div>
-          </div>
-          <div class="box">
-            <h3 class="margin-bottom-10">ພາລະກິດ ວິໄສທັດ</h3>
-            <p>
-              ເພື່ອສະໜອງບໍລິການໃຫ້ຄາປຶກສາ,ຂມູນຂ່າວສານ,
-              ການຝຶກອົບຮົມແລະເຄື່ອງມືທີ່ຈາເປນໃນການລິເລີ່ມ ທຸລະກິດໃຫ້ເຂ້ມແຂງ ແລະ
-              ສ້າງການປ່ຽນແປງທີ່ດີ ສູ່ສັງຄົມ.
+    <div class="container">
+      <h1 class="page-title">THE BIZ HUB ແມ່ນຫຍັງ?</h1>
+      <div class="grids is-2-desktop is-1-mobile gap-20-desktop">
+        <!-- <div class="box span-2-desktop">
+          <div class="grids is-5-desktop is-1-mobile gap-20-desktop">
+            <h1 class="span-2-desktop">
+              PARTNER FOR SUCCESS IN BUSINESS AND ENTREPRENEURSHIP
+            </h1>
+            <p class="span-3-desktop">
+              ພວກເຮົາມຸ່ງໝັ້ນໃນການສົ່ງເສີມ ແລະ ເສີມສ້າງຜູ້ປະກອບການລຸ້ນໃໝ່
+              ໂດຍສະເພາະແມ່ນ ຜູ້ທີ່ກຳລັງຢູ່ໃນຂັ້ນກຽມຕົວ ຫຼື
+              ກຳລັງເລີ່ມຕົ້ນເຮັດທຸລະກິດ ທີ່ຕ້ອງການພັດທະນາຕົນເອງ ແລະ
+              ທຸລະກິດໃຫ້ເຕີບໂຕຢ່າງບໍ່ຢຸດຢັ້ງ.
             </p>
           </div>
-          <div class="box">
-            <h3 class="margin-bottom-10">ວິໄສທັດ</h3>
-            <p>
-              ເປນຂົວຕໃຫ້ກັບບັນດາຜູ້ທີ່ເລີ່ມຕົ້ນເຮດທຸລະກິດສາ
-              ມາດກ້າວໄປສູ່ຄວາມສາເລດ
-            </p>
-          </div>
+        </div> -->
+        <!-- <div class="box">
+          <h3 class="margin-bottom-10">ພາລະກິດ ວິໄສທັດ</h3>
+          <p>
+            ເພື່ອສະໜອງບໍລິການໃຫ້ຄາປຶກສາ,ຂມູນຂ່າວສານ,
+            ການຝຶກອົບຮົມແລະເຄື່ອງມືທີ່ຈາເປນໃນການລິເລີ່ມ ທຸລະກິດໃຫ້ເຂ້ມແຂງ ແລະ
+            ສ້າງການປ່ຽນແປງທີ່ດີ ສູ່ສັງຄົມ.
+          </p>
+        </div> -->
+        <div class="box" v-for="(i, index) in tabs" :key="index">
+          <h3 class="margin-bottom-10">{{ i.key }}</h3>
+          <p>{{ i.desc }} </p>
         </div>
       </div>
-    </section>
+    </div>
     <img class="top-image" src="../../assets/images/about-page/team.jpg" />
     <ProductAndServcie />
     <h1 class="section-title">ຜົນງານຂອງ THE BIZ HUB</h1>
-    <Works :work="works" />
+    <Works :work="isWork" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import ProductAndServcie from "./product-and-services.vue";
 import Works from "./works.vue";
+const axios = useNuxtApp().$axios
+import { useI18n } from "vue-i18n";
+const { locale }: any = useI18n();
+const isLang = ref<any>();
+const isWork = ref<any>([])
+const tabs = ref<any>([]);
 
 const works = ref<any>([
   {
@@ -180,14 +181,36 @@ const works = ref<any>([
     ],
   },
 ]);
+
+const fetch = async () => {
+  await axios.post(`get-achievement-api/${isLang.value}`).then((res: any) => {
+    if (res) {
+      isWork.value = res.data.info
+    }
+  })
+}
+const fetchIntro = async () => {
+  const isLang = locale.value ? locale.value : "en";
+  const data = await axios.post(`get-intro-api?lang=${isLang}`);
+  tabs.value = data.data.info;
+};
+fetch()
+fetchIntro()
+watch(() => locale.value, (value) => {
+  isLang.value = value;
+  fetch()
+  fetchIntro()
+}, { immediate: true, deep: true })
+
 </script>
 
 <style lang="scss" scoped>
-.xx {
-  background-color: var(--sub-color);
-}
+// .xx {
+//   background-color: var(--sub-color);
+// }
 .box {
-  background-color: var(--light-color);
+  background-color: var(--sub-color);
+  color: #fff;
   padding: 20px;
 
   h1 {

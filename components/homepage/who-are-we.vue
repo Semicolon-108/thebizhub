@@ -5,12 +5,8 @@
       <div class="grids is-2-desktop gap-20-desktop is-1-mobile">
         <div class="left">
           <ul class="tabs">
-            <li
-              :class="{ open: selectedTab === i.key }"
-              @click="selectTab(i.key)"
-              v-for="(i, index) in tabs"
-              :key="index"
-            >
+            <li :class="{ open: selectedTab === i.key }" @click="selectTab(i.key)" v-for="(i, index) in tabs"
+              :key="index">
               <h1>{{ i.key }} <i class="fa-light fa-angle-down"></i></h1>
               <p>{{ i.desc }}</p>
             </li>
@@ -23,10 +19,7 @@
         </div>
         <div class="right">
           <div class="image">
-            <a
-              target="_blank"
-              href="https://www.youtube.com/watch?v=HEg8LjkZOaQ"
-            >
+            <a target="_blank" href="https://www.youtube.com/watch?v=HEg8LjkZOaQ">
               <i class="fa-solid fa-play"></i>
               <img src="../../assets/images/about-page/team.jpg" />
             </a>
