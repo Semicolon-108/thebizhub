@@ -58,41 +58,27 @@
       <div class="container">
         <div class="grids is-5-desktop gap-10-desktop">
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_1.jpg"
-            />
+            <img src="../../assets/images/biz-course/icons/1.png" />
             <p>ວ່າທີ່ຜູ້ປະກອບການ</p>
             <p>(Future Entrepreneur)</p>
           </div>
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_2.jpg"
-              alt=""
-            />
+            <img src="../../assets/images/biz-course/icons/2.png" alt="" />
             <p>ຜູ້ປະກອບອາຊີບດ້ວຍຕົນເອງ</p>
             <p>(Self-employed)</p>
           </div>
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_3.jpg"
-              alt=""
-            />
+            <img src="../../assets/images/biz-course/icons/3.png" alt="" />
             <p>ຜູ້ປະກອບການໃໝ່</p>
-            <p>(new entrepreneur)</p>
+            <p>(New entrepreneur)</p>
           </div>
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_4.jpg"
-              alt=""
-            />
+            <img src="../../assets/images/biz-course/icons/4.png" alt="" />
             <p>ຈຸນລະວິສາຫະກິດ</p>
             <p>(Micro entreprise)</p>
           </div>
           <div class="element">
-            <img
-              src="../../assets/images/services/about/Enterpreneurs-story_Page_5.jpg"
-              alt=""
-            />
+            <img src="../../assets/images/biz-course/icons/5.png" alt="" />
             <p>ວິສາຫະກິດຂະໜາດນ້ອຍ</p>
             <p>(Small entreprise)</p>
           </div>

@@ -103,7 +103,7 @@ a {
 
 :root {
   --xsm-font: clamp(0.6rem, 2.5vw, 0.7rem);
-  --sm-font: clamp(0.8rem, 2.5vw, 0.8rem);
+  --sm-font: clamp(0.8rem, 2.5vw, 0.9rem);
   --md-font: clamp(0.95rem, 2.5vw, 1rem);
   --lg-font: clamp(1.1rem, 2.5vw, 1.2rem);
   --xlg-font: clamp(1.3rem, 2.5vw, 1.4rem);
@@ -28548,7 +28548,7 @@ button {
   font-family: "Roboto", "Nuanta", sans-serif;
 }
 button.small {
-  font-size: clamp(0.8rem, 2.5vw, 0.8rem) !important;
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem) !important;
 }
 button.large {
   font-size: clamp(1.1rem, 2.5vw, 1.2rem);
@@ -28581,7 +28581,7 @@ button.main {
 }
 .field .control a {
   text-decoration: underline;
-  font-size: clamp(0.8rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
   display: block;
   cursor: pointer;
   margin-top: 10px;
@@ -28625,7 +28625,7 @@ input:disabled {
   background-color: hsl(0, 0%, 90%);
 }
 input.small {
-  font-size: clamp(0.8rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
   padding: 8px 12px;
 }
 

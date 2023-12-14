@@ -318,7 +318,7 @@ fetchLearning();
       li {
         a {
           padding: 20px 10px;
-          font-size: var(--md-font);
+          font-size: var(--sm-font);
           transition: all ease-in-out 0.15s;
           white-space: nowrap;
           display: flex;
