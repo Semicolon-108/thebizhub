@@ -7,5 +7,5 @@ export default defineNuxtPlugin((nuxtApp) => {
     provide: {
       axios: axios,
     },
-  };
-});
+  }
+})
