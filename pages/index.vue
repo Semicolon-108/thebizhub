@@ -128,18 +128,18 @@ const fetchSelftEmp = async () => {
   );
   selftEmpInfoTitle.value = res.data.info.name;
 };
-const fetchNewAndActivities = async () => {
-  const name = "651a4d06c2d5c94d6cc3daba";
-  await axios.post(`reuse-articles/${name}`).then((res) => {
-    if (res.status === 200) {
-      newsAndActivitiesInfo.value = res.data.info;
-    }
-  });
-  const res = await axios.post(
-    `get-section-home-page?_id=${name}&lang=${isLang.value}`
-  );
-  newActivityTitle.value = res.data.info.name;
-};
+// const fetchNewAndActivities = async () => {
+//   const name = "651a4d06c2d5c94d6cc3daba";
+//   await axios.post(`reuse-articles/${name}`).then((res) => {
+//     if (res.status === 200) {
+//       newsAndActivitiesInfo.value = res.data.info;
+//     }
+//   });
+//   const res = await axios.post(
+//     `get-section-home-page?_id=${name}&lang=${isLang.value}`
+//   );
+//   newActivityTitle.value = res.data.info.name;
+// };
 const fetchBizLaw = async () => {
   const name = "651a4d1ac2d5c94d6cc3dac3";
   await axios.post(`reuse-articles/${name}`).then((res) => {
@@ -220,7 +220,7 @@ fetchBizTool();
 fetchMSMEs();
 fetchEntrepre();
 fetchSelftEmp();
-fetchNewAndActivities();
+// fetchNewAndActivities();
 fetchBizLaw();
 fetchTSNS();
 fetchWing();
@@ -234,7 +234,7 @@ watch(
     fetchMSMEs();
     fetchEntrepre();
     fetchSelftEmp();
-    fetchNewAndActivities();
+    // fetchNewAndActivities();
     fetchBizLaw();
     fetchTSNS();
     fetchWing();
