@@ -473,12 +473,20 @@ const createError = (err) => {
 };
 const _routes = [
   {
+    name: "about-us-gallery",
+    path: "/about-us/gallery",
+    meta: {},
+    alias: [],
+    redirect: void 0,
+    component: () => import("./_nuxt/gallery-6aa4083d.js").then((m) => m.default || m)
+  },
+  {
     name: "about-us",
     path: "/about-us",
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-9610701c.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-fe42771b.js").then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -494,7 +502,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/works-463d9672.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/works-4d6e3bc8.js").then((m) => m.default || m)
   },
   {
     name: "auth-login",

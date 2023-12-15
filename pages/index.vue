@@ -5,42 +5,20 @@
     <WhoWeAre />
     <!-- <p>Event and Activity</p>
     <p>BIZ Tool</p> -->
-    <EventsAndActivitys
-      :title="eventsAndActivityTitle"
-      :info="eventsAndActivityInfo"
-      v-show="eventsAndActivityInfo.length"
-    />
-    <BizTool
-      :title="bizToolTitle"
-      :info="bizToolInfo"
-      v-show="bizToolInfo.length"
-    />
-    <Story
-      v-show="enterPreInfo.length"
-      :info="enterPreInfo"
-      :title="enterPreInfoTitle"
-    />
-    <BizLaws
-      :title="bizLawInfoTItle"
-      :info="bizLawInfo"
-      v-show="bizLawInfo.length"
-    />
+    <EventsAndActivitys :title="eventsAndActivityTitle" :info="eventsAndActivityInfo"
+      v-show="eventsAndActivityInfo.length" />
+    <BizTool :title="bizToolTitle" :info="bizToolInfo" v-show="bizToolInfo.length" />
+    <Story v-show="enterPreInfo.length" :info="enterPreInfo" :title="enterPreInfoTitle" />
+    <BizLaws :title="bizLawInfoTItle" :info="bizLawInfo" v-show="bizLawInfo.length" />
     <TSNS :title="TSNSInfoTItle" :info="TSNSInfo" v-show="TSNSInfo.length" />
     <TricksAndTips :title="smeTitle" :info="msmes" v-show="msmes.length" />
     <Wing :title="wingInfoTitle" :info="wingInfo" v-show="wingInfo.length" />
 
-    <SelftEmployment
-      :title="selftEmpInfoTitle"
-      :info="selftEmpInfo"
-      v-show="selftEmpInfo.length"
-    />
+    <SelftEmployment :title="selftEmpInfoTitle" :info="selftEmpInfo" v-show="selftEmpInfo.length" />
 
     <!-- <p>Business Supporters</p> -->
-    <BusinessSupporters
-      :title="businessSupportersTitle"
-      :info="businessSupportersInfo"
-      v-show="businessSupportersInfo.length"
-    />
+    <BusinessSupporters :title="businessSupportersTitle" :info="businessSupportersInfo"
+      v-show="businessSupportersInfo.length" />
     <!-- <NewsAndActivitiesInfo
       :title="newActivityTitle"
       :info="newsAndActivitiesInfo"
