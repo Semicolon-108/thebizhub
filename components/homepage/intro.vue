@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="container">
-      <div class="grids gap-20-desktop is-5-desktop is-1-mobile">
+      <div class="grids gap-20-desktop is-5-desktop is-1-mobile gap-10-mobile">
         <div class="left span-2-desktop">
           <div class="intro">
             <h1>THE BIZ HUB</h1>

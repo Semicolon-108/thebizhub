@@ -93,7 +93,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = [];
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"viewport","viewport":"width=device-width, initial-scale=1"},{"name":"TheBizhub","content":"thebizhub bizhub"},{"hid":"og:title","property":"og:title","content":"thebizhub.la"},{"hid":"keywords","name":"keywords","content":"thebizhub, Thebizhub, TheBizHub, thebizhub.la, Thebizhub.la, Bizhub, bizhub.la"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.ico"}],"style":[],"script":[{"src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8866188728269533","async":true}],"noscript":[],"title":"TheBIZHub"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"viewport","viewport":"width=device-width, initial-scale=1"},{"name":"TheBizhub","content":"thebizhub bizhub"},{"hid":"og:title","property":"og:title","content":"thebizhub.la"},{"hid":"keywords","name":"keywords","content":"thebizhub, Thebizhub, TheBizHub, thebizhub.la, Thebizhub.la, Bizhub, bizhub.la"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"}],"style":[],"script":[{"src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8866188728269533","async":true}],"noscript":[],"title":"TheBIZHub"};
 
 const appRootId = "__nuxt";
 

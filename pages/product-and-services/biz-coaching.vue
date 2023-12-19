@@ -126,9 +126,7 @@
             </ul>
           </div>
           <div>
-            <img
-              src="https://contentshifu.com/wp-content/uploads/2023/07/LP_Banner01.png.webp"
-            />
+            <img src="../../assets/images/biz-coaching/1-01.png" />
           </div>
         </div>
         <patternDivider style="margin-top: 30px" />
@@ -139,9 +137,7 @@
       <div class="container">
         <div class="grids is-2-desktop gap-50-desktop">
           <div>
-            <img
-              src="https://contentshifu.com/wp-content/uploads/2022/07/in-house-image-1-1024x1024.png.webp"
-            />
+            <img src="../../assets/images/biz-coaching/1-02.png" />
           </div>
           <div class="takeaway">
             <h3>ສິ່ງທີ່ຈະໄດ້ຮັບຈາກ BIZ COACHING</h3>

@@ -653,7 +653,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-4116c9dd.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-c127fb05.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -661,7 +661,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-coaching-87ef3135.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-coaching-e15911a7.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",

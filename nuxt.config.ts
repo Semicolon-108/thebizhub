@@ -43,7 +43,7 @@ export default defineNuxtConfig({
       ],
       title: process.env.npm_package_name || "",
       meta,
-      link: [{ rel: "icon", type: "image/png", href: "/favicon.ico" }],
+      link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
     },
     pageTransition: { name: "page", mode: "out-in" },
   },

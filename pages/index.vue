@@ -29,7 +29,7 @@
       />
     </section>
 
-    <section class="section">
+    <section class="section tsns-bg">
       <TSNS :title="TSNSInfoTItle" :info="TSNSInfo" v-show="TSNSInfo.length" />
     </section>
 
@@ -41,13 +41,13 @@
       <Wing :title="wingInfoTitle" :info="wingInfo" v-show="wingInfo.length" />
     </section>
 
-    <section class="section">
+    <!-- <section class="section">
       <SelftEmployment
         :title="selftEmpInfoTitle"
         :info="selftEmpInfo"
         v-show="selftEmpInfo.length"
       />
-    </section>
+    </section> -->
 
     <section class="section">
       <BusinessSupporters
@@ -265,6 +265,12 @@ section {
 
   @include mobile {
     padding: 2rem 1rem;
+  }
+  &.tsns-bg {
+    background-image: url("../assets/images/bg/tsns-bg.jpg");
+    background-position: cover;
+    background-size: cover;
+    color: #fff;
   }
   &.wing-bg {
     background-image: url("../assets/images/bg/wing-bg.svg");
