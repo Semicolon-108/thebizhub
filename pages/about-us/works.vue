@@ -17,31 +17,39 @@
             el: '.swiper-pagination',
           }"
           :autoplay="{
-            delay: 8000,
+            delay: 5000,
             disableOnInteraction: true,
           }"
         >
-          <SwiperSlide v-for="i in i.image">
-            <img :src="urlImage + i" alt="" />
+          <SwiperSlide v-for="o in i.image" @click="ShowGallery = true">
+            <img :src="urlImage + o" alt="" />
           </SwiperSlide>
           <div class="swiper-pagination"></div>
         </Swiper>
       </div>
+      <Gallery
+        :data="i.image"
+        v-if="ShowGallery"
+        @closeShowGallery="ShowGallery = false"
+      />
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import Gallery from "./gallery.vue";
 const { work } = defineProps(["work"]);
 const urlImage = useNuxtApp().$imageURL;
 
-const getImageUrl = (imagename) => {
-  const imageUrl = new URL(
-    `/assets/images/about-page/${imagename}`,
-    import.meta.url
-  ).href;
-  return imageUrl;
-};
+// const getImageUrl = (imagename) => {
+//   const imageUrl = new URL(
+//     `/assets/images/about-page/${imagename}`,
+//     import.meta.url
+//   ).href;
+//   return imageUrl;
+// };
+
+const ShowGallery = ref<any>(false);
 </script>
 
 <style lang="scss">

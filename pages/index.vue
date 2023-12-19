@@ -20,27 +20,42 @@
       :info="enterPreInfo"
       :title="enterPreInfoTitle"
     />
-    <BizLaws
-      :title="bizLawInfoTItle"
-      :info="bizLawInfo"
-      v-show="bizLawInfo.length"
-    />
-    <TSNS :title="TSNSInfoTItle" :info="TSNSInfo" v-show="TSNSInfo.length" />
-    <TricksAndTips :title="smeTitle" :info="msmes" v-show="msmes.length" />
-    <Wing :title="wingInfoTitle" :info="wingInfo" v-show="wingInfo.length" />
 
-    <SelftEmployment
-      :title="selftEmpInfoTitle"
-      :info="selftEmpInfo"
-      v-show="selftEmpInfo.length"
-    />
+    <section class="section">
+      <BizLaws
+        :title="bizLawInfoTItle"
+        :info="bizLawInfo"
+        v-show="bizLawInfo.length"
+      />
+    </section>
 
-    <!-- <p>Business Supporters</p> -->
-    <BusinessSupporters
-      :title="businessSupportersTitle"
-      :info="businessSupportersInfo"
-      v-show="businessSupportersInfo.length"
-    />
+    <section class="section">
+      <TSNS :title="TSNSInfoTItle" :info="TSNSInfo" v-show="TSNSInfo.length" />
+    </section>
+
+    <section class="section">
+      <TricksAndTips :title="smeTitle" :info="msmes" v-show="msmes.length" />
+    </section>
+
+    <section class="section wing-bg">
+      <Wing :title="wingInfoTitle" :info="wingInfo" v-show="wingInfo.length" />
+    </section>
+
+    <section class="section">
+      <SelftEmployment
+        :title="selftEmpInfoTitle"
+        :info="selftEmpInfo"
+        v-show="selftEmpInfo.length"
+      />
+    </section>
+
+    <section class="section">
+      <BusinessSupporters
+        :title="businessSupportersTitle"
+        :info="businessSupportersInfo"
+        v-show="businessSupportersInfo.length"
+      />
+    </section>
     <!-- <NewsAndActivitiesInfo
       :title="newActivityTitle"
       :info="newsAndActivitiesInfo"
@@ -128,18 +143,18 @@ const fetchSelftEmp = async () => {
   );
   selftEmpInfoTitle.value = res.data.info.name;
 };
-const fetchNewAndActivities = async () => {
-  const name = "651a4d06c2d5c94d6cc3daba";
-  await axios.post(`reuse-articles/${name}`).then((res) => {
-    if (res.status === 200) {
-      newsAndActivitiesInfo.value = res.data.info;
-    }
-  });
-  const res = await axios.post(
-    `get-section-home-page?_id=${name}&lang=${isLang.value}`
-  );
-  newActivityTitle.value = res.data.info.name;
-};
+// const fetchNewAndActivities = async () => {
+//   const name = "651a4d06c2d5c94d6cc3daba";
+//   await axios.post(`reuse-articles/${name}`).then((res) => {
+//     if (res.status === 200) {
+//       newsAndActivitiesInfo.value = res.data.info;
+//     }
+//   });
+//   const res = await axios.post(
+//     `get-section-home-page?_id=${name}&lang=${isLang.value}`
+//   );
+//   newActivityTitle.value = res.data.info.name;
+// };
 const fetchBizLaw = async () => {
   const name = "651a4d1ac2d5c94d6cc3dac3";
   await axios.post(`reuse-articles/${name}`).then((res) => {
@@ -220,7 +235,7 @@ fetchBizTool();
 fetchMSMEs();
 fetchEntrepre();
 fetchSelftEmp();
-fetchNewAndActivities();
+// fetchNewAndActivities();
 fetchBizLaw();
 fetchTSNS();
 fetchWing();
@@ -234,7 +249,7 @@ watch(
     fetchMSMEs();
     fetchEntrepre();
     fetchSelftEmp();
-    fetchNewAndActivities();
+    // fetchNewAndActivities();
     fetchBizLaw();
     fetchTSNS();
     fetchWing();
@@ -250,6 +265,12 @@ section {
 
   @include mobile {
     padding: 2rem 1rem;
+  }
+  &.wing-bg {
+    background-image: url("../assets/images/bg/wing-bg.svg");
+    background-position: cover;
+    background-size: cover;
+    color: #fff;
   }
 }
 
