@@ -5,13 +5,22 @@
         <h3>{{ i.title }}</h3>
       </div>
       <div class="body">
-        <Swiper :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]" :slides-per-view="3" :space-between="20"
-          :loop="false" :effect="'creative'" navigation :pagination="{
+        <Swiper
+          :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
+          :slides-per-view="3"
+          :space-between="20"
+          :loop="false"
+          :effect="'creative'"
+          navigation
+          :pagination="{
             clickable: true,
             el: '.swiper-pagination',
-          }" :autoplay="{
-  delay: 8000, disableOnInteraction: true,
-}">
+          }"
+          :autoplay="{
+            delay: 8000,
+            disableOnInteraction: true,
+          }"
+        >
           <SwiperSlide v-for="i in i.image">
             <img :src="urlImage + i" alt="" />
           </SwiperSlide>
@@ -33,7 +42,6 @@ const getImageUrl = (imagename) => {
   ).href;
   return imageUrl;
 };
-
 </script>
 
 <style lang="scss">
