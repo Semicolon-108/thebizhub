@@ -1,5 +1,5 @@
 import { ref } from 'vue';
-import { r as parse, t as getRequestHeader, v as destr, x as isEqual, y as setCookie, z as getCookie, A as deleteCookie } from '../../nitro/node-server.mjs';
+import { v as parse, x as getRequestHeader, y as destr, z as isEqual, A as setCookie, B as getCookie, C as deleteCookie } from '../../nitro/node-server.mjs';
 import { d as useNuxtApp } from '../server.mjs';
 
 function useRequestEvent(nuxtApp = useNuxtApp()) {
