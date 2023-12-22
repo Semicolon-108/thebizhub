@@ -8,7 +8,7 @@ const meta = [
     viewport: "width=device-width, initial-scale=1",
   },
   {
-    name: "TheBizhub",
+    name: "The BIZ HUB",
     content: "thebizhub bizhub",
   },
   {
@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   gtag: {
     id: "G-CVJQT1XPN2",
     config: {
-      page_title: "The BIZ HUB",
+      page_title: "Thex BIZ HUB",
     },
   },
   app: {
@@ -41,7 +41,8 @@ export default defineNuxtConfig({
           async: true,
         },
       ],
-      title: process.env.npm_package_name || "",
+      // title: process.env.npm_package_name || "dfgsdafsdafsdf",
+      title: "The BIZ HUB",
       meta,
       link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
     },

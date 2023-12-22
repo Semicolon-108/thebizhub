@@ -17,6 +17,7 @@
               <p>
                 {{ i.desc }}
               </p>
+              <button class="button main small">More detail</button>
             </div>
           </li>
         </ul>
@@ -123,6 +124,9 @@ fetchOurService();
       p {
         font-size: var(--md-font);
       }
+    }
+    button {
+      margin-top: 10px;
     }
   }
 }

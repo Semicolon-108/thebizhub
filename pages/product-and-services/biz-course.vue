@@ -19,12 +19,23 @@
             <img src="../../assets/images/services/biz-course.png" alt="" />
           </div>
           <div class="text">
-            <h3>BIZ Courses ແມ່ນ…</h3>
-            BIZ Courses ແມ່ນ… ຫຼັກສູດການຝຶກອົບຮົມທາງທຸລະກິດ ໄລຍະສັ້ນ
+            <h3>BIZ COURSES ແມ່ນຫຍັງ?</h3>
+            ຫຼັກສູດການຝຶກອົບຮົມທາງທຸລະກິດ ໄລຍະສັ້ນ
             ເພື່ອກຽມຄວາມພ້ອມໃຫ້ກັບຜູ້ປະກອບການຂັ້ນເລີ່ມຕົ້ນ ແລະ ວ່າທີ່ຜູ້ປະກອບການ
             ທີ່ເນັ້ນໜັກການພັດທະນາຄວາມຮູ້ຄວາມສາມາດ, ຝຶກຝົນການຄິດວິເຄາະ, ວາງແຜນ
             ແລະ ກຽມຄວາມພ້ອມຢ່າງເໝາະສົມ ເພື່ອຫຼຸດຜ່ອນຄວາມສ່ຽງ ແລະ
             ເພີ່ມໂອກາດໃນການປະກອບທຸລະກິດໃຫ້ປະສົບຜົນສຳເລັດຫຼາຍຂຶ້ນ.
+            <div class="contact">
+              <h3>{{ $t("contact_us") }}</h3>
+              <div class="icons">
+                <a href="https://wa.me/8562056508160">
+                  <i class="fa-brands fa-square-whatsapp"></i
+                ></a>
+                <a href="http://m.me/100091801856212"
+                  ><i class="fa-brands fa-facebook-messenger"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -217,6 +228,22 @@ import patternDivider from "./pattern.vue";
 </script>
 
 <style lang="scss" scoped>
+.contact {
+  margin-top: 20px;
+  h3 {
+    font-size: var(--lg-font) !important;
+    line-height: 1;
+  }
+  .icons {
+    display: flex;
+    gap: 20px;
+    i {
+      cursor: pointer;
+      font-size: 2rem;
+      color: var(--sub-color);
+    }
+  }
+}
 section {
   padding: 4rem 2rem;
   @include mobile {

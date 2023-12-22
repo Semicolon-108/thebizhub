@@ -4,8 +4,8 @@
       <ul class="grids is-14-desktop is-1-mobile">
         <li class="span-4-desktop">
           <div class="logo margin-bottom-10">
-            <img src="../../assets/images/Logo.png" alt="" />
-            <h3>THE BIZ HUB</h3>
+            <img src="../../assets/images/transparant-bg-logo.png" alt="" />
+            <!-- <h3>THE BIZ HUB</h3> -->
           </div>
           <small class="margin-bottom-15"
             >1st Floor, 108Hill Building Dongpaina Road, Saphanthong Village,

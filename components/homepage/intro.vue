@@ -24,7 +24,7 @@
           <div class="video">
             <!-- <i class="fa-solid fa-play"></i> -->
             <iframe
-              src="https://www.youtube.com/embed/HEg8LjkZOaQ?si=dULR1XN-DrTBTyXD"
+              src="https://www.youtube.com/embed/PezSDxa0vrs?si=h07PGaZbGmI8jwC2"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen

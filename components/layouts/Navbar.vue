@@ -10,12 +10,15 @@
         </p>
       </div>
       <div class="logo" @click="router.push({ path: '/' })">
-        <img src="../../assets/images/thebizhub-logo.jpg" />
+        <img src="../../assets/images/transparant-bg-logo.png" />
       </div>
       <h1>{{ $t("slogan") }}</h1>
 
       <Transition name="slide-down">
-        <LayoutsMobileNavbar v-if="openMobileNav" @closeMobileNavbar="openMobileNav = false" />
+        <LayoutsMobileNavbar
+          v-if="openMobileNav"
+          @closeMobileNavbar="openMobileNav = false"
+        />
       </Transition>
     </div>
     <div class="navbar is-hidden-mobile">
@@ -53,24 +56,34 @@
             </a>
           </li> -->
           <li class="has-dropdown">
-            <a class="hoverable">{{ $t("navbar_learning") }}
+            <a class="hoverable"
+              >{{ $t("navbar_learning") }}
               <i class="fa-light fa-angle-down"></i>
               <ul class="dropdown">
                 <li v-for="(o, index) in learing" :key="index">
-                  <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }">{{ o.name }}</NuxtLink>
+                  <NuxtLink
+                    :to="{ path: '/category', query: { is: `${o.name}` } }"
+                    >{{ o.name }}</NuxtLink
+                  >
                 </li>
               </ul>
             </a>
           </li>
           <li>
-            <a @click="$router.replace('/category?is=TSNS - Thao Sang Nang Sa')">{{ $t("navbar_tsns") }}</a>
+            <a
+              @click="$router.replace('/category?is=TSNS - Thao Sang Nang Sa')"
+              >{{ $t("navbar_tsns") }}</a
+            >
           </li>
           <li>
-            <a @click="
-              $router.replace(
-                `/category?is=WINGS - Women's Income Generating Support`
-              )
-              ">{{ $t("navbar_wing") }}</a>
+            <a
+              @click="
+                $router.replace(
+                  `/category?is=WINGS - Women's Income Generating Support`
+                )
+              "
+              >{{ $t("navbar_wing") }}</a
+            >
           </li>
           <li>
             <a @click="$router.replace('/category?is=Events & Activities')">{{
@@ -78,23 +91,32 @@
             }}</a>
           </li>
           <li>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsRhORbsNje2WzOdWGCLJAdKuyEGDlUejL2qr4e-gzencLcw/viewform"
-              target="_blank">{{ $t("navbar_partner_with_us") }}</a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfsRhORbsNje2WzOdWGCLJAdKuyEGDlUejL2qr4e-gzencLcw/viewform"
+              target="_blank"
+              >{{ $t("navbar_partner_with_us") }}</a
+            >
           </li>
           <li>
-            <NuxtLink to="/about-us">{{
-              $t("navbar_bussiness_supporter")
-            }}</NuxtLink>
+            <a @click="$router.replace('/category?is=Business Supporters')">
+              {{ $t("navbar_bussiness_supporter") }}</a
+            >
           </li>
-          <!-- <li>
+          <li>
             <NuxtLink to="/about-us">{{ $t("about_us") }}</NuxtLink>
-          </li> -->
+          </li>
         </ul>
       </div>
       <div class="navbar-end">
-        <input type="text" v-model="search" class="input small" :placeholder="$t('search')" @keyup.enter="
-          router.push({ path: '/search', query: { search: search } })
-          " />
+        <input
+          type="text"
+          v-model="search"
+          class="input small"
+          :placeholder="$t('search')"
+          @keyup.enter="
+            router.push({ path: '/search', query: { search: search } })
+          "
+        />
         <hr class="v" />
         <p class="lang-switch">
           <a :class="[{ current: enStatus }]" @click="setLan('en')">EN</a>
@@ -102,10 +124,16 @@
         </p>
         <hr class="v" />
         <div class="button-groups">
-          <button class="button small" @click="router.push({ path: '/auth/login' })">
+          <button
+            class="button small"
+            @click="router.push({ path: '/auth/login' })"
+          >
             {{ $t("login") }}
           </button>
-          <button class="button main small" @click="router.push({ path: '/auth/register' })">
+          <button
+            class="button main small"
+            @click="router.push({ path: '/auth/register' })"
+          >
             {{ $t("register") }}
           </button>
         </div>

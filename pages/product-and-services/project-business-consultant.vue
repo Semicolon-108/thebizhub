@@ -27,6 +27,18 @@
             ຈັດຕັ້ງປະຕິບັດ ແລະ ປະເມີນຜົນສຳເລັດຂອງໂຄງການ
             ທີ່ກ່ຽວຂ້ອງກັບການປະກອບອາຊີບດ້ວຍຕົນເອງ, ການປະກອບທຸລະກິດ ແລະ
             ການເຕີບໂຕຂອງທຸລະກິດ.
+
+            <div class="contact">
+              <h3>{{ $t("contact_us") }}</h3>
+              <div class="icons">
+                <a href="https://wa.me/8562056508160">
+                  <i class="fa-brands fa-square-whatsapp"></i
+                ></a>
+                <a href="http://m.me/100091801856212"
+                  ><i class="fa-brands fa-facebook-messenger"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -153,7 +165,22 @@ section {
     padding: 1rem;
   }
 }
-
+.contact {
+  margin-top: 20px;
+  h3 {
+    font-size: var(--lg-font) !important;
+    line-height: 1;
+  }
+  .icons {
+    display: flex;
+    gap: 20px;
+    i {
+      cursor: pointer;
+      font-size: 2rem;
+      color: var(--sub-color);
+    }
+  }
+}
 blockquote {
   text-align: center;
   line-height: 2;

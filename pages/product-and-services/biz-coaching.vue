@@ -34,6 +34,26 @@
                 >ເສີມສ້າງຄວາມເຂັ້ມແຂງໃນການບໍລິຫານທຸລະກິດ
               </li>
             </ul>
+
+            <div class="contact">
+              <h3>{{ $t("contact_us") }}</h3>
+              <div class="icons">
+                <a href="https://wa.me/8562056508160">
+                  <i class="fa-brands fa-square-whatsapp"></i
+                ></a>
+                <a href="http://m.me/100091801856212"
+                  ><i class="fa-brands fa-facebook-messenger"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- <div class="box">
+              <h1>contact us</h1>
+              <h3><i class="fa-brands fa-square-whatsapp"></i></h3>
+              <h3><i class="fa-brands fa-facebook-messenger"></i></h3>
+            </div> -->
+            <!-- <small>020 56508160</small> -->
+            <!-- <small>thebizhub.info@gmail.com</small> -->
           </div>
         </div>
       </div>
@@ -56,7 +76,7 @@
 
     <section>
       <div class="container">
-        <h3 class="section-title">ເນື້ອຫາທີ່ຈະໄດ້ຮັບ</h3>
+        <h3 class="section-title">BIZ Coaching ເໝາະກັບໃຜ</h3>
         <div class="grids is-5-desktop gap-10-desktop">
           <div class="element">
             <img src="../../assets/images/biz-coaching/icons/1.png" />
@@ -227,6 +247,22 @@ section {
     font-size: var(--xxlg-font);
     text-align: center;
     margin-bottom: 2rem;
+  }
+}
+.contact {
+  margin-top: 20px;
+  h3 {
+    font-size: var(--lg-font) !important;
+    line-height: 1;
+  }
+  .icons {
+    display: flex;
+    gap: 20px;
+    i {
+      cursor: pointer;
+      font-size: 2rem;
+      color: var(--sub-color);
+    }
   }
 }
 blockquote {

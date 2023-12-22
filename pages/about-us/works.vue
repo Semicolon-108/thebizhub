@@ -57,12 +57,13 @@ const ShowGallery = ref<any>(false);
   text-align: center;
   margin-top: 30px;
   margin-bottom: 60px;
-  border: 3px solid var(--sub-color);
 
+  overflow: hidden;
   .header {
     padding: 20px;
     color: #fff;
     background-color: var(--sub-color);
+    border-radius: 30px 30px 0 0;
 
     h3 {
       margin-left: auto;
@@ -77,12 +78,14 @@ const ShowGallery = ref<any>(false);
   // header
   .body {
     padding: 20px !important;
-
+    border: 3px solid var(--sub-color);
+    border-radius: 0 0 30px 30px;
     img {
       display: block;
       aspect-ratio: 1/1;
       // height: 300px;
       object-fit: cover;
+      border-radius: 20px;
     }
   }
 }

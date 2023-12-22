@@ -28542,7 +28542,7 @@ button {
   border: none;
   cursor: pointer;
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: 10px;
   font-size: clamp(0.95rem, 2.5vw, 1rem);
   white-space: pre;
   font-family: "Roboto", "Nuanta", sans-serif;

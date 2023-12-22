@@ -486,7 +486,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-fe42771b.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-235d14a5.js").then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -502,7 +502,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/works-4d6e3bc8.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/works-65a59e89.js").then((m) => m.default || m)
   },
   {
     name: "auth-login",
@@ -558,7 +558,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-c127fb05.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-dacb278f.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -566,7 +566,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/biz-coaching-e15911a7.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/biz-coaching-d99b2c44.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
@@ -574,7 +574,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/biz-course-89103741.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/biz-course-61f5477f.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
@@ -590,7 +590,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/project-business-consultant-08bf5bb3.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/project-business-consultant-98fea3df.js").then((m) => m.default || m)
   },
   {
     name: "search",
@@ -929,7 +929,7 @@ const language = [
   {
     key: "slogan",
     la: "ຄູ່ຮ່ວມງານເພື່ອຄວາມສໍາເລັດໃນທຸລະກິດ ແລະ ການເປັນຜູ້ປະກອບການ",
-    en: "Partner for success in business and entrepreneurship"
+    en: "Partner for Success in Business and Entrepreneurship"
   },
   {
     key: "home",
@@ -1216,7 +1216,7 @@ const plugins = [
   image_u014LPA7JK
 ];
 const layouts = {
-  main: () => import("./_nuxt/main-5441115e.js").then((m) => m.default || m)
+  main: () => import("./_nuxt/main-20696706.js").then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",

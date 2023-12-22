@@ -12,7 +12,7 @@ export const language = [
   {
     key: "slogan",
     la: "ຄູ່ຮ່ວມງານເພື່ອຄວາມສໍາເລັດໃນທຸລະກິດ ແລະ ການເປັນຜູ້ປະກອບການ",
-    en: "Partner for success in business and entrepreneurship",
+    en: "Partner for Success in Business and Entrepreneurship",
   },
   {
     key: "home",

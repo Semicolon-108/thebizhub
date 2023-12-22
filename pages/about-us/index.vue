@@ -196,6 +196,7 @@ watch(
   background-color: var(--sub-color);
   color: #fff;
   padding: 20px;
+  border-radius: 20px;
 
   h1 {
     font-weight: 700;

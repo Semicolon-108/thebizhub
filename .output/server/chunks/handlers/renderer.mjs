@@ -1,5 +1,5 @@
 import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'vue-bundle-renderer/runtime';
-import { e as eventHandler, s as setResponseHeader, a as send, g as getResponseStatus, b as setResponseStatus, c as setResponseHeaders, u as useNitroApp, j as joinURL, f as useRuntimeConfig, h as getQuery, i as createError, k as getRouteRules, l as getResponseStatusText } from '../nitro/node-server.mjs';
+import { e as eventHandler, s as setResponseHeader, a as send, g as getResponseStatus, b as setResponseStatus, c as setResponseHeaders, u as useNitroApp, j as joinURL, d as useRuntimeConfig, f as getQuery, h as createError, i as getRouteRules, k as getResponseStatusText } from '../nitro/node-server.mjs';
 import { stringify, uneval } from 'devalue';
 import { renderToString } from 'vue/server-renderer';
 import { renderSSRHead } from '@unhead/ssr';
@@ -93,7 +93,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = [];
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"viewport","viewport":"width=device-width, initial-scale=1"},{"name":"TheBizhub","content":"thebizhub bizhub"},{"hid":"og:title","property":"og:title","content":"thebizhub.la"},{"hid":"keywords","name":"keywords","content":"thebizhub, Thebizhub, TheBizHub, thebizhub.la, Thebizhub.la, Bizhub, bizhub.la"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"}],"style":[],"script":[{"src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8866188728269533","async":true}],"noscript":[],"title":"TheBIZHub"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"viewport","viewport":"width=device-width, initial-scale=1"},{"name":"The BIZ HUB","content":"thebizhub bizhub"},{"hid":"og:title","property":"og:title","content":"thebizhub.la"},{"hid":"keywords","name":"keywords","content":"thebizhub, Thebizhub, TheBizHub, thebizhub.la, Thebizhub.la, Bizhub, bizhub.la"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"}],"style":[],"script":[{"src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8866188728269533","async":true}],"noscript":[],"title":"The BIZ HUB"};
 
 const appRootId = "__nuxt";
 
