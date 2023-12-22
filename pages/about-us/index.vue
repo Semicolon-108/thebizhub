@@ -164,7 +164,7 @@ const works = ref<any>([
 ]);
 
 const fetch = async () => {
-  await axios.post(`get-achievement-api/${isLang.value}`).then((res: any) => {
+  await axios.post(`get-achievement-api?lang=${isLang.value}`).then((res: any) => {
     if (res) {
       isWork.value = res.data.info;
     }

@@ -5,9 +5,7 @@
         <div class="section-title">{{ $t("products") }}</div>
       </div>
       <div class="section-body">
-        <ul
-          class="grids is-3-desktop is-1-mobile gap-10-tablet gap-10-tablet gap-20-desktop gap-10-mobile"
-        >
+        <ul class="grids is-3-desktop is-1-mobile gap-10-tablet gap-10-tablet gap-20-desktop gap-10-mobile">
           <li v-for="(i, index) in info" :key="index">
             <div class="card">
               <div class="card-icon">
@@ -17,7 +15,11 @@
               <p>
                 {{ i.desc }}
               </p>
-              <button class="button main small">More detail</button>
+              <NuxtLink :to="{
+                path: `/${i.link}`,
+              }"> <button class="button main small">{{ $t("more_detail") }}</button>
+              </NuxtLink>
+
             </div>
           </li>
         </ul>
@@ -29,8 +31,10 @@
 <script setup lang="ts">
 // get-our-service-api
 const axios = useNuxtApp().$axios;
+const https = useNuxtApp().$https
 const urlImage = useNuxtApp().$imageURL;
 import { useI18n } from "vue-i18n";
+const router = useRouter();
 const { locale }: any = useI18n();
 const info = ref<any>();
 
@@ -125,6 +129,7 @@ fetchOurService();
         font-size: var(--md-font);
       }
     }
+
     button {
       margin-top: 10px;
     }

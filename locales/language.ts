@@ -255,4 +255,9 @@ export const language = [
     la: "ເພື່ອສະໜອງບໍລິການໃຫ້ຄຳປຶກສາ, ຂໍ້ມູນຂ່າວສານທີ່ຈຳເປັນ, ການຝຶກອົບຮົມ ແລະ ເຄື່ອງມືທາງທຸລະກິດ ເພື່ອສ້າງຄວາມເຂັ້ມແຂງໃຫ້ກັບທຸລະກິດ ແລະ ສ້າງການປ່ຽນແປງທີ່ດີສູ່ສັງຄົມ.",
     en: "​​To Provide Consulting Services, Essential Information, Courses and Business tools to strengthen Businesses and Create Positive Changes in the Community.",
   },
+  {
+    key: "more_detail",
+    la: "ລາຍລະອຽດ",
+    en: "More detail"
+  }
 ];

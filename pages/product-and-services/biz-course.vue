@@ -2,9 +2,7 @@
   <div>
     <section>
       <div class="container video-container">
-        <div
-          class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile"
-        >
+        <div class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile">
           <!-- <div class="video">
             <iframe
               width="560"
@@ -29,11 +27,8 @@
               <h3>{{ $t("contact_us") }}</h3>
               <div class="icons">
                 <a href="https://wa.me/8562056508160">
-                  <i class="fa-brands fa-square-whatsapp"></i
-                ></a>
-                <a href="http://m.me/100091801856212"
-                  ><i class="fa-brands fa-facebook-messenger"></i
-                ></a>
+                  <i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="http://m.me/100091801856212"><i class="fa-brands fa-facebook-messenger"></i></a>
               </div>
             </div>
           </div>
@@ -102,10 +97,7 @@
         <patternDivider style="margin-bottom: 30px" />
         <div class="grids is-12-desktop gap-50-desktop">
           <div class="span-5-desktop">
-            <img
-              src="../../assets/images/biz-course/biz-course-element-1.png"
-              alt=""
-            />
+            <img src="../../assets/images/biz-course/biz-course-element-1.png" alt="" />
           </div>
           <div class="takeaway span-7-desktop">
             <h3>ເຂົ້າຮ່ວມ BIZ Courses ຈະໄດ້ຫຍັງ?</h3>
@@ -153,69 +145,20 @@
 
     <section>
       <div class="container">
-        <div class="gallery">
-          <h3>ຜົນງານທີ່ຜ່ານມາ</h3>
-          <Swiper
-            :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
-            :slides-per-view="2"
-            :space-between="20"
-            :loop="false"
-            :effect="'creative'"
-            navigation
-            :pagination="{
+        <div class="gallery" v-for="(i, indx) in info" :key="indx">
+          <h3>{{ i.title }}</h3>
+          <Swiper :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]" :slides-per-view="2" :space-between="20"
+            :loop="false" :effect="'creative'" navigation :pagination="{
               clickable: true,
               el: '.swiper-pagination',
-            }"
-            :autoplay="{
-              delay: 8000,
-              disableOnInteraction: true,
-            }"
-          >
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-1.png" />
+            }" :autoplay="{
+  delay: 8000,
+  disableOnInteraction: true,
+}">
+            <SwiperSlide v-for="o in i.image" @click="ShowGallery = true">
+              <img :src="urlImage + o" />
             </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-2.png" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-3.png" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-4.png" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-5.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-6.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-7.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-8.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-9.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-10.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-11.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-12.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-13.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-14.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../../assets/images/biz-course/biz-course-15.jpg" />
-            </SwiperSlide>
+            <Gallery :data="i.image" v-if="ShowGallery" @closeShowGallery="ShowGallery = false" />
           </Swiper>
         </div>
       </div>
@@ -225,18 +168,45 @@
 
 <script setup lang="ts">
 import patternDivider from "./pattern.vue";
+import Gallery from "../about-us/gallery.vue";
+const axios = useNuxtApp().$axios;
+const urlImage = useNuxtApp().$imageURL;
+import { useI18n } from "vue-i18n";
+const { locale }: any = useI18n();
+const isLang = ref<any>();
+const ShowGallery = ref<any>(false);
+const info = ref<any>([])
+const area = ref<any>("Business Courses")
+const fetch = async () => {
+  await axios.post(`get-achievement-api?lang=${isLang.value}&area=${area.value}`).then((res: any) => {
+    if (res) {
+      info.value = res.data.info;
+    }
+  });
+};
+watch(
+  () => locale.value,
+  (value) => {
+    isLang.value = value;
+    fetch();
+  },
+  { immediate: true, deep: true }
+);
 </script>
 
 <style lang="scss" scoped>
 .contact {
   margin-top: 20px;
+
   h3 {
     font-size: var(--lg-font) !important;
     line-height: 1;
   }
+
   .icons {
     display: flex;
     gap: 20px;
+
     i {
       cursor: pointer;
       font-size: 2rem;
@@ -244,12 +214,15 @@ import patternDivider from "./pattern.vue";
     }
   }
 }
+
 section {
   padding: 4rem 2rem;
+
   @include mobile {
     padding: 1rem;
   }
 }
+
 blockquote {
   text-align: center;
   line-height: 2;
@@ -258,6 +231,7 @@ blockquote {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+
   i {
     font-size: 10rem;
     position: absolute;
@@ -266,6 +240,7 @@ blockquote {
     opacity: 0.2;
     color: var(--sub-color);
   }
+
   h3 {
     font-size: var(--xlg-font);
     font-weight: 700;
@@ -273,13 +248,16 @@ blockquote {
     color: var(--sub-color);
   }
 }
+
 .element {
   text-align: center;
+
   img {
     width: 80px;
     object-fit: cover;
   }
 }
+
 .video-container {
   .video {
     background-color: var(--light-grey-color);
@@ -287,9 +265,11 @@ blockquote {
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover i {
       color: var(--dark-grey-color) !important;
     }
+
     i {
       pointer-events: all;
       position: absolute;
@@ -299,19 +279,23 @@ blockquote {
       transition: all ease-in-out 0.15s;
     }
   }
+
   .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     h3 {
       font-weight: 700;
       color: var(--sub-color);
       font-size: var(--xxlg-font);
       margin-bottom: 10px;
     }
+
     ul {
       border: 2px dashed var(--sub-color);
       padding: 20px;
+
       li {
         list-style-type: none !important;
         font-size: var(--lg-font);
@@ -319,10 +303,12 @@ blockquote {
         display: flex;
         align-items: flex-start;
         gap: 10px;
+
         i {
           color: var(--sub-color);
           margin-top: 8px;
         }
+
         p {
           font-size: var(--lg-font);
           line-height: 2;
@@ -331,20 +317,24 @@ blockquote {
     }
   }
 }
+
 .benefits,
 .takeaway {
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
+
   h3 {
     font-size: var(--xlg-font);
     font-weight: 700;
     color: var(--sub-color);
     margin-bottom: 10px;
   }
+
   ul {
     list-style-type: none !important;
+
     li {
       list-style-type: none !important;
       font-size: var(--lg-font);
@@ -352,6 +342,7 @@ blockquote {
       display: flex;
       align-items: flex-start;
       gap: 10px;
+
       i {
         color: var(--sub-color);
         margin-top: 8px;
@@ -359,6 +350,7 @@ blockquote {
     }
   }
 }
+
 .gallery {
   h3 {
     text-align: center;
@@ -367,6 +359,7 @@ blockquote {
     font-weight: 700;
     margin-bottom: 20px;
   }
+
   img {
     aspect-ratio: 4/3;
     object-fit: cover;

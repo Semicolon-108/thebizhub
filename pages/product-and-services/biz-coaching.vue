@@ -2,9 +2,7 @@
   <div>
     <section>
       <div class="container video-container">
-        <div
-          class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile"
-        >
+        <div class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile">
           <!-- <div class="video">
             <iframe
               width="560"
@@ -26,12 +24,10 @@
                 ແນວທາງໃນການເຮັດທຸລະກິດ
               </li>
               <li>
-                <i class="fa-solid fa-square-check"></i
-                >ເຄື່ອງມືໃນການບໍລິຫານທຸລະກິດ
+                <i class="fa-solid fa-square-check"></i>ເຄື່ອງມືໃນການບໍລິຫານທຸລະກິດ
               </li>
               <li>
-                <i class="fa-solid fa-square-check"></i
-                >ເສີມສ້າງຄວາມເຂັ້ມແຂງໃນການບໍລິຫານທຸລະກິດ
+                <i class="fa-solid fa-square-check"></i>ເສີມສ້າງຄວາມເຂັ້ມແຂງໃນການບໍລິຫານທຸລະກິດ
               </li>
             </ul>
 
@@ -39,11 +35,8 @@
               <h3>{{ $t("contact_us") }}</h3>
               <div class="icons">
                 <a href="https://wa.me/8562056508160">
-                  <i class="fa-brands fa-square-whatsapp"></i
-                ></a>
-                <a href="http://m.me/100091801856212"
-                  ><i class="fa-brands fa-facebook-messenger"></i
-                ></a>
+                  <i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="http://m.me/100091801856212"><i class="fa-brands fa-facebook-messenger"></i></a>
               </div>
             </div>
 
@@ -120,8 +113,7 @@
                 (Business Identity)
               </li>
               <li>
-                <i class="fa-solid fa-square-check"></i
-                >ການສໍາຫຼວດຕະຫຼາດສໍາລັບທຸລະກິດ (Market Survey)
+                <i class="fa-solid fa-square-check"></i>ການສໍາຫຼວດຕະຫຼາດສໍາລັບທຸລະກິດ (Market Survey)
               </li>
               <li>
                 <i class="fa-solid fa-square-check"></i>ທໍາຄວາມເຂົ້າໃຈກັບລູກຄ້າ
@@ -140,8 +132,7 @@
                 ໜ້າທີ່ຫຼັກຂອງການເຮັດທຸລະກິດ (Team & key roles)
               </li>
               <li>
-                <i class="fa-solid fa-square-check"></i
-                >ການວາງແຜນທຸລະກິດສໍາລັບທຸລະກິດ (Future thinking)
+                <i class="fa-solid fa-square-check"></i>ການວາງແຜນທຸລະກິດສໍາລັບທຸລະກິດ (Future thinking)
               </li>
             </ul>
           </div>
@@ -182,65 +173,63 @@
         </div>
       </div>
     </section>
-
     <section>
       <div class="container">
-        <div class="gallery">
-          <h3>ຜົນງານທີ່ຜ່ານມາ</h3>
-          <Swiper
-            :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
-            :slides-per-view="2"
-            :space-between="20"
-            :loop="false"
-            :effect="'creative'"
-            navigation
-            :pagination="{
+        <div class="gallery" v-for="(i, indx) in info" :key="indx">
+          <h3>{{ i.title }}</h3>
+          <Swiper :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]" :slides-per-view="2" :space-between="20"
+            :loop="false" :effect="'creative'" navigation :pagination="{
               clickable: true,
               el: '.swiper-pagination',
-            }"
-            :autoplay="{
-              delay: 8000,
-              disableOnInteraction: true,
-            }"
-          >
-            <SwiperSlide
-              ><img src="../../assets/images/biz-coaching/biz-coaching-1.jpg"
-            /></SwiperSlide>
-            <SwiperSlide
-              ><img src="../../assets/images/biz-coaching/biz-coaching-2.jpg"
-            /></SwiperSlide>
-            <SwiperSlide
-              ><img src="../../assets/images/biz-coaching/biz-coaching-3.jpg"
-            /></SwiperSlide>
-            <SwiperSlide
-              ><img src="../../assets/images/biz-coaching/biz-coaching-4.jpg"
-            /></SwiperSlide>
-            <SwiperSlide
-              ><img src="../../assets/images/biz-coaching/biz-coaching-5.jpg"
-            /></SwiperSlide>
-            <SwiperSlide
-              ><img src="../../assets/images/biz-coaching/biz-coaching-6.jpg"
-            /></SwiperSlide>
-            <SwiperSlide
-              ><img src="../../assets/images/biz-coaching/biz-coaching-7.jpg"
-            /></SwiperSlide>
+            }" :autoplay="{
+  delay: 8000, disableOnInteraction: true,
+}">
+            <SwiperSlide v-for="o in i.image" @click="ShowGallery = true"><img :src="urlImage + o" /></SwiperSlide>
           </Swiper>
+          <Gallery :data="i.image" v-if="ShowGallery" @closeShowGallery="ShowGallery = false" />
         </div>
       </div>
+
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
 import patternDivider from "./pattern.vue";
+import Gallery from "../about-us/gallery.vue";
+const axios = useNuxtApp().$axios;
+const urlImage = useNuxtApp().$imageURL;
+import { useI18n } from "vue-i18n";
+const { locale }: any = useI18n();
+const isLang = ref<any>();
+const ShowGallery = ref<any>(false);
+const info = ref<any>([])
+const area = ref<any>("Business Coaching")
+const fetch = async () => {
+  await axios.post(`get-achievement-api?lang=${isLang.value}&area=${area.value}`).then((res: any) => {
+    if (res) {
+      info.value = res.data.info;
+    }
+  });
+};
+watch(
+  () => locale.value,
+  (value) => {
+    isLang.value = value;
+    fetch();
+  },
+  { immediate: true, deep: true }
+);
 </script>
 
 <style lang="scss" scoped>
 section {
   padding: 4rem 2rem;
+
   @include mobile {
     padding: 1rem;
   }
+
   .section-title {
     font-weight: 700;
     color: var(--sub-color);
@@ -249,15 +238,19 @@ section {
     margin-bottom: 2rem;
   }
 }
+
 .contact {
   margin-top: 20px;
+
   h3 {
     font-size: var(--lg-font) !important;
     line-height: 1;
   }
+
   .icons {
     display: flex;
     gap: 20px;
+
     i {
       cursor: pointer;
       font-size: 2rem;
@@ -265,6 +258,7 @@ section {
     }
   }
 }
+
 blockquote {
   text-align: center;
   line-height: 2;
@@ -273,6 +267,7 @@ blockquote {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+
   i {
     font-size: 10rem;
     position: absolute;
@@ -281,6 +276,7 @@ blockquote {
     opacity: 0.2;
     color: var(--sub-color);
   }
+
   h3 {
     font-size: var(--xlg-font);
     font-weight: 700;
@@ -288,13 +284,16 @@ blockquote {
     color: var(--sub-color);
   }
 }
+
 .element {
   text-align: center;
+
   img {
     width: 80px;
     object-fit: cover;
   }
 }
+
 .video-container {
   .video {
     background-color: var(--light-grey-color);
@@ -302,9 +301,11 @@ blockquote {
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover i {
       color: var(--dark-grey-color) !important;
     }
+
     i {
       pointer-events: all;
       position: absolute;
@@ -314,19 +315,23 @@ blockquote {
       transition: all ease-in-out 0.15s;
     }
   }
+
   .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     h3 {
       font-weight: 700;
       color: var(--sub-color);
       font-size: var(--xxlg-font);
       margin-bottom: 10px;
     }
+
     ul {
       border: 2px dashed var(--sub-color);
       padding: 20px;
+
       li {
         list-style-type: none !important;
         font-size: var(--lg-font);
@@ -334,10 +339,12 @@ blockquote {
         display: flex;
         align-items: flex-start;
         gap: 10px;
+
         i {
           color: var(--sub-color);
           margin-top: 8px;
         }
+
         p {
           font-size: var(--lg-font);
           line-height: 2;
@@ -346,20 +353,24 @@ blockquote {
     }
   }
 }
+
 .benefits,
 .takeaway {
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
+
   h3 {
     font-size: var(--xlg-font);
     font-weight: 700;
     color: var(--sub-color);
     margin-bottom: 10px;
   }
+
   ul {
     list-style-type: none !important;
+
     li {
       list-style-type: none !important;
       font-size: var(--lg-font);
@@ -367,6 +378,7 @@ blockquote {
       display: flex;
       align-items: flex-start;
       gap: 10px;
+
       i {
         color: var(--sub-color);
         margin-top: 8px;
@@ -374,6 +386,7 @@ blockquote {
     }
   }
 }
+
 .gallery {
   h3 {
     text-align: center;
@@ -382,6 +395,7 @@ blockquote {
     font-weight: 700;
     margin-bottom: 20px;
   }
+
   img {
     aspect-ratio: 4/3;
     object-fit: cover;

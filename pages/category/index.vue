@@ -2,6 +2,7 @@
   <section>
     <div class="container">
       <h1 class="page-title">{{ routerName }}</h1>
+      <p v-if="detail">{{ detail }}</p>
       <CategoryCardList :info="info" />
     </div>
   </section>
@@ -23,6 +24,11 @@ const totals = ref<any>(0);
 const msgError = ref<any>();
 const search = ref<any>("");
 const routerName = ref<any>("")
+const detail = ref<any>("")
+import { useI18n } from "vue-i18n";
+const { locale }: any = useI18n();
+const isLang = ref<any>();
+
 const fetchCategory = async () => {
   const data = await axios.post(`get-reuses-list/Category`);
   const isFilter = data.data.info.filter((f: any) => !f.groupStatus);
@@ -50,7 +56,7 @@ const fetch = async () => {
 
 const isFilter = () => {
   const cateName = route.query.is;
-  routerName.value = route.query.is
+  // routerName.value = route.query.is
   const events = "Events "
   const update = "Update";
   if (cateName === update) {
@@ -58,14 +64,13 @@ const isFilter = () => {
     categoryFilter.value = "";
   } else if (cateName === events) {
     // 6514fbff51ce087ae07926dc
-    routerName.value = "Events & Activities"
+    // routerName.value = "Events & Activities"
     categoryFilter.value = "6514fbff51ce087ae07926dc"
     search.value = "";
   } else {
     search.value = "";
     const dataEn = isCate.value.find((i: any) => i.name === cateName);
     const dataLao = isCate.value.find((i: any) => i.laoName === cateName);
-
     if (dataEn) {
       categoryFilter.value = dataEn._id;
       search.value = "";
@@ -78,19 +83,25 @@ const isFilter = () => {
     }
   }
 };
-
+const getById = async () => {
+  const res = await axios.post(`edit-reuse?_id=${categoryFilter.value}&type=Category&lang=${isLang.value}`);
+  routerName.value = res.data.info.name;
+  detail.value = res.data.info.detail
+}
 //onMounted(async () => {
 await fetchCategory();
 isFilter();
 await fetch();
 // });
 
-watch(() => route.path, () => {
+watch(() => [route.path, locale.value], ([value1, value2]) => {
+  isLang.value = value2
   isFilter();
   fetch();
+  getById()
 },
-  { deep: true }
-);
+  { immediate: true, deep: true }
+)
 </script>
 
 <style lang="scss" scoped>
