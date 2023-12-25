@@ -2,7 +2,7 @@
   <section class="section">
     <div class="bg is-hidden-mobile"></div>
     <div class="container">
-      <h1 class="page-title">Register</h1>
+      <h1 class="page-title">{{ $t("register") }}</h1>
       <div class="grids is-2-desktop is-1-mobile margin-top-30 gap-30-desktop">
         <div class="left">
           <form
@@ -11,13 +11,13 @@
             @submit.prevent="register()"
           >
             <div class="field">
-              <label for="">Name <span>*</span></label>
+              <label for="">{{ $t("fullname") }} <span>*</span></label>
               <div class="control">
                 <input
                   type="text"
                   v-model="state.name"
                   class="input"
-                  placeholder="Name"
+                  :placeholder="$t('fullname')"
                 />
                 <div v-if="v$.name.$error" class="err">
                   {{ v$.name.required.$message }}
@@ -25,7 +25,7 @@
               </div>
             </div>
             <div class="field">
-              <label for="">Year Of Birth: <span>*</span></label>
+              <label for="">{{ $t("dob") }} <span>*</span></label>
               <div class="control">
                 <input
                   type="number"
@@ -39,7 +39,7 @@
               </div>
             </div>
             <div class="field">
-              <label for="">Mobile number (020) <span>*</span></label>
+              <label for="">{{ $t("contact_number") }} <span>*</span></label>
               <div class="control">
                 <input
                   type="number"
@@ -53,7 +53,7 @@
               </div>
             </div>
             <div class="field">
-              <label for="">Email <span>*</span></label>
+              <label for="">{{ $t("email") }} <span>*</span></label>
               <div class="control">
                 <input
                   type="text"
@@ -67,7 +67,7 @@
               </div>
             </div>
             <div class="field">
-              <label for="">Province <span>*</span></label>
+              <label for="">{{ $t("current_province") }} <span>*</span></label>
               <div class="control">
                 <div class="select">
                   <select v-model="state.province">
@@ -87,7 +87,7 @@
               </div>
             </div>
             <div class="field">
-              <label for="">Occupation <span>*</span></label>
+              <label for="">{{ $t("occupation") }} <span>*</span></label>
               <div class="control">
                 <div class="select">
                   <select v-model="state.occupation">
@@ -107,13 +107,13 @@
               </div>
             </div>
             <div class="field">
-              <label for="">Password <span>*</span></label>
+              <label for="">{{ $t("password") }} <span>*</span></label>
               <div class="control">
                 <input
                   type="text"
                   v-model="state.password"
                   class="input"
-                  placeholder="password"
+                  :placeholder="$t('password')"
                 />
                 <div v-if="v$.password.$error" class="err">
                   {{ v$.password.required.$message }}
@@ -121,13 +121,13 @@
               </div>
             </div>
             <div class="field">
-              <label for="">Confirm Password <span>*</span></label>
+              <label for="">{{ $t("confirm_password") }} <span>*</span></label>
               <div class="control">
                 <input
                   type="text"
                   v-model="state.confirmPassword"
                   class="input"
-                  placeholder="Re-type password again"
+                  :placeholder="$t('confirm_password')"
                 />
                 <div v-if="v$.confirmPassword.$error" class="err">
                   {{ v$.confirmPassword.required.$message }}
@@ -143,12 +143,12 @@
             class="button main margin-top-20 margin-bottom-10"
             @click="register()"
           >
-            Regsiter
+            {{ $t("register") }}
           </button>
 
           <p class="note">
-            Already have an account?
-            <a @click="router.push({ path: 'login' })">Login</a>
+            {{ $t("have_account") }}
+            <a @click="router.push({ path: 'login' })">{{ $t("login") }}</a>
           </p>
         </div>
         <div class="right">

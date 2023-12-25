@@ -2,32 +2,36 @@
   <section class="section">
     <div class="bg is-hidden-mobile"></div>
     <div class="container">
-      <h1 class="page-title">Login</h1>
+      <h1 class="page-title">{{ $t("login") }}</h1>
 
       <div class="grids is-5-desktop is-1-mobile margin-top-30 gap-30-desktop">
         <div class="left span-2-desktop">
           <form action="" class="grids is-1-desktop is-1-mobile gap-20-desktop">
             <div class="field">
-              <label for="">Mobile number (020) <span>*</span></label>
+              <label for=""> {{ $t("contact_number") }} <span>*</span></label>
               <div class="control">
                 <input type="text" class="input" placeholder="123456678" />
               </div>
             </div>
             <div class="field">
-              <label for="">Password <span>*</span></label>
+              <label for=""> {{ $t("password") }} <span>*</span></label>
               <div class="control">
                 <input type="text" class="input" placeholder="password" />
-                <NuxtLink to="password-recovery">Forgot Password</NuxtLink>
+                <NuxtLink to="password-recovery">
+                  {{ $t("forgot_password") }}</NuxtLink
+                >
               </div>
             </div>
           </form>
           <button class="button main margin-top-20 margin-bottom-10">
-            Login
+            {{ $t("login") }}
           </button>
 
           <p class="note">
-            Don't have an account?
-            <a @click="router.push({ path: 'register' })">Register</a>
+            {{ $t("dont_have_account") }}
+            <a @click="router.push({ path: 'register' })">{{
+              $t("register")
+            }}</a>
           </p>
         </div>
         <div class="right span-3-desktop">

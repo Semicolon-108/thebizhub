@@ -2,7 +2,9 @@
   <div>
     <section>
       <div class="container video-container">
-        <div class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile">
+        <div
+          class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile"
+        >
           <!-- <div class="video">
             <iframe
               width="560"
@@ -30,8 +32,11 @@
               <h3>{{ $t("contact_us") }}</h3>
               <div class="icons">
                 <a href="https://wa.me/8562056508160">
-                  <i class="fa-brands fa-square-whatsapp"></i></a>
-                <a href="http://m.me/100091801856212"><i class="fa-brands fa-facebook-messenger"></i></a>
+                  <i class="fa-brands fa-square-whatsapp"></i
+                ></a>
+                <a href="http://m.me/100091801856212"
+                  ><i class="fa-brands fa-facebook-messenger"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -63,15 +68,13 @@
       </div>
     </section> -->
 
-    <section>
+    <!-- <section>
       <div class="container">
         <div class="grids is-2-desktop gap-10-desktop">
           <div class="element">
-            <!-- <img src="../../assets/images/services/about/Enterpreneurs-story_Page_1.jpg" /> -->
             <p>ບໍລິສັດ/ອົງກອນ</p>
           </div>
           <div class="element">
-            <!-- <img src="../../assets/images/services/about/Enterpreneurs-story_Page_2.jpg" alt="" /> -->
             <p>
               ໂຄງການທີ່ປິ່ນອ້ອມວຽກງານ ການປະກອບອາຊີບດ້ວຍຕົນເອງ ແລະ
               ການປະກອບທຸລະກິດ
@@ -79,23 +82,37 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section>
       <div class="container">
         <div class="gallery" v-for="(i, indx) in info" :key="indx">
-          <h3>{{i.title}}</h3>
-          <Swiper :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]" :slides-per-view="2" :space-between="20"
-            :loop="false" :effect="'creative'" navigation :pagination="{
+          <h3>{{ i.title }}</h3>
+          <Swiper
+            :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
+            :slides-per-view="2"
+            :space-between="20"
+            :loop="false"
+            :effect="'creative'"
+            navigation
+            :pagination="{
               clickable: true,
               el: '.swiper-pagination',
-            }" :autoplay="{
-  delay: 8000,
-  disableOnInteraction: true,
-}">
-            <SwiperSlide v-for="o in i.image" @click="ShowGallery = true"><img :src="urlImage + o" /></SwiperSlide>
+            }"
+            :autoplay="{
+              delay: 8000,
+              disableOnInteraction: true,
+            }"
+          >
+            <SwiperSlide v-for="o in i.image" @click="ShowGallery = true"
+              ><img :src="urlImage + o"
+            /></SwiperSlide>
           </Swiper>
-          <Gallery :data="i.image" v-if="ShowGallery" @closeShowGallery="ShowGallery = false" />
+          <Gallery
+            :data="i.image"
+            v-if="ShowGallery"
+            @closeShowGallery="ShowGallery = false"
+          />
         </div>
       </div>
     </section>
@@ -111,14 +128,16 @@ import { useI18n } from "vue-i18n";
 const { locale }: any = useI18n();
 const isLang = ref<any>();
 const ShowGallery = ref<any>(false);
-const info = ref<any>([])
-const area = ref<any>("Project/Business Consultancy")
+const info = ref<any>([]);
+const area = ref<any>("Project/Business Consultancy");
 const fetch = async () => {
-  await axios.post(`get-achievement-api?lang=${isLang.value}&area=${area.value}`).then((res: any) => {
-    if (res) {
-      info.value = res.data.info;
-    }
-  });
+  await axios
+    .post(`get-achievement-api?lang=${isLang.value}&area=${area.value}`)
+    .then((res: any) => {
+      if (res) {
+        info.value = res.data.info;
+      }
+    });
 };
 watch(
   () => locale.value,

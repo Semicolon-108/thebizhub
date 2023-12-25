@@ -27,7 +27,7 @@ export const language = [
   {
     key: "register",
     la: "ລົງທະບຽນ",
-    en: "Sign in",
+    en: "Register",
   },
   {
     key: "fullname",
@@ -70,9 +70,35 @@ export const language = [
     en: "Password",
   },
   {
+    key: "confirm_password",
+    la: "ຢືນຢັນລະຫັດຜ່ານ",
+    en: "Confirm Password",
+  },
+  {
+    key: "forgot_password",
+    la: "ຂ້ອຍລືມລະຫັດຜ່ານ",
+    en: "Forgot Password",
+  },
+  {
+    key: "contact_information",
+    la: "ຂໍ້ມູນຕິດຕໍ່",
+    en: "Contact Information",
+  },
+
+  {
     key: "confirm",
     la: "ຢືນຢັນ",
     en: "Submit",
+  },
+  {
+    key: "have_account",
+    la: "ຖ້າເປັນເປັນສະມາຊິກແລ້ວ",
+    en: "Already have an account?",
+  },
+  {
+    key: "dont_have_account",
+    la: "ຍັງບໍ່ໄດ້ເປັນສະມາຊິກເທື່ອ?",
+    en: "Don't have an account?",
   },
   {
     key: "about_us",
@@ -258,6 +284,6 @@ export const language = [
   {
     key: "more_detail",
     la: "ລາຍລະອຽດ",
-    en: "More detail"
-  }
+    en: "More detail",
+  },
 ];

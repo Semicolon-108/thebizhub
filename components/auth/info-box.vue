@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <h3 class="box-title margin-bottom-10">Contact Information</h3>
+    <h3 class="box-title margin-bottom-10">{{ $t("contact_information") }}</h3>
     <ul>
       <li>
         <span><i class="fa-solid fa-mobile"></i></span>

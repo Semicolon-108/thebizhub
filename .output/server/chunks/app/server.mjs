@@ -581,7 +581,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-235d14a5.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-03ad5035.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -605,7 +605,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/login-c15f2d4c.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/login-c10bd68f.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-password-recovery",
@@ -613,7 +613,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/password-recovery-dc92a2f5.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/password-recovery-f83df6f6.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-register",
@@ -621,7 +621,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/register-c81428fb.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/register-d390086b.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-detail-id",
@@ -645,7 +645,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-cf9a7159.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-5aa6cc64.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -653,7 +653,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-dacb278f.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-4c197962.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -661,7 +661,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-coaching-d99b2c44.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-coaching-113df137.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
@@ -669,7 +669,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-course-61f5477f.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-course-e56100b6.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
@@ -685,7 +685,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/project-business-consultant-98fea3df.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/project-business-consultant-2b35bdea.mjs').then((m) => m.default || m)
   },
   {
     name: "search",
@@ -1039,7 +1039,7 @@ const language = [
   {
     key: "register",
     la: "ລົງທະບຽນ",
-    en: "Sign in"
+    en: "Register"
   },
   {
     key: "fullname",
@@ -1082,9 +1082,34 @@ const language = [
     en: "Password"
   },
   {
+    key: "confirm_password",
+    la: "ຢືນຢັນລະຫັດຜ່ານ",
+    en: "Confirm Password"
+  },
+  {
+    key: "forgot_password",
+    la: "ຂ້ອຍລືມລະຫັດຜ່ານ",
+    en: "Forgot Password"
+  },
+  {
+    key: "contact_information",
+    la: "ຂໍ້ມູນຕິດຕໍ່",
+    en: "Contact Information"
+  },
+  {
     key: "confirm",
     la: "ຢືນຢັນ",
     en: "Submit"
+  },
+  {
+    key: "have_account",
+    la: "ຖ້າເປັນເປັນສະມາຊິກແລ້ວ",
+    en: "Already have an account?"
+  },
+  {
+    key: "dont_have_account",
+    la: "ຍັງບໍ່ໄດ້ເປັນສະມາຊິກເທື່ອ?",
+    en: "Don't have an account?"
   },
   {
     key: "about_us",
@@ -1265,6 +1290,11 @@ const language = [
     key: "about_mission_text",
     la: "ເພື່ອສະໜອງບໍລິການໃຫ້ຄຳປຶກສາ, ຂໍ້ມູນຂ່າວສານທີ່ຈຳເປັນ, ການຝຶກອົບຮົມ ແລະ ເຄື່ອງມືທາງທຸລະກິດ ເພື່ອສ້າງຄວາມເຂັ້ມແຂງໃຫ້ກັບທຸລະກິດ ແລະ ສ້າງການປ່ຽນແປງທີ່ດີສູ່ສັງຄົມ.",
     en: "​​To Provide Consulting Services, Essential Information, Courses and Business tools to strengthen Businesses and Create Positive Changes in the Community."
+  },
+  {
+    key: "more_detail",
+    la: "ລາຍລະອຽດ",
+    en: "More detail"
   }
 ];
 const getKeyFunc = (lang) => {
