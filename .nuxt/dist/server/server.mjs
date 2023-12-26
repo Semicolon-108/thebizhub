@@ -486,7 +486,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/index-03ad5035.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-e4812c8e.js").then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -494,7 +494,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/product-and-services-b17f6dd7.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/product-and-services-191089dd.js").then((m) => m.default || m)
   },
   {
     name: "about-us-works",
@@ -566,7 +566,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/biz-coaching-216146a2.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/biz-coaching-d7c5549a.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
