@@ -273,7 +273,7 @@ section {
     color: #fff;
   }
   &.wing-bg {
-    background-image: url("../assets/images/bg/wing-bg.jpg");
+    background-image: url("../assets/images/bg/wing-bg.png");
     background-position: cover;
     background-size: cover;
     color: #fff;

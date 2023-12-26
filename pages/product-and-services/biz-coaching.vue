@@ -2,7 +2,9 @@
   <div>
     <section>
       <div class="container video-container">
-        <div class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile">
+        <div
+          class="grids is-2-desktop gap-30-desktop is-1-mobile gap-10-mobile"
+        >
           <!-- <div class="video">
             <iframe
               width="560"
@@ -24,10 +26,12 @@
                 ແນວທາງໃນການເຮັດທຸລະກິດ
               </li>
               <li>
-                <i class="fa-solid fa-square-check"></i>ເຄື່ອງມືໃນການບໍລິຫານທຸລະກິດ
+                <i class="fa-solid fa-square-check"></i
+                >ເຄື່ອງມືໃນການບໍລິຫານທຸລະກິດ
               </li>
               <li>
-                <i class="fa-solid fa-square-check"></i>ເສີມສ້າງຄວາມເຂັ້ມແຂງໃນການບໍລິຫານທຸລະກິດ
+                <i class="fa-solid fa-square-check"></i
+                >ເສີມສ້າງຄວາມເຂັ້ມແຂງໃນການບໍລິຫານທຸລະກິດ
               </li>
             </ul>
 
@@ -35,8 +39,11 @@
               <h3>{{ $t("contact_us") }}</h3>
               <div class="icons">
                 <a href="https://wa.me/8562056508160">
-                  <i class="fa-brands fa-square-whatsapp"></i></a>
-                <a href="http://m.me/100091801856212"><i class="fa-brands fa-facebook-messenger"></i></a>
+                  <i class="fa-brands fa-square-whatsapp"></i
+                ></a>
+                <a href="http://m.me/100091801856212"
+                  ><i class="fa-brands fa-facebook-messenger"></i
+                ></a>
               </div>
             </div>
 
@@ -113,7 +120,8 @@
                 (Business Identity)
               </li>
               <li>
-                <i class="fa-solid fa-square-check"></i>ການສໍາຫຼວດຕະຫຼາດສໍາລັບທຸລະກິດ (Market Survey)
+                <i class="fa-solid fa-square-check"></i
+                >ການສໍາຫຼວດຕະຫຼາດສໍາລັບທຸລະກິດ (Market Survey)
               </li>
               <li>
                 <i class="fa-solid fa-square-check"></i>ທໍາຄວາມເຂົ້າໃຈກັບລູກຄ້າ
@@ -132,7 +140,8 @@
                 ໜ້າທີ່ຫຼັກຂອງການເຮັດທຸລະກິດ (Team & key roles)
               </li>
               <li>
-                <i class="fa-solid fa-square-check"></i>ການວາງແຜນທຸລະກິດສໍາລັບທຸລະກິດ (Future thinking)
+                <i class="fa-solid fa-square-check"></i
+                >ການວາງແຜນທຸລະກິດສໍາລັບທຸລະກິດ (Future thinking)
               </li>
             </ul>
           </div>
@@ -175,21 +184,36 @@
     </section>
     <section>
       <div class="container">
+        <h3 class="section-title">ຜົນງານທີ່ຜ່ານມາ</h3>
         <div class="gallery" v-for="(i, indx) in info" :key="indx">
           <h3>{{ i.title }}</h3>
-          <Swiper :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]" :slides-per-view="2" :space-between="20"
-            :loop="false" :effect="'creative'" navigation :pagination="{
+          <Swiper
+            :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
+            :slides-per-view="2"
+            :space-between="20"
+            :loop="false"
+            :effect="'creative'"
+            navigation
+            :pagination="{
               clickable: true,
               el: '.swiper-pagination',
-            }" :autoplay="{
-  delay: 8000, disableOnInteraction: true,
-}">
-            <SwiperSlide v-for="o in i.image" @click="ShowGallery = true"><img :src="urlImage + o" /></SwiperSlide>
+            }"
+            :autoplay="{
+              delay: 8000,
+              disableOnInteraction: true,
+            }"
+          >
+            <SwiperSlide v-for="o in i.image" @click="ShowGallery = true"
+              ><img :src="urlImage + o"
+            /></SwiperSlide>
           </Swiper>
-          <Gallery :data="i.image" v-if="ShowGallery" @closeShowGallery="ShowGallery = false" />
+          <Gallery
+            :data="i.image"
+            v-if="ShowGallery"
+            @closeShowGallery="ShowGallery = false"
+          />
         </div>
       </div>
-
     </section>
   </div>
 </template>
@@ -203,14 +227,16 @@ import { useI18n } from "vue-i18n";
 const { locale }: any = useI18n();
 const isLang = ref<any>();
 const ShowGallery = ref<any>(false);
-const info = ref<any>([])
-const area = ref<any>("Business Coaching")
+const info = ref<any>([]);
+const area = ref<any>("Business Coaching");
 const fetch = async () => {
-  await axios.post(`get-achievement-api?lang=${isLang.value}&area=${area.value}`).then((res: any) => {
-    if (res) {
-      info.value = res.data.info;
-    }
-  });
+  await axios
+    .post(`get-achievement-api?lang=${isLang.value}&area=${area.value}`)
+    .then((res: any) => {
+      if (res) {
+        info.value = res.data.info;
+      }
+    });
 };
 watch(
   () => locale.value,
@@ -388,12 +414,13 @@ blockquote {
 }
 
 .gallery {
+  margin-bottom: 30px;
   h3 {
     text-align: center;
     color: var(--sub-color);
-    font-size: var(--xlg-font);
+    font-size: var(--lg-font);
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   img {

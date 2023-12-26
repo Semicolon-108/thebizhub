@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <h1 class="page-title">{{ routerName }}</h1>
-      <p v-if="detail">{{ detail }}</p>
+      <p class="category-desc" v-if="detail">{{ detail }}</p>
       <CategoryCardList :info="info" />
     </div>
   </section>
@@ -23,8 +23,8 @@ const categoryFilter = ref<any>("");
 const totals = ref<any>(0);
 const msgError = ref<any>();
 const search = ref<any>("");
-const routerName = ref<any>("")
-const detail = ref<any>("")
+const routerName = ref<any>("");
+const detail = ref<any>("");
 import { useI18n } from "vue-i18n";
 const { locale }: any = useI18n();
 const isLang = ref<any>();
@@ -57,7 +57,7 @@ const fetch = async () => {
 const isFilter = () => {
   const cateName = route.query.is;
   // routerName.value = route.query.is
-  const events = "Events "
+  const events = "Events ";
   const update = "Update";
   if (cateName === update) {
     search.value = update;
@@ -65,7 +65,7 @@ const isFilter = () => {
   } else if (cateName === events) {
     // 6514fbff51ce087ae07926dc
     // routerName.value = "Events & Activities"
-    categoryFilter.value = "6514fbff51ce087ae07926dc"
+    categoryFilter.value = "6514fbff51ce087ae07926dc";
     search.value = "";
   } else {
     search.value = "";
@@ -84,27 +84,39 @@ const isFilter = () => {
   }
 };
 const getById = async () => {
-  const res = await axios.post(`edit-reuse?_id=${categoryFilter.value}&type=Category&lang=${isLang.value}`);
+  const res = await axios.post(
+    `edit-reuse?_id=${categoryFilter.value}&type=Category&lang=${isLang.value}`
+  );
   routerName.value = res.data.info.name;
-  detail.value = res.data.info.detail
-}
+  detail.value = res.data.info.detail;
+};
 //onMounted(async () => {
 await fetchCategory();
 isFilter();
 await fetch();
 // });
 
-watch(() => [route.path, locale.value], ([value1, value2]) => {
-  isLang.value = value2
-  isFilter();
-  fetch();
-  getById()
-},
+watch(
+  () => [route.path, locale.value],
+  ([value1, value2]) => {
+    isLang.value = value2;
+    isFilter();
+    fetch();
+    getById();
+  },
   { immediate: true, deep: true }
-)
+);
 </script>
 
 <style lang="scss" scoped>
+.category-desc {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--sub-color);
+  color: #fff;
+  border-radius: 10px;
+}
 .tabs-container {
   display: flex;
   align-items: center;
@@ -148,9 +160,11 @@ watch(() => [route.path, locale.value], ([value1, value2]) => {
     width: 50px;
     align-items: center;
     justify-content: flex-end;
-    background: linear-gradient(270deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
 
     @include mobile {
       display: flex;

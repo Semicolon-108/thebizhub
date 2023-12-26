@@ -645,7 +645,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-5aa6cc64.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-1de2b11e.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -653,7 +653,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-4c197962.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-853ad9ef.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -661,7 +661,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-coaching-113df137.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-coaching-216146a2.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
@@ -669,7 +669,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-course-e56100b6.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-course-4d6128c5.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
@@ -685,7 +685,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/project-business-consultant-2b35bdea.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/project-business-consultant-421ff42e.mjs').then((m) => m.default || m)
   },
   {
     name: "search",

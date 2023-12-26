@@ -68,13 +68,16 @@
       </div>
     </section> -->
 
-    <!-- <section>
+    <section>
       <div class="container">
+        <h3 class="section-title">Project / Business Consultancy ເໝາະກັບໃຜ</h3>
         <div class="grids is-2-desktop gap-10-desktop">
           <div class="element">
+            <img src="../../assets/images/business-consultant/icons/1.png" />
             <p>ບໍລິສັດ/ອົງກອນ</p>
           </div>
           <div class="element">
+            <img src="../../assets/images/business-consultant/icons/2.png" />
             <p>
               ໂຄງການທີ່ປິ່ນອ້ອມວຽກງານ ການປະກອບອາຊີບດ້ວຍຕົນເອງ ແລະ
               ການປະກອບທຸລະກິດ
@@ -82,10 +85,11 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <section>
       <div class="container">
+        <h3 class="section-title">ຜົນງານທີ່ຜ່ານມາ</h3>
         <div class="gallery" v-for="(i, indx) in info" :key="indx">
           <h3>{{ i.title }}</h3>
           <Swiper
@@ -155,6 +159,13 @@ section {
 
   @include mobile {
     padding: 1rem;
+  }
+  .section-title {
+    font-weight: 700;
+    color: var(--sub-color);
+    font-size: var(--xxlg-font);
+    text-align: center;
+    margin-bottom: 2rem;
   }
 }
 
@@ -307,12 +318,13 @@ blockquote {
 }
 
 .gallery {
+  margin-bottom: 30px;
   h3 {
     text-align: center;
     color: var(--sub-color);
-    font-size: var(--xlg-font);
+    font-size: var(--lg-font);
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   img {
