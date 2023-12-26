@@ -244,6 +244,13 @@ section {
   @include mobile {
     padding: 1rem;
   }
+  .section-title {
+    font-weight: 700;
+    color: var(--sub-color);
+    font-size: var(--xxlg-font);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 }
 
 blockquote {

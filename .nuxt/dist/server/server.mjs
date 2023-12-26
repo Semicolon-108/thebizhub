@@ -574,7 +574,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/biz-course-4d6128c5.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/biz-course-9572abeb.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
