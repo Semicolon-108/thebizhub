@@ -5,28 +5,13 @@
     <WhoWeAre />
     <!-- <p>Event and Activity</p>
     <p>BIZ Tool</p> -->
-    <EventsAndActivitys
-      :title="eventsAndActivityTitle"
-      :info="eventsAndActivityInfo"
-      v-show="eventsAndActivityInfo.length"
-    />
-    <BizTool
-      :title="bizToolTitle"
-      :info="bizToolInfo"
-      v-show="bizToolInfo.length"
-    />
-    <Story
-      v-show="enterPreInfo.length"
-      :info="enterPreInfo"
-      :title="enterPreInfoTitle"
-    />
+    <EventsAndActivitys :title="eventsAndActivityTitle" :info="eventsAndActivityInfo"
+      v-show="eventsAndActivityInfo.length" />
+    <BizTool :title="bizToolTitle" :info="bizToolInfo" v-show="bizToolInfo.length" />
+    <Story v-show="enterPreInfo.length" :info="enterPreInfo" :title="enterPreInfoTitle" />
 
     <section class="section">
-      <BizLaws
-        :title="bizLawInfoTItle"
-        :info="bizLawInfo"
-        v-show="bizLawInfo.length"
-      />
+      <BizLaws :title="bizLawInfoTItle" :info="bizLawInfo" v-show="bizLawInfo.length" />
     </section>
 
     <section class="section tsns-bg">
@@ -50,11 +35,8 @@
     </section> -->
 
     <section class="section">
-      <BusinessSupporters
-        :title="businessSupportersTitle"
-        :info="businessSupportersInfo"
-        v-show="businessSupportersInfo.length"
-      />
+      <BusinessSupporters :title="businessSupportersTitle" :info="businessSupportersInfo"
+        v-show="businessSupportersInfo.length" />
     </section>
     <!-- <NewsAndActivitiesInfo
       :title="newActivityTitle"
@@ -265,12 +247,14 @@ section {
   @include mobile {
     padding: 2rem 1rem;
   }
+
   &.tsns-bg {
     background-image: url("../assets/images/bg/tsns-bg.jpg");
     background-position: cover;
     background-size: cover;
     color: #fff;
   }
+
   &.wing-bg {
     background-image: url("../assets/images/bg/wing-bg.png");
     background-position: cover;

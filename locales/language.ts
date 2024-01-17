@@ -300,5 +300,10 @@ export const language = [
     key: 'entrepreneurship',
     la: "ການເປັນຜູ້ປະກອບການ",
     en: "entrepreneurship"
+  },
+  {
+    key:"more",
+    la:"ເພີ່ມຕື່ມ",
+    en:"More"
   }
 ];

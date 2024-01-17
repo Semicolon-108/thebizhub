@@ -67,7 +67,7 @@ const isFilter = () => {
     // routerName.value = "Events & Activities"
     categoryFilter.value = "6514fbff51ce087ae07926dc";
     search.value = "";
-  } else {
+  }  else {
     search.value = "";
     const dataEn = isCate.value.find((i: any) => i.name === cateName);
     const dataLao = isCate.value.find((i: any) => i.laoName === cateName);
@@ -117,6 +117,7 @@ watch(
   color: #fff;
   border-radius: 10px;
 }
+
 .tabs-container {
   display: flex;
   align-items: center;
@@ -160,11 +161,9 @@ watch(
     width: 50px;
     align-items: center;
     justify-content: flex-end;
-    background: linear-gradient(
-      270deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(270deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%);
 
     @include mobile {
       display: flex;

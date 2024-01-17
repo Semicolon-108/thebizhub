@@ -1,7 +1,11 @@
 <template>
   <section>
     <div class="container">
-      <h1 class="section-title">{{ title }}</h1>
+      <h1 class="section-title">{{ title }}
+        <NuxtLink :to="{ path: '/category', query: { is: `${title}` } }">
+          <button class="main margin-top-20">{{ $t("more") }}</button>
+        </NuxtLink>
+      </h1>
       <ul>
         <li v-for="(i, index) in info" :key="index">
           <div class="card dark" @click="router.push(`/blog-detail/${i._id}`)">
