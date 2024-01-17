@@ -581,7 +581,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-03ad5035.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-e4812c8e.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -589,7 +589,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/product-and-services-b17f6dd7.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/product-and-services-191089dd.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us-works",
@@ -605,7 +605,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/login-c10bd68f.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/login-beeda1b1.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-password-recovery",
@@ -613,7 +613,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/password-recovery-f83df6f6.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/password-recovery-a9c1ffbe.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-register",
@@ -621,7 +621,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/register-d390086b.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/register-b3716ba0.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-detail-id",
@@ -661,7 +661,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-coaching-216146a2.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-coaching-5d59926d.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
@@ -669,7 +669,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-course-9572abeb.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-course-86427d62.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
@@ -685,7 +685,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/project-business-consultant-421ff42e.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/project-business-consultant-0a22b8c1.mjs').then((m) => m.default || m)
   },
   {
     name: "search",
