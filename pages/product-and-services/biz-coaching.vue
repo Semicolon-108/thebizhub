@@ -146,7 +146,7 @@
             </ul>
           </div>
           <div>
-            <img src="../../assets/images/biz-coaching/1-01.png" />
+            <img src="../../assets/images/biz-coaching/Artwork-02.png" />
           </div>
         </div>
         <patternDivider style="margin-top: 30px" />
@@ -157,7 +157,7 @@
       <div class="container">
         <div class="grids is-2-desktop gap-50-desktop">
           <div>
-            <img src="../../assets/images/biz-coaching/1-02.png" />
+            <img src="../../assets/images/biz-coaching/Artwork-01.png" />
           </div>
           <div class="takeaway">
             <h3>ສິ່ງທີ່ຈະໄດ້ຮັບຈາກ BIZ COACHING</h3>
@@ -185,28 +185,33 @@
     <section>
       <div class="container">
         <h3 class="section-title">ຜົນງານທີ່ຜ່ານມາ</h3>
-        <div class="gallery" v-for="(i, indx) in info" :key="indx">
-          <h3>{{ i.title }}</h3>
-          <Swiper
-            :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
-            :slides-per-view="2"
-            :space-between="20"
-            :loop="false"
-            :effect="'creative'"
-            navigation
-            :pagination="{
-              clickable: true,
-              el: '.swiper-pagination',
-            }"
-            :autoplay="{
-              delay: 8000,
-              disableOnInteraction: true,
-            }"
-          >
-            <SwiperSlide v-for="o in i.image" @click="ShowGallery = true"
-              ><img :src="urlImage + o"
-            /></SwiperSlide>
-          </Swiper>
+
+        <div class="work" v-for="(i, indx) in info" :key="indx">
+          <div class="header">
+            <h3>{{ i.title }}</h3>
+          </div>
+          <div class="body">
+            <Swiper
+              :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation]"
+              :slides-per-view="3"
+              :space-between="20"
+              :loop="false"
+              :effect="'creative'"
+              navigation
+              :pagination="{
+                clickable: true,
+                el: '.swiper-pagination',
+              }"
+              :autoplay="{
+                delay: 8000,
+                disableOnInteraction: true,
+              }"
+            >
+              <SwiperSlide v-for="o in i.image" @click="ShowGallery = true"
+                ><img :src="urlImage + o"
+              /></SwiperSlide>
+            </Swiper>
+          </div>
           <Gallery
             :data="i.image"
             v-if="ShowGallery"
@@ -413,19 +418,40 @@ blockquote {
   }
 }
 
-.gallery {
-  margin-bottom: 30px;
-  h3 {
-    text-align: center;
-    color: var(--sub-color);
-    font-size: var(--lg-font);
-    font-weight: 700;
-    margin-bottom: 10px;
+.work {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+
+  overflow: hidden;
+  .header {
+    padding: 20px;
+    color: #fff;
+    background-color: var(--sub-color);
+    border-radius: 30px 30px 0 0;
+
+    h3 {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 10px;
+      font-size: var(--lg-font);
+      max-width: 850px;
+    }
   }
 
-  img {
-    aspect-ratio: 4/3;
-    object-fit: cover;
+  // header
+  .body {
+    padding: 20px !important;
+    border: 3px solid var(--sub-color);
+    border-radius: 0 0 30px 30px;
+    img {
+      display: block;
+      aspect-ratio: 1/1;
+      // height: 300px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
   }
 }
 </style>

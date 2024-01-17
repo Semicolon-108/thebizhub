@@ -40,15 +40,6 @@
 import Gallery from "./gallery.vue";
 const { work } = defineProps(["work"]);
 const urlImage = useNuxtApp().$imageURL;
-
-// const getImageUrl = (imagename) => {
-//   const imageUrl = new URL(
-//     `/assets/images/about-page/${imagename}`,
-//     import.meta.url
-//   ).href;
-//   return imageUrl;
-// };
-
 const ShowGallery = ref<any>(false);
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="box">
-    <h3 class="box-title margin-bottom-10">{{ $t("contact_information") }}</h3>
-    <ul>
+    <h3 class="box-title margin-bottom-10">ຜົນປະໂຫຍດຈາກການເປັນສະມາຊິກ</h3>
+    <!-- <ul>
       <li>
         <span><i class="fa-solid fa-mobile"></i></span>
         <p>020 56463959 | 020 56508160</p>
@@ -19,6 +19,11 @@
           Vientiane Capital, Lao PDR.
         </p>
       </li>
+    </ul> -->
+    <ul>
+      <li>ສະດວກສະບາຍໃນການດາວໂຫຼດ File PDF ( ບົດຮຽນ )</li>
+      <li>ສ່ວນຫຼຸດໃນການເຂົ້າຮ່ວມກິດຈະກໍາ ແລະ ຝຶກອົບຮົມ</li>
+      <li>ການອັບເດດຂໍ້ມູນທີ່ວ່ອງໄວ( E-mail )</li>
     </ul>
   </div>
 
