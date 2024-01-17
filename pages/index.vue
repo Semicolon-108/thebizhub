@@ -105,8 +105,7 @@ const businessSupportersTitle = ref<any>("");
 //end title
 import { useI18n } from "vue-i18n";
 const { locale }: any = useI18n();
-const isLang = ref<any>();
-
+const isLang = ref<any>()
 const fetchMSMEs = async () => {
   const name = "654d868d4040f0af2207e5eb";
   await axios.post(`sme-articles/${name}`).then((res) => {

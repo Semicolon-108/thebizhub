@@ -6,11 +6,11 @@ import content from '../../gql';
         </div>
         <div class="bg"></div>
         <div class="gallery">
-            <ul>
-                <li v-for="(i, index) in data" :key="index">
-                    <img :src="showImage + i" alt="" />
-                </li>
-            </ul>
+            <!-- <ul> -->
+                <!-- <li v-for="(i, index) in data" :key="index"> -->
+                    <img :src="showImage + data" alt="" />
+                <!-- </li> -->
+            <!-- </ul> -->
         </div>
     </div>
 </template>

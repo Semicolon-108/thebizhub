@@ -7,10 +7,8 @@
             <img src="../../assets/images/transparant-bg-logo.png" alt="" />
             <!-- <h3>THE BIZ HUB</h3> -->
           </div>
-          <small class="margin-bottom-15"
-            >1st Floor, 108Hill Building Dongpaina Road, Saphanthong Village,
-            Sisattanak District, Vientiane Capital, Lao PDR.</small
-          >
+          <small class="margin-bottom-15">1st Floor, 108Hill Building Dongpaina Road, Saphanthong Village,
+            Sisattanak District, Vientiane Capital, Lao PDR.</small>
           <small>020 56463959 | 020 56508160</small>
           <small>thebizhub.info@gmail.com</small>
         </li>
@@ -18,10 +16,7 @@
           <h3>{{ $t("navbar_learning") }}</h3>
           <ul>
             <li v-for="(o, index) in learing" :key="index">
-              <NuxtLink
-                :to="{ path: '/category', query: { is: `${o.name}` } }"
-                >{{ o.name }}</NuxtLink
-              >
+              <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }">{{ o.name }}</NuxtLink>
             </li>
           </ul>
         </li>
@@ -29,28 +24,19 @@
           <h3>{{ $t("products") }}</h3>
           <ul>
             <li>
-              <NuxtLink
-                :to="{
-                  path: '/product-and-services/biz-coaching',
-                }"
-                >{{ $t("product_biz_coaching") }}</NuxtLink
-              >
+              <NuxtLink :to="{
+                path: '/product-and-services/biz-coaching',
+              }">{{ $t("product_biz_coaching") }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink
-                :to="{
-                  path: '/product-and-services/biz-course',
-                }"
-                >{{ $t("product_biz_course") }}</NuxtLink
-              >
+              <NuxtLink :to="{
+                path: '/product-and-services/biz-course',
+              }">{{ $t("product_biz_course") }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink
-                :to="{
-                  path: '/product-and-services/project-business-consultant',
-                }"
-                >{{ $t("product_business_consultant") }}</NuxtLink
-              >
+              <NuxtLink :to="{
+                path: '/product-and-services/project-business-consultant',
+              }">{{ $t("product_business_consultant") }}</NuxtLink>
             </li>
           </ul>
 
@@ -58,10 +44,7 @@
             <h3>{{ $t("follow_us") }}</h3>
             <ul>
               <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100091801856212"
-                  target="_blank"
-                >
+                <a href="https://www.facebook.com/profile.php?id=100091801856212" target="_blank">
                   <i class="fa-brands fa-facebook"></i>
                 </a>
               </li>
@@ -102,10 +85,10 @@ const enStatus = ref<any>(false);
 const laoStatus = ref<any>(false);
 const useCookies: any = useCookie("lang");
 const i18n = useI18n();
-i18n.locale.value = useCookies.value || "en";
+i18n.locale.value = useCookies.value || "lao";
 enStatus.value = useCookies.value === "en";
 laoStatus.value = useCookies.value === "lao";
-
+if (!enStatus.value && !laoStatus.value) laoStatus.value = true;
 const fetchProductAndService = async () => {
   const type = "Product & Services";
   await axios
@@ -194,6 +177,7 @@ section {
     li {
       padding: 20px;
       line-height: 1.5;
+
       .logo {
         display: flex;
         align-items: center;

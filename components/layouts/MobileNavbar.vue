@@ -84,13 +84,13 @@ const cateInfo = ref<any>();
 
 const enStatus = ref<any>(false);
 const laoStatus = ref<any>(false);
-const useCookies: any = useCookie("lang");
-const i18n = useI18n();
-i18n.locale.value = useCookies.value || "en";
-enStatus.value = useCookies.value === "en";
-laoStatus.value = useCookies.value === "lao";
-
-const emit = defineEmits(["closeMobileNavbar"]);
+const useCookies: any = useCookie("lang")
+const i18n = useI18n()
+i18n.locale.value = useCookies.value || "lao"
+enStatus.value = useCookies.value === "en"
+laoStatus.value = useCookies.value === "lao"
+if (!enStatus.value && !laoStatus.value) laoStatus.value = true;
+const emit = defineEmits(["closeMobileNavbar"])
 
 const closeMobileNavbar = async () => {
   emit("closeMobileNavbar");

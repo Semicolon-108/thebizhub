@@ -286,4 +286,19 @@ export const language = [
     la: "ລາຍລະອຽດ",
     en: "More detail",
   },
+  {
+    key: "partnerforsuccess",
+    la: "ຄູ່ຮ່ວມງານເພື່ອຄວາມສໍາເລັດ",
+    en: "Partner for success",
+  },
+  {
+    key: "inBusiness",
+    la: "ໃນທຸລະກິດ ແລະ",
+    en: "in business and"
+  },
+  {
+    key: 'entrepreneurship',
+    la: "ການເປັນຜູ້ປະກອບການ",
+    en: "entrepreneurship"
+  }
 ];

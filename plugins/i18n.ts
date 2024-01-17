@@ -19,17 +19,16 @@ const getKeyFunc = (lang: string) => {
 const laKey = getKeyFunc("la");
 const enKey = getKeyFunc("en");
 // console.log(laKey)
-
 export default defineNuxtPlugin(({ vueApp }) => {
   const i18n = createI18n({
     legacy: false,
     globalInjection: true,
-    locale: "en",
+    locale: "lao",
     messages: {
       en: enKey,
-      lao: laKey,
-    },
-  });
+      lao: laKey
+    }
+  })
 
   vueApp.use(i18n);
 });

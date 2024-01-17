@@ -6,6 +6,11 @@
         <li v-for="(i, index) in info" :key="index">
           <img :src="urlImage + i.image" />
           <h3>{{ i.key }}</h3>
+          <br/>
+          <NuxtLink :to="{
+            path: `/${i.link}`,
+          }"> <button class="button main small">{{ $t("more_detail") }}</button>
+          </NuxtLink>
           <!-- <p>
             {{ i.desc }}
           </p>

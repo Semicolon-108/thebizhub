@@ -119,8 +119,8 @@
         />
         <hr class="v" />
         <p class="lang-switch">
-          <a :class="[{ current: enStatus }]" @click="setLan('en')">EN</a>
           <a :class="[{ current: laoStatus }]" @click="setLan('lao')">LA</a>
+          <a :class="[{ current: enStatus }]" @click="setLan('en')">EN</a>
         </p>
         <hr class="v" />
         <div class="button-groups">
@@ -156,10 +156,11 @@ const enStatus = ref<any>(false);
 const laoStatus = ref<any>(false);
 const useCookies: any = useCookie("lang");
 const i18n = useI18n();
-i18n.locale.value = useCookies.value || "en";
+
+i18n.locale.value = useCookies.value || "lao";
 enStatus.value = useCookies.value === "en";
 laoStatus.value = useCookies.value === "lao";
-if (!enStatus.value && !laoStatus.value) enStatus.value = true;
+if (!enStatus.value && !laoStatus.value) laoStatus.value = true;
 const openMobileNav = ref(false);
 
 const fetchProductAndService = async () => {
