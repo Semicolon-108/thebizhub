@@ -653,7 +653,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-0a594024.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-e28d8534.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -1313,7 +1313,7 @@ const language = [
   },
   {
     key: "more",
-    la: "ເພີ່ມຕື່ມ",
+    la: "ບົດຄວາມທັງໝົດ",
     en: "More"
   }
 ];
