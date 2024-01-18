@@ -5,13 +5,28 @@
     <WhoWeAre />
     <!-- <p>Event and Activity</p>
     <p>BIZ Tool</p> -->
-    <EventsAndActivitys :title="eventsAndActivityTitle" :info="eventsAndActivityInfo"
-      v-show="eventsAndActivityInfo.length" />
-    <BizTool :title="bizToolTitle" :info="bizToolInfo" v-show="bizToolInfo.length" />
-    <Story v-show="enterPreInfo.length" :info="enterPreInfo" :title="enterPreInfoTitle" />
+    <EventsAndActivities
+      :title="eventsAndActivityTitle"
+      :info="eventsAndActivityInfo"
+      v-show="eventsAndActivityInfo.length"
+    />
+    <BizTool
+      :title="bizToolTitle"
+      :info="bizToolInfo"
+      v-show="bizToolInfo.length"
+    />
+    <Story
+      v-show="enterPreInfo.length"
+      :info="enterPreInfo"
+      :title="enterPreInfoTitle"
+    />
 
     <section class="section">
-      <BizLaws :title="bizLawInfoTItle" :info="bizLawInfo" v-show="bizLawInfo.length" />
+      <BizLaws
+        :title="bizLawInfoTItle"
+        :info="bizLawInfo"
+        v-show="bizLawInfo.length"
+      />
     </section>
 
     <section class="section tsns-bg">
@@ -35,8 +50,11 @@
     </section> -->
 
     <section class="section">
-      <BusinessSupporters :title="businessSupportersTitle" :info="businessSupportersInfo"
-        v-show="businessSupportersInfo.length" />
+      <BusinessSupporters
+        :title="businessSupportersTitle"
+        :info="businessSupportersInfo"
+        v-show="businessSupportersInfo.length"
+      />
     </section>
     <!-- <NewsAndActivitiesInfo
       :title="newActivityTitle"
@@ -54,7 +72,7 @@ import Story from "../components/homepage/story.vue";
 // import NewsAndActivitiesInfo from "../components/homepage/reuse/column-layout.vue";
 import BizLaws from "~/components/homepage/reuse/column-layout.vue";
 
-import EventsAndActivitys from "../components/homepage/reuse/grids-layout.vue";
+import EventsAndActivities from "../components/homepage/reuse/grids-layout.vue";
 import BizTool from "../components/homepage/reuse/grids-layout.vue";
 import TricksAndTips from "../components/homepage/reuse/grids-layout.vue";
 import SelftEmployment from "../components/homepage/reuse/grids-layout.vue";
@@ -87,7 +105,7 @@ const businessSupportersTitle = ref<any>("");
 //end title
 import { useI18n } from "vue-i18n";
 const { locale }: any = useI18n();
-const isLang = ref<any>()
+const isLang = ref<any>();
 const fetchMSMEs = async () => {
   const name = "654d868d4040f0af2207e5eb";
   await axios.post(`sme-articles/${name}`).then((res) => {
@@ -269,11 +287,24 @@ section {
   max-width: 1024px;
   line-height: 1.5;
 }
-
-.section-title {
-  font-size: var(--xlg-font);
-  font-weight: 700;
-  text-transform: uppercase;
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   margin-bottom: 10px;
+  .section-title {
+    font-size: var(--xlg-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  a {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid var(--border-color);
+  }
 }
 </style>

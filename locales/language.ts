@@ -294,16 +294,16 @@ export const language = [
   {
     key: "inBusiness",
     la: "ໃນທຸລະກິດ ແລະ",
-    en: "in business and"
+    en: "in business and",
   },
   {
-    key: 'entrepreneurship',
+    key: "entrepreneurship",
     la: "ການເປັນຜູ້ປະກອບການ",
-    en: "entrepreneurship"
+    en: "entrepreneurship",
   },
   {
-    key:"more",
-    la:"ເພີ່ມຕື່ມ",
-    en:"More"
-  }
+    key: "more",
+    la: "ບົດຄວາມທັງໝົດ",
+    en: "More",
+  },
 ];

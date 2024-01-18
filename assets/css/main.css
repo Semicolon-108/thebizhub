@@ -28537,7 +28537,8 @@ a {
   }
 }
 
-button {
+button,
+.button {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -28547,19 +28548,23 @@ button {
   white-space: pre;
   font-family: "Roboto", "Nuanta", sans-serif;
 }
-button.small {
+button.small,
+.button.small {
   font-size: clamp(0.8rem, 2.5vw, 0.9rem) !important;
 }
-button.large {
+button.large,
+.button.large {
   font-size: clamp(1.1rem, 2.5vw, 1.2rem);
 }
-button.grey {
+button.grey,
+.button.grey {
   padding: 10px 30px;
   border: none;
   cursor: pointer;
   background-color: hsl(0, 0%, 90%);
 }
-button.main {
+button.main,
+.button.main {
   padding: 10px 30px;
   border: none;
   cursor: pointer;

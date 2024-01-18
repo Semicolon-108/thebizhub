@@ -1,12 +1,12 @@
 <template>
   <section>
     <div class="container">
-      <h1 class="section-title">{{ title }}
+      <div class="section-header">
+        <h1 class="section-title">{{ title }}</h1>
         <NuxtLink :to="{ path: '/category', query: { is: `${title}` } }">
-          <button class="main margin-top-20">{{ $t("more") }}</button>
+          {{ $t("more") }}<i class="fa-regular fa-arrow-right"></i>
         </NuxtLink>
-      </h1>
-
+      </div>
       <ul>
         <li v-for="(i, index) in info" :key="index">
           <div class="card" @click="router.push(`/blog-detail/${i._id}`)">
@@ -35,7 +35,7 @@ const router = useRouter();
 <style lang="scss" scoped>
 ul {
   display: grid;
-  grid-template-columns: repeat(17, 1fr);
+  grid-template-columns: repeat(16, 1fr);
   gap: 20px;
 
   @include mobile {

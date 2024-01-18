@@ -573,7 +573,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/gallery-6aa4083d.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/gallery-697764f2.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us",
@@ -581,7 +581,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-e4812c8e.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-5b60afb4.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -589,7 +589,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/product-and-services-191089dd.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/product-and-services-778ec1a1.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us-works",
@@ -597,7 +597,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/works-65a59e89.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/works-94940a94.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-login",
@@ -605,7 +605,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/login-beeda1b1.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/login-fea5be3b.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-password-recovery",
@@ -613,7 +613,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/password-recovery-a9c1ffbe.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/password-recovery-ad2e4af7.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-register",
@@ -621,7 +621,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/register-b3716ba0.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/register-28805089.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-detail-id",
@@ -645,7 +645,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-1de2b11e.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-ae33180a.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -653,7 +653,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-853ad9ef.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-0a594024.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -661,7 +661,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-coaching-5d59926d.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-coaching-600a1a98.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
@@ -669,7 +669,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-course-86427d62.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-course-dc5e0740.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
@@ -685,7 +685,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/project-business-consultant-0a22b8c1.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/project-business-consultant-8565018b.mjs').then((m) => m.default || m)
   },
   {
     name: "search",
@@ -1295,6 +1295,26 @@ const language = [
     key: "more_detail",
     la: "ລາຍລະອຽດ",
     en: "More detail"
+  },
+  {
+    key: "partnerforsuccess",
+    la: "ຄູ່ຮ່ວມງານເພື່ອຄວາມສໍາເລັດ",
+    en: "Partner for success"
+  },
+  {
+    key: "inBusiness",
+    la: "ໃນທຸລະກິດ ແລະ",
+    en: "in business and"
+  },
+  {
+    key: "entrepreneurship",
+    la: "ການເປັນຜູ້ປະກອບການ",
+    en: "entrepreneurship"
+  },
+  {
+    key: "more",
+    la: "ເພີ່ມຕື່ມ",
+    en: "More"
   }
 ];
 const getKeyFunc = (lang) => {
@@ -1314,7 +1334,7 @@ const i18n_VfGcjrvSkj = /* @__PURE__ */ defineNuxtPlugin(({ vueApp }) => {
   const i18n = createI18n({
     legacy: false,
     globalInjection: true,
-    locale: "en",
+    locale: "lao",
     messages: {
       en: enKey,
       lao: laKey
@@ -1341,7 +1361,7 @@ const plugins = [
   image_u014LPA7JK
 ];
 const layouts = {
-  main: () => import('./_nuxt/main-20696706.mjs').then((m) => m.default || m)
+  main: () => import('./_nuxt/main-73076072.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
