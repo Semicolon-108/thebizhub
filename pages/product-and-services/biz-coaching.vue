@@ -89,12 +89,12 @@
           <div class="element">
             <img src="../../assets/images/biz-coaching/icons/4.png" alt="" />
             <p>ຈຸນລະວິສາຫະກິດ</p>
-            <p>(Micro entreprise)</p>
+            <p>(Micro enterprise)</p>
           </div>
           <div class="element">
             <img src="../../assets/images/biz-coaching/icons/5.png" alt="" />
             <p>ວິສາຫະກິດຂະໜາດນ້ອຍ</p>
-            <p>(Small entreprise)</p>
+            <p>(Small enterprise)</p>
           </div>
         </div>
       </div>

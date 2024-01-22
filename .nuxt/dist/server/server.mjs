@@ -566,7 +566,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/biz-coaching-600a1a98.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/biz-coaching-6c28b9e9.js").then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
