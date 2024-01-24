@@ -1,8 +1,11 @@
 import axios from "axios";
+import { useAuthStore } from '@/stores/store'
+import { apiURL } from '@/global-url'
+
 export default defineNuxtPlugin((nuxtApp) => {
-  // const defaultUrl = "http://localhost:4000/client-api/"
-  const defaultUrl = "https://db.thebizhub.la/client-api/"
-  axios.defaults.baseURL = defaultUrl;
+  const authStore = useAuthStore();
+  axios.defaults.baseURL = apiURL;
+  axios.defaults.headers.common['Authorization'] = authStore.token ? `Bearer ${authStore.token}` : ''
   return {
     provide: {
       axios: axios,

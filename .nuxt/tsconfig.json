@@ -67,6 +67,9 @@
       "vue-demi": [
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
+      "pinia": [
+        "../node_modules/pinia/dist/pinia"
+      ],
       "#vue-router": [
         "./vue-router-stub"
       ],
@@ -89,6 +92,7 @@
     "../**/*",
     "../node_modules/nuxt-gtag/runtime",
     "../node_modules/nuxt-swiper/runtime",
+    "../node_modules/@pinia/nuxt/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
@@ -97,6 +101,7 @@
     "../node_modules/nuxt/node_modules",
     "../node_modules/nuxt-gtag/runtime/server",
     "../node_modules/nuxt-swiper/runtime/server",
+    "../node_modules/@pinia/nuxt/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"

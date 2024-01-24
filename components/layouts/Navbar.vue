@@ -15,10 +15,7 @@
       <h1>{{ $t("slogan") }}</h1>
 
       <Transition name="slide-down">
-        <LayoutsMobileNavbar
-          v-if="openMobileNav"
-          @closeMobileNavbar="openMobileNav = false"
-        />
+        <LayoutsMobileNavbar v-if="openMobileNav" @closeMobileNavbar="openMobileNav = false" />
       </Transition>
     </div>
     <div class="navbar is-hidden-mobile">
@@ -56,34 +53,24 @@
             </a>
           </li> -->
           <li class="has-dropdown">
-            <a class="hoverable"
-              >{{ $t("navbar_learning") }}
+            <a class="hoverable">{{ $t("navbar_learning") }}
               <i class="fa-light fa-angle-down"></i>
               <ul class="dropdown">
                 <li v-for="(o, index) in learing" :key="index">
-                  <NuxtLink
-                    :to="{ path: '/category', query: { is: `${o.name}` } }"
-                    >{{ o.name }}</NuxtLink
-                  >
+                  <NuxtLink :to="{ path: '/category', query: { is: `${o.name}` } }">{{ o.name }}</NuxtLink>
                 </li>
               </ul>
             </a>
           </li>
           <li>
-            <a
-              @click="$router.replace('/category?is=TSNS - Thao Sang Nang Sa')"
-              >{{ $t("navbar_tsns") }}</a
-            >
+            <a @click="$router.replace('/category?is=TSNS - Thao Sang Nang Sa')">{{ $t("navbar_tsns") }}</a>
           </li>
           <li>
-            <a
-              @click="
-                $router.replace(
-                  `/category?is=WINGS - Women's Income Generating Support`
-                )
-              "
-              >{{ $t("navbar_wing") }}</a
-            >
+            <a @click="
+              $router.replace(
+                `/category?is=WINGS - Women's Income Generating Support`
+              )
+              ">{{ $t("navbar_wing") }}</a>
           </li>
           <li>
             <a @click="$router.replace('/category?is=Events & Activities')">{{
@@ -91,16 +78,12 @@
             }}</a>
           </li>
           <li>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfsRhORbsNje2WzOdWGCLJAdKuyEGDlUejL2qr4e-gzencLcw/viewform"
-              target="_blank"
-              >{{ $t("navbar_partner_with_us") }}</a
-            >
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsRhORbsNje2WzOdWGCLJAdKuyEGDlUejL2qr4e-gzencLcw/viewform"
+              target="_blank">{{ $t("navbar_partner_with_us") }}</a>
           </li>
           <li>
             <a @click="$router.replace('/category?is=Business Supporters')">
-              {{ $t("navbar_bussiness_supporter") }}</a
-            >
+              {{ $t("navbar_bussiness_supporter") }}</a>
           </li>
           <li>
             <NuxtLink to="/about-us">{{ $t("about_us") }}</NuxtLink>
@@ -108,15 +91,9 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <input
-          type="text"
-          v-model="search"
-          class="input small"
-          :placeholder="$t('search')"
-          @keyup.enter="
-            router.push({ path: '/search', query: { search: search } })
-          "
-        />
+        <input type="text" v-model="search" class="input small" :placeholder="$t('search')" @keyup.enter="
+          router.push({ path: '/search', query: { search: search } })
+          " />
         <hr class="v" />
         <p class="lang-switch">
           <a :class="[{ current: laoStatus }]" @click="setLan('lao')">LA</a>
@@ -124,16 +101,14 @@
         </p>
         <hr class="v" />
         <div class="button-groups">
-          <button
-            class="button small"
-            @click="router.push({ path: '/auth/login' })"
-          >
+          <button class="button small" @click="logout()" v-if="authStatus">
+            {{ $t("logout") }}
+          </button>
+          <button class="button small" @click="router.push({ path: '/auth/login' })" v-else>
             {{ $t("login") }}
           </button>
-          <button
-            class="button main small"
-            @click="router.push({ path: '/auth/register' })"
-          >
+
+          <button class="button main small" @click="router.push({ path: '/auth/register' })" v-if="!authStatus">
             {{ $t("register") }}
           </button>
         </div>
@@ -144,6 +119,9 @@
 
 <script lang="ts" setup>
 import { useI18n } from "vue-i18n";
+import { useAuthStore } from '@/stores/store'
+const useCookiesToken = useCookie('thebizhub-token')
+const tokenStore = useAuthStore()
 
 const axios = useNuxtApp().$axios;
 const router = useRouter();
@@ -162,7 +140,7 @@ enStatus.value = useCookies.value === "en";
 laoStatus.value = useCookies.value === "lao";
 if (!enStatus.value && !laoStatus.value) laoStatus.value = true;
 const openMobileNav = ref(false);
-
+const authStatus = ref<any>(false)
 const fetchProductAndService = async () => {
   const type = "Product & Services";
   await axios
@@ -188,13 +166,17 @@ const fetchCategory = async () => {
   cateInfo.value = data.data.info;
 };
 watch(
-  () => i18n.locale.value,
-  (value) => {
+  () => [i18n.locale.value, useCookiesToken.value],
+  ([value, token]) => {
     fetchLearning();
     fetchProductAndService();
-  },
-  { immediate: true, deep: true }
-);
+    if (token) {
+      tokenStore.setToken(token)
+    }
+    if (tokenStore.token) {
+      authStatus.value = true
+    }
+  }, { immediate: true, deep: true });
 //Language syntax
 const setLan = (key: any) => {
   i18n.locale.value = key;
@@ -212,6 +194,15 @@ const setLan = (key: any) => {
   }
 };
 
+const logout = () => {
+  useCookiesToken.value = ""
+  tokenStore.logout
+  authStatus.value = false
+  if (process.client) {
+    router.push('/')
+    window.location.reload()
+  }
+}
 fetchCategory();
 fetchProductAndService();
 fetchLearning();

@@ -26,7 +26,7 @@ const meta = [
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
-  modules: ["nuxt-gtag", "nuxt-swiper"],
+  modules: ["nuxt-gtag", "nuxt-swiper", '@pinia/nuxt',],
   gtag: {
     id: "G-CVJQT1XPN2",
     config: {

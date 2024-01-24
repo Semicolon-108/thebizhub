@@ -25,6 +25,11 @@ export const language = [
     en: "Log in",
   },
   {
+    key: "logout",
+    la: "ອອກຈາກລະບົບ",
+    en: "Log out",
+  },
+  {
     key: "register",
     la: "ລົງທະບຽນ",
     en: "Register",

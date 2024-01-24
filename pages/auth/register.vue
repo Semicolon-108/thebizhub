@@ -5,20 +5,11 @@
       <h1 class="page-title">{{ $t("register") }}</h1>
       <div class="grids is-2-desktop is-1-mobile margin-top-30 gap-30-desktop">
         <div class="left">
-          <form
-            action=""
-            class="grids is-2-desktop is-1-mobile gap-20-desktop"
-            @submit.prevent="register()"
-          >
+          <form action="" class="grids is-2-desktop is-1-mobile gap-20-desktop" @submit.prevent="register()">
             <div class="field">
               <label for="">{{ $t("fullname") }} <span>*</span></label>
               <div class="control">
-                <input
-                  type="text"
-                  v-model="state.name"
-                  class="input"
-                  :placeholder="$t('fullname')"
-                />
+                <input type="text" v-model="state.name" class="input" :placeholder="$t('fullname')" />
                 <div v-if="v$.name.$error" class="err">
                   {{ v$.name.required.$message }}
                 </div>
@@ -27,12 +18,7 @@
             <div class="field">
               <label for="">{{ $t("dob") }} <span>*</span></label>
               <div class="control">
-                <input
-                  type="number"
-                  v-model="state.birtYear"
-                  class="input"
-                  placeholder="1999"
-                />
+                <input type="number" v-model="state.birtYear" class="input" placeholder="1999" />
                 <div v-if="v$.birtYear.$error" class="err">
                   {{ v$.birtYear.required.$message }}
                 </div>
@@ -41,12 +27,7 @@
             <div class="field">
               <label for="">{{ $t("contact_number") }} <span>*</span></label>
               <div class="control">
-                <input
-                  type="number"
-                  v-model="state.mobile"
-                  class="input"
-                  placeholder="12345678"
-                />
+                <input type="number" v-model="state.mobile" class="input" placeholder="12345678" />
                 <div v-if="v$.mobile.$error" class="err">
                   {{ v$.mobile.required.$message }}
                 </div>
@@ -55,12 +36,7 @@
             <div class="field">
               <label for="">{{ $t("email") }} <span>*</span></label>
               <div class="control">
-                <input
-                  type="text"
-                  v-model="state.email"
-                  class="input"
-                  placeholder="email@gmail.com"
-                />
+                <input type="text" v-model="state.email" class="input" placeholder="email@gmail.com" />
                 <div v-if="v$.email.$error" class="err">
                   {{ v$.email.required.$message }}
                 </div>
@@ -72,11 +48,7 @@
                 <div class="select">
                   <select v-model="state.province">
                     <option value="" disabled>Select dropdown</option>
-                    <option
-                      v-for="(i, index) in provinceInfo"
-                      :key="index"
-                      :value="i._id"
-                    >
+                    <option v-for="(i, index) in provinceInfo" :key="index" :value="i._id">
                       {{ i.name }}
                     </option>
                   </select>
@@ -92,11 +64,7 @@
                 <div class="select">
                   <select v-model="state.occupation">
                     <option value="" disabled>Select dropdown</option>
-                    <option
-                      v-for="(i, indx) in occupationInfo"
-                      :key="indx"
-                      :value="i._id"
-                    >
+                    <option v-for="(i, indx) in occupationInfo" :key="indx" :value="i._id">
                       {{ i.name }}
                     </option>
                   </select>
@@ -109,12 +77,7 @@
             <div class="field">
               <label for="">{{ $t("password") }} <span>*</span></label>
               <div class="control">
-                <input
-                  type="text"
-                  v-model="state.password"
-                  class="input"
-                  :placeholder="$t('password')"
-                />
+                <input type="text" v-model="state.password" class="input" :placeholder="$t('password')" />
                 <div v-if="v$.password.$error" class="err">
                   {{ v$.password.required.$message }}
                 </div>
@@ -123,12 +86,7 @@
             <div class="field">
               <label for="">{{ $t("confirm_password") }} <span>*</span></label>
               <div class="control">
-                <input
-                  type="text"
-                  v-model="state.confirmPassword"
-                  class="input"
-                  :placeholder="$t('confirm_password')"
-                />
+                <input type="text" v-model="state.confirmPassword" class="input" :placeholder="$t('confirm_password')" />
                 <div v-if="v$.confirmPassword.$error" class="err">
                   {{ v$.confirmPassword.required.$message }}
                 </div>
@@ -138,11 +96,7 @@
           <br />
           <p v-if="isError" class="err2">{{ isError }}</p>
           <p v-if="response" class="response">{{ response }}</p>
-          <button
-            type="submit"
-            class="button main margin-top-20 margin-bottom-10"
-            @click="register()"
-          >
+          <button type="submit" class="button main margin-top-20 margin-bottom-10" @click="register()">
             {{ $t("register") }}
           </button>
 
@@ -231,15 +185,7 @@ const register = async () => {
         response.value = "Register succeed";
         isError.value = "";
         setTimeout(() => {
-          state.occupation = "";
-          state.province = "";
-          state.name = "";
-          state.birtYear = "";
-          state.mobile = "";
-          state.email = "";
-          state.password = "";
-          state.confirmPassword = "";
-          response.value = "";
+          router.push('/auth/login')
         }, 1500);
       }
     })
@@ -272,8 +218,7 @@ button {
   background-color: var(--sub-color);
 }
 
-.left {
-}
+.left {}
 
 .right {
   position: relative;

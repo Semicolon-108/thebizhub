@@ -10,20 +10,20 @@
             <div class="field">
               <label for=""> {{ $t("contact_number") }} <span>*</span></label>
               <div class="control">
-                <input type="text" class="input" placeholder="123456678" />
+                <input type="text" class="input" placeholder="922xxx93" v-model="mobile" />
               </div>
             </div>
             <div class="field">
               <label for=""> {{ $t("password") }} <span>*</span></label>
               <div class="control">
-                <input type="text" class="input" placeholder="password" />
+                <input type="text" class="input" placeholder="password" v-model="password" />
                 <NuxtLink to="password-recovery">
-                  {{ $t("forgot_password") }}</NuxtLink
-                >
+                  {{ $t("forgot_password") }}</NuxtLink>
               </div>
             </div>
           </form>
-          <button class="button main margin-top-20 margin-bottom-10">
+          <p style="color:red">{{ isError }}</p>
+          <button class="button main margin-top-20 margin-bottom-10" @click="login()">
             {{ $t("login") }}
           </button>
 
@@ -43,8 +43,34 @@
 </template>
 
 <script lang="ts" setup>
+const axios = useNuxtApp().$axios;
 import InfoBox from "../../components/auth/info-box.vue";
 const router = useRouter();
+const isError = ref<any>("")
+const mobile = ref<any>("")
+const password = ref<any>("")
+const useCookies = useCookie('thebizhub-token')
+import { useAuthStore } from '@/stores/store'
+const setTokenToStore = useAuthStore()
+
+const login = async () => {
+  if (!mobile.value || !password.value) return isError.value = "Please fill mobile or password"
+  isError.value = ""
+  await axios
+    .post(`client-login`, {
+      mobile: mobile.value,
+      password: password.value
+    })
+    .then((res: any) => {
+      if (res.status === 200) {
+        useCookies.value = res.data.token
+        setTokenToStore.setToken(res.data.token)
+        router.push('/')
+      }
+    }).catch((e: any) => {
+      isError.value = e.response.data.message;
+    });
+};
 </script>
 <style lang="scss" scoped>
 section {
