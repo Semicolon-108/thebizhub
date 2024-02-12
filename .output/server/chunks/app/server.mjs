@@ -1,5 +1,5 @@
-import { hasInjectionContext, getCurrentInstance, version, unref, inject, defineComponent, h, computed, ref, provide, shallowReactive, Suspense, nextTick, Transition, mergeProps, useSSRContext, createApp, effectScope, reactive, defineAsyncComponent, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, withCtx } from 'vue';
-import { f as useRuntimeConfig$1, $ as $fetch, m as withQuery, n as hasProtocol, p as parseURL, o as isScriptProtocol, j as joinURL, i as createError$1, q as defu, r as sanitizeStatusCode, t as createHooks } from '../nitro/node-server.mjs';
+import { hasInjectionContext, getCurrentInstance, version, unref, inject, defineComponent, h, computed, ref, provide, shallowReactive, Suspense, nextTick, Transition, mergeProps, useSSRContext, createApp, effectScope, reactive, watch, isRef, isReactive, toRaw, defineAsyncComponent, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, toRef, shallowRef, isReadonly, getCurrentScope, onScopeDispose, markRaw, toRefs, isShallow, withCtx } from 'vue';
+import { d as useRuntimeConfig$1, $ as $fetch, w as withQuery, l as hasProtocol, p as parseURL, m as isScriptProtocol, j as joinURL, h as createError$1, n as defu, o as sanitizeStatusCode, q as createHooks } from '../nitro/node-server.mjs';
 import { getActiveHead } from 'unhead';
 import { defineHeadPlugin } from '@unhead/shared';
 import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
@@ -8,16 +8,10 @@ import { createI18n } from 'vue-i18n';
 import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode } from 'vue/server-renderer';
 import 'node:http';
 import 'node:https';
-import 'node:zlib';
-import 'node:stream';
-import 'node:buffer';
-import 'node:util';
-import 'node:url';
-import 'node:net';
-import 'node:fs';
-import 'node:path';
 import 'fs';
 import 'path';
+import 'node:fs';
+import 'node:url';
 
 function createContext$1(opts = {}) {
   let currentInstance;
@@ -579,7 +573,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/gallery-697764f2.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/gallery-c61f2734.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us",
@@ -587,7 +581,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-5b60afb4.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-655bdd8f.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -595,7 +589,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/product-and-services-778ec1a1.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/product-and-services-baa0acc2.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us-works",
@@ -603,7 +597,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/works-94940a94.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/works-1c793746.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-login",
@@ -611,7 +605,15 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/login-fea5be3b.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/login-d0f8ad07.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "auth-otp",
+    path: "/auth/otp",
+    meta: {},
+    alias: [],
+    redirect: void 0,
+    component: () => import('./_nuxt/otp-fa738ed3.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-password-recovery",
@@ -619,7 +621,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/password-recovery-ad2e4af7.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/password-recovery-315948db.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-register",
@@ -627,7 +629,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/register-28805089.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/register-6380b233.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-detail-id",
@@ -635,7 +637,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_-5bb00655.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_-4165ab2a.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-detail-related",
@@ -643,7 +645,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/related-40e92588.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/related-8493758d.mjs').then((m) => m.default || m)
   },
   {
     name: "category",
@@ -651,7 +653,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-ae33180a.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-177c01a7.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -659,7 +661,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-e28d8534.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-3103fd27.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -667,7 +669,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-coaching-6c28b9e9.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-coaching-1763d203.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
@@ -675,7 +677,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-course-ae9c0775.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-course-b03efe37.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
@@ -683,7 +685,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/pattern-fc7bb63a.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/pattern-2e5b619d.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-project-business-consultant",
@@ -691,7 +693,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/project-business-consultant-8565018b.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/project-business-consultant-bc0b25ba.mjs').then((m) => m.default || m)
   },
   {
     name: "search",
@@ -699,7 +701,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-df20c89b.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-faf18396.mjs').then((m) => m.default || m)
   },
   {
     name: "tag-id",
@@ -707,7 +709,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_-4b54fcfc.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_-bfc0b3cb.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -820,7 +822,7 @@ const globalMiddleware = [
   manifest_45route_45rule
 ];
 const namedMiddleware = {};
-const plugin = /* @__PURE__ */ defineNuxtPlugin({
+const plugin$1 = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:router",
   enforce: "pre",
   async setup(nuxtApp) {
@@ -974,11 +976,368 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
     return { provide: { router } };
   }
 });
+const isVue2 = false;
+/*!
+ * pinia v2.1.7
+ * (c) 2023 Eduardo San Martin Morote
+ * @license MIT
+ */
+let activePinia;
+const setActivePinia = (pinia) => activePinia = pinia;
+const piniaSymbol = (
+  /* istanbul ignore next */
+  Symbol()
+);
+function isPlainObject(o) {
+  return o && typeof o === "object" && Object.prototype.toString.call(o) === "[object Object]" && typeof o.toJSON !== "function";
+}
+var MutationType;
+(function(MutationType2) {
+  MutationType2["direct"] = "direct";
+  MutationType2["patchObject"] = "patch object";
+  MutationType2["patchFunction"] = "patch function";
+})(MutationType || (MutationType = {}));
+function createPinia() {
+  const scope = effectScope(true);
+  const state = scope.run(() => ref({}));
+  let _p = [];
+  let toBeInstalled = [];
+  const pinia = markRaw({
+    install(app) {
+      setActivePinia(pinia);
+      {
+        pinia._a = app;
+        app.provide(piniaSymbol, pinia);
+        app.config.globalProperties.$pinia = pinia;
+        toBeInstalled.forEach((plugin2) => _p.push(plugin2));
+        toBeInstalled = [];
+      }
+    },
+    use(plugin2) {
+      if (!this._a && !isVue2) {
+        toBeInstalled.push(plugin2);
+      } else {
+        _p.push(plugin2);
+      }
+      return this;
+    },
+    _p,
+    // it's actually undefined here
+    // @ts-expect-error
+    _a: null,
+    _e: scope,
+    _s: /* @__PURE__ */ new Map(),
+    state
+  });
+  return pinia;
+}
+const noop = () => {
+};
+function addSubscription(subscriptions, callback, detached, onCleanup = noop) {
+  subscriptions.push(callback);
+  const removeSubscription = () => {
+    const idx = subscriptions.indexOf(callback);
+    if (idx > -1) {
+      subscriptions.splice(idx, 1);
+      onCleanup();
+    }
+  };
+  if (!detached && getCurrentScope()) {
+    onScopeDispose(removeSubscription);
+  }
+  return removeSubscription;
+}
+function triggerSubscriptions(subscriptions, ...args) {
+  subscriptions.slice().forEach((callback) => {
+    callback(...args);
+  });
+}
+const fallbackRunWithContext = (fn) => fn();
+function mergeReactiveObjects(target, patchToApply) {
+  if (target instanceof Map && patchToApply instanceof Map) {
+    patchToApply.forEach((value, key) => target.set(key, value));
+  }
+  if (target instanceof Set && patchToApply instanceof Set) {
+    patchToApply.forEach(target.add, target);
+  }
+  for (const key in patchToApply) {
+    if (!patchToApply.hasOwnProperty(key))
+      continue;
+    const subPatch = patchToApply[key];
+    const targetValue = target[key];
+    if (isPlainObject(targetValue) && isPlainObject(subPatch) && target.hasOwnProperty(key) && !isRef(subPatch) && !isReactive(subPatch)) {
+      target[key] = mergeReactiveObjects(targetValue, subPatch);
+    } else {
+      target[key] = subPatch;
+    }
+  }
+  return target;
+}
+const skipHydrateSymbol = (
+  /* istanbul ignore next */
+  Symbol()
+);
+function shouldHydrate(obj) {
+  return !isPlainObject(obj) || !obj.hasOwnProperty(skipHydrateSymbol);
+}
+const { assign } = Object;
+function isComputed(o) {
+  return !!(isRef(o) && o.effect);
+}
+function createOptionsStore(id, options, pinia, hot) {
+  const { state, actions, getters } = options;
+  const initialState = pinia.state.value[id];
+  let store;
+  function setup() {
+    if (!initialState && (!("production" !== "production") )) {
+      {
+        pinia.state.value[id] = state ? state() : {};
+      }
+    }
+    const localState = toRefs(pinia.state.value[id]);
+    return assign(localState, actions, Object.keys(getters || {}).reduce((computedGetters, name) => {
+      computedGetters[name] = markRaw(computed(() => {
+        setActivePinia(pinia);
+        const store2 = pinia._s.get(id);
+        return getters[name].call(store2, store2);
+      }));
+      return computedGetters;
+    }, {}));
+  }
+  store = createSetupStore(id, setup, options, pinia, hot, true);
+  return store;
+}
+function createSetupStore($id, setup, options = {}, pinia, hot, isOptionsStore) {
+  let scope;
+  const optionsForPlugin = assign({ actions: {} }, options);
+  const $subscribeOptions = {
+    deep: true
+    // flush: 'post',
+  };
+  let isListening;
+  let isSyncListening;
+  let subscriptions = [];
+  let actionSubscriptions = [];
+  let debuggerEvents;
+  const initialState = pinia.state.value[$id];
+  if (!isOptionsStore && !initialState && (!("production" !== "production") )) {
+    {
+      pinia.state.value[$id] = {};
+    }
+  }
+  ref({});
+  let activeListener;
+  function $patch(partialStateOrMutator) {
+    let subscriptionMutation;
+    isListening = isSyncListening = false;
+    if (typeof partialStateOrMutator === "function") {
+      partialStateOrMutator(pinia.state.value[$id]);
+      subscriptionMutation = {
+        type: MutationType.patchFunction,
+        storeId: $id,
+        events: debuggerEvents
+      };
+    } else {
+      mergeReactiveObjects(pinia.state.value[$id], partialStateOrMutator);
+      subscriptionMutation = {
+        type: MutationType.patchObject,
+        payload: partialStateOrMutator,
+        storeId: $id,
+        events: debuggerEvents
+      };
+    }
+    const myListenerId = activeListener = Symbol();
+    nextTick().then(() => {
+      if (activeListener === myListenerId) {
+        isListening = true;
+      }
+    });
+    isSyncListening = true;
+    triggerSubscriptions(subscriptions, subscriptionMutation, pinia.state.value[$id]);
+  }
+  const $reset = isOptionsStore ? function $reset2() {
+    const { state } = options;
+    const newState = state ? state() : {};
+    this.$patch(($state) => {
+      assign($state, newState);
+    });
+  } : (
+    /* istanbul ignore next */
+    noop
+  );
+  function $dispose() {
+    scope.stop();
+    subscriptions = [];
+    actionSubscriptions = [];
+    pinia._s.delete($id);
+  }
+  function wrapAction(name, action) {
+    return function() {
+      setActivePinia(pinia);
+      const args = Array.from(arguments);
+      const afterCallbackList = [];
+      const onErrorCallbackList = [];
+      function after(callback) {
+        afterCallbackList.push(callback);
+      }
+      function onError(callback) {
+        onErrorCallbackList.push(callback);
+      }
+      triggerSubscriptions(actionSubscriptions, {
+        args,
+        name,
+        store,
+        after,
+        onError
+      });
+      let ret;
+      try {
+        ret = action.apply(this && this.$id === $id ? this : store, args);
+      } catch (error) {
+        triggerSubscriptions(onErrorCallbackList, error);
+        throw error;
+      }
+      if (ret instanceof Promise) {
+        return ret.then((value) => {
+          triggerSubscriptions(afterCallbackList, value);
+          return value;
+        }).catch((error) => {
+          triggerSubscriptions(onErrorCallbackList, error);
+          return Promise.reject(error);
+        });
+      }
+      triggerSubscriptions(afterCallbackList, ret);
+      return ret;
+    };
+  }
+  const partialStore = {
+    _p: pinia,
+    // _s: scope,
+    $id,
+    $onAction: addSubscription.bind(null, actionSubscriptions),
+    $patch,
+    $reset,
+    $subscribe(callback, options2 = {}) {
+      const removeSubscription = addSubscription(subscriptions, callback, options2.detached, () => stopWatcher());
+      const stopWatcher = scope.run(() => watch(() => pinia.state.value[$id], (state) => {
+        if (options2.flush === "sync" ? isSyncListening : isListening) {
+          callback({
+            storeId: $id,
+            type: MutationType.direct,
+            events: debuggerEvents
+          }, state);
+        }
+      }, assign({}, $subscribeOptions, options2)));
+      return removeSubscription;
+    },
+    $dispose
+  };
+  const store = reactive(partialStore);
+  pinia._s.set($id, store);
+  const runWithContext = pinia._a && pinia._a.runWithContext || fallbackRunWithContext;
+  const setupStore = runWithContext(() => pinia._e.run(() => (scope = effectScope()).run(setup)));
+  for (const key in setupStore) {
+    const prop = setupStore[key];
+    if (isRef(prop) && !isComputed(prop) || isReactive(prop)) {
+      if (!isOptionsStore) {
+        if (initialState && shouldHydrate(prop)) {
+          if (isRef(prop)) {
+            prop.value = initialState[key];
+          } else {
+            mergeReactiveObjects(prop, initialState[key]);
+          }
+        }
+        {
+          pinia.state.value[$id][key] = prop;
+        }
+      }
+    } else if (typeof prop === "function") {
+      const actionValue = wrapAction(key, prop);
+      {
+        setupStore[key] = actionValue;
+      }
+      optionsForPlugin.actions[key] = prop;
+    } else ;
+  }
+  {
+    assign(store, setupStore);
+    assign(toRaw(store), setupStore);
+  }
+  Object.defineProperty(store, "$state", {
+    get: () => pinia.state.value[$id],
+    set: (state) => {
+      $patch(($state) => {
+        assign($state, state);
+      });
+    }
+  });
+  pinia._p.forEach((extender) => {
+    {
+      assign(store, scope.run(() => extender({
+        store,
+        app: pinia._a,
+        pinia,
+        options: optionsForPlugin
+      })));
+    }
+  });
+  if (initialState && isOptionsStore && options.hydrate) {
+    options.hydrate(store.$state, initialState);
+  }
+  isListening = true;
+  isSyncListening = true;
+  return store;
+}
+function defineStore(idOrOptions, setup, setupOptions) {
+  let id;
+  let options;
+  const isSetupStore = typeof setup === "function";
+  if (typeof idOrOptions === "string") {
+    id = idOrOptions;
+    options = isSetupStore ? setupOptions : setup;
+  } else {
+    options = idOrOptions;
+    id = idOrOptions.id;
+  }
+  function useStore(pinia, hot) {
+    const hasContext = hasInjectionContext();
+    pinia = // in test mode, ignore the argument provided as we can always retrieve a
+    // pinia instance with getActivePinia()
+    (pinia) || (hasContext ? inject(piniaSymbol, null) : null);
+    if (pinia)
+      setActivePinia(pinia);
+    pinia = activePinia;
+    if (!pinia._s.has(id)) {
+      if (isSetupStore) {
+        createSetupStore(id, setup, options, pinia);
+      } else {
+        createOptionsStore(id, options, pinia);
+      }
+    }
+    const store = pinia._s.get(id);
+    return store;
+  }
+  useStore.$id = id;
+  return useStore;
+}
 function definePayloadReducer(name, reduce) {
   {
     (/* @__PURE__ */ useNuxtApp()).ssrContext._payloadReducers[name] = reduce;
   }
 }
+const plugin = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
+  const pinia = createPinia();
+  nuxtApp.vueApp.use(pinia);
+  setActivePinia(pinia);
+  {
+    nuxtApp.payload.pinia = pinia.state.value;
+  }
+  return {
+    provide: {
+      pinia
+    }
+  };
+});
 const reducers = {
   NuxtError: (data) => isNuxtError(data) && data.toJSON(),
   EmptyShallowRef: (data) => isRef(data) && isShallow(data) && !data.value && (typeof data.value === "bigint" ? "0n" : JSON.stringify(data.value) || "_"),
@@ -999,9 +1358,30 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
 const components_plugin_KR1HBZs4kY = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:global-components"
 });
+const useAuthStore = defineStore({
+  id: "tokenStore",
+  state: () => ({
+    token: null
+  }),
+  getters: {
+    getToken() {
+      return this.token;
+    }
+  },
+  actions: {
+    setToken(token) {
+      this.token = token;
+    },
+    logout() {
+      this.token = null;
+    }
+  }
+});
+const apiURL = "https://db.thebizhub.la/client-api/";
 const axios_QMFgzss1s4 = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
-  const defaultUrl = "https://db.thebizhub.la/client-api/";
-  axios.defaults.baseURL = defaultUrl;
+  const authStore = useAuthStore();
+  axios.defaults.baseURL = apiURL;
+  axios.defaults.headers.common["Authorization"] = authStore.token ? `Bearer ${authStore.token}` : "";
   return {
     provide: {
       axios
@@ -1041,6 +1421,11 @@ const language = [
     key: "login",
     la: "ເຂົ້າສູ່ລະບົບ",
     en: "Log in"
+  },
+  {
+    key: "logout",
+    la: "ອອກຈາກລະບົບ",
+    en: "Log out"
   },
   {
     key: "register",
@@ -1199,8 +1584,8 @@ const language = [
   },
   {
     key: "navbar_wing",
-    la: "WINGS ",
-    en: "WINGS"
+    la: "WeeM ",
+    en: "WeeM"
   },
   {
     key: "navbar_learning",
@@ -1358,6 +1743,7 @@ const image_u014LPA7JK = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
 });
 const plugins = [
   unhead_KgADcZ0jPj,
+  plugin$1,
   plugin,
   revive_payload_server_eJ33V7gbc6,
   components_plugin_KR1HBZs4kY,
@@ -1367,7 +1753,7 @@ const plugins = [
   image_u014LPA7JK
 ];
 const layouts = {
-  main: () => import('./_nuxt/main-73076072.mjs').then((m) => m.default || m)
+  main: () => import('./_nuxt/main-debbbc58.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -1644,8 +2030,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./_nuxt/error-404-320f564f.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./_nuxt/error-500-b4fd7718.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./_nuxt/error-404-b6816b3e.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./_nuxt/error-500-47adb4d2.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -1663,7 +2049,7 @@ const _sfc_main = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const IslandRenderer = defineAsyncComponent(() => import('./_nuxt/island-renderer-790a2a09.mjs').then((r) => r.default || r));
+    const IslandRenderer = defineAsyncComponent(() => import('./_nuxt/island-renderer-7bb441aa.mjs').then((r) => r.default || r));
     const nuxtApp = /* @__PURE__ */ useNuxtApp();
     nuxtApp.deferHydration();
     nuxtApp.ssrContext.url;
@@ -1725,5 +2111,5 @@ let entry;
 }
 const entry$1 = (ctx) => entry(ctx);
 
-export { _export_sfc as _, useRuntimeConfig as a, navigateTo as b, createError as c, useNuxtApp as d, entry$1 as default, useRoute as e, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRouter as u };
+export { _export_sfc as _, useRuntimeConfig as a, navigateTo as b, createError as c, useNuxtApp as d, entry$1 as default, useAuthStore as e, useRoute as f, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRouter as u };
 //# sourceMappingURL=server.mjs.map

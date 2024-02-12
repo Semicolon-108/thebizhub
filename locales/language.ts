@@ -187,8 +187,8 @@ export const language = [
   },
   {
     key: "navbar_wing",
-    la: "WINGS ",
-    en: "WINGS",
+    la: "WeeM ",
+    en: "WeeM",
   },
   {
     key: "navbar_learning",

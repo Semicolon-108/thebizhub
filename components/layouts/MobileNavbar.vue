@@ -46,7 +46,7 @@
             }}</a>
           </li>
           <li>
-            <a @click="$router.replace(`/category?is=WINGS - Women's Income Generating Support`), closeMobileNavbar()
+            <a @click="$router.replace(`/category?is=WeeM - Women's Economic Empowerment Miracle`), closeMobileNavbar()
               ">{{ $t("article_wing") }}
             </a>
           </li>

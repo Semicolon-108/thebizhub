@@ -23,12 +23,7 @@
             <div class="field">
               <label for="">Set new password <span>*</span></label>
               <div class="control">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Password"
-                  disabled
-                />
+                <input type="text" class="input" placeholder="Password" disabled />
               </div>
             </div>
           </form>
@@ -50,6 +45,7 @@ import InfoBox from "~/components/auth/info-box.vue";
 section {
   position: relative;
 }
+
 button {
   width: 100%;
 }

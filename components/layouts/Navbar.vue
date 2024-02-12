@@ -68,7 +68,7 @@
           <li>
             <a @click="
               $router.replace(
-                `/category?is=WINGS - Women's Income Generating Support`
+                `/category?is=WeeM - Women's Economic Empowerment Miracle`
               )
               ">{{ $t("navbar_wing") }}</a>
           </li>

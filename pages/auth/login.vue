@@ -16,7 +16,7 @@
             <div class="field">
               <label for=""> {{ $t("password") }} <span>*</span></label>
               <div class="control">
-                <input type="text" class="input" placeholder="password" v-model="password" />
+                <input type="password" class="input" placeholder="password" v-model="password" @keyup.enter="login()"/>
                 <NuxtLink to="password-recovery">
                   {{ $t("forgot_password") }}</NuxtLink>
               </div>

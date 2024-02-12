@@ -27,7 +27,7 @@
             <div class="field">
               <label for="">{{ $t("contact_number") }} <span>*</span></label>
               <div class="control">
-                <input type="number" v-model="state.mobile" class="input" placeholder="12345678" />
+                <input type="number" v-model="state.mobile" class="input" placeholder="922xxx93" />
                 <div v-if="v$.mobile.$error" class="err">
                   {{ v$.mobile.required.$message }}
                 </div>
@@ -116,6 +116,7 @@
 import InfoBox from "~/components/auth/info-box.vue";
 import { required, helpers } from "@vuelidate/validators";
 import { useVuelidate } from "@vuelidate/core";
+const useCookies = useCookie('verifyToken')
 const router = useRouter();
 const axios = useNuxtApp().$axios;
 const occupationInfo = ref<any>();
@@ -183,9 +184,10 @@ const register = async () => {
     .then((res: any) => {
       if (res.status === 201) {
         response.value = "Register succeed";
+        useCookies.value = res.data.token
         isError.value = "";
         setTimeout(() => {
-          router.push('/auth/login')
+          router.push('/auth/otp')
         }, 1500);
       }
     })
