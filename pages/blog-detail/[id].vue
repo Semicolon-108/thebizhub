@@ -2,15 +2,9 @@
   <div id="blog-detail">
     <section class="has-bg">
       <div class="container">
-        <iframe
-          v-if="videoLink"
-          :src="videoLink"
-          class="youtube"
-          title="YouTube video player"
-          frameborder="0"
+        <iframe v-if="videoLink" :src="videoLink" class="youtube" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+          allowfullscreen></iframe>
         <img v-else :src="coverPage" alt="" v-if="coverPage" />
       </div>
     </section>
@@ -25,17 +19,12 @@
         <li class="post-date">{{ createdAt }}</li>
         <li class="social">
           <p>
-            <a
-              :href="`https://www.facebook.com/sharer/sharer.php?u=${https}blog-detail/${route.params.id}`"
-              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a
-              :href="`whatsapp://send?text=${https}blog-detail/${route.params.id}`"
-              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
-            >
-              <i class="fa-brands fa-whatsapp"></i
-            ></a>
+            <a :href="`https://www.facebook.com/sharer/sharer.php?u=${https}blog-detail/${route.params.id}`"
+              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a :href="`whatsapp://send?text=${https}blog-detail/${route.params.id}`"
+              onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+              <i class="fa-brands fa-whatsapp"></i></a>
             <i class="fa-light fa-link" @click="isCopy()" v-if="copy"></i>
             <i class="fa-light fa-check checkStatus" v-else></i>
           </p>
@@ -45,22 +34,25 @@
       <div class="blog-detail" v-html="detail"></div>
       <div class="tags">
         <strong>TAGS:</strong>
-        <a
-          v-for="(t, indx) in tag"
-          :key="indx"
-          @click="router.push(`/tag/${t._id}`)"
-          >{{ t.name }}</a
-        >
+        <a v-for="(t, indx) in tag" :key="indx" @click="router.push(`/tag/${t._id}`)">{{ t.name }}</a>
+      </div>
+      <div v-if="attachments.length">
+        <h1>{{ $t("attachment") }}</h1>
+        <ul>
+          <li v-for="(i, index) in attachments" :key="index">
+            <!-- <a :href="i" target="_blank" download="awesome.pdf"> -->
+            <img src="~/assets/images/file/file.png" class="isFile" title="Click for download"
+              @click="clickedDownload(i)">
+            <!-- </a> -->
+          </li>
+        </ul>
       </div>
       <div class="follow-us">
         <h1>ສາມາດຕິດຕາມ THEBIZHUB</h1>
         <p>ຜ່ານແອັບພິເຄຊັ້ນຕ່າງໆ ທີ່ທ່ານສະດວກ ຫຼື ໃຊ້ງານຢູ່ແລ້ວໄດ້ເລີຍ</p>
         <ul>
           <li>
-            <a
-              href="https://www.facebook.com/profile.php?id=100091801856212"
-              target="_blank"
-            >
+            <a href="https://www.facebook.com/profile.php?id=100091801856212" target="_blank">
               <i class="fa-brands fa-facebook"></i>
             </a>
           </li>
@@ -100,8 +92,13 @@ const tag = ref<any>();
 const category = ref<any>();
 const detail = ref<any>();
 const createdAt = ref<any>();
+const attachments = ref<any>([])
 const related = ref<any>([]);
 const copy = ref<any>(true);
+const authStatus = ref<any>(false)
+import { useAuthStore } from '@/stores/store'
+const tokenStore = useAuthStore()
+
 const fetch = async () => {
   const id = route.params.id;
   if (!id) return;
@@ -115,6 +112,7 @@ const fetch = async () => {
         category.value = res.data.info.category;
         detail.value = res.data.info.details;
         createdAt.value = res.data.info.createdAt;
+        attachments.value = res.data.info.attachments;
         related.value = res.data.isRelated;
         if (res.data.info.videoLink) {
           videoLink.value =
@@ -147,9 +145,40 @@ useHead({
     { hid: "og:image", property: "og:image", content: coverPage },
   ],
 });
+
+watch(() => tokenStore.token, (token) => {
+  if (token) {
+    authStatus.value = true
+  }
+}, { immediate: true, deep: true });
+
+const clickedDownload = (url: any) => {
+  if (!authStatus.value) {
+    if (confirm("Please Login!")) {
+      router.push('/auth/login')
+    }
+    return
+  }
+  const link = document.createElement('a');
+  link.href = url
+  link.setAttribute('download', 'file.pdf');
+  document.body.appendChild(link);
+  link.click();
+}
 </script>
 
 <style lang="scss" scoped>
+.isFile {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.isFile:hover {
+  width: 101px;
+  height: 101px;
+}
+
 .has-bg {
   background-color: var(--light-grey-color);
 

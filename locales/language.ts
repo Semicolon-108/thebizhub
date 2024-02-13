@@ -311,4 +311,9 @@ export const language = [
     la: "ບົດຄວາມທັງໝົດ",
     en: "More",
   },
+  {
+    key: "attachment",
+    la: "ໄຟລ໌ແນບ",
+    en: "Attachments"
+  }
 ];

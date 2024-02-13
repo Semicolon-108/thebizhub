@@ -511,7 +511,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/login-d0f8ad07.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/login-722686a8.js").then((m) => m.default || m)
   },
   {
     name: "auth-otp",
@@ -527,7 +527,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/password-recovery-315948db.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/password-recovery-ddd39975.js").then((m) => m.default || m)
   },
   {
     name: "auth-register",
@@ -535,7 +535,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/register-6380b233.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/register-4cfe7801.js").then((m) => m.default || m)
   },
   {
     name: "blog-detail-id",
@@ -543,7 +543,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/_id_-4165ab2a.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/_id_-aaae2421.js").then((m) => m.default || m)
   },
   {
     name: "blog-detail-related",
@@ -2435,6 +2435,11 @@ const language = [
     key: "more",
     la: "ບົດຄວາມທັງໝົດ",
     en: "More"
+  },
+  {
+    key: "attachment",
+    la: "ໄຟລ໌ແນບ",
+    en: "Attachments"
   }
 ];
 const getKeyFunc = (lang) => {

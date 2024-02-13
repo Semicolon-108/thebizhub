@@ -8,9 +8,9 @@
         <div class="left span-2-desktop">
           <form action="" class="grids is-1-desktop is-1-mobile gap-20-desktop">
             <div class="field">
-              <label for=""> {{ $t("contact_number") }} <span>*</span></label>
+              <label for=""> {{ $t("email") }} <span>*</span></label>
               <div class="control">
-                <input type="text" class="input" placeholder="922xxx93" v-model="mobile" />
+                <input type="text" class="input" placeholder="E-mail" v-model="mobile" />
               </div>
             </div>
             <div class="field">

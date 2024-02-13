@@ -27,7 +27,7 @@
             <div class="field">
               <label for="">{{ $t("contact_number") }} <span>*</span></label>
               <div class="control">
-                <input type="number" v-model="state.mobile" class="input" placeholder="922xxx93" />
+                <input type="number" v-model="state.mobile" class="input" placeholder="92xxxx93" />
                 <div v-if="v$.mobile.$error" class="err">
                   {{ v$.mobile.required.$message }}
                 </div>
