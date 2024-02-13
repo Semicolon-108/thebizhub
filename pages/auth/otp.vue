@@ -11,7 +11,7 @@
                             <label for="">Enter OTP code from Inbox <span>*</span></label>
                             <div class="control has-addon">
                                 <input type="text" class="input" v-model="isVerifyCode" placeholder="1234" />
-                                <a>Resend Code</a>
+                                <a @click="resendCode">Resend Code</a>
                             </div> <small style="color:red">Your OTP will expire in 15 minutes from now</small>
                         </div>
                     </form>
@@ -58,6 +58,27 @@ const verifyCode = async () => {
             erMsg.value = e.response.data.message
         }
 
+    })
+}
+
+const resendCode = async () => {
+    if (!useCookies.value) return erMsg.value = "Not found your verifyTOken yet"
+    await axios.post(`resend-verify-code`, {
+        verifyToken: useCookies.value
+    }).then((res: any) => {
+        if (res.status === 201) {
+            succesMsg.value = res.data.message
+            erMsg.value = ""
+        }
+    }).catch((e: any) => {
+        succesMsg.value = ""
+        if (e.response.status === 501) {
+            erMsg.value = "Can not verify"
+        } else if (e.response.status === 429) {
+            erMsg.value = "Sorry, You have too many request, please try again after 10 minutes"
+        } else {
+            erMsg.value = e.response.data.message
+        }
     })
 }
 </script>
