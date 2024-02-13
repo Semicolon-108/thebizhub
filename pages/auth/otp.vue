@@ -67,7 +67,8 @@ const resendCode = async () => {
         verifyToken: useCookies.value
     }).then((res: any) => {
         if (res.status === 201) {
-            succesMsg.value = res.data.message
+            useCookies.value = res.data.token
+            succesMsg.value = "OTP has sent, Please check your email"
             erMsg.value = ""
         }
     }).catch((e: any) => {
