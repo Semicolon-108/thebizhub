@@ -202,8 +202,8 @@ export const language = [
   },
   {
     key: "navbar_bussiness_supporter",
-    la: "ແຫຼ່ງສະໜັບສະໜູນທຸລະກິດ",
-    en: "Business Supporters",
+    la: "ຄູ່ຮ່ວມງານທາງທຸລະກິດ",
+    en: "Business Partner",
   },
   {
     key: "article_biz_laws",
