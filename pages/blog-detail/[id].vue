@@ -32,21 +32,18 @@
       </ul>
       <!-- Blog detail -->
       <div class="blog-detail" v-html="detail"></div>
+      <div v-if="attachments.length">
+        <ul class="document-list">
+          <li v-for="(i, index) in attachments" :key="index">
+              <button class="button main" @click="clickedDownload(i)">{{ $t("download_document") }} {{index +1}}</button>
+          </li>
+        </ul>
+      </div>
       <div class="tags">
         <strong>TAGS:</strong>
         <a v-for="(t, indx) in tag" :key="indx" @click="router.push(`/tag/${t._id}`)">{{ t.name }}</a>
       </div>
-      <div v-if="attachments.length">
-        <h1>{{ $t("attachment") }}</h1>
-        <ul>
-          <li v-for="(i, index) in attachments" :key="index">
-            <!-- <a :href="i" target="_blank" download="awesome.pdf"> -->
-            <img src="~/assets/images/file/file.png" class="isFile" title="Click for download"
-              @click="clickedDownload(i)">
-            <!-- </a> -->
-          </li>
-        </ul>
-      </div>
+
       <div class="follow-us">
         <h1>ສາມາດຕິດຕາມ THEBIZHUB</h1>
         <p>ຜ່ານແອັບພິເຄຊັ້ນຕ່າງໆ ທີ່ທ່ານສະດວກ ຫຼື ໃຊ້ງານຢູ່ແລ້ວໄດ້ເລີຍ</p>
@@ -168,15 +165,15 @@ const clickedDownload = (url: any) => {
 </script>
 
 <style lang="scss" scoped>
-.isFile {
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-}
 
-.isFile:hover {
-  width: 101px;
-  height: 101px;
+.document-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  button{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
 
 .has-bg {

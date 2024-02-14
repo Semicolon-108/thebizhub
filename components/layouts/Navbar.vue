@@ -77,12 +77,12 @@
               $t("article_events")
             }}</a>
           </li>
-          <li>
+          <li> 
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsRhORbsNje2WzOdWGCLJAdKuyEGDlUejL2qr4e-gzencLcw/viewform"
               target="_blank">{{ $t("navbar_partner_with_us") }}</a>
           </li>
           <li>
-            <a @click="$router.replace('/category?is=Business Supporters')">
+            <a @click="$router.replace('/category?is=Business Partner')">
               {{ $t("navbar_bussiness_supporter") }}</a>
           </li>
           <li>

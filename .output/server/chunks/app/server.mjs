@@ -637,7 +637,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_-aaae2421.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_-89e0b82b.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-detail-related",
@@ -1708,9 +1708,9 @@ const language = [
     en: "More"
   },
   {
-    key: "attachment",
-    la: "ໄຟລ໌ແນບ",
-    en: "Attachments"
+    key: "download_document",
+    la: "ດາວໂຫລດ ເອກະສານ",
+    en: "Download Document"
   }
 ];
 const getKeyFunc = (lang) => {
@@ -1758,7 +1758,7 @@ const plugins = [
   image_u014LPA7JK
 ];
 const layouts = {
-  main: () => import('./_nuxt/main-debbbc58.mjs').then((m) => m.default || m)
+  main: () => import('./_nuxt/main-48769ddd.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",

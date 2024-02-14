@@ -312,8 +312,8 @@ export const language = [
     en: "More",
   },
   {
-    key: "attachment",
-    la: "ໄຟລ໌ແນບ",
-    en: "Attachments"
+    key: "download_document",
+    la: "ດາວໂຫລດ ເອກະສານ",
+    en: "Download Document"
   }
 ];
