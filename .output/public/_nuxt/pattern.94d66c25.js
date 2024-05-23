@@ -1,0 +1,1 @@
+import{_ as e}from"./entry.f2dc0412.js";import{N as t,M as _}from"./swiper-vue.6a103a73.js";const c={},n={class:"line"};function o(s,a){return _(),t("div",n)}const i=e(c,[["render",o],["__scopeId","data-v-5cfd73a9"]]);export{i as default};

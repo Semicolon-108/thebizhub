@@ -1,11 +1,11 @@
-import { hasInjectionContext, getCurrentInstance, version, unref, inject, defineComponent, h, computed, ref, provide, shallowReactive, Suspense, nextTick, Transition, mergeProps, useSSRContext, createApp, effectScope, reactive, watch, isRef, isReactive, toRaw, defineAsyncComponent, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, toRef, shallowRef, isReadonly, getCurrentScope, onScopeDispose, markRaw, toRefs, isShallow, withCtx } from 'vue';
-import { d as useRuntimeConfig$1, $ as $fetch, w as withQuery, l as hasProtocol, p as parseURL, m as isScriptProtocol, j as joinURL, h as createError$1, n as defu, o as sanitizeStatusCode, q as createHooks } from '../nitro/node-server.mjs';
+import { hasInjectionContext, getCurrentInstance, version, unref, inject, ref, defineComponent, h, computed, provide, shallowReactive, Suspense, nextTick, Transition, useSSRContext, mergeProps, reactive, watch, withCtx, createVNode, createApp, effectScope, isRef, isReactive, toRaw, defineAsyncComponent, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, toRef, shallowRef, isReadonly, getCurrentScope, onScopeDispose, markRaw, toRefs, isShallow } from 'vue';
+import { d as useRuntimeConfig$1, $ as $fetch, w as withQuery, l as hasProtocol, p as parseURL, m as isScriptProtocol, j as joinURL, h as createError$1, n as parse, o as getRequestHeader, q as defu, r as sanitizeStatusCode, t as destr, v as isEqual, x as setCookie, y as getCookie, z as deleteCookie, A as createHooks } from '../nitro/node-server.mjs';
 import { getActiveHead } from 'unhead';
 import { defineHeadPlugin } from '@unhead/shared';
 import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
 import axios from 'axios';
 import { createI18n } from 'vue-i18n';
-import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode } from 'vue/server-renderer';
+import { ssrRenderAttrs, ssrRenderAttr, ssrRenderStyle, ssrInterpolate, ssrRenderComponent, ssrRenderSuspense, ssrRenderVNode } from 'vue/server-renderer';
 import 'node:http';
 import 'node:https';
 import 'fs';
@@ -573,7 +573,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/gallery-c61f2734.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/gallery-2023e299.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us",
@@ -581,7 +581,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-655bdd8f.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-e766fb2f.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us-product-and-services",
@@ -589,7 +589,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/product-and-services-baa0acc2.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/product-and-services-d08ce4e4.mjs').then((m) => m.default || m)
   },
   {
     name: "about-us-works",
@@ -597,7 +597,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/works-1c793746.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/works-cbbac3fb.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-login",
@@ -605,7 +605,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/login-722686a8.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/login-6655ec84.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-otp",
@@ -613,7 +613,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/otp-9ceb4e75.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/otp-a6063f60.mjs').then((m) => m.default || m)
   },
   {
     name: "auth-password-recovery",
@@ -621,7 +621,17 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/password-recovery-ddd39975.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/password-recovery-b277a77e.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "auth-protect",
+    path: "/auth/protect",
+    meta: {},
+    alias: [],
+    redirect: void 0,
+    component: () => Promise.resolve().then(function() {
+      return protect;
+    }).then((m) => m.default || m)
   },
   {
     name: "auth-register",
@@ -629,7 +639,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/register-4cfe7801.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/register-3beab0da.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-detail-id",
@@ -637,7 +647,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_-89e0b82b.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_-fe70661b.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-detail-related",
@@ -645,7 +655,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/related-8493758d.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/related-f4c391db.mjs').then((m) => m.default || m)
   },
   {
     name: "category",
@@ -653,7 +663,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-177c01a7.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-8e1fdf89.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -661,7 +671,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-3103fd27.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-773c5da6.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-coaching",
@@ -669,7 +679,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-coaching-1763d203.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-coaching-d1cf3aea.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-biz-course",
@@ -677,7 +687,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/biz-course-b03efe37.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/biz-course-f049cc66.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-pattern",
@@ -685,7 +695,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/pattern-2e5b619d.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/pattern-6d8efad8.mjs').then((m) => m.default || m)
   },
   {
     name: "product-and-services-project-business-consultant",
@@ -693,7 +703,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/project-business-consultant-bc0b25ba.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/project-business-consultant-77d4c351.mjs').then((m) => m.default || m)
   },
   {
     name: "search",
@@ -701,7 +711,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-faf18396.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-8a5fec83.mjs').then((m) => m.default || m)
   },
   {
     name: "tag-id",
@@ -709,7 +719,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_id_-bfc0b3cb.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_id_-f2deb43b.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1320,6 +1330,59 @@ function defineStore(idOrOptions, setup, setupOptions) {
   useStore.$id = id;
   return useStore;
 }
+function useRequestEvent(nuxtApp = /* @__PURE__ */ useNuxtApp()) {
+  var _a;
+  return (_a = nuxtApp.ssrContext) == null ? void 0 : _a.event;
+}
+const CookieDefaults = {
+  path: "/",
+  watch: true,
+  decode: (val) => destr(decodeURIComponent(val)),
+  encode: (val) => encodeURIComponent(typeof val === "string" ? val : JSON.stringify(val))
+};
+function useCookie(name, _opts) {
+  var _a;
+  const opts = { ...CookieDefaults, ..._opts };
+  const cookies = readRawCookies(opts) || {};
+  let delay;
+  if (opts.maxAge !== void 0) {
+    delay = opts.maxAge * 1e3;
+  } else if (opts.expires) {
+    delay = opts.expires.getTime() - Date.now();
+  }
+  const hasExpired = delay !== void 0 && delay <= 0;
+  const cookieValue = hasExpired ? void 0 : cookies[name] ?? ((_a = opts.default) == null ? void 0 : _a.call(opts));
+  const cookie = ref(cookieValue);
+  {
+    const nuxtApp = /* @__PURE__ */ useNuxtApp();
+    const writeFinalCookieValue = () => {
+      if (!isEqual(cookie.value, cookies[name])) {
+        writeServerCookie(useRequestEvent(nuxtApp), name, cookie.value, opts);
+      }
+    };
+    const unhook = nuxtApp.hooks.hookOnce("app:rendered", writeFinalCookieValue);
+    nuxtApp.hooks.hookOnce("app:error", () => {
+      unhook();
+      return writeFinalCookieValue();
+    });
+  }
+  return cookie;
+}
+function readRawCookies(opts = {}) {
+  {
+    return parse(getRequestHeader(useRequestEvent(), "cookie") || "", opts);
+  }
+}
+function writeServerCookie(event, name, value, opts = {}) {
+  if (event) {
+    if (value !== null && value !== void 0) {
+      return setCookie(event, name, value, opts);
+    }
+    if (getCookie(event, name) !== void 0) {
+      return deleteCookie(event, name, opts);
+    }
+  }
+}
 function definePayloadReducer(name, reduce) {
   {
     (/* @__PURE__ */ useNuxtApp()).ssrContext._payloadReducers[name] = reduce;
@@ -1758,7 +1821,7 @@ const plugins = [
   image_u014LPA7JK
 ];
 const layouts = {
-  main: () => import('./_nuxt/main-48769ddd.mjs').then((m) => m.default || m)
+  main: () => import('./_nuxt/main-1d3446e6.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -1983,6 +2046,36 @@ function _mergeTransitionProps(routeProps) {
   }));
   return defu(..._props);
 }
+const _sfc_main$3 = /* @__PURE__ */ defineComponent({
+  __name: "protect",
+  __ssrInlineRender: true,
+  setup(__props) {
+    (/* @__PURE__ */ useNuxtApp()).$axios;
+    const succesMsg = ref();
+    const email = ref();
+    const password = ref();
+    const erMsg = ref();
+    useCookie("protector");
+    reactive({
+      email: "thebizhub.pro@gmail.com",
+      password: "321@2024"
+    });
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "section" }, _attrs))} data-v-37bab3e9><div class="bg is-hidden-mobile" data-v-37bab3e9></div><div class="container" data-v-37bab3e9><h1 class="page-title" data-v-37bab3e9>Welcome to Thebizhub </h1><div class="grids is-2-desktop is-1-mobile margin-top-30 gap-30" data-v-37bab3e9><div class="left" data-v-37bab3e9><form action="" class="grids is-1-desktop is-1-mobile gap-20" data-v-37bab3e9><div class="field" data-v-37bab3e9><label for="" data-v-37bab3e9>Enter Email <span data-v-37bab3e9>*</span></label><div class="control has-addon" data-v-37bab3e9><input type="email" class="input"${ssrRenderAttr("value", unref(email))} placeholder="protect@gmail.com" data-v-37bab3e9></div></div><div class="field" data-v-37bab3e9><label for="" data-v-37bab3e9>Enter Password <span data-v-37bab3e9>*</span></label><div class="control has-addon" data-v-37bab3e9><input type="password" class="input"${ssrRenderAttr("value", unref(password))} placeholder="123456787" data-v-37bab3e9></div></div></form>`);
+      if (unref(succesMsg)) {
+        _push(`<small style="${ssrRenderStyle({ "color": "green" })}" data-v-37bab3e9>${ssrInterpolate(unref(succesMsg))}</small>`);
+      } else {
+        _push(`<!---->`);
+      }
+      if (unref(erMsg)) {
+        _push(`<small style="${ssrRenderStyle({ "color": "red" })}" data-v-37bab3e9>${ssrInterpolate(unref(erMsg))}</small>`);
+      } else {
+        _push(`<!---->`);
+      }
+      _push(`<button class="button main margin-top-20 margin-bottom-10" data-v-37bab3e9> Login </button></div></div></div></section>`);
+    };
+  }
+});
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -1990,30 +2083,55 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$2 = {};
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_NuxtLayout = __nuxt_component_0;
-  const _component_NuxtPage = __nuxt_component_1;
-  _push(ssrRenderComponent(_component_NuxtLayout, mergeProps({ name: "main" }, _attrs), {
-    default: withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(ssrRenderComponent(_component_NuxtPage, null, null, _parent2, _scopeId));
+const _sfc_setup$3 = _sfc_main$3.setup;
+_sfc_main$3.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/auth/protect.vue");
+  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
+};
+const Protect = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-37bab3e9"]]);
+const protect = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  default: Protect
+});
+const _sfc_main$2 = /* @__PURE__ */ defineComponent({
+  __name: "app",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const protector = ref(false);
+    const useCookies = useCookie("protector");
+    watch(() => useCookies.value, (value) => {
+      if (value)
+        protector.value = true;
+    }, { immediate: true, deep: true });
+    return (_ctx, _push, _parent, _attrs) => {
+      const _component_NuxtLayout = __nuxt_component_0;
+      const _component_NuxtPage = __nuxt_component_1;
+      if (unref(protector)) {
+        _push(ssrRenderComponent(_component_NuxtLayout, mergeProps({ name: "main" }, _attrs), {
+          default: withCtx((_, _push2, _parent2, _scopeId) => {
+            if (_push2) {
+              _push2(ssrRenderComponent(_component_NuxtPage, null, null, _parent2, _scopeId));
+            } else {
+              return [
+                createVNode(_component_NuxtPage)
+              ];
+            }
+          }),
+          _: 1
+        }, _parent));
       } else {
-        return [
-          createVNode(_component_NuxtPage)
-        ];
+        _push(ssrRenderComponent(Protect, _attrs, null, _parent));
       }
-    }),
-    _: 1
-  }, _parent));
-}
+    };
+  }
+});
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender]]);
 const _sfc_main$1 = {
   __name: "nuxt-error-page",
   __ssrInlineRender: true,
@@ -2035,8 +2153,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./_nuxt/error-404-b6816b3e.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./_nuxt/error-500-47adb4d2.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./_nuxt/error-404-3c79e2d7.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./_nuxt/error-500-ac00c33b.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -2054,7 +2172,7 @@ const _sfc_main = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const IslandRenderer = defineAsyncComponent(() => import('./_nuxt/island-renderer-7bb441aa.mjs').then((r) => r.default || r));
+    const IslandRenderer = defineAsyncComponent(() => import('./_nuxt/island-renderer-a5427993.mjs').then((r) => r.default || r));
     const nuxtApp = /* @__PURE__ */ useNuxtApp();
     nuxtApp.deferHydration();
     nuxtApp.ssrContext.url;
@@ -2081,7 +2199,7 @@ const _sfc_main = {
           } else if (unref(SingleRenderer)) {
             ssrRenderVNode(_push, createVNode(resolveDynamicComponent(unref(SingleRenderer)), null, null), _parent);
           } else {
-            _push(ssrRenderComponent(unref(AppComponent), null, null, _parent));
+            _push(ssrRenderComponent(unref(_sfc_main$2), null, null, _parent));
           }
         },
         _: 1
@@ -2116,5 +2234,5 @@ let entry;
 }
 const entry$1 = (ctx) => entry(ctx);
 
-export { _export_sfc as _, useRuntimeConfig as a, navigateTo as b, createError as c, useNuxtApp as d, entry$1 as default, useAuthStore as e, useRoute as f, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRouter as u };
+export { _export_sfc as _, useRuntimeConfig as a, navigateTo as b, createError as c, useNuxtApp as d, entry$1 as default, useCookie as e, useAuthStore as f, useRoute as g, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRouter as u };
 //# sourceMappingURL=server.mjs.map
